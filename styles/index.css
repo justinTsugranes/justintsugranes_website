@@ -438,22 +438,22 @@ a:active,
 }
 
 .index-hero-container::before {
-  background-image: url('/public/images-main/hero.jpg');
-}
-
-.pre-footer-container::before {
-  background-image: url('/public/images-main/pre-footer.jpg');
+  background-image: url('public/images/heros/hero-index.jpg');
 }
 
 .projects-hero-container::before {
-  background-image: url('/public/images-main/about-hero.jpg');
+  background-image: url('public/images/heros/hero-projects.jpg');
 }
 
 .about-hero-container::before {
-  background-image: url('/public/images-main/about-hero.jpg');
+  background-image: url('public/images/heros/hero-about.jpg');
 }
 .contact-hero-container::before {
-  background-image: url('/public/images-main/about-hero.jpg');
+  background-image: url('public/images/heros/hero-contact.jpg');
+}
+
+.pre-footer-container::before {
+  background-image: url('public/images/heros/pre-footer.jpg');
 }
 
 /* QUOTE */
