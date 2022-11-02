@@ -1,0 +1,543 @@
+/* TIPS */
+
+// Use rem units
+// Use flex-start, flex-end, grid, start, grid end, etc... instead of Left, right, up down, etc...
+// Use Accessible contrast ratios
+// Use proper font spacing and line height for fonts that are designed to headers or fonts that designed to be body text.
+// Avoid absolute units in line-height. Ie. use 1.5 instead of 22px.
+// Include purely decorative images like baners in CSS instead of in html file.
+// Avoid text in images and instead put the text at a higher Z index. - This makes the site more accessible, responsive, translatable and searchable.
+// Do not let secondary content occupy the screen.
+// Use vector graphics like SVG instead of raster graphics like PNG.
+
+/* IMPORTS */
+@import url('../node_modules/font-awesome/css/font-awesome.min.css');
+
+/*
+Modern CSS Reset 
+https://piccalil.li/blog/a-modern-css-reset/
+*/
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Remove link styling */
+a {
+  text-decoration: none;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role='list'],
+ol[role='list'] {
+  list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  text-rendering: optimizeSpeed;
+  min-height: 100vh;
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.5;
+  font-size: 1.1rem;
+  font-weight: 100;
+  background-color: var(--background);
+  color: var(--on-background);
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+/* END CSS RESET */
+
+/* SKIP LINK */
+
+/* Hide the skip link */
+.skip {
+  position: absolute;
+  left: -10000px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
+/* Show Skip Link when Focused */
+.skip:focus {
+  position: static;
+  width: auto;
+  height: auto;
+}
+
+/* GLOBAL COLORS */
+
+:root {
+  /* Material Design 3 */
+  --primary: hsla(258, 100%, 87%, 1);
+  --on-primary: hsla(259, 58%, 28%, 1);
+  --primary-container: hsla(257, 43%, 38%, 1);
+  --onprimary-container: hsla(263, 100%, 93%, 1);
+  --secondary: hsla(263, 27%, 81%, 1);
+  --on-secondary: hsla(258, 18%, 22%, 1);
+  --secondary-container: hsla(258, 13%, 31%, 1);
+  --onsecondary-container: hsla(263, 65%, 92%, 1);
+  --tertiary: hsla(343, 63%, 83%, 1);
+  --on-tertiary: hsla(338, 33%, 22%, 1);
+  --tertiary-container: hsla(340, 25%, 31%, 1);
+  --ontertiary-container: hsla(340, 25%, 31%, 1);
+  --error: hsla(3, 70%, 83%, 1);
+  --on-error: hsla(3, 71%, 22%, 1);
+  --error-container: hsla(3, 71%, 22%, 1);
+  --onerror-container: hsla(4, 71%, 92%, 1);
+  --background: hsl(0, 0%, 11%, 1);
+  --on-background: hsla(312, 9%, 89%, 1);
+  --surface: hsla(255, 7%, 11%, 1);
+  --on-surface: hsla(312, 9%, 89%, 1);
+  --surface-variant: hsla(264, 7%, 29%, 1);
+  --onsurface-variant: hsla(264, 7%, 29%, 1);
+  --outline: hsla(264, 5%, 58%, 1);
+  --outline-variant: hsla(264, 7%, 29%, 1);
+  /* Acents */
+}
+
+/* TYPOGRAPHY */
+
+h1,
+h2,
+h3,
+h4,
+p,
+l1 {
+  text-align: center;
+}
+
+/* TODO Generalize he font sizes */
+/*
+12px
+14px
+16px
+18px
+20px
+24px
+30px
+36px
+48px
+60px
+72px
+ */
+
+/* TODO Incorporate these for accessibility best practices */
+/* .wrapper {
+  max-width: 34em;
+  line-height: 1.5em;
+  paragraph-spacing: 2em;
+  word-spacing: 0.16em;
+  letter-spacing: 0.12em;
+} */
+
+h1 {
+  font-size: 2rem;
+  font-weight: 300;
+}
+
+h2 {
+  font-size: 1.25rem;
+  font-weight: 100;
+}
+
+h3 {
+  font-size: 1.1rem;
+  font-weight: 300;
+}
+
+h4 {
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+li {
+  font-size: 1.1rem;
+  font-weight: 100;
+  line-height: 1.5;
+  list-style: none;
+}
+
+.section-title {
+  text-transform: uppercase;
+  border-bottom: 1px solid var(--on-background);
+  mag-top: 50px;
+}
+
+.font-sm {
+  font-size: 0.8rem;
+  font-weight: 100;
+}
+
+/* SHADOWS */
+
+/* box shadow */
+.box-shadow,
+.image,
+.hero-section-container::before,
+.about-hero-container::before {
+  box-shadow: 0 1px 3px hsla(0, 0%, 0%, 0.2);
+}
+
+/* inset */
+.inset {
+  box-shadow: inset 0 2px 2px hsla(0, 0%, 0%, 0.1);
+}
+
+/* drop shadow */
+.drop-shadow,
+.hero-title,
+.hero-subtitle,
+.pre-footer-title,
+.pre-footer-subtitle {
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.5));
+}
+
+/* text shadow */
+.text-shadow,
+.footer-title,
+.footer-social-title {
+  text-shadow: 0px 4px 4px var(--on-surface);
+}
+
+/* LINKS AND BUTTONS */
+
+a {
+  color: var(--on-background);
+}
+
+.btn {
+  display: inline-block;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 400;
+  padding: 7px 35px;
+  margin-top: 30px;
+  margin-bottom: 50px;
+  background-color: var(--primary-container);
+  color: var(--onprimary-container);
+  border: none;
+  border-radius: 60px;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.06), 0 2px 10px 0 rgba(0, 0, 0, 0.07);
+  -webkit-transition: all 300ms ease;
+  transition: all 300ms ease;
+}
+
+a:hover,
+.btn:hover,
+.icon:hover {
+  color: var(--primary);
+  opacity: 0.9;
+  transition: 0.3s;
+  transform: translateY(1px);
+}
+
+.btn:hover {
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.1), 0 1px 1px 0 rgba(0, 0, 0, 0.09);
+}
+
+a:active,
+.btn:active,
+.icon:active {
+  opacity: 0.7;
+  transition: 0.3s;
+  transform: translateY(1px);
+}
+
+.btn:active {
+  background-color: var(--on-primary);
+}
+
+.submit-btn {
+  float: right;
+}
+
+/* ICONOGRAPHY */
+
+.icon {
+  padding: 30px;
+  font-size: 24px;
+}
+
+/* LAYOUT */
+
+/* flex */
+
+.flex-col {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+/* global containers */
+
+.main-container {
+  width: 100%;
+}
+
+.container {
+  width: 90%;
+  margin: 40px auto;
+}
+
+/* HEADER */
+
+.header-container {
+  height: 75px;
+  margin: auto auto;
+}
+
+.header-logo > a {
+  white-space: nowrap;
+  text-transform: uppercase;
+}
+
+.header-nav {
+  justify-content: end;
+  width: 100%;
+}
+
+.header-nav > a {
+  margin-left: 20px;
+  font-weight: 300;
+}
+
+/* PRE-FOOTER */
+
+.pre-footer-title,
+#pre-footer-subtitle {
+  color: var(--background);
+}
+
+#pre-footer-subtitle {
+  font-size: 1.2rem;
+  font-weight: 300;
+  margin-top: 1rem;
+}
+
+/* FOOTER */
+
+.footer-title,
+.footer-social-title {
+  text-transform: uppercase;
+  color: var(--primary);
+}
+
+.footer-title {
+  margin-bottom: 10px;
+}
+
+.footer-social-title {
+  margin-top: 50px;
+  margin-bottom: 20px;
+}
+
+/* HERO */
+
+.hero-container,
+.pre-footer-container {
+  height: 60vh;
+  width: 100%;
+  position: relative;
+}
+
+.index-hero-container::before,
+.projects-hero-container::before,
+.about-hero-container::before,
+.contact-hero-container::before,
+.pre-footer-container::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+/* IMAGES */
+
+.image {
+  border-radius: 16px;
+  x-index: 1;
+}
+
+.about-image,
+.tech-tools-image {
+  max-height: 30%;
+  max-width: 40%;
+}
+
+.index-hero-container::before {
+  background-image: url('/public/images-main/hero.jpg');
+}
+
+.pre-footer-container::before {
+  background-image: url('/public/images-main/pre-footer.jpg');
+}
+
+.projects-hero-container::before {
+  background-image: url('/public/images-main/about-hero.jpg');
+}
+
+.about-hero-container::before {
+  background-image: url('/public/images-main/about-hero.jpg');
+}
+.contact-hero-container::before {
+  background-image: url('/public/images-main/about-hero.jpg');
+}
+
+/* QUOTE */
+
+.quote-text {
+  font-size: 1.7rem;
+  line-height: 45px;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+/* PROJECTS */
+
+.project-cards-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-column-gap: 25px;
+  grid-row-gap: 25px;
+  margin: 50px 0px;
+}
+
+.project-card {
+  flex: 0 1 calc(25% - 1em);
+}
+
+.project-card-image {
+  height: 275px;
+  width: 275px;
+}
+
+.project-card-image:hover {
+  opacity: 70%;
+  transition: 0.4s;
+  box-shadow: inset 10px 5px 25px 5px var(--secondary),
+    5px 5px 12px 2px var(--secondary);
+}
+
+.project-card-title {
+  padding-top: 15px;
+}
+
+/* TECH AND TOOLS */
+
+.tech-tools-text-container {
+  padding-right: 50px;
+  white-space: nowrap;
+}
+
+/* ABOUT */
+
+.about-text-container {
+  padding-left: 50px;
+}
+
+/* Resonsive Cards */
+/* @media screen and (min-width: 60em) {
+  .project-card {
+    flex: 0 1 calc(25% - 1em);
+  }
+}
+
+@media screen and (min-width: 40em) {
+  .project-cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .project-card {
+    flex: 0 1 calc(50% - 1em);
+  }
+}
+ */
+/* flexbox method */
+/* width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px 15px; */
+
+/* @media (max-width: 768px) {
+  .btn {
+    width: 100%;
+    float: none;
+    text-align: center;
+  } */

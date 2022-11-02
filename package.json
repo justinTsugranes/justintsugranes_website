@@ -1,0 +1,14 @@
+{
+  "name": "justintsugranes_website",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "justinTsugranes",
+  "license": "MIT",
+  "dependencies": {
+    "font-awesome": "^4.7.0"
+  }
+}
