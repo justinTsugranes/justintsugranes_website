@@ -66,9 +66,6 @@ body {
   background-color: var(--background);
   color: var(--on-background);
   margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
 }
 
 /* A elements that don't have a class get default styles */
@@ -130,7 +127,7 @@ select {
 /* GLOBAL COLORS */
 
 :root {
-  /* Material Design 3 */
+  /* Material Design 3 Colors*/
   --primary: hsla(258, 100%, 87%, 1);
   --on-primary: hsla(259, 58%, 28%, 1);
   --primary-container: hsla(257, 43%, 38%, 1);
@@ -155,7 +152,7 @@ select {
   --onsurface-variant: hsla(264, 7%, 29%, 1);
   --outline: hsla(264, 5%, 58%, 1);
   --outline-variant: hsla(264, 7%, 29%, 1);
-  /* Acents */
+  /* Accent Colors */
 }
 
 /* TYPOGRAPHY */
@@ -170,40 +167,59 @@ l1 {
   max-width: 75ch;
 }
 
-/* TODO Generalize he font sizes */
-/*
+/* TODO Generalize the font sizes */
+/* 
+ {
+  font-size: 12px;
+}
 
-{font-size: 12px}
+ {
+  font-size: 14px;
+}
 
-{font-size: 14px}
+ {
+  font-size: 16px;
+}
 
-{font-size: 16px}
+ {
+  font-size: 18px;
+}
 
-{font-size: 18px}
+ {
+  font-size: 20px;
+}
 
-{font-size: 20px}
+ {
+  font-size: 24px;
+}
 
-{font-size: 24px}
+ {
+  font-size: 30px;
+}
 
-{font-size: 30px}
+ {
+  font-size: 36px;
+}
 
-{font-size: 36px}
+ {
+  font-size: 48px;
+}
 
-{font-size: 48px}
+ {
+  font-size: 60px;
+}
 
-{font-size: 60px}
+ {
+  font-size: 72px;
+} */
 
-{font-size: 72px}
- */
-
-/* TODO Incorporate these for accessibility best practices */
-/* .wrapper {
-  max-width: 34em;
-  line-height: 1.5em;
+/* Accessibility best practices */
+.wrapper {
+  /* max-width: 34em; */
   paragraph-spacing: 2em;
   word-spacing: 0.16em;
   letter-spacing: 0.12em;
-} */
+}
 
 h1 {
   font-size: 2rem;
@@ -243,7 +259,7 @@ li {
   font-weight: 100;
 }
 
-.quote-text {
+.font-quote {
   font-size: 1.7rem;
   padding-top: 100px;
   padding-bottom: 100px;
@@ -610,7 +626,7 @@ a:active,
 }
 
 /* Resonsive Project Cards */
-@media screen and (min-width: 800px) {
+/* @media screen and (min-width: 800px) {
   .project-card {
     flex: 0 1 calc(25% - 1em);
   }
@@ -626,4 +642,4 @@ a:active,
   .project-card {
     flex: 0 1 calc(50% - 1em);
   }
-}
+} */
