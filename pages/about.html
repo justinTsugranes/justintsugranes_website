@@ -5,9 +5,9 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    
+
     <!-- Description -->
-    <title>About | Justin Tsugranes | Web Developer, Digital Media Creator</title>
+    <title>Justin Tsugranes | Web Developer, Digital Media Creator</title>
     <meta name="description" content="A brief description" />
     <meta name="author" content="Insert site name" />
 
@@ -57,10 +57,10 @@
       </div>
       <nav class="header-nav flex-row" aria-label="main">
         <a href="/pages/projects.html">Projects</a>
+        <a href="/pages/about.html">About </a>
         <a href="https://justintsugranes.myportfolio.com/work" target="_blank"
           >Adobe Portfolio</a
         >
-        <a href="/pages/about.html">About </a>
         <a href="/pages/contact.html">Contact </a>
       </nav>
     </header>
@@ -68,111 +68,197 @@
     <!-- MAIN SECTION -->
     <main class="main-container flex-col">
       <!-- Hero Section-->
-      <section class="container hero-container about-hero-container flex-col">
+      <section class="hero-container about-hero-container flex-col">
         <div class="hero-content">
-          <h1 class="hero-title"><!-- hero title text --></h1>
+          <h1 class="hero-title"><!-- hero title --></h1>
           <h2 class="hero-subtitle">
-            <!-- hero subtitle text -->
+            <!-- hero subtitle -->
           </h2>
         </div>
       </section>
 
       <!-- ABOUT SECTION -->
-    <section class="container about-container flex-row">
-      <img class="image about-image" src="public/images/headshots/headshot-about.jpg"></img>
-      <div class="about-text-container">
-        <h1 class="about-heading">About Justin Tsugranes</h1>
-        <p class="about-text">
-          Just one of those "guitar-playing, web developing, backpacking, road-tripping creative-types"
+      <section class="container about-container flex-row">
+        <!-- Gallery -->
+        <div id="gallery">
+          <img src="/public/images/headshots/headshot-about.jpg" />
+          <img src="/public/images/headshots/headshot-about.jpg" />
+          <img src="/public/images/headshots/headshot-about.jpg" />
+          <img src="/public/images/headshots/headshot-about.jpg" />
+          <img src="/public/images/headshots/headshot-about.jpg" />
+          <img src="/public/images/headshots/headshot-about.jpg" />
+          <img src="/public/images/headshots/headshot-about.jpg" />
+          <img src="/public/images/headshots/headshot-about.jpg" />
+          <img src="/public/images/headshots/headshot-about.jpg" />
+        </div>
+
+        <!-- <div class="gallery">
+          <a target="_blank" href="/public/images/headshots/headshot-about.jpg">
+            <img
+              class="image about-image"
+              src="/public/images/headshots/headshot-about.jpg"
+              alt=""
+              width="300"
+              height="200"
+            />
+          </a>
+        </div>
+
+        <div class="gallery">
+          <a target="_blank" href="/public/images/headshots/headshot-about.jpg">
+            <img
+              class="image about-image"
+              src="/public/images/headshots/headshot-about.jpg"
+              alt=""
+              width="300"
+              height="200"
+            />
+          </a>
+        </div>
+
+        <div class="gallery">
+          <a target="_blank" href="/public/images/headshots/headshot-about.jpg">
+            <img
+              class="image about-image"
+              src="/public/images/headshots/headshot-about.jpg"
+              alt=""
+              width="300"
+              height="200"
+            />
+          </a>
+        </div>
+
+        <div class="gallery">
+          <a target="_blank" href="img_mountains.jpg">
+            <img
+              class="image about-image"
+              src="/public/images/headshots/headshot-about.jpg"
+              alt=""
+              width="300"
+              height="200"
+            />
+          </a>
+        </div>
+        <div class="gallery">
+          <a target="_blank" href="img_mountains.jpg">
+            <img
+              class="image about-image"
+              src="/public/images/headshots/headshot-about.jpg"
+              alt=""
+              width="300"
+              height="200"
+            />
+          </a>
+        </div>
+        <div class="gallery">
+          <a target="_blank" href="img_mountains.jpg">
+            <img
+              class="image about-image"
+              src="/public/images/headshots/headshot-about.jpg"
+              alt=""
+              width="300"
+              height="200"
+            />
+          </a>
+        </div> -->
+
+        <!-- old -->
+        <!-- <img class="image about-image" src="/public/images/headshots/headshot-about.jpg"></img> -->
+        <div class="about-text-container">
+          <h1 class="about-heading">About Justin Tsugranes</h1>
+          <p class="about-text">
+            Just one of those "guitar-playing, web developing, backpacking,
+            road-tripping creative-types"
+          </p>
+        </div>
+      </section>
+
+      <!-- PRE-FOOTER SECTION-->
+      <section class="container pre-footer-container flex-col">
+        <h1 class="pre-footer-title">I am always looking to connect!</h1>
+        <a
+          id="pre-footer-subtitle"
+          href="mailto:justintsugranes@proton.me?subject=Hello!"
+          >justintsugranes@proton.me</a
+        >
+      </section>
+    </main>
+
+    <!-- FOOTER SECTION-->
+    <footer class="container footer-container flex-col">
+      <!-- Footer Main Text -->
+      <h1 class="footer-title">Justin Tsugranes</h1>
+      <p class="footer-subtitle">Web Developer, Digital Media Creator</p>
+      <!-- Footer Social Section -->
+      <div class="social-container flex-col">
+        <a href="pages/contact.html" class="footer-social-title"
+          >Get In Touch</a
+        >
+        <!-- Social Icons -->
+        <div class="icons-container flex-row">
+          <!-- linkedin -->
+          <div class="icon-container">
+            <a
+              href="https://linkedin.com/in/justin-tsugranes"
+              target="_blank"
+              class="social-link"
+            >
+              <i class="fa-brands fa-linkedin fa-lg icon"></i>
+            </a>
+          </div>
+          <!-- github -->
+          <div class="icon-container">
+            <a
+              href="https://github.com/justintsugranes"
+              target="_blank"
+              class="social-link"
+              ><i class="fa-brands fa-github fa-lg icon"></i>
+            </a>
+          </div>
+          <!-- medium -->
+          <div class="icon-container">
+            <a
+              href="https://justintsugranes.medium.com/"
+              target="_blank"
+              class="social-link"
+            >
+              <i class="fa-brands fa-medium fa-lg icon"></i>
+            </a>
+          </div>
+          <!-- spotify -->
+          <div class="icon-container">
+            <a
+              href="https://open.spotify.com/artist/4vV18ClJAixgpNfKaJkEmR"
+              target="_blank"
+              class="social-link"
+              ><i class="fa-brands fa-spotify fa-lg icon"></i>
+            </a>
+          </div>
+          <!-- instagram -->
+          <div class="icon-container">
+            <a
+              href="https://instagram.com/justintsugranes"
+              target="_blank"
+              class="social-link"
+              ><i class="fa-brands fa-instagram fa-lg icon"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Footer Terms, Conditions, and Policies Section-->
+      <div class="container policies-container">
+        <!-- <p class="policies-text">Privacy Policy</p>
+      <p class="policies-text">Terms & Conditions</p> -->
+        <p class="policies-text font-sm">
+          Copyright 2022 misfitDodo Media. All Rights Reserved
         </p>
       </div>
-    </section>
+    </footer>
 
-    <!-- PRE-FOOTER SECTION-->
-    <section class="container pre-footer-container flex-col">
-      <h1 class="pre-footer-title">I am always looking to connect!</h1>
-      <a
-        id="pre-footer-subtitle"
-        href="mailto:justintsugranes@proton.me?subject=Hello!"
-        >justintsugranes@proton.me</a
-      >
-    </section>
-  </main>
-
-  <!-- FOOTER SECTION-->
-  <footer class="container footer-container flex-col">
-    <!-- Footer Main Text -->
-    <h1 class="footer-title">Justin Tsugranes</h1>
-    <p class="footer-subtitle">Web Developer, Digital Media Creator</p>
-    <!-- Footer Social Section -->
-    <div class="social-container flex-col">
-      <a href="pages/contact.html" class="footer-social-title"
-        >Get In Touch</a
-      >
-      <!-- Social Icons -->
-      <div class="icons-container flex-row">
-        <!-- linkedin -->
-        <div class="icon-container">
-          <a
-            href="https://linkedin.com/in/justin-tsugranes"
-            target="_blank"
-            class="social-link"
-          >
-            <i class="fa-brands fa-linkedin fa-lg icon"></i>
-          </a>
-        </div>
-        <!-- github -->
-        <div class="icon-container">
-          <a
-            href="https://github.com/justintsugranes"
-            target="_blank"
-            class="social-link"
-            ><i class="fa-brands fa-github fa-lg icon"></i>
-          </a>
-        </div>
-        <!-- medium -->
-        <div class="icon-container">
-          <a
-            href="https://justintsugranes.medium.com/"
-            target="_blank"
-            class="social-link"
-          >
-            <i class="fa-brands fa-medium fa-lg icon"></i>
-          </a>
-        </div>
-        <!-- spotify -->
-        <div class="icon-container">
-          <a
-            href="https://open.spotify.com/artist/4vV18ClJAixgpNfKaJkEmR"
-            target="_blank"
-            class="social-link"
-            ><i class="fa-brands fa-spotify fa-lg icon"></i>
-          </a>
-        </div>
-        <!-- instagram -->
-        <div class="icon-container">
-          <a
-            href="https://instagram.com/justintsugranes"
-            target="_blank"
-            class="social-link"
-            ><i class="fa-brands fa-instagram fa-lg icon"></i>
-          </a>
-        </div>
-      </div>
-    </div>
-
-    <!-- Footer Terms, Conditions, and Policies Section-->
-    <div class="container policies-container">
-      <!-- <p class="policies-text">Privacy Policy</p>
-      <p class="policies-text">Terms & Conditions</p> -->
-      <p class="policies-text font-sm">
-        Copyright 2022 misfitDodo Media. All Rights Reserved
-      </p>
-    </div>
-  </footer>
-
-  <!-- JAVASCRIPT-->
-  <script src="js/scripts.js"></script>
-  <script src="js/dropdown.js"></script>
-</body>
+    <!-- JAVASCRIPT-->
+    <script src="js/scripts.js"></script>
+    <script src="js/dropdown.js"></script>
+    <script src="js/gallery.js"></script>
+  </body>
 </html>

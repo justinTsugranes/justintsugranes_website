@@ -65,6 +65,10 @@ body {
   font-weight: 100;
   background-color: var(--background);
   color: var(--on-background);
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 /* A elements that don't have a class get default styles */
@@ -163,21 +167,33 @@ h4,
 p,
 l1 {
   text-align: center;
+  max-width: 75ch;
 }
 
 /* TODO Generalize he font sizes */
 /*
-12px
-14px
-16px
-18px
-20px
-24px
-30px
-36px
-48px
-60px
-72px
+
+{font-size: 12px}
+
+{font-size: 14px}
+
+{font-size: 16px}
+
+{font-size: 18px}
+
+{font-size: 20px}
+
+{font-size: 24px}
+
+{font-size: 30px}
+
+{font-size: 36px}
+
+{font-size: 48px}
+
+{font-size: 60px}
+
+{font-size: 72px}
  */
 
 /* TODO Incorporate these for accessibility best practices */
@@ -219,7 +235,7 @@ li {
 .section-title {
   text-transform: uppercase;
   border-bottom: 1px solid var(--on-background);
-  mag-top: 50px;
+  /* margin-top: 50px; */
 }
 
 .font-sm {
@@ -227,11 +243,24 @@ li {
   font-weight: 100;
 }
 
+.quote-text {
+  font-size: 1.7rem;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.tech-tools-text-container {
+  padding-right: 50px;
+}
+
+.about-text-container {
+  padding-left: 50px;
+}
+
 /* SHADOWS */
 
 /* box shadow */
 .box-shadow,
-.image,
 .hero-section-container::before,
 .about-hero-container::before {
   box-shadow: 0 1px 3px hsla(0, 0%, 0%, 0.2);
@@ -244,6 +273,7 @@ li {
 
 /* drop shadow */
 .drop-shadow,
+.image,
 .hero-title,
 .hero-subtitle,
 .pre-footer-title,
@@ -251,7 +281,7 @@ li {
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.5));
 }
 
-/* text shadow */
+/* text shadow 02*/
 .text-shadow,
 .footer-title,
 .footer-social-title {
@@ -271,7 +301,7 @@ a {
   font-size: 18px;
   font-weight: 400;
   padding: 7px 35px;
-  margin-top: 30px;
+  margin-top: 20px;
   margin-bottom: 50px;
   background-color: var(--primary-container);
   color: var(--onprimary-container);
@@ -320,8 +350,7 @@ a:active,
 
 /* LAYOUT */
 
-/* flex */
-
+/* Flex */
 .flex-col {
   display: flex;
   flex-direction: column;
@@ -336,8 +365,7 @@ a:active,
   align-items: center;
 }
 
-/* global containers */
-
+/* Global Containers */
 .main-container {
   width: 100%;
 }
@@ -396,7 +424,6 @@ a:active,
 
 .footer-social-title {
   margin-top: 50px;
-  margin-bottom: 20px;
 }
 
 /* HERO */
@@ -422,47 +449,126 @@ a:active,
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
+  filter: grayscale(100%);
+  transition: filter 2s;
+}
+
+#gallery img:hover {
+  filter: none;
 }
 
 /* IMAGES */
 
 .image {
   border-radius: 16px;
-  x-index: 1;
-}
-
-.about-image,
-.tech-tools-image {
-  max-height: 30%;
-  max-width: 40%;
 }
 
 .index-hero-container::before {
-  background-image: url('public/images/heros/hero-index.jpg');
+  background-image: url('/public/images/heros/hero-index.jpg');
 }
 
 .projects-hero-container::before {
-  background-image: url('public/images/heros/hero-projects.jpg');
+  background-image: url('/public/images/heros/hero-projects.jpg');
 }
 
 .about-hero-container::before {
-  background-image: url('public/images/heros/hero-about.jpg');
+  background-image: url('/public/images/heros/hero-about.jpg');
 }
 .contact-hero-container::before {
-  background-image: url('public/images/heros/hero-contact.jpg');
+  background-image: url('/public/images/heros/hero-contact.jpg');
 }
 
 .pre-footer-container::before {
-  background-image: url('public/images/heros/pre-footer.jpg');
+  background-image: url('/public/images/heros/pre-footer.jpg');
 }
 
-/* QUOTE */
+/* Gallery  */
 
-.quote-text {
-  font-size: 1.7rem;
-  line-height: 45px;
-  padding-top: 100px;
-  padding-bottom: 100px;
+/* https://timnwells.medium.com/create-a-simple-responsive-image-gallery-with-html-and-css-fcb973f595ea */
+
+#darkbox {
+  width: 1280px;
+  height: 720px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #333;
+  overflow: hidden;
+  text-align: center;
+}
+.darkboximg {
+  padding: 5%;
+  max-width: 1216px;
+  max-height: 684px;
+}
+
+#gallery {
+  line-height: 0;
+  -webkit-column-count: 5;
+  -webkit-column-gap: 5px;
+  -moz-column-count: 5;
+  -moz-column-gap: 5px;
+  column-count: 5;
+  column-gap: 5px;
+  margin-top: 2rem;
+}
+
+#gallery img {
+  width: 100% !important;
+  height: auto !important;
+  margin-bottom: 5px;
+  filter: grayscale(100%);
+  transition: filter 2s;
+}
+
+#gallery img:hover {
+  filter: none;
+}
+
+@media (max-width: 1200px) {
+  #gallery {
+    -moz-column-count: 4;
+    -webkit-column-count: 4;
+    column-count: 4;
+  }
+}
+@media (max-width: 1000px) {
+  #gallery {
+    -moz-column-count: 3;
+    -webkit-column-count: 3;
+    column-count: 3;
+  }
+}
+@media (max-width: 800px) {
+  #gallery {
+    -moz-column-count: 2;
+    -webkit-column-count: 2;
+    column-count: 2;
+  }
+}
+@media (max-width: 400px) {
+  #gallery {
+    -moz-column-count: 1;
+    -webkit-column-count: 1;
+    column-count: 1;
+  }
+}
+
+/* Gallery Lightbox */
+#darkbox {
+  width: 1280px;
+  height: 720px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #333;
+  overflow: hidden;
+  text-align: center;
+}
+.darkboximg {
+  padding: 5%;
+  max-width: 1216px;
+  max-height: 684px;
 }
 
 /* PROJECTS */
@@ -495,21 +601,8 @@ a:active,
   padding-top: 15px;
 }
 
-/* TECH AND TOOLS */
-
-.tech-tools-text-container {
-  padding-right: 50px;
-  white-space: nowrap;
-}
-
-/* ABOUT */
-
-.about-text-container {
-  padding-left: 50px;
-}
-
 /* Resonsive Cards */
-/* @media screen and (min-width: 60em) {
+@media screen and (min-width: 60em) {
   .project-card {
     flex: 0 1 calc(25% - 1em);
   }
@@ -526,18 +619,17 @@ a:active,
     flex: 0 1 calc(50% - 1em);
   }
 }
- */
-/* flexbox method */
-/* width: 100%;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  margin: 20px 15px; */
 
-/* @media (max-width: 768px) {
+/* width: 100%;
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+align-items: center;
+margin: 20px 15px; */
+
+@media (max-width: 768px) {
   .btn {
-    width: 100%;
+    width: 50%;
     float: none;
     text-align: center;
-  } */
+  }
