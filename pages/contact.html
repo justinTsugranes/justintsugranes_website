@@ -42,122 +42,136 @@
 
   <body>
     <!-- HEADER SECTION-->
-    <header class="container header-container flex-row">
+    <header class="header">
       <!-- Accessibility Skip Link -->
       <a href="#main" class="skip">Skip to main content</a>
 
-      <!-- Header Logo -->
-      <div class="header-logo">
-        <a href="/index.html">Justin Tsugranes</a>
+      <!-- Navbar -->
+      <div class="container flex-row">
+        <!-- Logo -->
+        <div class="header-logo">
+          <a href="/index.html">Justin Tsugranes</a>
+        </div>
+        <!-- Nav -->
+        <nav class="header-nav flex-row" aria-label="main">
+          <a href="/pages/projects.html">Projects</a>
+          <a href="/pages/about.html">About </a>
+          <a href="https://justintsugranes.myportfolio.com/work" target="_blank">Adobe Portfolio</a>
+          <a href="/pages/contact.html">Contact </a>
+        </nav>
       </div>
-      <nav class="header-nav flex-row" aria-label="main">
-        <a href="/pages/projects.html">Projects</a>
-        <a href="/pages/about.html">About </a>
-        <a href="https://justintsugranes.myportfolio.com/work" target="_blank">Adobe Portfolio</a>
-        <a href="/pages/contact.html">Contact </a>
-      </nav>
+
+      <!-- Hero-->
+      <section class="hero contact-hero">
+        <div class="container hero-text flex-col">
+          <h1 class="title hero-title wrapper"></h1>
+          <h2 class="subtitle hero-subtitle wrapper"></h2>
+        </div>
+      </section>
     </header>
 
     <!-- MAIN SECTION -->
-    <main class="main-container flex-col">
-      <!-- Hero Section-->
-      <section class="hero-container contact-hero-container flex-col">
-        <div class="hero-content">
-          <h1 class="hero-title"><!-- hero title --></h1>
-          <h2 class="hero-subtitle">
-            <!-- hero subtitle -->
-          </h2>
-        </div>
-      </section>
-
+    <main>
       <!-- CONTACT FORM -->
-      <div class="container contact-container">
-        <div class="row">
-          <h1 class="section-title">Contact</h1>
+      <form action="">
+        <div class="container contact-container flex-col">
+          <div class="row">
+            <h1 class="section-title">Contact</h1>
+          </div>
+          <div class="row input-container">
+            <div class="col-xs-12">
+              <div class="styled-input wide">
+                <input class="inset" type="text" required />
+                <label>Name</label>
+              </div>
+            </div>
+            <div class="col-md-6 col-sm-12">
+              <div class="styled-input">
+                <input class="inset" type="text" required />
+                <label>Email</label>
+              </div>
+            </div>
+            <div class="col-xs-12">
+              <div class="inset" class="styled-input wide">
+                <textarea required></textarea>
+                <label>Message</label>
+              </div>
+            </div>
+            <div class="col-xs-12">
+              <button class="btn submit-btn">Send Message</button>
+            </div>
+          </div>
         </div>
-        <div class="row input-container">
-          <div class="col-xs-12">
-            <div class="styled-input wide">
-              <input class="inset" type="text" required />
-              <label>Name</label>
-            </div>
-          </div>
-          <div class="col-md-6 col-sm-12">
-            <div class="styled-input">
-              <input class="inset" type="text" required />
-              <label>Email</label>
-            </div>
-          </div>
-          <div class="col-xs-12">
-            <div class="inset" class="styled-input wide">
-              <textarea required></textarea>
-              <label>Message</label>
-            </div>
-          </div>
-          <div class="col-xs-12">
-            <button class="btn submit-btn">Send Message</button>
-          </div>
-        </div>
-      </div>
+      </form>
 
       <!-- PRE-FOOTER SECTION-->
-      <section class="container pre-footer-container flex-col">
-        <h1 class="pre-footer-title">I am always looking to connect!</h1>
-        <a id="pre-footer-subtitle" href="mailto:justintsugranes@proton.me?subject=Hello!">justintsugranes@proton.me</a>
+      <section class="pre-footer">
+        <div class="container pre-footer-text flex-col">
+          <h1 class="title pre-footer-title wrapper">I am always looking to connect!</h1>
+          <a
+            class="subtitle pre-footer-subtitle"
+            id="pre-footer-email"
+            href="mailto:justintsugranes@proton.me?subject=Hello!"
+            >justintsugranes@proton.me</a
+          >
+        </div>
       </section>
     </main>
 
     <!-- FOOTER SECTION-->
-    <footer class="container footer-container flex-col">
-      <!-- Footer Main Text -->
-      <h1 class="footer-title">Justin Tsugranes</h1>
-      <p class="footer-subtitle">Web Developer, Digital Media Creator</p>
-      <!-- Footer Social Section -->
-      <div class="social-container flex-col">
-        <a href="pages/contact.html" class="footer-social-title">Get In Touch</a>
-        <!-- Social Icons -->
-        <div class="icons-container flex-row">
-          <!-- linkedin -->
-          <div class="icon-container">
-            <a href="https://linkedin.com/in/justin-tsugranes" target="_blank" class="social-link">
-              <i class="fa-brands fa-linkedin fa-lg icon"></i>
-            </a>
-          </div>
-          <!-- github -->
-          <div class="icon-container">
-            <a href="https://github.com/justintsugranes" target="_blank" class="social-link"
-              ><i class="fa-brands fa-github fa-lg icon"></i>
-            </a>
-          </div>
-          <!-- medium -->
-          <div class="icon-container">
-            <a href="https://justintsugranes.medium.com/" target="_blank" class="social-link">
-              <i class="fa-brands fa-medium fa-lg icon"></i>
-            </a>
-          </div>
-          <!-- spotify -->
-          <div class="icon-container">
-            <a href="https://open.spotify.com/artist/4vV18ClJAixgpNfKaJkEmR" target="_blank" class="social-link"
-              ><i class="fa-brands fa-spotify fa-lg icon"></i>
-            </a>
-          </div>
-          <!-- instagram -->
-          <div class="icon-container">
-            <a href="https://instagram.com/justintsugranes" target="_blank" class="social-link"
-              ><i class="fa-brands fa-instagram fa-lg icon"></i>
-            </a>
+    <footer class="footer">
+      <div class="container flex-col">
+        <!-- Footer Main Text -->
+        <h1 class="title footer-title">Justin Tsugranes</h1>
+        <p class="subtitle footer-subtitle on-background">Web Developer, Digital Media Creator</p>
+        <!-- Footer Social Section -->
+        <div class="social-icons-container flex-col">
+          <a href="pages/contact.html" class="title footer-social-title">Get In Touch</a>
+          <!-- Social Icons -->
+          <div class="icons-container flex-row">
+            <!-- linkedin -->
+            <div class="icon-container">
+              <a href="https://linkedin.com/in/justin-tsugranes" target="_blank" class="social-link">
+                <i class="fa-brands fa-linkedin fa-lg icon"></i>
+              </a>
+            </div>
+            <!-- github -->
+            <div class="icon-container">
+              <a href="https://github.com/justintsugranes" target="_blank" class="social-link"
+                ><i class="fa-brands fa-github fa-lg icon"></i>
+              </a>
+            </div>
+            <!-- medium -->
+            <div class="icon-container">
+              <a href="https://justintsugranes.medium.com/" target="_blank" class="social-link">
+                <i class="fa-brands fa-medium fa-lg icon"></i>
+              </a>
+            </div>
+            <!-- spotify -->
+            <div class="icon-container">
+              <a href="https://open.spotify.com/artist/4vV18ClJAixgpNfKaJkEmR" target="_blank" class="social-link"
+                ><i class="fa-brands fa-spotify fa-lg icon"></i>
+              </a>
+            </div>
+            <!-- instagram -->
+            <div class="icon-container">
+              <a href="https://instagram.com/justintsugranes" target="_blank" class="social-link"
+                ><i class="fa-brands fa-instagram fa-lg icon"></i>
+              </a>
+            </div>
           </div>
         </div>
-      </div>
 
-      <!-- Footer Terms, Conditions, and Policies Section-->
-      <div class="container policies-container flex-row">
-        <p class="policies-text font-sm">Copyright 2022 misfitDodo Media. All Rights Reserved</p>
+        <!-- Footer Terms, Conditions, and Policies Section-->
+        <div class="container flex-row">
+          <p class="policies-text font-sm wrapper">Copyright 2022 misfitDodo Media. All Rights Reserved</p>
+        </div>
       </div>
     </footer>
 
     <!-- JAVASCRIPT-->
-    <script src="js/scripts.js"></script>
-    <script src="js/dropdown.js"></script>
+    <script src="/js/scripts.js"></script>
+    <script src="/js/dropdown.js"></script>
+    <script src="/js/contact-form.js"></script>
   </body>
 </html>
