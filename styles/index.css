@@ -230,7 +230,7 @@ select {
 
 /* TYPOGRAPHY */
 
-/* Accessibility best practices */
+/* Accessibility Text Best Practices */
 .wrapper {
   /* max-width: 34em; */
   paragraph-spacing: 2em;
@@ -314,9 +314,9 @@ h4 {
 }
 
 li {
+  list-style: none;
   font-size: 1.1rem;
   font-weight: 100;
-  list-style: none;
   line-height: 1.5;
 }
 
@@ -566,6 +566,11 @@ a:active,
 
 .pre-footer::before {
   background-image: url('/public/images/heros/pre-footer.jpg');
+}
+
+.tech-tools,
+#tech-tools-title {
+  text-align: center;
 }
 
 /* GALLERY  */
