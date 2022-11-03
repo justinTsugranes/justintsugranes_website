@@ -450,10 +450,14 @@ a:active,
   background-size: cover;
   background-position: center center;
   filter: grayscale(100%);
-  transition: filter 2s;
+  transition: filter 0.5s;
 }
 
-#gallery img:hover {
+.index-hero-container:hover::before,
+.projects-hero-container:hover::before,
+.about-hero-container:hover::before,
+.contact-hero-container:hover::before,
+.pre-footer-container:hover::before {
   filter: none;
 }
 
@@ -482,7 +486,7 @@ a:active,
   background-image: url('/public/images/heros/pre-footer.jpg');
 }
 
-/* Gallery  */
+/* GALLERY  */
 
 /* https://timnwells.medium.com/create-a-simple-responsive-image-gallery-with-html-and-css-fcb973f595ea */
 
@@ -504,11 +508,11 @@ a:active,
 
 #gallery {
   line-height: 0;
-  -webkit-column-count: 5;
+  -webkit-column-count: 4;
   -webkit-column-gap: 5px;
-  -moz-column-count: 5;
+  -moz-column-count: 4;
   -moz-column-gap: 5px;
-  column-count: 5;
+  column-count: 4;
   column-gap: 5px;
   margin-top: 2rem;
 }
@@ -518,7 +522,7 @@ a:active,
   height: auto !important;
   margin-bottom: 5px;
   filter: grayscale(100%);
-  transition: filter 2s;
+  transition: filter 0.5s;
 }
 
 #gallery img:hover {
@@ -527,23 +531,28 @@ a:active,
 
 @media (max-width: 1200px) {
   #gallery {
-    -moz-column-count: 4;
-    -webkit-column-count: 4;
-    column-count: 4;
-  }
-}
-@media (max-width: 1000px) {
-  #gallery {
     -moz-column-count: 3;
     -webkit-column-count: 3;
     column-count: 3;
   }
 }
-@media (max-width: 800px) {
+@media (max-width: 1000px) {
   #gallery {
     -moz-column-count: 2;
     -webkit-column-count: 2;
     column-count: 2;
+  }
+}
+@media (max-width: 800px) {
+  #gallery {
+    -moz-column-count: 1;
+    -webkit-column-count: 1;
+    column-count: 1;
+  }
+  .btn {
+    width: 50%;
+    float: none;
+    text-align: center;
   }
 }
 @media (max-width: 400px) {
@@ -585,6 +594,10 @@ a:active,
   flex: 0 1 calc(25% - 1em);
 }
 
+.project-card-title {
+  padding-top: 15px;
+}
+
 .project-card-image {
   height: 275px;
   width: 275px;
@@ -593,16 +606,11 @@ a:active,
 .project-card-image:hover {
   opacity: 70%;
   transition: 0.4s;
-  box-shadow: inset 10px 5px 25px 5px var(--secondary),
-    5px 5px 12px 2px var(--secondary);
+  box-shadow: inset 10px 5px 25px 5px var(--secondary), 5px 5px 12px 2px var(--secondary);
 }
 
-.project-card-title {
-  padding-top: 15px;
-}
-
-/* Resonsive Cards */
-@media screen and (min-width: 60em) {
+/* Resonsive Project Cards */
+@media screen and (min-width: 800px) {
   .project-card {
     flex: 0 1 calc(25% - 1em);
   }
@@ -619,17 +627,3 @@ a:active,
     flex: 0 1 calc(50% - 1em);
   }
 }
-
-/* width: 100%;
-display: flex;
-flex-direction: row;
-justify-content: space-between;
-align-items: center;
-margin: 20px 15px; */
-
-@media (max-width: 768px) {
-  .btn {
-    width: 50%;
-    float: none;
-    text-align: center;
-  }
