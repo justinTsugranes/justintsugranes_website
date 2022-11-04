@@ -128,8 +128,10 @@ select {
 
 :root {
   /* Material Design 3 Colors*/
-  --primary: hsla(258, 100%, 87%, 1);
+  /* --primary: hsla(258, 100%, 87%, 1); */
+  --primary: #03dac5;
   --on-primary: hsla(259, 58%, 28%, 1);
+  --on-primary: #6200ee;
   --primary-container: hsla(257, 43%, 38%, 1);
   --onprimary-container: hsla(263, 100%, 93%, 1);
   --secondary: hsla(263, 27%, 81%, 1);
@@ -334,6 +336,7 @@ li {
 }
 
 .section-title {
+  margin-bottom: 20px;
   font-size: ;
   font-weight: ;
   text-transform: uppercase;
@@ -384,17 +387,20 @@ li {
 
 /* drop shadow */
 .drop-shadow,
-.image,
-.title,
-.subtitle {
+.image {
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.5));
 }
 
-/* text shadow for footer*/
-.text-shadow,
-.footer-title,
-.footer-social-title {
-  text-shadow: 0px 4px 4px var(--on-surface);
+/* text shadow for titles */
+.text-shadow-dark,
+.title,
+.subtitle {
+  text-shadow: 2px 8px 10px var(--background);
+}
+
+/* text shadow for footer */
+.text-shadow-light {
+  text-shadow: 1px 4px 6px var(--on-background);
 }
 
 /* LINKS AND BUTTONS */
@@ -409,10 +415,10 @@ a {
   text-decoration: none;
   font-size: 18px;
   font-weight: 400;
-  color: var(--onprimary-container);
-  background-color: var(--primary-container);
   padding: 7px 35px;
-  border: none;
+  background-color: var(--background);
+  color: var(--primary);
+  border: 1px solid var(--primary);
   border-radius: 60px;
   margin-top: 20px;
   margin-bottom: 50px;
@@ -433,19 +439,21 @@ a:focus,
 
 .btn:hover,
 .btn:focus {
-  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.1), 0 1px 1px 0 rgba(0, 0, 0, 0.09);
+  background-color: var(--primary);
+  color: var(--on-primary);
 }
 
 a:active,
 .btn:active,
 .icon:active {
-  opacity: 0.7;
+  opacity: 0.8;
   transition: 0.3s;
-  transform: translateY(1px);
+  transform: translateY(2px);
 }
 
 .btn:active {
-  background-color: var(--on-primary);
+  background-color: var(--primary);
+  box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.06), 0 1px 5px 0 rgba(0, 0, 0, 0.07);
 }
 
 .submit-btn {
