@@ -33,11 +33,14 @@
   height: auto !important;
   margin-bottom: 5px;
   filter: grayscale(100%);
-  transition: filter 0.5s;
+  transition: transform 0.7s ease-in-out;
+  transition: filter 0.7s ease-in-out;
 }
 
 #gallery img:hover {
   filter: none;
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
 }
 
 @media (max-width: 1200px) {

@@ -616,7 +616,6 @@ a:active,
   background-size: cover;
   background-position: center;
   filter: grayscale(100%);
-  filter: brightness(100%);
   transition: filter 0.5s;
 }
 

@@ -1,7 +1,7 @@
 /* https://codepen.io/iamalexmacc/pen/dVgvmY */
 
 $(document).ready(function () {
-  var docEl = $(document),
+  let docEl = $(document),
     headerEl = $('header'),
     headerWrapEl = $('.wrapHead'),
     navEl = $('nav'),
