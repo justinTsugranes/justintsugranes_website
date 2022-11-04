@@ -84,7 +84,7 @@
   position: absolute;
   top: 0;
   left: 0;
-  background-color: #333;
+  background-color: var(--on-background);
   overflow: hidden;
   text-align: center;
 }

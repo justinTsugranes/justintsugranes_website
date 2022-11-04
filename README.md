@@ -12,6 +12,12 @@ Code hosted on Github
 CI/CD through Netlify
 Contact form connected to Netlify
 
+**JAVASCRIPT**
+smooth scrolling on header
+nav dropdown on media query
+contact form
+gallery
+
 **CSS**
 Google Fonts
 CSS Flexbox and Grid
@@ -38,3 +44,8 @@ image gallery with lightbox
 FontAwesome Icons
 form
 form success action
+
+**UTILITIES**
+node.js
+prettier
+Netlify

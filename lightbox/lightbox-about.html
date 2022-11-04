@@ -8,31 +8,14 @@
 
     <!-- Description -->
     <title>About | Justin Tsugranes | Web Developer, Digital Media Creator</title>
-    <meta
-      name="description"
-      content="Web Developer, Digital Media Creator, UI Enthusiast, Musician, and everything in between"
-    />
-    <meta name="autor" content="Justin Tsugranes" />
-
-    <!-- Open Graph Protocol-->
-    <meta property="og:title" content="Justin Tsugranes's Personal Website" />
-    <meta property="og:type" content="website" />
-    <meta property="og:image" content="image.png" />
-    <meta property="og:url" content="https://www.justintsugranes.com/about" />
-
-    <!--Additional Meta tags-->
-    <meta property="og:description" content="Web developer, UI Enthusiast, Musician, and everything in between" />
-    <meta property="og:locale" content="en_US" />
-    <meta property="og:site_name" content="Justin Tsugranes" />
-
-    <link rel="shortcut icon" href="public/favicon.ico" />
-    <link rel="icon" href="public/favicon.svg" type="image/svg+xml" />
-    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <meta name="description" content="A brief description" />
+    <meta name="author" content="Insert site name" />
 
     <!-- Main Styles -->
     <link rel="stylesheet" href="/styles/index.css" />
-    <link rel="stylesheet" href="/styles/gallery.css" />
     <link rel="stylesheet" href="/styles/nav.css" />
+    <!-- <link rel="stylesheet" href="/styles/gallery.css" /> -->
+    <link rel="stylesheet" href="/lightbox/lightbox.css" />
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -41,8 +24,22 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
       rel="stylesheet"
     />
-    <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/cc78883918.js" crossorigin="anonymous"></script>
+
+    <!-- Open Graph Protocol-->
+    <meta property="og:title" content="title of the current page, not the website" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="image.png" />
+    <meta property="og:url" content="https://www.mysite" />
+
+    <!--Additional Meta tags-->
+    <meta property="og:description" content="A brief description" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:site_name" content="Site Name" />
+
+    <link rel="icon" href="/public/favicon.ico" />
+    <link rel="icon" href="/public/favicon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
   </head>
 
   <!-- HEADER SECTION-->
@@ -85,7 +82,7 @@
       <section class="about">
         <div class="container flex-col">
           <div class="about-text-container">
-            <h2 class="title section-title">About Me</h2>
+            <h2 class="section-title">About Me</h2>
             <p class="about-text">
               Just one of those "guitar-playing, web developing, backpacking, road-tripping creative-types"
             </p>
@@ -94,10 +91,10 @@
       </section>
 
       <!-- Gallery -->
-      <section class="gallery">
-        <div class="container">
+      <!-- <section class="gallery">
+        <div class="container"> -->
           <!-- About Gallery -->
-          <div id="gallery">
+          <!-- <div id="gallery">
             <img class="headshot"  src="/public/images/headshots/headshot-01.jpg" />
             <img class="headshot"  src="/public/images/headshots/headshot-02.jpg" />
             <img class="headshot"  src="/public/images/headshots/headshot-03.jpg" />
@@ -106,10 +103,64 @@
             <img class="headshot"  src="/public/images/headshots/headshot-06.jpg" />
             <img class="headshot"  src="/public/images/headshots/headshot-07.jpg" />
             <img class="headshot"  src="/public/images/headshots/headshot-08.jpg" />
-            <!-- <img src="/public/images/headshots/headshot-09.jpg" /> -->
           </div>
         </div>
-      </section>
+      </section> -->
+
+      <section>
+  <div class="row">
+    <div class="column">
+      <img class="headshot" src="/public/images/headshots/headshot-01.jpg" style="width: 100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor" />
+    </div>
+    <div class="column">
+      <img class="headshot" src="/public/images/headshots/headshot-02.jpg" style="width: 100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor" />
+    </div>
+    <div class="column">
+      <img class="headshot" src="/public/images/headshots/headshot-03.jpg" style="width: 100%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor" />
+    </div>
+    <div class="column">
+      <img class="headshot" src="/public/images/headshots/headshot-04.jpg" style="width: 100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor" />
+    </div>
+    </div>
+
+  <div id="myModal" class="modal">
+    <span class="close cursor" onclick="closeModal()">&times;</span>
+    <div class="modal-content">
+      <div class="mySlides">
+        <img class="headshot" src="/public/images/headshots/headshot-01.jpg" style="width: 100%" />
+      </div>
+      <div class="mySlides">
+        <img class="headshot" src="/public/images/headshots/headshot-02.jpg" style="width: 100%" />
+      </div>
+      <div class="mySlides">
+        <img class="headshot" src="/public/images/headshots/headshot-03.jpg" style="width: 100%" />
+      </div>
+      <div class="mySlides">
+        <img class="headshot" src="/public/images/headshots/headshot-04.jpg" style="width: 100%" />
+      </div>
+
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+      <div class="caption-container">
+        <p id="caption"></p>
+      </div>
+
+      <div class="column">
+        <img class="demo cursor headshot" src="/public/images/headshots/headshot-01.jpg" style="width: 100%" onclick="currentSlide(1)" alt="" />
+      </div>
+      <div class="column">
+        <img class="demo cursor headshot" src="/public/images/headshots/headshot-02.jpg" style="width: 100%" onclick="currentSlide(2)" alt="" />
+      </div>
+      <div class="">
+        <img class="demo cursor headshot" src="/public/images/headshots/headshot-03.jpg" style="width: 100%" onclick="currentSlide(3)" alt="" />
+      </div>
+      <div class="column">
+        <img class="demo cursor headshot" src="/public/images/headshots/headshot-04.jpg" style="width: 100%" onclick="currentSlide(4)" alt="" />
+      </div>
+    </div>
+
+  </section>
 
       <!-- PRE-FOOTER SECTION-->
       <section class="pre-footer">
@@ -179,6 +230,7 @@
     <!-- JAVASCRIPT-->
     <!-- <script src="js/scripts.js"></script> -->
     <script src="/js/dropdown.js"></script>
-    <script src="/js/gallery.js"></script>
+    <!-- <script src="/js/gallery.js"></script> -->
+    <script src="js/lightbox.js"></script>
   </body>
 </html>
