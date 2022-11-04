@@ -11,6 +11,21 @@
     <meta name="description" content="A brief description" />
     <meta name="author" content="Insert site name" />
 
+    <!-- Open Graph Protocol-->
+    <meta property="og:title" content="Justin Tsugranes's Personal Website" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="image.png" />
+    <meta property="og:url" content="https://www.justintsugranes.com" />
+
+    <!--Additional Meta tags-->
+    <meta property="og:description" content="Web developer, UI Enthusiast, Musician, and everything in between" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:site_name" content="Justin Tsugranes" />
+
+    <link rel="shortcut icon" href="public/favicon.ico" />
+    <link rel="icon" href="public/favicon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+
     <!-- Main Styles -->
     <link rel="stylesheet" href="/styles/index.css" />
     <link rel="stylesheet" href="/styles/nav.css" />
@@ -23,21 +38,6 @@
       rel="stylesheet"
     />
     <script src="https://kit.fontawesome.com/cc78883918.js" crossorigin="anonymous"></script>
-
-    <!-- Open Graph Protocol-->
-    <meta property="og:title" content="title of the current page, not the website" />
-    <meta property="og:type" content="website" />
-    <meta property="og:image" content="image.png" />
-    <meta property="og:url" content="https://www.mysite" />
-
-    <!--Additional Meta tags-->
-    <meta property="og:description" content="A brief description" />
-    <meta property="og:locale" content="en_US" />
-    <meta property="og:site_name" content="Site Name" />
-
-    <link rel="icon" href="public/favicon.ico" />
-    <link rel="icon" href="public/favicon.svg" type="image/svg+xml" />
-    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
   </head>
 
   <body>
@@ -50,7 +50,7 @@
       <div class="container flex-row">
         <!-- Logo -->
         <div class="header-logo">
-          <a href="/index.html">Justin Tsugranes</a>
+          <a class="logo" href="/index.html">Justin Tsugranes</a>
         </div>
         <!-- Nav -->
         <div class="nav-container">
@@ -82,10 +82,12 @@
       <!-- QUOTE SECTION -->
       <section class="quote">
         <div class="container flex-row">
-          <h3 class="quote wrapper">
-            I believe the best designs are drive user-centered, equity-focused principles that ensure any user from any
-            nation can interact with your product from any device and any internet connection
-          </h3>
+          <div class="quote-bg">
+            <h3 class="quote wrapper">
+              I believe the best designs are drive user-centered, equity-focused principles that ensure any user from
+              any nation can interact with your product from any device and any internet connection
+            </h3>
+          </div>
         </div>
       </section>
 
@@ -257,8 +259,23 @@
       </div>
     </footer>
 
-    <!-- JAVASCRIPT-->
+    <!-- CORE JAVASCRIPT FILES -->
     <!-- <script src="js/scripts.js"></script> -->
     <script src="/js/dropdown.js"></script>
+    <!-- *********************************************
+         _   _              _   _                   _
+        | | | | ___ _   _  | |_| |__   ___ _ __ ___| |
+        | |_| |/ _ \ | | | | __| '_ \ / _ \ '__/ _ \ |
+        |  _  |  __/ |_| | | |_| | | |  __/ | |  __/_|
+        |_| |_|\___|\__, |  \__|_| |_|\___|_|  \___(_)
+                    |___/
+       
+        Lookin' at the source code huh?
+        Be sure to drop me a line! I'd love to chat,
+        whether it's about code, design, guitar,
+        coffee, defi, blockchain, or anything in between.
+
+        - Justin
+        ********************************************** -->
   </body>
 </html>

@@ -192,9 +192,12 @@ select {
 :root {
   /* Material Design 3 Colors*/
   /* --primary: hsla(258, 100%, 87%, 1); */
-  --primary: #03dac5;
+  /* --primary: #03dac5; */
+  /* --primary: hsl(267, 96%, 48%); */
+  --primary: hsl(200, 100%, 70%);
   --on-primary: hsla(259, 58%, 28%, 1);
   --on-primary: #6200ee;
+  /* --on-primary: white; */
   --primary-container: hsla(257, 43%, 38%, 1);
   --onprimary-container: hsla(263, 100%, 93%, 1);
   --secondary: hsla(263, 27%, 81%, 1);
@@ -209,7 +212,8 @@ select {
   --on-error: hsla(3, 71%, 22%, 1);
   --error-container: hsla(3, 71%, 22%, 1);
   --onerror-container: hsla(4, 71%, 92%, 1);
-  --background: hsl(0, 0%, 11%, 1);
+  /* --background: hsl(0, 0%, 11%, 1); */
+  --background: hsl(0, 0%, 11%);
   --on-background: hsla(312, 9%, 89%, 1);
   --surface: hsla(255, 7%, 11%, 1);
   --on-surface: hsla(312, 9%, 89%, 1);
@@ -218,6 +222,7 @@ select {
   --outline: hsla(264, 5%, 58%, 1);
   --outline-variant: hsla(264, 7%, 29%, 1);
   /* Accent Colors */
+  --purple: #6919ffe6;
 }
 
 .primary {
@@ -360,12 +365,12 @@ l1 {
 
 h1 {
   font-size: 2rem;
-  font-weight: 300;
+  font-weight: 700;
 }
 
 h2 {
-  font-size: 2rem;
-  font-weight: 100;
+  font-size: 1.25rem;
+  font-weight: 700;
 }
 
 h3 {
@@ -390,9 +395,22 @@ li {
   line-height: 1.5;
 }
 
+.uppercase {
+  text-transform: uppercase;
+}
+
+.font-bold {
+  font-weight: 700;
+}
+
+.logo {
+  font-weight: 700;
+}
+
 /* TODO: REFACTOR */
 .title {
-  font-size: ;
+  font-size: 24px;
+  font-weight: 700;
   color: var(--on-background);
 }
 
@@ -405,8 +423,9 @@ li {
 
 .section-title {
   margin-bottom: 20px;
-  font-size: ;
-  font-weight: ;
+  /* font-size: ; */
+  /* font-weight: ; */
+  color: var(--primary);
   text-transform: uppercase;
   border-bottom: 1px solid var(--on-background);
 }
@@ -420,7 +439,15 @@ li {
   font-size: 1.7rem;
   font-weight: ;
   padding-top: 50px;
-  padding-bottom: 50px;
+  padding-bottom: 25px;
+  /* padding: 50px 100px; */
+  /* border: 1px solid white; */
+  /* color: var(--on-primary); */
+}
+
+.quote-bg {
+  /* background-color: var(--primary); */
+  opacity: 0.8;
 }
 
 .pre-footer-title,
@@ -434,7 +461,6 @@ li {
   color: var(--primary);
   margin-bottom: 10px;
 }
-
 /* TODO REFACTOR END */
 
 /* SHADOWS */
@@ -529,6 +555,7 @@ a:active,
 .icon {
   padding: 0 15px;
   font-size: 24px;
+  font-weight: bold;
 }
 
 .icons-container {
@@ -589,6 +616,7 @@ a:active,
   background-size: cover;
   background-position: center;
   filter: grayscale(100%);
+  filter: brightness(100%);
   transition: filter 0.5s;
 }
 
