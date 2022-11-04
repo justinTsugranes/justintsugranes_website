@@ -1,5 +1,7 @@
 /* TIPS */
 
+// Oraganize your CSS according to:
+// https://9elements.com/css-rule-order/#:~:text=So%20the%20order%20is%3A%20position,text%2D*%20%2C%20then%20word%2D*%20.
 // Use rem units
 // Use flex-start, flex-end, grid, start, grid end, etc... instead of Left, right, up down, etc...
 // Use Accessible contrast ratios
@@ -9,6 +11,65 @@
 // Avoid text in images and instead put the text at a higher Z index. - This makes the site more accessible, responsive, translatable and searchable.
 // Do not let secondary content occupy the screen.
 // Use vector graphics like SVG instead of raster graphics like PNG.
+
+/* SASS INHERITANCE */
+// @extend
+// @mixin, e.g. clearfix
+/* GENERATED CONTENT */
+// content
+/* POSITION AND LAYOUT */
+// position
+// z-index
+// top
+// bottom
+// left
+// right
+// flexbox properties
+// float
+// clear
+/* DISPLAY AND VISIBILITY */
+// display
+// opacity
+// transform
+/* CLIPPING */
+// overflow
+// clip
+/* ANIMATION */
+// animation
+// transition
+/* BOX MODEL (FROM OUTSIDE IN) */
+// margin
+// box-shadow
+// border
+// border-radius
+// box-sizing
+// width
+// height
+// padding
+/* BACKGROUND */
+// background
+// cursor
+/* TYPOGRAPHY */
+// font-size
+// line-height
+// font-family
+// font-weight
+// font-style
+// text-align
+// text-transform
+// word-spacing
+// color
+/* PSEUDO-CLASSES AND PSEUDO-ELEMENTS (NESTED RULES) */
+// :hover
+// :focus
+// :active
+// :before
+// :after
+// :first-child
+// :last-child
+//
+//
+//
 
 /* IMPORTS */
 @import url('../node_modules/font-awesome/css/font-awesome.min.css');
@@ -48,6 +109,8 @@ a {
 ul[role='list'],
 ol[role='list'] {
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 /* Set core root defaults */
@@ -231,7 +294,6 @@ select {
 }
 
 /* TYPOGRAPHY */
-/* TODO: Unify Font sizes and weights */
 
 /* Accessibility Text Best Practices */
 .wrapper {
@@ -241,7 +303,7 @@ select {
   letter-spacing: 0.12em;
 }
 
-/* Font Sizes */
+/* Font Sizes and Weights*/
 .font-12 {
   font-size: 12px;
 }
@@ -316,6 +378,11 @@ h4 {
   font-weight: 400;
 }
 
+h5 {
+  font-size: 1rem;
+  font-weight: 100;
+}
+
 li {
   list-style: none;
   font-size: 1.1rem;
@@ -368,13 +435,6 @@ li {
   margin-bottom: 10px;
 }
 
-.tech-tools {
-  text-align: center;
-}
-
-.form-success {
-  height: 50vh;
-}
 /* TODO REFACTOR END */
 
 /* SHADOWS */
@@ -555,12 +615,6 @@ a:active,
   }
 }
 
-/* FOOTER */
-
-.footer-social-title {
-  margin-top: 50px;
-}
-
 /* HERO AND PRE-FOOTER */
 
 .hero,
@@ -631,99 +685,6 @@ a:active,
   background-image: url('/public/images/heros/pre-footer.jpg');
 }
 
-/* GALLERY  */
-/* https://timnwells.medium.com/create-a-simple-responsive-image-gallery-with-html-and-css-fcb973f595ea */
-
-#darkbox {
-  width: 1280px;
-  height: 720px;
-  position: absolute;
-  top: 0;
-  left: 0;
-  background-color: var(--on-background);
-  overflow: hidden;
-  text-align: center;
-}
-.darkboximg {
-  padding: 5%;
-  max-width: 1216px;
-  max-height: 684px;
-}
-
-#gallery {
-  line-height: 0;
-  -webkit-column-count: 4;
-  -webkit-column-gap: 5px;
-  -moz-column-count: 4;
-  -moz-column-gap: 5px;
-  column-count: 4;
-  column-gap: 5px;
-  margin-top: 2rem;
-}
-
-#gallery img {
-  width: 100% !important;
-  height: auto !important;
-  margin-bottom: 5px;
-  filter: grayscale(100%);
-  transition: filter 0.5s;
-}
-
-#gallery img:hover {
-  filter: none;
-}
-
-@media (max-width: 1200px) {
-  #gallery {
-    -moz-column-count: 3;
-    -webkit-column-count: 3;
-    column-count: 3;
-  }
-}
-@media (max-width: 1000px) {
-  #gallery {
-    -moz-column-count: 2;
-    -webkit-column-count: 2;
-    column-count: 2;
-  }
-}
-@media (max-width: 800px) {
-  #gallery {
-    -moz-column-count: 1;
-    -webkit-column-count: 1;
-    column-count: 1;
-  }
-  .btn {
-    width: 50%;
-    float: none;
-    text-align: center;
-  }
-}
-@media (max-width: 400px) {
-  #gallery {
-    -moz-column-count: 1;
-    -webkit-column-count: 1;
-    column-count: 1;
-  }
-}
-
-/* Gallery Lightbox */
-#darkbox {
-  width: 1280px;
-  height: 720px;
-  position: absolute;
-  top: 0;
-  left: 0;
-  background-color: #333;
-  overflow: hidden;
-  text-align: center;
-}
-.darkboximg {
-  padding: 5%;
-  max-width: 1216px;
-  max-height: 684px;
-}
-
 /* PROJECTS */
 
 .project-cards-container {
@@ -772,4 +733,18 @@ a:active,
   .project-cards-container {
     grid-template-columns: repeat(4, 1fr);
   }
+}
+
+/* Specific Styling */
+
+.footer-social-title {
+  margin-top: 50px;
+}
+
+/* .tech-tools {
+  text-align: center;
+} */
+
+.form-success {
+  height: 50vh;
 }
