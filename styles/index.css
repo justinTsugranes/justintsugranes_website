@@ -408,6 +408,11 @@ li {
 }
 
 /* TODO: REFACTOR */
+.font-sm {
+  font-size: 0.8rem;
+  font-weight: 100;
+}
+
 .title {
   font-size: 24px;
   font-weight: 700;
@@ -428,11 +433,6 @@ li {
   color: var(--primary);
   text-transform: uppercase;
   border-bottom: 1px solid var(--on-background);
-}
-
-.font-sm {
-  font-size: 0.8rem;
-  font-weight: 100;
 }
 
 .quote {

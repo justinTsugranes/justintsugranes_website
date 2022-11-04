@@ -27,7 +27,11 @@
   text-align: center;
   margin-left: 24px;
   text-decoration: none;
+  font-size: 18px;
   font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: all 1s cubic-bezier(0.25, 1, 0.25, 1);
 }
 
 /* Add an active class to highlight the current page */
