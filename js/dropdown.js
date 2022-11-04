@@ -1,15 +1,9 @@
-/* When the user clicks on the button, 
-toggle between hiding and showing the dropdown content */
+/* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
 function myFunction() {
-  document.getElementById('dropdown').classList.toggle('show');
-}
-
-// Close the dropdown if the user clicks outside of it
-window.onclick = function (e) {
-  if (!e.target.matches('.dropbtn')) {
-    var dropdown = document.getElementById('myDropdown');
-    if (dropdown.classList.contains('show')) {
-      dropdown.classList.remove('show');
-    }
+  var x = document.getElementById('myTopnav');
+  if (x.className === 'topnav') {
+    x.className += ' responsive';
+  } else {
+    x.className = 'topnav';
   }
-};
+}

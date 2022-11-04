@@ -231,6 +231,7 @@ select {
 }
 
 /* TYPOGRAPHY */
+/* TODO: Unify Font sizes and weights */
 
 /* Accessibility Text Best Practices */
 .wrapper {
@@ -322,7 +323,7 @@ li {
   line-height: 1.5;
 }
 
-/* TODO REFACTOR */
+/* TODO: REFACTOR */
 .title {
   font-size: ;
   color: var(--on-background);
@@ -373,9 +374,7 @@ li {
 
 .form-success {
   height: 50vh;
-  /* margin: 100px auto; */
 }
-
 /* TODO REFACTOR END */
 
 /* SHADOWS */
@@ -410,10 +409,6 @@ li {
 
 /* LINKS AND BUTTONS */
 
-a {
-  color: var(--on-background);
-}
-
 .btn {
   display: inline-block;
   cursor: pointer;
@@ -430,6 +425,10 @@ a {
   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.06), 0 2px 10px 0 rgba(0, 0, 0, 0.07);
   -webkit-transition: all 300ms ease;
   transition: all 300ms ease;
+}
+
+a {
+  color: var(--on-background);
 }
 
 a:hover,
@@ -497,20 +496,63 @@ a:active,
   margin: 50px auto;
 }
 
-/* HEADER */
+/* NAVIGATION */
 
 .header-logo > a {
   white-space: nowrap;
   text-transform: uppercase;
 }
 
-.header-nav {
+.topnav {
+  overflow: hidden;
+  display: flex;
   justify-content: end;
   width: 100%;
 }
 
-.header-nav > a {
-  margin-left: 20px;
+/* Style the links inside the navigation bar */
+.topnav a {
+  text-align: center;
+  margin-left: 24px;
+  text-decoration: none;
+}
+
+/* Add an active class to highlight the current page */
+.topnav a.active {
+  color: var(--primary);
+}
+
+/* Hide the link that should open and close the topnav on small screens */
+.topnav .icon {
+  display: none;
+}
+
+/* When the screen is less than 600 pixels wide, hide all links */
+@media screen and (max-width: 800px) {
+  .topnav a {
+    display: none;
+  }
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+@media screen and (max-width: 800px) {
+  .topnav.responsive {
+    position: relative;
+  }
+  .topnav.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: center;
+  }
 }
 
 /* FOOTER */
@@ -685,15 +727,16 @@ a:active,
 /* PROJECTS */
 
 .project-cards-container {
+  max-width: 1175px;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-column-gap: 25px;
-  grid-row-gap: 25px;
+  /* gap: 25px; */
+  gap: 1.2rem;
   margin: 50px 0px;
 }
 
 .project-card {
-  flex: 0 1 calc(25% - 1em);
+  /* flex: 0 1 calc(25% - 1em); */
 }
 
 .project-card-title {
@@ -706,26 +749,27 @@ a:active,
 }
 
 .project-card-image:hover {
-  opacity: 70%;
-  transition: 0.4s;
-  box-shadow: inset 10px 5px 25px 5px var(--secondary), 5px 5px 12px 2px var(--secondary);
+  opacity: 80%;
+  transition: 0.3s;
+  transform: translate(-2px, -10px);
+  filter: drop-shadow(2px 3px 4px var(--on-background));
 }
 
 /* Resonsive Project Cards */
-/* @media screen and (min-width: 800px) {
-  .project-card {
-    flex: 0 1 calc(25% - 1em);
+@media (min-width: 400px) {
+  .project-cards-container {
+    grid-template-columns: repeat(1, 1fr);
   }
 }
 
-@media screen and (min-width: 40em) {
+@media (min-width: 600px) {
   .project-cards-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    grid-template-columns: repeat(2, 1fr);
   }
+}
 
-  .project-card {
-    flex: 0 1 calc(50% - 1em);
+@media (min-width: 1000px) {
+  .project-cards-container {
+    grid-template-columns: repeat(4, 1fr);
   }
-} */
+}
