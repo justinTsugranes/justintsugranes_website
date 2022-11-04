@@ -587,7 +587,7 @@ a:active,
   height: 100%;
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center center;
+  background-position: center;
   filter: grayscale(100%);
   transition: filter 0.5s;
 }

@@ -7,13 +7,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!-- Description -->
-    <title>Justin Tsugranes | Web Developer, Digital Media Creator</title>
+    <title>About Justin Tsugranes | Web Developer, Digital Media Creator</title>
     <meta name="description" content="A brief description" />
     <meta name="author" content="Insert site name" />
 
     <!-- Main Styles -->
     <link rel="stylesheet" href="/styles/index.css" />
     <link rel="stylesheet" href="/styles/gallery.css" />
+    <link rel="stylesheet" href="/styles/nav.css" />
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -40,29 +41,28 @@
     <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
   </head>
 
-  <body>
-    <!-- HEADER SECTION-->
-    <header class="header">
-      <!-- Accessibility Skip Link -->
-      <a href="#main" class="skip">Skip to main content</a>
+  <!-- HEADER SECTION-->
+  <header class="header">
+    <!-- Accessibility Skip Link -->
+    <a href="#main" class="skip">Skip to main content</a>
 
-      <!-- Navbar -->
-      <div class="container flex-row">
-        <!-- Logo -->
-        <div class="header-logo">
-          <a href="/index.html">Justin Tsugranes</a>
-        </div>
-        <!-- Nav -->
-        <nav class="topnav flex-row" id="myTopnav" aria-label="main">
-          <a href="/pages/projects.html">Projects</a>
-          <a href="/pages/about.html">About </a>
-          <a href="https://justintsugranes.myportfolio.com/work" target="_blank">Adobe Portfolio</a>
-          <a href="/pages/contact.html">Contact </a>
-          <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-            <i class="fa fa-bars"></i>
-          </a>
-        </nav>
+    <!-- Navbar -->
+    <div class="container flex-row">
+      <!-- Logo -->
+      <div class="header-logo">
+        <a href="/index.html">Justin Tsugranes</a>
       </div>
+      <!-- Nav -->
+      <nav class="topnav flex-row" id="myTopnav" aria-label="main">
+        <a href="/pages/projects.html">Projects</a>
+        <a href="/pages/about.html">About </a>
+        <a href="https://justintsugranes.myportfolio.com/work" target="_blank">Adobe Portfolio</a>
+        <a href="/pages/contact.html">Contact </a>
+        <a href="javascript:void(0);" class="icon" onclick="dropDown()">
+          <i class="fa fa-bars"></i>
+        </a>
+      </nav>
+    </div>
 
       <!-- Hero-->
       <section class="hero about-hero">
@@ -172,7 +172,7 @@
 
     <!-- JAVASCRIPT-->
     <!-- <script src="js/scripts.js"></script> -->
-    <script src="js/dropdown.js"></script>
+    <script src="/js/dropdown.js"></script>
     <script src="/js/gallery.js"></script>
   </body>
 </html>
