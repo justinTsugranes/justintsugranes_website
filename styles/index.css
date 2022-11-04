@@ -635,7 +635,7 @@ a:active,
 }
 
 .index-hero::before {
-  background-image: url('/public/images/heros/hero-index.jpg');
+  background-image: url('/public/images/heros/hero-index.png');
 }
 
 .projects-hero::before {
