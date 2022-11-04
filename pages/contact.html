@@ -73,8 +73,9 @@
     <!-- MAIN SECTION -->
     <main>
       <!-- CONTACT FORM -->
-      <form name="contact" method="POST" data-netlify="true" onSubmit="submit">
+      <form name="contact" method="POST" data-netlify="true" onSubmit="submit" data-netlify-honeypot="bot-field">
         <div class="container contact-container flex-col">
+          <input id="bot-field" name="bot-field" />
           <div class="row">
             <h2 class="section-title">Contact</h2>
           </div>
