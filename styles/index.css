@@ -299,7 +299,7 @@ h1 {
 }
 
 h2 {
-  font-size: 1.25rem;
+  font-size: 2rem;
   font-weight: 100;
 }
 
@@ -322,6 +322,7 @@ li {
 
 /* TODO REFACTOR */
 .title {
+  font-size: ;
   color: var(--on-background);
 }
 
@@ -333,6 +334,8 @@ li {
 }
 
 .section-title {
+  font-size: ;
+  font-weight: ;
   text-transform: uppercase;
   border-bottom: 1px solid var(--on-background);
 }
@@ -344,6 +347,7 @@ li {
 
 .quote {
   font-size: 1.7rem;
+  font-weight: ;
   padding-top: 50px;
   padding-bottom: 50px;
 }
@@ -360,17 +364,20 @@ li {
   margin-bottom: 10px;
 }
 
+.tech-tools {
+  text-align: center;
+}
+
 /* TODO REFACTOR END */
 
 /* SHADOWS */
 
-/* box shadow */
-.box-shadow,
-.hero::before {
+/* box shadow for buttons*/
+.box-shadow {
   box-shadow: 0 1px 3px hsla(0, 0%, 0%, 0.2);
 }
 
-/* inset */
+/* inset shadow for input fields */
 .inset {
   box-shadow: inset 0 2px 2px hsla(0, 0%, 0%, 0.1);
 }
@@ -383,7 +390,7 @@ li {
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.5));
 }
 
-/* text shadow 02*/
+/* text shadow for footer*/
 .text-shadow,
 .footer-title,
 .footer-social-title {
@@ -511,6 +518,7 @@ a:active,
 .hero-text,
 .pre-footer-text {
   position: absolute;
+  z-index: 50;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -568,13 +576,7 @@ a:active,
   background-image: url('/public/images/heros/pre-footer.jpg');
 }
 
-.tech-tools,
-#tech-tools-title {
-  text-align: center;
-}
-
 /* GALLERY  */
-
 /* https://timnwells.medium.com/create-a-simple-responsive-image-gallery-with-html-and-css-fcb973f595ea */
 
 #darkbox {
