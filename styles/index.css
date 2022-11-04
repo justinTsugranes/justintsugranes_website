@@ -371,6 +371,11 @@ li {
   text-align: center;
 }
 
+.form-success {
+  height: 50vh;
+  /* margin: 100px auto; */
+}
+
 /* TODO REFACTOR END */
 
 /* SHADOWS */
