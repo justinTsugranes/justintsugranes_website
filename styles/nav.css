@@ -1,14 +1,24 @@
 /* NAVIGATION */
+.header {
+  height: fixed;
+}
 
 .header-logo > a {
   white-space: nowrap;
   text-transform: uppercase;
 }
 
+.nav-container {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: end;
+}
+
 .topnav {
   overflow: hidden;
   display: flex;
-  justify-content: end;
+  justify-content: right;
   width: 100%;
 }
 
@@ -25,7 +35,7 @@
 }
 
 /* Hide the link that should open and close the topnav on small screens */
-.topnav .icon {
+.topnav .nav-icon {
   display: none;
 }
 
@@ -34,9 +44,11 @@
   .topnav a {
     display: none;
   }
-  .topnav a.icon {
+  .topnav a.nav-icon {
     float: right;
     display: block;
+
+    font-size: 24px;
   }
 }
 
@@ -44,17 +56,19 @@
 @media screen and (max-width: 800px) {
   .topnav.responsive {
     position: relative;
-    /* display: block; */
+    display: block;
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
-    width: 300px;
-    position: absolute;
+    justify-content: end;
+    align-items: start;
+    width: 250px;
+    /* position: absolute; */
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
+    transition: opacity 0.2s ease-out;
   }
-  .topnav.responsive a.icon {
+  .topnav.responsive a.nav-icon {
     position: absolute;
     right: 0;
     top: 0;
@@ -62,6 +76,6 @@
   .topnav.responsive a {
     float: none;
     display: block;
-    text-align: center;
+    text-align: left;
   }
 }
