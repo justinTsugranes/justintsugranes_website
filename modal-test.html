@@ -12,24 +12,31 @@
       name="description"
       content="Web Developer, Digital Media Creator, UI Enthusiast, Musician, and everything in between"
     />
-    <meta name="author" content="Justin Tsugranes" />
+    <meta name="autor" content="Justin Tsugranes" />
+
     <!-- Open Graph Protocol-->
     <meta property="og:title" content="Justin Tsugranes's Personal Website" />
     <meta property="og:type" content="website" />
-    <meta property="og:image" content="public/images/heros/hero-index.png" />
+    <meta property="og:image" content="image.png" />
+    <meta property="og:image:width" content="500" />
+    <meta property="og:image:height" content="500" />
     <meta property="og:url" content="https://www.justintsugranes.com" />
+    <meta property="og:image:url" content="" />
+    <meta property="twitter:image" content="" />
+
     <!--Additional Meta tags-->
     <meta property="og:description" content="Web developer, UI Enthusiast, Musician, and everything in between" />
     <meta property="og:locale" content="en_US" />
     <meta property="og:site_name" content="Justin Tsugranes" />
 
-    <link rel="shortcut icon" href="public/favicon.ico" />
+    <link rel="shortcut icon" href="/public/favicon.ico" />
     <link rel="icon" href="public/favicon.svg" type="image/svg+xml" />
     <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
 
     <!-- Main Styles -->
     <link rel="stylesheet" href="/styles/index.css" />
-    <link rel="stylesheet" href="/styles/navbar.css" />
+    <link rel="stylesheet" href="/styles/nav.css" />
+    <link rel="stylesheet" href="/styles/modal.css" />
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -62,7 +69,7 @@
             <a href="/pages/about.html">About </a>
             <a href="https://justintsugranes.myportfolio.com/work" target="_blank">Adobe Portfolio</a>
             <a href="/pages/contact.html">Contact </a>
-            <a href="javascript:void(0);" class="nav-icon" onclick="dropDown()">
+            <a href="javascript:void(0);" class="nav-icon" onmouseover="dropDown()">
               <i class="fa fa-bars"></i>
             </a>
           </nav>
@@ -154,17 +161,18 @@
 
             <!-- blackjack -->
             <article class="project-card flex-col">
-              <a href="https://justin-tsugranes-blackjack.netlify.app/" target="_blank">
-                <img src="public/images/project-images/blackjack.jpg" alt="" class="image project-card-image" />
-              </a>
+              <img
+                id="modal-btn-five"
+                class="image project-card-image"
+                src="public/images/project-images/blackjack.jpg"
+                alt=""
+              />
               <h4 class="project-card-title">Blackjack</h4>
             </article>
 
             <!-- webflix -->
-            <article class="project-card flex-col">
-              <a href="https://justin-tsugranes-webflix.netlify.app/" target="_blank">
-                <img src="public/images/project-images/webflix.jpg" alt="" class="image project-card-image" />
-              </a>
+            <article class="project-card flex-col" id="modal-btn-six">
+              <img class="image project-card-image" src="public/images/project-images/webflix.jpg" alt="" />
               <h4 class="project-card-title">Webflix</h4>
             </article>
           </div>
@@ -173,6 +181,49 @@
           <a href="pages/projects.html" class="btn view-all-projects-btn box-shadow"> View All Projects </a>
         </div>
       </section>
+
+      <!-- PROJECT MODALS -->
+      <!-- Modal 5 -->
+      <div id="modal-five" class="modal-five">
+        <!-- Modal Content -->
+        <div class="modal-content flex-col">
+          <span id="close-five" class="close">&times;</span>
+          <!-- project image -->
+          <a href="https://justin-tsugranes-blackjack.netlify.app/" target="_blank">
+            <img src="public/images/project-images/blackjack.jpg" alt="" class="image project-card-image" />
+          </a>
+          <!-- project title -->
+          <h4 class="project-card-title">Blackjack</h4>
+          <!-- project description -->
+          <!-- github icon -->
+          <div class="github-icon icon-container">
+            <a href="https://github.com/justintsugranes" target="_blank" class="social-link">
+              <i class="fa-brands fa-github fa-lg icon"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Modal 6 -->
+      <div id="modal-six" class="modal-six">
+        <!-- Modal Content -->
+        <div class="modal-content flex-col">
+          <span id="close-six" class="close">&times;</span>
+          <!-- project image -->
+          <a href="https://justin-tsugranes.webflix.netlify.app/" target="_blank">
+            <img src="public/images/project-images/webflix.jpg" alt="" class="image project-card-image" />
+          </a>
+          <!-- project title -->
+          <h4 class="project-card-title">Webflix</h4>
+          <!-- project description -->
+          <!-- github icon -->
+          <div class="github-icon icon-container">
+            <a href="https://github.com/justintsugranes" target="_blank" class="social-link">
+              <i class="fa-brands fa-github fa-lg icon"></i>
+            </a>
+          </div>
+        </div>
+      </div>
 
       <!-- TECH AND TOOLS SECTION-->
       <!-- <section class="tech-tools">
@@ -264,8 +315,10 @@
 
     <!-- CORE JAVASCRIPT FILES -->
     <!-- <script src="js/scripts.js"></script> -->
-    <script src="/js/navbar.js"></script>
-    <!-- *********************************************
+    <script src="/js/dropdown.js"></script>
+    <script src="/js/modal.js"></script>
+
+    <!--
          _   _              _   _                   _
         | | | | ___ _   _  | |_| |__   ___ _ __ ___| |
         | |_| |/ _ \ | | | | __| '_ \ / _ \ '__/ _ \ |
@@ -279,6 +332,6 @@
         coffee, defi, blockchain, or anything in between.
 
         - Justin
-        ********************************************** -->
+        ********************************************* -->
   </body>
 </html>

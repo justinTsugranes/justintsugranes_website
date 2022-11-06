@@ -12,14 +12,12 @@
       name="description"
       content="Web Developer, Digital Media Creator, UI Enthusiast, Musician, and everything in between"
     />
-    <meta name="autor" content="Justin Tsugranes" />
-
+    <meta name="author" content="Justin Tsugranes" />
     <!-- Open Graph Protocol-->
     <meta property="og:title" content="Justin Tsugranes's Personal Website" />
     <meta property="og:type" content="website" />
-    <meta property="og:image" content="image.png" />
+    <meta property="og:image" content="public/images/heros/hero-index.png" />
     <meta property="og:url" content="https://www.justintsugranes.com/projects" />
-
     <!--Additional Meta tags-->
     <meta property="og:description" content="Web developer, UI Enthusiast, Musician, and everything in between" />
     <meta property="og:locale" content="en_US" />
@@ -31,7 +29,7 @@
 
     <!-- Main Styles -->
     <link rel="stylesheet" href="/styles/index.css" />
-    <link rel="stylesheet" href="/styles/nav.css" />
+    <link rel="stylesheet" href="/styles/navbar.css" />
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -90,6 +88,18 @@
           <!-- project cards container -->
           <div class="project-cards-container">
             <!-- PROJECTS START -->
+
+            <!-- frontend-bootcamp -->
+            <article class="project-card flex-col">
+              <a href="https://justin-tsugranes-bootstrap-example01.netlify.app/" target="_blank">
+                <img
+                  src="/public/images/project-images/frontend-bootcamp.jpg"
+                  alt=""
+                  class="image project-card-image"
+                />
+              </a>
+              <h4 class="project-card-title">Frontend Bootcamp</h4>
+            </article>
 
             <!-- megamask -->
             <article class="project-card flex-col">
@@ -321,6 +331,6 @@
 
     <!-- JAVASCRIPT-->
     <!-- <script src="js/scripts.js"></script> -->
-    <script src="/js/dropdown.js"></script>
+    <script src="/js/navbar.js"></script>
   </body>
 </html>

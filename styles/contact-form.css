@@ -93,6 +93,7 @@ input[type='checkbox']:checked + label {
   font-style: normal;
 }
 
+/* Anti Spam Bot Field */
 #bot-field {
   display: none;
 }
