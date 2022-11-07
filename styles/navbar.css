@@ -1,21 +1,16 @@
 /* NAVIGATION */
-.header {
-  height: fixed;
-  padding: 10px 0;
-  z-index: 50;
+.header-main-container {
+  /* width: 100%; */
 }
 
-.header-logo > a {
-  font-size: 18px;
-  letter-spacing: 5px;
-  text-shadow: 2px 2px 5px #111;
-  white-space: nowrap;
-  text-transform: uppercase;
+.header-container {
+  width: 90%;
+  padding: 20px;
+  margin: 0px auto;
 }
 
 .nav-container {
   width: 90%;
-  margin: 0 auto;
   display: flex;
   justify-content: end;
 }
@@ -27,16 +22,26 @@
   width: 100%;
 }
 
+.brand {
+  font-weight: 700;
+}
+
+.header-brand-container > a {
+  font-size: 18px;
+  letter-spacing: 5px;
+  text-shadow: 2px 2px 5px hsl(0, 0%, 7%);
+  white-space: nowrap;
+  text-transform: uppercase;
+}
+
 /* Style the links inside the navigation bar */
 .topnav a {
   text-align: center;
   margin-left: 24px;
-  text-decoration: none;
   font-size: 18px;
   font-weight: 300;
   text-transform: uppercase;
   letter-spacing: 1px;
-  transition: all 1s cubic-bezier(0.25, 1, 0.25, 1);
 }
 
 /* Add an active class to highlight the current page */
