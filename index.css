@@ -1,7 +1,7 @@
 /* IMPORTS */
 @import url('../node_modules/font-awesome/css/font-awesome.min.css');
 
-/* SKIP LINK */
+/*---- SKIP LINK ----*/
 
 /* Hide the skip link */
 .skip {
@@ -38,7 +38,6 @@
 .dark-orange {
   color: var(--dark-orange);
 }
-
 /*---- /colors ----*/
 
 body::before {
