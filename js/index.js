@@ -14,7 +14,9 @@
 //   })
 // );
 
-// $('#contact').on('submit', function (e) {
-//   $('#successModal').modal('show');
-//   e.preventDefault();
-// });
+function formSubmit() {
+  $('#contact').on('submit', function (e) {
+    $('#successModal').modal('show');
+    e.preventDefault();
+  });
+}
