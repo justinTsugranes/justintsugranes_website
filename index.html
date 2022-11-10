@@ -397,10 +397,10 @@
               name="contact"
               method="POST"
               data-netlify="true"
-              onSubmit="openModal()"
+              onSubmit="submit"
               data-netlify-honeypot="bot-field"
               data-netlify-recaptcha="true"
-              action=""
+              action="pages/success.html"
             >
               <input id="bot-field" name="bot-field" />
               <div class="form-floating mb-3 mt-3">
@@ -422,9 +422,9 @@
                 ></textarea>
                 <label for="message">Message</label>
               </div>
-              <!-- <div class="form-group"> -->
-              <div data-netlify-recaptcha="true"></div>
-              <!-- </div> -->
+              <div class="form-group">
+                <div data-netlify-recaptcha="true"></div>
+              </div>
             </form>
           </div>
           <div class="modal-footer">
@@ -445,6 +445,9 @@
           </div>
           <div class="modal-body">
             <p class="lead">I can't wait to read your message! I will respond asap!</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
           </div>
         </div>
       </div>
@@ -733,6 +736,6 @@
       integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
       crossorigin="anonymous"
     ></script>
-    <script src="js/index.js"></script>
+    <script src="/js/index.js"></script>
   </body>
 </html>
