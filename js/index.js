@@ -1,4 +1,4 @@
-import bootstrap from 'bootstrap';
+// import bootstrap from 'bootstrap';
 // import Lightbox from 'bs5-lightbox';
 
 // const options = {
@@ -14,7 +14,7 @@ import bootstrap from 'bootstrap';
 //   })
 // );
 
-$('#myForm').on('submit', function (e) {
+$('#contact').on('submit', function (e) {
   $('#success').modal('show');
   e.preventDefault();
 });
