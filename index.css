@@ -61,6 +61,8 @@ a:hover {
 
 /* style navlinks on hover */
 .navbar .navbar-nav .nav-link:hover {
+  color: var(--light-blue);
+  cursor: pointer;
 }
 
 .navbar .navbar-nav .nav-link {
