@@ -100,13 +100,13 @@
             <div class="text-white text-center">
               <h1 class="mb-3">About Me</h1>
               <h4 class="mb-3 fs-5 light-blue">
-                One of those "guitar-playing, web developing, backpacking, road-tripping creative-types"
+                One of those "web developing, guitar-playing, road-tripping creative-types"
               </h4>
             </div>
           </div>
         </div>
       </section>
-      <!-- /Background image -->
+      <!-- Background image end -->
     </header>
     <!-- /Section: Header -->
 
@@ -127,7 +127,7 @@
                 marketing, real estate, and hospitality.
               </p>
             </div>
-            <!-- /left side -->
+            <!-- /end left side -->
 
             <!-- Right Side -->
             <div class="col-md-6 right d-flex flex-column justify-content-center">
@@ -162,173 +162,15 @@
                 </div>
               </div>
             </div>
-            <!-- /right side -->
+            <!-- /end right side -->
           </div>
         </div>
       </section>
-      <!-- /split section -->
-
-      <!-- Section: Pre-Footer Connect -->
-      <section>
-        <div class="masthead" class="p-5 bg-image" style="background-image: url('/public/images/heros/pre-footer.jpg')">
-          <div class="color-overlay d-flex justify-content-center align-items-center h-100">
-            <div class="container p-5">
-              <div class="row align-items-center justify-content-between">
-                <div class="col-md d-none d-md-block">
-                  <img src="/img/connect.svg" class="img-fluid" alt="" />
-                </div>
-                <div class="col-md d-flex flex-column">
-                  <h2 class="light-blue align-self-sm-center">I'm always looking to connect</h2>
-                  <p class="text-light text-center d-none d-md-block">
-                    Although, I'm currently based in the US, I love making friends and working with teams from all
-                    around the globe.
-                  </p>
-                  <div data-bs-toggle="modal" data-bs-target="#contact" class="d-flex flex-column">
-                    <p class="btn btn-secondary rounded-pill mt-3 align-self-sm-center">Message Me</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- /Section: Pre-Footer -->
-
-      <!-- Section: Footer -->
-      <footer class="p-5 bg-dark text-white text-center position-relative">
-        <div class="container">
-          <h2 class="text-uppercase mb-3 h3 light-blue">Justin Tsugranes</h2>
-          <p class="mb-5">Web Developer, Digital Media Creator</p>
-          <h3 class="text-uppercase h4 light-blue">Get In Touch</h3>
-          <!-- Grid container -->
-          <div class="container-fluid p-4 pb-0">
-            <!-- Section: Social media -->
-            <div class="mb-4">
-              <!-- linkedin -->
-              <a
-                class="btn btn-link btn-floating btn-lg text-light m-1 icon"
-                href="https://www.linkedin.com/in/justintsugranes"
-                target="_blank"
-                role="button"
-                ><i class="fa-brands fa-linkedin fa-lg"></i
-              ></a>
-              <!-- github -->
-              <a
-                class="btn btn-link btn-floating btn-lg text-light m-1 icon"
-                href="https://www.github.com/justintsugranes"
-                target="_blank"
-                role="button"
-                ><i class="fa-brands fa-github"></i
-              ></a>
-              <!-- codepen -->
-              <a
-                class="btn btn-link btn-floating btn-lg text-light m-1 icon"
-                href="https://codepen.io/justintsugranes"
-                target="_blank"
-                role="button"
-                ><i class="fa-brands fa-codepen"></i
-              ></a>
-              <!-- medium -->
-              <a
-                class="btn btn-link btn-floating btn-lg text-light m-1 icon"
-                href="https://justintsugranes.medium.com"
-                target="_blank"
-                role="button"
-                ><i class="fa-brands fa-medium fa-lg"></i
-              ></a>
-              <!-- spotify -->
-              <a
-                class="btn btn-link btn-floating btn-lg text-light m-1 icon"
-                href="https://open.spotify.com/artist/4vV18ClJAixgpNfKaJkEmR?si=bOY2nkJXT_esmViVXk6GbA"
-                target="_blank"
-                role="button"
-              >
-                <i class="fa-brands fa-spotify fa-lg"></i>
-              </a>
-              <!-- instagram -->
-              <a
-                class="btn btn-link btn-floating btn-lg text-light m-1 icon"
-                href="https://www.instagram.com/justintsugranes"
-                target="_blank"
-                role="button"
-                ><i class="fa-brands fa-instagram fa-lg"></i
-              ></a>
-            </div>
-            <!-- Section: Social media -->
-          </div>
-          <!-- Grid container -->
-
-          <p class="text-secondary">Copyright &copy; 2021 misfitDodo Media</p>
-          <a href="#" class="position-absolute bottom-0 end-0 p-5"
-            ><i class="bi bi-arrow-up-circle h1 light-blue"></i>
-          </a>
-        </div>
-      </footer>
-      <!-- /Section: Footer -->
     </main>
 
     <!-- MODALS -->
 
-    <!-- Contact Modal -->
-    <div
-      class="modal fade"
-      id="contact"
-      data-backdrop="true"
-      tabindex="-1"
-      aria-labelledby="contactLabel"
-      aria-hidden="true"
-    >
-      <div class="modal-dialog modal-dialog-centered">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h1 class="modal-title fs-5" id="contactLabel">Contact</h1>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div>
-          <div class="modal-body">
-            <p class="lead">Hi! Fill out the form below to send a message directly to my personal email.</p>
-            <form
-              id="contact-form"
-              name="contact"
-              method="POST"
-              data-netlify="true"
-              onSubmit="submit"
-              data-netlify-honeypot="bot-field"
-              data-netlify-recaptcha="true"
-              action="pages/success.html"
-            >
-              <input id="bot-field" name="bot-field" />
-              <input type="hidden" name="subject" value="Contact message from justintsugranes.com" />
-              <div class="form-floating mb-3 mt-3">
-                <input type="text" class="form-control" id="name" placeholder="Name" name="name" required />
-                <label for="name">Name</label>
-              </div>
-              <div class="form-floating mb-3 mt-3">
-                <input type="text" class="form-control" id="email" placeholder="Enter email" name="email" required />
-                <label for="email">Email</label>
-              </div>
-              <div class="form-floating mt-3 mb-3">
-                <textarea
-                  type="text"
-                  class="form-control"
-                  id="message"
-                  placeholder="Enter message"
-                  name="message"
-                  required
-                ></textarea>
-                <label for="message">Message</label>
-              </div>
-              <div data-netlify-recaptcha="true"></div>
-              <div class="modal-footer">
-                <button type="submit" class="btn btn-primary">Send</button>
-              </div>
-            </form>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- /Contact Modal -->
-
-    <!-- Modal One-->
+    <!-- Modal One: Musician-->
     <div
       class="modal modal-xl fade"
       id="modalOne"
@@ -410,7 +252,7 @@
               </div>
             </div>
             <div class="modal-footer">
-              <!-- footer content -->
+              <!-- insert modal footer content -->
             </div>
           </div>
         </div>
