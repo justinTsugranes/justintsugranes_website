@@ -397,17 +397,18 @@
               name="contact"
               method="POST"
               data-netlify="true"
-              onSubmit="submit"
+              onSubmit="openModal()"
               data-netlify-honeypot="bot-field"
-              action="/pages/success/"
+              data-netlify-recaptcha="true"
+              action=""
             >
               <input id="bot-field" name="bot-field" />
               <div class="form-floating mb-3 mt-3">
-                <input type="text" class="form-control" id="name" placeholder="Name" name="name" />
+                <input type="text" class="form-control" id="name" placeholder="Name" name="name" required />
                 <label for="name">Name</label>
               </div>
               <div class="form-floating mb-3 mt-3">
-                <input type="text" class="form-control" id="email" placeholder="Enter email" name="email" />
+                <input type="text" class="form-control" id="email" placeholder="Enter email" name="email" required />
                 <label for="email">Email</label>
               </div>
               <div class="form-floating mt-3 mb-3">
@@ -417,18 +418,38 @@
                   id="message"
                   placeholder="Enter message"
                   name="message"
+                  required
                 ></textarea>
                 <label for="message">Message</label>
               </div>
+              <!-- <div class="form-group"> -->
+              <div data-netlify-recaptcha="true"></div>
+              <!-- </div> -->
             </form>
           </div>
           <div class="modal-footer">
-            <button type="button" class="btn btn-primary">Send</button>
+            <button type="submit" class="btn btn-primary">Send</button>
           </div>
         </div>
       </div>
     </div>
     <!-- /Contact Modal -->
+
+    <!-- Contact Success Modal -->
+    <div class="modal fade" id="success" tabindex="-1" aria-labelledby="successLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="successLabel">Message Sent</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <p class="lead">I can't wait to read your message! I will respond asap!</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- /Contact Success Modal -->
 
     <!-- Modal 1: Frontend Bootcamp-->
     <div class="modal fade" id="frontendBootcamp" tabindex="-1" aria-labelledby="frontendBootcamp" aria-hidden="true">
