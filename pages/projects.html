@@ -1,13 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
-  <!-- Head Data -->
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
     <!-- Description -->
-    <title>Projects | Justin Tsugranes | Web Developer, Digital Media Creator</title>
+    <title>Home | Justin Tsugranes | Web Developer, Digital Media Creator</title>
     <meta
       name="description"
       content="Web Developer, Digital Media Creator, UI Enthusiast, Musician, and everything in between"
@@ -16,21 +11,20 @@
     <!-- Open Graph Protocol-->
     <meta property="og:title" content="Justin Tsugranes's Personal Website" />
     <meta property="og:type" content="website" />
-    <meta property="og:image" content="public/images/heros/hero-index.png" />
-    <meta property="og:url" content="https://www.justintsugranes.com/projects" />
+    <meta property="og:image" content="public/images/headshots/headshot-03.jpg" />
+    <meta property="og:url" content="https://www.justintsugranes.com/" />
     <!--Additional Meta tags-->
     <meta property="og:description" content="Web developer, UI Enthusiast, Musician, and everything in between" />
     <meta property="og:locale" content="en_US" />
     <meta property="og:site_name" content="Justin Tsugranes" />
 
+    <link rel="shortcut icon" href="public/favicon.ico" />
+    <link rel="icon" href="public/favicon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+
     <link rel="shortcut icon" href="/public/favicon.ico" />
     <link rel="icon" href="/public/favicon.svg" type="image/svg+xml" />
     <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
-
-    <!-- Main Styles -->
-    <link rel="stylesheet" href="/styles/index.css" />
-    <link rel="stylesheet" href="/styles/navbar.css" />
-
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -38,309 +32,1080 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
       rel="stylesheet"
     />
-
+    <!-- Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+      crossorigin="anonymous"
+    />
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" />
     <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/cc78883918.js" crossorigin="anonymous"></script>
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="/index.css" />
   </head>
 
-  <body>
-    <!-- HEADER SECTION-->
+  <body class="bg-dark">
+    <!-- Section: Header -->
     <header>
       <!-- Accessibility Skip Link -->
       <a href="#main" class="skip">Skip to main content</a>
-      <!-- Top Nav -->
-      <div class="header-main-container">
-        <!-- Navbar -->
-        <div class="header-container flex-row">
-          <!-- Logo -->
-          <div class="header-brand-container">
-            <a class="brand" href="/index.html">Justin Tsugranes</a>
-          </div>
-          <!-- Nav -->
-          <div class="nav-container">
-            <nav class="topnav flex-row" id="myTopnav" aria-label="main">
-              <a href="/pages/projects.html">Projects</a>
-              <a href="/pages/about.html">About </a>
-              <a href="https://justintsugranes.myportfolio.com/work" target="_blank">Adobe Portfolio</a>
-              <a href="/pages/contact.html">Contact </a>
-              <a href="javascript:void(0);" class="nav-icon" onclick="dropDown()">
-                <i class="fa fa-bars"></i>
-              </a>
-            </nav>
-          </div>
-        </div>
-      </div>
+      <!-- Navigation -->
+      <section>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow py-2 fixed-top">
+          <div class="container">
+            <a class="navbar-brand text-uppercase" href="/index.html">Justin Tsugranes</a>
 
-      <!-- Hero-->
-      <section class="hero projects-hero">
-        <div class="container hero-text flex-col">
-          <h1 class="title hero-title wrapper"></h1>
-          <h2 class="subtitle hero-subtitle wrapper"></h2>
-        </div>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-display="static"
+              data-bs-toggle="collapse"
+              data-bs-target="#navmenu"
+              aria-controls="navmenu"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse dropdown dropstart text-end" id="navmenu">
+              <ul class="nav navbar-nav ms-auto mb-2 pt-3 mb-lg-0 dropdown-menu-dark">
+                <li class="dropdown-item">
+                  <a class="nav-link text-uppercase" href="/pages/projects.html">Projects</a>
+                </li>
+                <li class="dropdown-item">
+                  <a class="nav-link text-uppercase" href="/pages/about.html">About</a>
+                </li>
+                <li class="dropdown-item">
+                  <div data-bs-toggle="modal" data-bs-target="#contact">
+                    <p class="nav-link text-uppercase">Contact</p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
       </section>
+      <!-- Navbar -->
     </header>
 
-    <!-- MAIN SECTION -->
-    <main>
-      <!-- PROJECTS SECTION-->
-      <section class="projects">
-        <div class="container flex-col">
-          <!-- projects title -->
-          <h2 class="title section-title">Some of My Recent Projects</h2>
-          <!-- project cards container -->
-          <div class="project-cards-container">
-            <!-- PROJECTS START -->
-
-            <!-- frontend-bootcamp -->
-            <article class="project-card flex-col">
-              <a href="https://justin-tsugranes-bootstrap-example01.netlify.app/" target="_blank">
-                <img
-                  src="/public/images/project-images/frontend-bootcamp.jpg"
-                  alt=""
-                  class="image project-card-image"
-                />
-              </a>
-              <h4 class="project-card-title">Frontend Bootcamp</h4>
-            </article>
-
-            <!-- megamask -->
-            <article class="project-card flex-col">
-              <a href="https://justin-tsugranes-megamask.netlify.app/" target="_blank">
-                <img src="/public/images/project-images/megamask.jpg" alt="" class="image project-card-image" />
-              </a>
-              <h4 class="project-card-title">MegaMask</h4>
-            </article>
-
-            <!-- password generator -->
-            <article class="project-card flex-col">
-              <a href="https://justin-tsugranes-password-generator.netlify.app/" target="_blank">
-                <img
-                  src="/public/images/project-images/password-generator.jpg"
-                  alt=""
-                  class="image project-card-image"
-                />
-              </a>
-              <h4 class="project-card-title">Password Generator</h4>
-            </article>
-
-            <!-- company landing page -->
-            <article class="project-card flex-col">
-              <a href="https://justin-tsugranes-company-landing-ex.netlify.app/" target="_blank">
-                <img src="/public/images/project-images/landingpage.jpg" alt="" class="image project-card-image" />
-              </a>
-              <h4 class="project-card-title">Company Landing Page</h4>
-            </article>
-
-            <!-- breakfast recipe website -->
-            <article class="project-card flex-col">
-              <a href="https://justin-tsugranes-breakfast-recipes.netlify.app/" target="_blank">
-                <img src="/public/images/project-images/recipewebsite.jpg" alt="" class="image project-card-image" />
-              </a>
-              <h4 class="project-card-title">Breakfast Recipe Website</h4>
-            </article>
-
-            <!-- band website -->
-            <article class="project-card flex-col">
-              <a href="https://justin-tsugranes-band-website-ex.netlify.app/" target="_blank">
-                <img src="/public/images/project-images/bandwebsite.jpg" alt="" class="image project-card-image" />
-              </a>
-              <h4 class="project-card-title">Band Website</h4>
-            </article>
-
-            <!-- coding crash courses -->
-            <article class="project-card flex-col">
-              <a href="https://justin-tsugranes-coding-crash-courses.netlify.app/" target="_blank">
-                <img src="/public/images/project-images/crashcourse.jpg" alt="" class="image project-card-image" />
-              </a>
-              <h4 class="project-card-title">Coding Crash Courses</h4>
-            </article>
-
-            <!-- oldagram -->
-            <article class="project-card flex-col">
-              <a href="https://justin-tsugranes.oldagram.netlify.app/" target="_blank">
-                <img src="/public/images/project-images/oldagram.jpg" alt="" class="image project-card-image" />
-              </a>
-              <h4 class="project-card-title">Oldagram</h4>
-            </article>
-
-            <!-- interactive scorecard -->
-            <article class="project-card flex-col">
-              <a href="https://justin-tsugranes-scorecard.netlify.app/" target="_blank">
-                <img src="/public/images/project-images/scorecard.jpg" alt="" class="image project-card-image" />
-              </a>
-              <h4 class="project-card-title">Interactive Scorecard</h4>
-            </article>
-
-            <!-- blackjack -->
-            <article class="project-card flex-col">
-              <a href="https://justin-tsugranes-blackjack.netlify.app/" target="_blank">
-                <img src="/public/images/project-images/blackjack.jpg" alt="" class="image project-card-image" />
-              </a>
-              <h4 class="project-card-title">Blackjack</h4>
-            </article>
-
-            <!-- next.js tailwind blog -->
-            <article class="project-card flex-col">
-              <a href="https://blog-website-using-next-tailwind.vercel.app/" target="_blank">
-                <img
-                  src="/public/images/project-images/next-tailwind-blog.jpg"
-                  alt=""
-                  class="image project-card-image"
-                />
-              </a>
-              <h4 class="project-card-title">Next.js Tailwind Blog</h4>
-            </article>
-
-            <!-- next.js blog -->
-            <article class="project-card flex-col">
-              <a href="https://jt-nextjs-blog.vercel.app/" target="_blank">
-                <img src="/public/images/project-images/next-blog.jpg" alt="" class="image project-card-image" />
-              </a>
-              <h4 class="project-card-title">Next.js Blog</h4>
-            </article>
-
-            <!-- webflix -->
-            <article class="project-card flex-col">
-              <a href="https://justin-tsugranes-webflix.netlify.app/" target="_blank">
-                <img src="/public/images/project-images/webflix.jpg" alt="" class="image project-card-image" />
-              </a>
-              <h4 class="project-card-title">Webflix</h4>
-            </article>
-
-            <!-- Unit Converter -->
-            <article class="project-card flex-col">
-              <a href="https://justin-tsugranes-unit-converter.netlify.app/" target="_blank">
-                <img src="/public/images/project-images/unit-converter.jpg" alt="" class="image project-card-image" />
-              </a>
-              <h4 class="project-card-title">Unit Converter UI</h4>
-            </article>
-
-            <!-- kittygram stories -->
-            <article class="project-card flex-col">
-              <a href="https://play.tailwindcss.com/m0vJbNyJyi?size=540x720&file=config" target="_blank">
-                <img src="/public/images/project-images/kitty-stories.jpg" alt="" class="image project-card-image" />
-              </a>
-              <h4 class="project-card-title">Kittygram Stories</h4>
-            </article>
-
-            <!-- to do react app -->
-            <article class="project-card flex-col">
-              <a href="https://to-do-react-app.stackblitz.io" target="_blank">
-                <img src="/public/images/project-images/react-todo.jpg" alt="" class="image project-card-image" />
-              </a>
-              <h4 class="project-card-title">React To Do</h4>
-            </article>
-
-            <!-- React Tac Toe -->
-            <article class="project-card flex-col">
-              <a href="https://tic-tac-toe-react-app.stackblitz.io/ " target="_blank">
-                <img src="/public/images/project-images/react-tac-toe.jpg" alt="" class="image project-card-image" />
-              </a>
-              <h4 class="project-card-title">React Tac Toe</h4>
-            </article>
-
-            <!-- i love lucy celebrity counter -->
-            <article class="project-card flex-col">
-              <a href="https://justin-tsugranes-counter.netlify.app/" target="_blank">
-                <img src="/public/images/project-images/ilovelucy.jpg" alt="" class="image project-card-image" />
-              </a>
-              <h4 class="project-card-title">I Love Lucy Themed “Celebrity Counter” App</h4>
-            </article>
-
-            <!-- Image Mapping -->
-            <article class="project-card flex-col">
-              <a href="https://justin-tsugranes-image-mapping.netlify.app/" target="_blank">
-                <img src="/public/images/project-images/image-mapping.jpg" alt="" class="image project-card-image" />
-              </a>
-              <h4 class="project-card-title">Image Mapping</h4>
-            </article>
-
-            <!-- Google Clone -->
-            <article class="project-card flex-col">
-              <a href="https://justin-tsugranes-goople.netlify.app/" target="_blank">
-                <img src="/public/images/project-images/goople.jpg" alt="" class="image project-card-image" />
-              </a>
-              <h4 class="project-card-title">Goople</h4>
-            </article>
-
-            <!-- digital business card -->
-            <article class="project-card flex-col">
-              <a href="https://justin-tsugranes-business-card.netlify.app/" target="_blank">
-                <img src="/public/images/project-images/business-card.jpg" alt="" class="image project-card-image" />
-              </a>
-              <h4 class="project-card-title">Digital Business Card</h4>
-            </article>
+    <main id="main">
+      <!-- Showcase -->
+      <section class="bg-dark text-light p-5 p-lg-0 pt-lg-5 text-center text-sm-start d-none d-md-block">
+        <div class="container">
+          <div class="d-sm-flex align-items-center justify-content-around">
+            <div>
+              <h1><span class="text-warning">Some Tech</span> I've Worked With</h1>
+              <div class="col-sm-offset-1 col-xs-12 col-sm-6 col-md-10">
+                <div class="row mt-3 text-center">
+                  <div class="col-xs-3 col-sm-2 col-md-3">
+                    <a href="https://reactjs.org/" target="_blank">
+                      <i id="skill-icon" class="fa-brands fa-react text-light h1"></i>
+                    </a>
+                  </div>
+                  <div class="col-xs-3 col-sm-2 col-md-3">
+                    <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank">
+                      <i class="fa-brands fa-square-js text-light h1"></i>
+                    </a>
+                  </div>
+                  <div class="col-xs-3 col-sm-2 col-md-3">
+                    <a href="https://nodejs.org/" target="_blank">
+                      <i class="fa-brands fa-node text-light h1"></i>
+                    </a>
+                  </div>
+                  <div class="col-xs-3 col-sm-2 col-md-3">
+                    <a href="https://developer.mozilla.org/en-US/docs/Glossary/HTML5" target="_blank">
+                      <i class="fa-brands fa-html5 text-light h1"></i>
+                    </a>
+                  </div>
+                  <div class="col-xs-3 col-sm-2 col-md-3">
+                    <a href="https://developer.mozilla.org/en-US/docs/Web/CSS" target="_blank">
+                      <i class="fa-brands fa-css3 text-light h1"></i>
+                    </a>
+                  </div>
+                  <div class="col-xs-3 col-sm-2 col-md-3">
+                    <a href="https://getbootstrap.com/" target="_blank">
+                      <i class="fa-brands fa-bootstrap text-light h1"></i>
+                    </a>
+                  </div>
+                  <div class="col-xs-3 col-sm-2 col-md-3">
+                    <a href="https://sass-lang.com/" target="_blank">
+                      <i class="fa-brands fa-sass text-light h1"></i>
+                    </a>
+                  </div>
+                  <div class="col-xs-3 col-sm-2 col-md-3">
+                    <a href="https://git-scm.com/" target="_blank">
+                      <i class="fa-brands fa-git text-light h1"></i>
+                    </a>
+                  </div>
+                  <div class="col-xs-3 col-sm-2 col-md-3">
+                    <a href="https://www.figma.com/" target="_blank">
+                      <i class="fa-brands fa-figma text-light h1"></i>
+                    </a>
+                  </div>
+                  <div class="col-xs-3 col-sm-2 col-md-3">
+                    <a href="https://www.salesforce.com/" target="_blank">
+                      <i class="fa-brands fa-salesforce text-light h1"></i>
+                    </a>
+                  </div>
+                  <div class="col-xs-3 col-sm-2 col-md-3">
+                    <a href="https://wordpress.org/" target="_blank">
+                      <i class="fa-brands fa-wordpress text-light h1"></i>
+                    </a>
+                  </div>
+                  <div class="col-xs-3 col-sm-2 col-md-3">
+                    <a href="https://ethereum.org/en/" target="_blank">
+                      <i class="fa-brands fa-ethereum text-light h1"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <img class="img-fluid w-50 d-none d-sm-block" src="/img/undraw_programming_re_kg9v.svg" alt="" />
           </div>
         </div>
       </section>
+      <!-- /Section: Experience -->
 
-      <!-- PRE-FOOTER SECTION-->
-      <section class="pre-footer">
-        <div class="container pre-footer-text flex-col">
-          <h1 class="title pre-footer-title wrapper">I am always looking to connect!</h1>
-          <a
-            class="subtitle pre-footer-subtitle"
-            id="pre-footer-email"
-            href="mailto:justintsugranes@proton.me?subject=Hello!"
-            >justintsugranes@proton.me</a
-          >
+      <!-- Section: Project Cards -->
+      <section class="p-5">
+        <div id="cards_landscape_wrap-2" class="bg-dark">
+          <div class="container bg-dark">
+            <h2 class="text-light">Coding Projects</h2>
+
+            <!-- ROW 1 -->
+            <div class="row">
+              <!-- frontend bootcamp -->
+              <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+                <div data-bs-toggle="modal" data-bs-target="#frontendBootcamp">
+                  <div class="card-flyer">
+                    <div class="text-box pb-3 bg-dark" style="height: 17rem">
+                      <div class="image-box">
+                        <img src="/public/images/project-images/frontend-bootcamp.jpg" alt="" />
+                      </div>
+                      <div class="text-container">
+                        <h6>Frontend Bootcamp</h6>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- /frontend bootcamp -->
+
+              <!-- megamask -->
+              <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+                <div data-bs-toggle="modal" data-bs-target="#megamask">
+                  <div class="card-flyer">
+                    <div class="text-box pb-3 bg-dark" style="height: 17rem">
+                      <div class="image-box">
+                        <img src="/public/images/project-images/megamask.jpg" alt="" />
+                      </div>
+                      <div class="text-container">
+                        <h6>MegaMask</h6>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- /megamask -->
+
+              <!-- coding crash courses -->
+              <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+                <div data-bs-toggle="modal" data-bs-target="#crashcourses">
+                  <div class="card-flyer">
+                    <div class="text-box pb-3 bg-dark" style="height: 17rem">
+                      <div class="image-box">
+                        <img src="/public/images/project-images/crashcourses.jpg" alt="" />
+                      </div>
+                      <div class="text-container">
+                        <h6>Crash Courses</h6>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- /coding crash courses -->
+
+              <!-- password generator -->
+              <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+                <div data-bs-toggle="modal" data-bs-target="#passwordGenerator">
+                  <div class="card-flyer">
+                    <div class="text-box pb-3 bg-dark" style="height: 17rem">
+                      <div class="image-box">
+                        <img src="/public/images/project-images/password-generator.jpg" alt="" />
+                      </div>
+                      <div class="text-container">
+                        <h6>Password Generator</h6>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- /password generator -->
+
+            <!-- react todo -->
+            <div class="row">
+              <!-- card 1 -->
+              <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+                <div data-bs-toggle="modal" data-bs-target="#reactTodo">
+                  <div class="card-flyer">
+                    <div class="text-box pb-3 bg-dark" style="height: 17rem">
+                      <div class="image-box">
+                        <img src="/public/images/project-images/react-todo.jpg" alt="" />
+                      </div>
+                      <div class="text-container">
+                        <h6>React To Do</h6>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- /react todo -->
+
+              <!-- company landing page -->
+              <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+                <div data-bs-toggle="modal" data-bs-target="#landingPageExample">
+                  <div class="card-flyer">
+                    <div class="text-box pb-3 bg-dark" style="height: 17rem">
+                      <div class="image-box">
+                        <img src="/public/images/project-images/landing-page.jpg" alt="" />
+                      </div>
+                      <div class="text-container">
+                        <h6>Landing Page</h6>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- breakfast recipes -->
+              <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+                <div data-bs-toggle="modal" data-bs-target="#recipes">
+                  <div class="card-flyer">
+                    <div class="text-box pb-3 bg-dark" style="height: 17rem">
+                      <div class="image-box">
+                        <img src="/public/images/project-images/recipes.jpg" alt="" />
+                      </div>
+                      <div class="text-container">
+                        <h6>Breakfast Recipes</h6>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- /breakfast recipes -->
+
+              <!-- project: next.js tailwind blog -->
+              <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+                <div data-bs-toggle="modal" data-bs-target="#nexttailwindblog">
+                  <div class="card-flyer">
+                    <div class="text-box pb-3 bg-dark" style="height: 17rem">
+                      <div class="image-box">
+                        <img src="/public/images/project-images/next-tailwind-blog.jpg" alt="" />
+                      </div>
+                      <div class="text-container">
+                        <h6>Tailwind Blog</h6>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- /project: Next.js Tailwind Blog -->
+
+              <!-- project: next.js blog -->
+              <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+                <div data-bs-toggle="modal" data-bs-target="#nextjsblog">
+                  <div class="card-flyer">
+                    <div class="text-box pb-3 bg-dark" style="height: 17rem">
+                      <div class="image-box">
+                        <img src="/public/images/project-images/next-blog.jpg" alt="" />
+                      </div>
+                      <div class="text-container">
+                        <h6>Next.js Blog</h6>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- /project: Next.js Blog -->
+
+              <!-- project: unit converter -->
+              <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+                <div data-bs-toggle="modal" data-bs-target="#unitconverter">
+                  <div class="card-flyer">
+                    <div class="text-box pb-3 bg-dark" style="height: 17rem">
+                      <div class="image-box">
+                        <img src="/public/images/project-images/unit-converter.jpg" alt="" />
+                      </div>
+                      <div class="text-container">
+                        <h6>Unit Converter</h6>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- /project: unit converter -->
+
+              <!-- project: band website -->
+              <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+                <div data-bs-toggle="modal" data-bs-target="#bandwebsite">
+                  <div class="card-flyer">
+                    <div class="text-box pb-3 bg-dark" style="height: 17rem">
+                      <div class="image-box">
+                        <img src="/public/images/project-images/bandwebsite.jpg" alt="" />
+                      </div>
+                      <div class="text-container">
+                        <h6>Band Website</h6>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- /project: band website -->
+
+              <!-- project: oldagram -->
+              <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+                <div data-bs-toggle="modal" data-bs-target="#oldagram">
+                  <div class="card-flyer">
+                    <div class="text-box pb-3 bg-dark" style="height: 17rem">
+                      <div class="image-box">
+                        <img src="/public/images/project-images/oldagram.jpg" alt="" />
+                      </div>
+                      <div class="text-container">
+                        <h6>Oldagram</h6>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- /project: Oldagram-->
+
+              <!-- project: blackjack -->
+              <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+                <div data-bs-toggle="modal" data-bs-target="#blackjack">
+                  <div class="card-flyer">
+                    <div class="text-box pb-3 bg-dark" style="height: 17rem">
+                      <div class="image-box">
+                        <img src="/public/images/project-images/blackjack.jpg" alt="" />
+                      </div>
+                      <div class="text-container">
+                        <h6>Blackjack</h6>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- /project: blackjack -->
+
+              <!-- project: ilovelucy counter -->
+              <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+                <div data-bs-toggle="modal" data-bs-target="#ilovelucy">
+                  <div class="card-flyer">
+                    <div class="text-box pb-3 bg-dark" style="height: 17rem">
+                      <div class="image-box">
+                        <img src="/public/images/project-images/ilovelucy.jpg" alt="" />
+                      </div>
+                      <div class="text-container">
+                        <h6>Celebrity Counter</h6>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- /project: ilovelucy counter -->
+
+              <!-- project: image mapping -->
+              <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+                <div data-bs-toggle="modal" data-bs-target="#imagemapping">
+                  <div class="card-flyer">
+                    <div class="text-box pb-3 bg-dark" style="height: 17rem">
+                      <div class="image-box">
+                        <img src="/public/images/project-images/image-mapping.jpg" alt="" />
+                      </div>
+                      <div class="text-container">
+                        <h6>Image Mapping</h6>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- /project: image mapping -->
+
+              <!-- /cards end -->
+            </div>
+          </div>
         </div>
       </section>
+      <!-- /Section: Project Cards -->
+
+      <!-- Section: Pre-Footer Connect -->
+      <section>
+        <div class="masthead" class="p-5 bg-image" style="background-image: url('/public/images/heros/pre-footer.jpg')">
+          <div class="color-overlay d-flex justify-content-center align-items-center h-100">
+            <div class="container p-5">
+              <div class="row align-items-center justify-content-between">
+                <div class="col-md d-none d-md-block">
+                  <img src="/img/connect.svg" class="img-fluid" alt="" />
+                </div>
+                <div class="col-md d-flex flex-column">
+                  <h2 class="light-blue align-self-sm-center">I'm always looking to connect</h2>
+                  <p class="text-light text-center d-none d-md-block">
+                    Although, I'm currently based in the US, I love making friends and working with teams from all
+                    around the globe.
+                  </p>
+                  <div data-bs-toggle="modal" data-bs-target="#contact" class="d-flex flex-column">
+                    <p class="btn btn-secondary mt-3 align-self-sm-center">Message Me</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- /Section: Pre-Footer -->
     </main>
 
-    <!-- FOOTER SECTION-->
-    <footer class="footer">
-      <div class="container flex-col">
-        <!-- Footer Main Text -->
-        <h3 class="title footer-title">Justin Tsugranes</h3>
-        <p class="subtitle footer-subtitle on-background">Web Developer, Digital Media Creator</p>
-        <!-- Footer Social Section -->
-        <div class="social-icons-container flex-col">
-          <a href="pages/contact.html" class="title footer-social-title">Get In Touch</a>
-          <!-- Social Icons -->
-          <div class="icons-container flex-row">
+    <!-- Section: Footer -->
+    <footer class="p-5 bg-dark text-white text-center position-relative">
+      <div class="container">
+        <h2 class="text-uppercase mb-3 h3 light-blue">Justin Tsugranes</h2>
+        <p class="mb-5">Web Developer, Digital Media Creator</p>
+        <h3 class="text-uppercase h4 light-blue">Get In Touch</h3>
+        <!-- Grid container -->
+        <div class="container-fluid p-4 pb-0">
+          <!-- Section: Social media -->
+          <section class="mb-4">
             <!-- linkedin -->
-            <div class="icon-container">
-              <a href="https://linkedin.com/in/justin-tsugranes" target="_blank" class="social-link">
-                <i class="fa-brands fa-linkedin fa-lg icon"></i>
-              </a>
-            </div>
+            <a
+              class="btn btn-link btn-floating btn-lg text-light m-1 icon"
+              href="https://www.linkedin.com/in/justintsugranes"
+              target="_blank"
+              role="button"
+              ><i class="fa-brands fa-linkedin fa-lg"></i
+            ></a>
+
             <!-- github -->
-            <div class="icon-container">
-              <a href="https://github.com/justintsugranes" target="_blank" class="social-link"
-                ><i class="fa-brands fa-github fa-lg icon"></i>
-              </a>
-            </div>
+            <a
+              class="btn btn-link btn-floating btn-lg text-light m-1 icon"
+              href="https://www.github.com/justintsugranes"
+              target="_blank"
+              role="button"
+              ><i class="fa-brands fa-github"></i
+            ></a>
+
+            <!-- codepen -->
+            <a
+              class="btn btn-link btn-floating btn-lg text-light m-1 icon"
+              href="https://codepen.io/justintsugranes"
+              target="_blank"
+              role="button"
+              ><i class="fa-brands fa-codepen"></i
+            ></a>
+
             <!-- medium -->
-            <div class="icon-container">
-              <a href="https://justintsugranes.medium.com/" target="_blank" class="social-link">
-                <i class="fa-brands fa-medium fa-lg icon"></i>
-              </a>
-            </div>
+            <a
+              class="btn btn-link btn-floating btn-lg text-light m-1 icon"
+              href="https://justintsugranes.medium.com"
+              target="_blank"
+              role="button"
+              ><i class="fa-brands fa-medium fa-lg"></i
+            ></a>
+
             <!-- spotify -->
-            <div class="icon-container">
-              <a href="https://open.spotify.com/artist/4vV18ClJAixgpNfKaJkEmR" target="_blank" class="social-link"
-                ><i class="fa-brands fa-spotify fa-lg icon"></i>
+            <a
+              class="btn btn-link btn-floating btn-lg text-light m-1 icon"
+              href="https://open.spotify.com/artist/4vV18ClJAixgpNfKaJkEmR?si=bOY2nkJXT_esmViVXk6GbA"
+              target="_blank"
+              role="button"
+            >
+              <i class="fa-brands fa-spotify fa-lg"></i>
+            </a>
+
+            <!-- instagram -->
+            <a
+              class="btn btn-link btn-floating btn-lg text-light m-1 icon"
+              href="https://www.instagram.com/justintsugranes"
+              target="_blank"
+              role="button"
+              ><i class="fa-brands fa-instagram fa-lg"></i
+            ></a>
+          </section>
+          <!-- Section: Social media -->
+        </div>
+        <!-- Grid container -->
+
+        <p class="text-secondary">Copyright &copy; 2021 misfitDodo Media</p>
+        <a href="#" class="position-absolute bottom-0 end-0 p-5"
+          ><i class="bi bi-arrow-up-circle h1 light-blue"></i>
+        </a>
+      </div>
+    </footer>
+    <!-- /Section: Footer -->
+
+    <!-- Section: MODALS -->
+
+    <!-- Modal: Contact -->
+    <div class="modal fade" id="contact" tabindex="-1" aria-labelledby="contactLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="contactLabel">Contact</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <p class="lead">Hi! Fill out the form below to send a message directly to my personal email.</p>
+            <form
+              id="contact-form"
+              name="contact"
+              method="POST"
+              data-netlify="true"
+              onSubmit="submit"
+              data-netlify-honeypot="bot-field"
+              action="/pages/success/"
+            >
+              <input id="bot-field" name="bot-field" />
+              <div class="form-floating mb-3 mt-3">
+                <input type="text" class="form-control" id="name" placeholder="Name" name="name" />
+                <label for="name">Name</label>
+              </div>
+              <div class="form-floating mb-3 mt-3">
+                <input type="text" class="form-control" id="email" placeholder="Enter email" name="email" />
+                <label for="email">Email</label>
+              </div>
+              <div class="form-floating mt-3 mb-3">
+                <textarea
+                  type="text"
+                  class="form-control"
+                  id="message"
+                  placeholder="Enter message"
+                  name="message"
+                ></textarea>
+                <label for="message">Message</label>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-primary">Send</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- /Modal: Contact -->
+
+    <!-- Modal: Frontend Bootcamp-->
+    <div class="modal fade" id="frontendBootcamp" tabindex="-1" aria-labelledby="frontendBootcamp" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content bg-dark text-light">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="frontendBootcampLabel">Frontend Bootcamp Example</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <a href="https://justin-tsugranes-bootstrap-example01.netlify.app/" target="_blank">
+              <img src="/public/images/project-images/frontend-bootcamp.jpg" class="img-fluid" alt="..." />
+            </a>
+          </div>
+          <p class="mx-3">
+            An example of a landing page for a Frontend Bootcamp where I learned more about using Bootstrap
+          </p>
+          <div class="modal-footer">
+            <div class="h2 mb-3">
+              <a
+                href="https://github.com/justinTsugranes/project_bootstrap-frontend-example"
+                target="_blank"
+                class="text-light"
+              >
+                <i class="bi bi-github"></i>
               </a>
             </div>
-            <!-- instagram -->
-            <div class="icon-container">
-              <a href="https://instagram.com/justintsugranes" target="_blank" class="social-link"
-                ><i class="fa-brands fa-instagram fa-lg icon"></i>
+            <div class="h2 mb-3">
+              <a href="https://justin-tsugranes-bootstrap-example01.netlify.app/" target="_blank" class="text-light">
+                <i class="bi bi-arrow-up-circle"></i>
               </a>
             </div>
           </div>
         </div>
+      </div>
+    </div>
+    <!-- /frontend-bootcamp -->
 
-        <!-- Footer Terms, Conditions, and Policies Section-->
-        <div class="container flex-row">
-          <p class="policies-text font-sm wrapper">Copyright 2022 misfitDodo Media. All Rights Reserved</p>
+    <!-- Modal: megamask-->
+    <div class="modal fade" id="megamask" tabindex="-1" aria-labelledby="megamask" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content bg-dark text-light">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="megamaskLabel">MegaMask</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <a href="https://justin-tsugranes-megamask.netlify.app/" target="_blank">
+              <img src="/public/images/project-images/megamask.jpg" class="img-fluid" alt="..." />
+            </a>
+          </div>
+          <p class="mx-3">A UI clone of the popular Web3 Wallet, MetaMask</p>
+          <div class="modal-footer">
+            <div class="h2 mb-3">
+              <a href="https://github.com/justinTsugranes/project_metamask-clone" target="_blank" class="text-light">
+                <i class="bi bi-github"></i>
+              </a>
+            </div>
+            <div class="h2 mb-3">
+              <a href="https://justin-tsugranes-megamask.netlify.app/" target="_blank" class="text-light">
+                <i class="bi bi-arrow-up-circle"></i>
+              </a>
+            </div>
+          </div>
         </div>
       </div>
-    </footer>
+    </div>
+    <!-- /megamask -->
 
-    <!-- JAVASCRIPT-->
-    <!-- <script src="js/index.js" type="module"></script> -->
-    <script src="/js/navbar.js"></script>
+    <!-- Modal: coding crash courses-->
+    <div class="modal fade" id="crashcourses" tabindex="-1" aria-labelledby="crashcourses" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content bg-dark text-light">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="crashCoursesLabel">Coding Crash Courses</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <a href="https://justin-tsugranes-coding-crash-courses.netlify.app/" target="_blank">
+              <img src="/public/images/project-images/crashcourses.jpg" class="img-fluid" alt="..." />
+            </a>
+          </div>
+          <p class="mx-3">A website I created from my notes from all of the Codevolution crash courses</p>
+          <div class="modal-footer">
+            <div class="h2 mb-3">
+              <a
+                href="https://github.com/justinTsugranes/project_codevolution-crash-courses"
+                target="_blank"
+                class="text-light"
+              >
+                <i class="bi bi-github"></i>
+              </a>
+            </div>
+            <div class="h2 mb-3">
+              <a href="https://justin-tsugranes-coding-crash-courses.netlify.app/" target="_blank" class="text-light">
+                <i class="bi bi-arrow-up-circle"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- /coding crash courses -->
+
+    <!-- Modal: password generator-->
+    <div class="modal fade" id="passwordGenerator" tabindex="-1" aria-labelledby="passwordGenerator" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content bg-dark text-light">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="passwordGeneratorLabel">Random Password Generator</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <a href="https://justin-tsugranes-password-generator.netlify.app/" target="_blank">
+              <img src="/public/images/project-images/password-generator.jpg" class="img-fluid" alt="..." />
+            </a>
+          </div>
+          <p class="mx-3">
+            A random password generator that is written in JavaScript, HTML, and CSS where I learned more about random
+            number generation in JavaScript
+          </p>
+          <div class="modal-footer">
+            <div class="h2 mb-3">
+              <a
+                href="https://github.com/justinTsugranes/project_password-generator"
+                target="_blank"
+                class="text-light"
+              >
+                <i class="bi bi-github"></i>
+              </a>
+            </div>
+            <div class="h2 mb-3">
+              <a href="https://justin-tsugranes-password-generator.netlify.app/" target="_blank" class="text-light">
+                <i class="bi bi-arrow-up-circle"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- /password generator -->
+
+    <!-- Modal: react todo-->
+    <div class="modal fade" id="reactTodo" tabindex="-1" aria-labelledby="reactTodo" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content bg-dark text-light">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="reactTodoLabel">React To DoApp</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <a href="https://to-do-react-app.stackblitz.io" target="_blank">
+              <img src="/public/images/project-images/react-todo.jpg" class="img-fluid" alt="..." />
+            </a>
+          </div>
+          <p class="mx-3">A To-Do App where I learned more about React.js</p>
+          <div class="modal-footer">
+            <div class="h2 mb-3">
+              <a href="https://github.com/justinTsugranes/tut_todo-react-app" target="_blank" class="text-light">
+                <i class="bi bi-github"></i>
+              </a>
+            </div>
+            <div class="h2 mb-3">
+              <a href="https://to-do-react-app.stackblitz.io" target="_blank" class="text-light">
+                <i class="bi bi-arrow-up-circle"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- /react todo -->
+
+    <!-- Modal: landing page example -->
+    <div
+      class="modal fade"
+      id="landingPageExample"
+      tabindex="-1"
+      aria-labelledby="landingPageExample"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content bg-dark text-light">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="landingPageExampleLabel">Company Landing Page Example</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <a href="https://justin-tsugranes-company-landing-ex.netlify.app/" target="_blank">
+              <img src="/public/images/project-images/landing-page.jpg" class="img-fluid" alt="..." />
+            </a>
+          </div>
+          <p class="mx-3">A company landing page website based off of a Figma design spec</p>
+          <div class="modal-footer">
+            <div class="h2 mb-3">
+              <a href="https://github.com/justinTsugranes/project_landing-page" target="_blank" class="text-light">
+                <i class="bi bi-github"></i>
+              </a>
+            </div>
+            <div class="h2 mb-3">
+              <a href="https://justin-tsugranes-company-landing-ex.netlify.app/" target="_blank" class="text-light">
+                <i class="bi bi-arrow-up-circle"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- /landing page example -->
+
+    <!-- Modal: recipes-->
+    <div class="modal fade" id="recipes" tabindex="-1" aria-labelledby="recipes" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content bg-dark text-light">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="recipesLabel">Breakfast Recipe Website</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <a href="https://justin-tsugranes-breakfast-recipes.netlify.app/" target="_blank">
+              <img src="/public/images/project-images/recipes.jpg" class="img-fluid" alt="..." />
+            </a>
+          </div>
+          <p class="mx-3">A website showcasing my favorite carb-loaded breakfast recipes</p>
+          <div class="modal-footer">
+            <div class="h2 mb-3">
+              <a href="https://github.com/justinTsugranes/project_recipe-website" target="_blank" class="text-light">
+                <i class="bi bi-github"></i>
+              </a>
+            </div>
+            <div class="h2 mb-3">
+              <a href="https://justin-tsugranes-breakfast-recipes.netlify.app/" target="_blank" class="text-light">
+                <i class="bi bi-arrow-up-circle"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- /recipes -->
+
+    <!-- MODAL: band website -->
+    <div class="modal fade" id="bandwebsite" tabindex="-1" aria-labelledby="bandwebsite" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content bg-dark text-light">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="bandwebsiteLabel">Band Website</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <a href="https://justin-tsugranes-bootstrap-example01.netlify.app/" target="_blank">
+              <img src="/public/images/project-images/bandwebsite.jpg" class="img-fluid" alt="..." />
+            </a>
+          </div>
+          <p class="mx-3">A band website built using JavaScript, HTML, and CSS</p>
+          <div class="modal-footer">
+            <div class="h2 mb-3">
+              <a href="https://github.com/justinTsugranes/proj_band-website" target="_blank" class="text-light">
+                <i class="bi bi-github"></i>
+              </a>
+            </div>
+            <div class="h2 mb-3">
+              <a href="https://justin-tsugranes-band-website-ex.netlify.app/" target="_blank" class="text-light">
+                <i class="bi bi-arrow-up-circle"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- /MODAL: band website -->
+
+    <!-- MODAL: blackjack -->
+    <div class="modal fade" id="blackjack" tabindex="-1" aria-labelledby="blackjack" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content bg-dark text-light">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="blackjackLabel">Blackjack</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <a href="https://justin-tsugranes-blackjack.netlify.app/" target="_blank">
+              <img src="/public/images/project-images/blackjack.jpg" class="img-fluid" alt="..." />
+            </a>
+          </div>
+          <p class="mx-3">
+            A JavaScript implementation of the classic casino game, Blackjack where I learned more about data types,
+            if/else statements, loops, Math objects, and object-oriented programming
+          </p>
+          <div class="modal-footer">
+            <div class="h2 mb-3">
+              <a href="https://github.com/justinTsugranes/project_blackjack" target="_blank" class="text-light">
+                <i class="bi bi-github"></i>
+              </a>
+            </div>
+            <div class="h2 mb-3">
+              <a href="https://justin-tsugranes-blackjack.netlify.app/ " target="_blank" class="text-light">
+                <i class="bi bi-arrow-up-circle"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- /MODAL: blackjack -->
+
+    <!-- MODAL: ilovelucy counter -->
+    <div class="modal fade" id="ilovelucy" tabindex="-1" aria-labelledby="ilovelucy" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content bg-dark text-light">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="ilovelucyLabel">Celebrity Counter</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <a href="https://justin-tsugranes-counter.netlify.app/" target="_blank">
+              <img src="/public/images/project-images/ilovelucy.jpg" class="img-fluid" alt="..." />
+            </a>
+          </div>
+          <p class="mx-3">A counter app inspired by the “I Love Lucy” episode “Hollywood at Last”</p>
+          <div class="modal-footer">
+            <div class="h2 mb-3">
+              <a href="https://github.com/justinTsugranes/project_counter" target="_blank" class="text-light">
+                <i class="bi bi-github"></i>
+              </a>
+            </div>
+            <div class="h2 mb-3">
+              <a href="https://justin-tsugranes-counter.netlify.app/" target="_blank" class="text-light">
+                <i class="bi bi-arrow-up-circle"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- /MODAL: ilovelucy counter -->
+
+    <!-- MODAL: image mapping -->
+    <div class="modal fade" id="imagemapping" tabindex="-1" aria-labelledby="imagemapping" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content bg-dark text-light">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="imagemappingLabel">Image Mapping</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <a href="https://justin-tsugranes-image-mapping.netlify.app/" target="_blank">
+              <img src="/public/images/project-images/image-mapping.jpg" class="img-fluid" alt="..." />
+            </a>
+          </div>
+          <p class="mx-3">A counter app inspired by the “I Love Lucy” episode “Hollywood at Last”</p>
+          <div class="modal-footer">
+            <div class="h2 mb-3">
+              <a href="https://github.com/justinTsugranes/tutorial_image-mapping" target="_blank" class="text-light">
+                <i class="bi bi-github"></i>
+              </a>
+            </div>
+            <div class="h2 mb-3">
+              <a href="https://justin-tsugranes-image-mapping.netlify.app/" target="_blank" class="text-light">
+                <i class="bi bi-arrow-up-circle"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- /MODAL: image mapping -->
+
+    <!-- MODAL: Next.js Blog -->
+    <div class="modal fade" id="nextjsblog" tabindex="-1" aria-labelledby="nextjsblog" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content bg-dark text-light">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="nextjsblogLabel">Next.js Blog</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <a href="https://jt-nextjs-blog.vercel.app/" target="_blank">
+              <img src="/public/images/project-images/next-blog.jpg" class="img-fluid" alt="..." />
+            </a>
+          </div>
+          <p class="mx-3">
+            This blog project from the Next.js website addresses dynamic page routing and Module CSS. I deployed the app
+            through Vercel. Tools: Next.js, Vercel, TypeScript, Module CSS
+          </p>
+          <div class="modal-footer">
+            <div class="h2 mb-3">
+              <a href="https://github.com/justinTsugranes/tutorial_nextjs-blog" target="_blank" class="text-light">
+                <i class="bi bi-github"></i>
+              </a>
+            </div>
+            <div class="h2 mb-3">
+              <a href="https://jt-nextjs-blog.vercel.app/" target="_blank" class="text-light">
+                <i class="bi bi-arrow-up-circle"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- /MODAL: Next.js Blog -->
+
+    <!-- MODAL: Next.js Tailwind Blog -->
+    <div class="modal fade" id="nexttailwindblog" tabindex="-1" aria-labelledby="nexttailwindblog" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content bg-dark text-light">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="nexttailwindLabel">Next.js Tailwind Blog</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <a href="https://blog-website-using-next-tailwind.vercel.app/ " target="_blank">
+              <img src="/public/images/project-images/next-tailwind-blog.jpg" class="img-fluid" alt="..." />
+            </a>
+          </div>
+          <p class="mx-3">
+            Interactive Blog project where I learned more about Next.js routing, TailwindCSS, API fetching, using Swiper
+            for interactive scrolling, and working with React Functional Components
+          </p>
+          <div class="modal-footer">
+            <div class="h2 mb-3">
+              <a
+                href="https://github.com/justinTsugranes/tutorial_blog-website-using-next-tailwind"
+                target="_blank"
+                class="text-light"
+              >
+                <i class="bi bi-github"></i>
+              </a>
+            </div>
+            <div class="h2 mb-3">
+              <a href="https://blog-website-using-next-tailwind.vercel.app/" target="_blank" class="text-light">
+                <i class="bi bi-arrow-up-circle"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- /MODAL: Next.js Tailwind Blog -->
+
+    <!-- MODAL: Oldagram -->
+    <div class="modal fade" id="oldagram" tabindex="-1" aria-labelledby="oldagram" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content bg-dark text-light">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="oldagramLabel">Oldagram</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <a href="https://justin-tsugranes-oldagram.netlify.app/" target="_blank">
+              <img src="/public/images/project-images/oldagram.jpg" class="img-fluid" alt="..." />
+            </a>
+          </div>
+          <p class="mx-3">A UI clone of Instagram using JavaScript, HTML, and Figma</p>
+          <div class="modal-footer">
+            <div class="h2 mb-3">
+              <a href="https://github.com/justinTsugranes/project_oldagram" target="_blank" class="text-light">
+                <i class="bi bi-github"></i>
+              </a>
+            </div>
+            <div class="h2 mb-3">
+              <a href="https://justin-tsugranes-oldagram.netlify.app/" target="_blank" class="text-light">
+                <i class="bi bi-arrow-up-circle"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- /MODAL: Oldagram -->
+
+    <!-- MODAL: unit converter -->
+    <div class="modal fade" id="unitconverter" tabindex="-1" aria-labelledby="unitconverter" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content bg-dark text-light">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="unitconverterLabel">Unit Converter</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <a href="https://justin-tsugranes-unit-converter.netlify.app/" target="_blank">
+              <img src="/public/images/project-images/unit-converter.jpg" class="img-fluid" alt="..." />
+            </a>
+          </div>
+          <p class="mx-3">Ui for a Metric Converter</p>
+          <div class="modal-footer">
+            <div class="h2 mb-3">
+              <a href="https://github.com/justinTsugranes/project_unit-converter" target="_blank" class="text-light">
+                <i class="bi bi-github"></i>
+              </a>
+            </div>
+            <div class="h2 mb-3">
+              <a href="https://justin-tsugranes-unit-converter.netlify.app/" target="_blank" class="text-light">
+                <i class="bi bi-arrow-up-circle"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- /MODAL: unit converter -->
+
+    <!-- /Project Modals -->
+    <!-- /Section: Project Modals -->
+
+    <!-- Core JavaScript -->
+    <!-- Bootstrap -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/index.js"></script>
   </body>
 </html>

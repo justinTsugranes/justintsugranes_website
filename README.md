@@ -1,6 +1,4 @@
-# justintsugranes_website
-
-[![Netlify Status](https://api.netlify.com/api/v1/badges/a8ec3265-e384-4caa-a137-408fa79c33e8/deploy-status)](https://app.netlify.com/sites/justintsugranes/deploys)
+# My Personal Website Built with Bootstrap
 
 My personal portfolio site designed and coded from scratch to showcase my skills and past work
 
@@ -11,6 +9,15 @@ Visit the [live site](https://www.justintsugranes.com) deployed through Netlify
 Code hosted on Github
 CI/CD through Netlify
 Contact form connected to Netlify
+
+**BOOTSTRAP 5**
+modals
+lightboxes
+responsive images
+responsive forms
+cards
+bootstrap icons
+image galleries
 
 **JAVASCRIPT**
 smooth scrolling on header

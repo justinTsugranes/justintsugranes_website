@@ -1,0 +1,255 @@
+/* IMPORTS */
+@import url('../node_modules/font-awesome/css/font-awesome.min.css');
+
+/* SKIP LINK */
+
+/* Hide the skip link */
+.skip {
+  position: absolute;
+  left: -10000px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
+/* Show Skip Link when Focused */
+.skip:focus {
+  position: static;
+  width: auto;
+  height: auto;
+}
+
+/*---- Colors ----*/
+:root {
+  --light-blue: hsl(200, 100%, 70%);
+  --light-orange: hsl(35, 100%, 70%);
+  --dark-orange: hsl(5, 100%, 70%);
+}
+
+.light-blue {
+  color: var(--light-blue);
+}
+
+.light-orange {
+  color: var(--light-orange);
+}
+
+.dark-orange {
+  color: var(--dark-orange);
+}
+
+/*---- /colors ----*/
+
+body::before {
+  display: block;
+  content: '';
+  height: 60px;
+}
+
+a,
+a:hover {
+  text-decoration: none;
+}
+
+a:hover {
+  opacity: 0.8;
+}
+
+#contactBtn:hover {
+  cursor: pointer;
+}
+
+/* style navlinks on hover */
+.navbar .navbar-nav .nav-link:hover {
+}
+
+.navbar .navbar-nav .nav-link {
+  transition: all 0.5s;
+}
+
+/*----  Hero Images  ----*/
+
+.masthead {
+  position: relative;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  min-height: 60vh;
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+  filter: grayscale(100%);
+  transition: filter 0.5s;
+}
+
+.masthead:hover {
+  filter: none;
+}
+
+.color-overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+/*---- About Me ----*/
+
+.content-about {
+  position: relative;
+  margin-top: -80px;
+  margin-bottom: 80px;
+  background: #fff;
+  box-shadow: 0 0 20px -6px rgba(0, 0, 0, 0.2);
+}
+
+.content .left {
+  padding-top: 20px;
+}
+
+.content .right {
+  padding: 0;
+}
+
+.about-image {
+  height: 100%;
+  filter: grayscale(100%);
+  transition: filter 0.5s;
+}
+
+.about-image:hover {
+  cursor: pointer;
+  filter: none;
+}
+
+/*----  Project Cards  ----*/
+/* https://codepen.io/donho_zamo/pen/YzXzPXZ */
+
+#cards_landscape_wrap-2 {
+  text-align: center;
+  /* background: #f7f7f7; */
+}
+#cards_landscape_wrap-2 .container {
+  padding-top: 80px;
+  padding-bottom: 100px;
+}
+#cards_landscape_wrap-2 a {
+  text-decoration: none;
+  outline: none;
+}
+
+#cards_landscape_wrap-2 .card-flyer .image-box {
+  background: #ffffff;
+  overflow: hidden;
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+}
+#cards_landscape_wrap-2 .card-flyer .image-box img {
+  -webkit-transition: all 0.9s ease;
+  -moz-transition: all 0.9s ease;
+  -o-transition: all 0.9s ease;
+  -ms-transition: all 0.9s ease;
+  width: 100%;
+  height: 200px;
+}
+#cards_landscape_wrap-2 .card-flyer:hover .image-box img {
+  opacity: 0.7;
+  -webkit-transform: scale(1.15);
+  -moz-transform: scale(1.15);
+  -ms-transform: scale(1.15);
+  -o-transform: scale(1.15);
+  transform: scale(1.15);
+}
+#cards_landscape_wrap-2 .card-flyer .text-box {
+  text-align: center;
+}
+#cards_landscape_wrap-2 .card-flyer .text-box .text-container {
+  padding: 20px 16px 10px 16px;
+}
+#cards_landscape_wrap-2 .card-flyer {
+  background: #ffffff;
+  margin-top: 50px;
+  -webkit-transition: all 0.2s ease-in;
+  -moz-transition: all 0.2s ease-in;
+  -ms-transition: all 0.2s ease-in;
+  -o-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+  box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.4);
+}
+#cards_landscape_wrap-2 .card-flyer:hover {
+  background: #fff;
+  box-shadow: 0px 15px 26px rgba(0, 0, 0, 0.5);
+  -webkit-transition: all 0.2s ease-in;
+  -moz-transition: all 0.2s ease-in;
+  -ms-transition: all 0.2s ease-in;
+  -o-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+  margin-top: 50px;
+}
+#cards_landscape_wrap-2 .card-flyer .text-box p {
+  margin-top: 10px;
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+  font-size: 14px;
+  letter-spacing: 1px;
+  /* color: #000000; */
+}
+#cards_landscape_wrap-2 .card-flyer .text-box h6 {
+  margin-top: 0px;
+  margin-bottom: 4px;
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-family: 'Roboto Black', sans-serif;
+  letter-spacing: 1px;
+  color: var(--light-blue);
+}
+
+/*----  Contact Form  ----*/
+
+/* Anti Spam Bot Field */
+#bot-field {
+  display: none;
+}
+
+/* BOOTSTRAP DEFAULT MEDIA BREAK POINTS */
+
+// Extra small devices (portrait phones, less than 576px)
+// No media query since this is the default in Bootstrap
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) {
+  ...;
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+  ...;
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+  ...;
+}
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+  ...;
+}
+
+@media (max-width: 768px) {
+  .masthead {
+    min-height: 30vh;
+    filter: none;
+  }
+  .about-image {
+    filter: none;
+  }
+  h1 {
+    font-size: calc(1rem + 1.3vw);
+  }
+  h4 {
+    display: none;
+    font-size: calc(0.5rem + 1.3vw);
+  }
+}

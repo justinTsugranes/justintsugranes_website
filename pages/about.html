@@ -1,13 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
-  <!-- Head Data -->
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
     <!-- Description -->
-    <title>About | Justin Tsugranes | Web Developer, Digital Media Creator</title>
+    <title>Home | Justin Tsugranes | Web Developer, Digital Media Creator</title>
     <meta
       name="description"
       content="Web Developer, Digital Media Creator, UI Enthusiast, Musician, and everything in between"
@@ -16,22 +11,20 @@
     <!-- Open Graph Protocol-->
     <meta property="og:title" content="Justin Tsugranes's Personal Website" />
     <meta property="og:type" content="website" />
-    <meta property="og:image" content="public/images/heros/hero-index.png" />
-    <meta property="og:url" content="https://www.justintsugranes.com/about" />
+    <meta property="og:image" content="public/images/headshots/headshot-03.jpg" />
+    <meta property="og:url" content="https://www.justintsugranes.com/" />
     <!--Additional Meta tags-->
     <meta property="og:description" content="Web developer, UI Enthusiast, Musician, and everything in between" />
     <meta property="og:locale" content="en_US" />
     <meta property="og:site_name" content="Justin Tsugranes" />
 
+    <link rel="shortcut icon" href="public/favicon.ico" />
+    <link rel="icon" href="public/favicon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+
     <link rel="shortcut icon" href="/public/favicon.ico" />
     <link rel="icon" href="/public/favicon.svg" type="image/svg+xml" />
     <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
-
-    <!-- Main Styles -->
-    <link rel="stylesheet" href="/styles/index.css" />
-    <link rel="stylesheet" href="/styles/gallery.css" />
-    <link rel="stylesheet" href="/styles/navbar.css" />
-
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -39,148 +32,388 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
       rel="stylesheet"
     />
+    <!-- Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+      crossorigin="anonymous"
+    />
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" />
     <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/cc78883918.js" crossorigin="anonymous"></script>
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="/index.css" />
   </head>
 
-  <!-- HEADER SECTION-->
-  <header class="header">
-    <!-- HEADER SECTION-->
+  <body class="bg-dark">
+    <!-- Section: Header -->
     <header>
       <!-- Accessibility Skip Link -->
       <a href="#main" class="skip">Skip to main content</a>
-      <!-- Top Nav -->
-      <div class="header-main-container">
-        <!-- Navbar -->
-        <div class="header-container flex-row">
-          <!-- Logo -->
-          <div class="header-brand-container">
-            <a class="brand" href="/index.html">Justin Tsugranes</a>
-          </div>
-          <!-- Nav -->
-          <div class="nav-container">
-            <nav class="topnav flex-row" id="myTopnav" aria-label="main">
-              <a href="/pages/projects.html">Projects</a>
-              <a href="/pages/about.html">About </a>
-              <a href="https://justintsugranes.myportfolio.com/work" target="_blank">Adobe Portfolio</a>
-              <a href="/pages/contact.html">Contact </a>
-              <a href="javascript:void(0);" class="nav-icon" onclick="dropDown()">
-                <i class="fa fa-bars"></i>
-              </a>
-            </nav>
-          </div>
-        </div>
-      </div>
+      <!-- Navigation -->
+      <section>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow py-2 fixed-top">
+          <div class="container">
+            <a class="navbar-brand text-uppercase" href="/index.html">Justin Tsugranes</a>
 
-      <!-- Hero-->
-      <section class="hero about-hero">
-        <div class="container hero-text flex-col">
-          <h1 class="title hero-title wrapper"></h1>
-          <h2 class="subtitle hero-subtitle wrapper"></h2>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-display="static"
+              data-bs-toggle="collapse"
+              data-bs-target="#navmenu"
+              aria-controls="navmenu"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse dropdown dropstart text-end" id="navmenu">
+              <ul class="nav navbar-nav ms-auto mb-2 pt-3 mb-lg-0 dropdown-menu-dark">
+                <li class="dropdown-item">
+                  <a class="nav-link text-uppercase" href="/pages/projects.html">Projects</a>
+                </li>
+                <li class="dropdown-item">
+                  <a class="nav-link text-uppercase" href="/pages/about.html">About</a>
+                </li>
+                <li class="dropdown-item">
+                  <div data-bs-toggle="modal" data-bs-target="#contact">
+                    <p class="nav-link text-uppercase">Contact</p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </section>
+      <!-- /Navbar -->
+
+      <!-- Background image -->
+      <section>
+        <div
+          class="masthead"
+          class="p-5 bg-image"
+          style="background-image: url('/public/images/headshots/headshot-03.jpg')"
+        >
+          <div class="color-overlay d-flex justify-content-center align-items-center h-100">
+            <div class="text-white text-center">
+              <h1 class="mb-3">About Me</h1>
+              <h4 class="mb-3 fs-5 light-blue">
+                Just one of those "guitar-playing, web developing, backpacking, road-tripping creative-types"
+              </h4>
+            </div>
+          </div>
         </div>
       </section>
+      <!-- Background image end -->
     </header>
+    <!-- /Section: Header -->
 
-    <!-- MAIN SECTION -->
-    <main>
-      <!-- ABOUT SECTION -->
-      <section class="about">
-        <div class="container flex-col">
-          <div class="about-text-container">
-            <h2 class="title section-title">About Me</h2>
-            <p class="about-text">
-              Just one of those "guitar-playing, web developing, backpacking, road-tripping creative-types"
-            </p>
-          </div>
-        </div>
-      </section>
-
-      <!-- Gallery -->
-      <section class="gallery">
+    <main id="main">
+      <!-- Split Section -->
+      <section>
         <div class="container">
-          <!-- About Gallery -->
-          <div id="gallery">
-            <img class="headshot"  src="/public/images/headshots/headshot-01.jpg" />
-            <img class="headshot"  src="/public/images/headshots/headshot-02.jpg" />
-            <img class="headshot"  src="/public/images/headshots/headshot-03.jpg" />
-            <img class="headshot"  src="/public/images/headshots/headshot-04.jpg" />
-            <img class="headshot"  src="/public/images/headshots/headshot-05.jpg" />
-            <img class="headshot"  src="/public/images/headshots/headshot-06.jpg" />
-            <img class="headshot"  src="/public/images/headshots/headshot-07.jpg" />
-            <img class="headshot"  src="/public/images/headshots/headshot-08.jpg" />
-            <!-- <img src="/public/images/headshots/headshot-09.jpg" /> -->
+          <div class="content-about row">
+            <!-- Left side -->
+            <div class="col-md-6 d-flex flex-column justify-content-center left p-5">
+              <h2 class="light-blue">Justin Tsugranes</h2>
+              <p>
+                I am a frontend web developer with 2 years of experience designing, building, and implementing web
+                applications using JavaScript, JavaScript frameworks (React.js, Next.js), HTML, CSS, and CSS frameworks
+                (Bootstrap).<br /><br />I hold a Master of Arts degree, served 13 years as a member of the US Army Band,
+                and have over 20 years of combined experience working with government entities, Fortune 500 companies,
+                and international organizations across several industries, including media & entertainment, IT, sales,
+                marketing, real estate, and hospitality.
+              </p>
+            </div>
+            <!-- /end left side -->
+
+            <!-- Right Side -->
+            <div class="col-md-6 right d-flex flex-column justify-content-center">
+              <div class="photo-gallery pt-5 pb-5 bg-dark mb-sm-3">
+                <div class="container">
+                  <div class="row">
+                    <div
+                      data-gallery="example-gallery"
+                      class="col-sm-4 mb-3"
+                      data-bs-toggle="modal"
+                      data-bs-target="#modalOne"
+                    >
+                      <img src="/public/images/headshots/headshot-01.jpg" class="img-fluid about-image" />
+                    </div>
+                    <div
+                      data-gallery="example-gallery"
+                      class="col-sm-4 mb-3"
+                      data-bs-toggle="modal"
+                      data-bs-target="#modalTwo"
+                    >
+                      <img src="/public/images/headshots/headshot-02.jpg" class="img-fluid about-image" />
+                    </div>
+                    <div
+                      data-gallery="example-gallery"
+                      class="col-sm-4 mb-3"
+                      data-bs-toggle="modal"
+                      data-bs-target="#modalThree"
+                    >
+                      <img src="/public/images/headshots/headshot-03.jpg" class="img-fluid about-image" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- /end right side -->
           </div>
         </div>
       </section>
 
-      <!-- PRE-FOOTER SECTION-->
-      <section class="pre-footer">
-        <div class="container pre-footer-text flex-col">
-          <h1 class="title pre-footer-title wrapper">I am always looking to connect!</h1>
-          <a
-            class="subtitle pre-footer-subtitle"
-            id="pre-footer-email"
-            href="mailto:justintsugranes@proton.me?subject=Hello!"
-            >justintsugranes@proton.me</a
-          >
+      <!-- Section: Pre-Footer Connect -->
+      <section>
+        <div class="masthead" class="p-5 bg-image" style="background-image: url('/public/images/heros/pre-footer.jpg')">
+          <div class="color-overlay d-flex justify-content-center align-items-center h-100">
+            <div class="container p-5">
+              <div class="row align-items-center justify-content-between">
+                <div class="col-md d-none d-md-block">
+                  <img src="/img/connect.svg" class="img-fluid" alt="" />
+                </div>
+                <div class="col-md d-flex flex-column">
+                  <h2 class="light-blue align-self-sm-center">I'm always looking to connect</h2>
+                  <p class="text-light text-center d-none d-md-block">
+                    Although, I'm currently based in the US, I love making friends and working with teams from all
+                    around the globe.
+                  </p>
+                  <div data-bs-toggle="modal" data-bs-target="#contact" class="d-flex flex-column">
+                    <p class="btn btn-secondary mt-3 align-self-sm-center">Message Me</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
+      <!-- /Section: Pre-Footer -->
+
+      <!-- Section: Footer -->
+      <footer class="p-5 bg-dark text-white text-center position-relative">
+        <div class="container">
+          <h2 class="text-uppercase mb-3 h3 light-blue">Justin Tsugranes</h2>
+          <p class="mb-5">Web Developer, Digital Media Creator</p>
+          <h3 class="text-uppercase h4 light-blue">Get In Touch</h3>
+          <!-- Grid container -->
+          <div class="container-fluid p-4 pb-0">
+            <!-- Section: Social media -->
+            <div class="mb-4">
+              <!-- linkedin -->
+              <a
+                class="btn btn-link btn-floating btn-lg text-light m-1 icon"
+                href="https://www.linkedin.com/in/justintsugranes"
+                target="_blank"
+                role="button"
+                ><i class="fa-brands fa-linkedin fa-lg"></i
+              ></a>
+
+              <!-- github -->
+              <a
+                class="btn btn-link btn-floating btn-lg text-light m-1 icon"
+                href="https://www.github.com/justintsugranes"
+                target="_blank"
+                role="button"
+                ><i class="fa-brands fa-github"></i
+              ></a>
+
+              <!-- codepen -->
+              <a
+                class="btn btn-link btn-floating btn-lg text-light m-1 icon"
+                href="https://codepen.io/justintsugranes"
+                target="_blank"
+                role="button"
+                ><i class="fa-brands fa-codepen"></i
+              ></a>
+
+              <!-- medium -->
+              <a
+                class="btn btn-link btn-floating btn-lg text-light m-1 icon"
+                href="https://justintsugranes.medium.com"
+                target="_blank"
+                role="button"
+                ><i class="fa-brands fa-medium fa-lg"></i
+              ></a>
+
+              <!-- spotify -->
+              <a
+                class="btn btn-link btn-floating btn-lg text-light m-1 icon"
+                href="https://open.spotify.com/artist/4vV18ClJAixgpNfKaJkEmR?si=bOY2nkJXT_esmViVXk6GbA"
+                target="_blank"
+                role="button"
+              >
+                <i class="fa-brands fa-spotify fa-lg"></i>
+              </a>
+
+              <!-- instagram -->
+              <a
+                class="btn btn-link btn-floating btn-lg text-light m-1 icon"
+                href="https://www.instagram.com/justintsugranes"
+                target="_blank"
+                role="button"
+                ><i class="fa-brands fa-instagram fa-lg"></i
+              ></a>
+            </div>
+            <!-- Section: Social media -->
+          </div>
+          <!-- Grid container -->
+
+          <p class="text-secondary">Copyright &copy; 2021 misfitDodo Media</p>
+          <a href="#" class="position-absolute bottom-0 end-0 p-5"
+            ><i class="bi bi-arrow-up-circle h1 light-blue"></i>
+          </a>
+        </div>
+      </footer>
+      <!-- /Section: Footer -->
     </main>
 
-    <!-- FOOTER SECTION-->
-    <footer class="footer">
-      <div class="container flex-col">
-        <!-- Footer Main Text -->
-        <h3 class="title footer-title">Justin Tsugranes</h3>
-        <p class="subtitle footer-subtitle on-background">Web Developer, Digital Media Creator</p>
-        <!-- Footer Social Section -->
-        <div class="social-icons-container flex-col">
-          <a href="pages/contact.html" class="title footer-social-title">Get In Touch</a>
-          <!-- Social Icons -->
-          <div class="icons-container flex-row">
-            <!-- linkedin -->
-            <div class="icon-container">
-              <a href="https://linkedin.com/in/justin-tsugranes" target="_blank" class="social-link">
-                <i class="fa-brands fa-linkedin fa-lg icon"></i>
-              </a>
+    <!-- MODALS -->
+
+    <!-- Contact Modal -->
+    <div class="modal fade" id="contact" tabindex="-1" aria-labelledby="contactLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="contactLabel">Contact</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <p class="lead">Hi! Fill out the form below to send a message directly to my personal email.</p>
+            <form
+              id="contact-form"
+              name="contact"
+              method="POST"
+              data-netlify="true"
+              onSubmit="submit"
+              data-netlify-honeypot="bot-field"
+              action="/pages/success/"
+            >
+              <input id="bot-field" name="bot-field" />
+              <div class="form-floating mb-3 mt-3">
+                <input type="text" class="form-control" id="name" placeholder="Name" name="name" />
+                <label for="name">Name</label>
+              </div>
+              <div class="form-floating mb-3 mt-3">
+                <input type="text" class="form-control" id="email" placeholder="Enter email" name="email" />
+                <label for="email">Email</label>
+              </div>
+              <div class="form-floating mt-3 mb-3">
+                <textarea
+                  type="text"
+                  class="form-control"
+                  id="message"
+                  placeholder="Enter message"
+                  name="message"
+                ></textarea>
+                <label for="message">Message</label>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-primary">Send</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- /Contact Modal -->
+
+    <!-- Modal One-->
+    <div class="modal modal-xl fade" id="modalOne" tabindex="-1" aria-labelledby="textLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content bg-secondary">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5 text-light" id="textLabel">Photo Gallery</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <div class="photo-gallery pt-5 pb-5">
+              <div class="container">
+                <div class="intro pt-5 pb-5">
+                  <h2 class="text-center text-light">Photo Gallery</h2>
+                  <p class="text-center text-light">
+                    Being a great photographer has always been a pursuit of mine. It requires having a great eye for
+                    line, color, perspective, lightning, and finding good subject matter. I enjoy going to hard to reach
+                    spots in order to get great shots.
+                  </p>
+                </div>
+                <div class="row">
+                  <a
+                    href="https://unsplash.it/1200/768.jpg?image=251"
+                    data-toggle="lightbox"
+                    data-gallery="gallery"
+                    class="col-sm-4 mb-3"
+                    size="fullscreen"
+                  >
+                    <img src="https://unsplash.it/600.jpg?image=251" class="img-fluid" />
+                  </a>
+                  <a
+                    href="https://unsplash.it/1200/768.jpg?image=252"
+                    data-toggle="lightbox"
+                    data-gallery="example-gallery"
+                    class="col-sm-4 mb-3"
+                  >
+                    <img src="https://unsplash.it/600.jpg?image=252" class="img-fluid" />
+                  </a>
+                  <a
+                    href="https://unsplash.it/1200/768.jpg?image=253"
+                    data-toggle="lightbox"
+                    data-gallery="example-gallery"
+                    class="col-sm-4 mb-3"
+                  >
+                    <img src="https://unsplash.it/600.jpg?image=253" class="img-fluid" />
+                  </a>
+                </div>
+                <div class="row">
+                  <a
+                    href="https://unsplash.it/1200/768.jpg?image=254"
+                    data-toggle="lightbox"
+                    data-gallery="example-gallery"
+                    class="col-sm-4 mb-3"
+                  >
+                    <img src="https://unsplash.it/600.jpg?image=254" class="img-fluid" />
+                  </a>
+                  <a
+                    href="https://unsplash.it/1200/768.jpg?image=255"
+                    data-toggle="lightbox"
+                    data-gallery="example-gallery"
+                    class="col-sm-4 mb-3"
+                  >
+                    <img src="https://unsplash.it/600.jpg?image=255" class="img-fluid" />
+                  </a>
+                  <a
+                    href="https://unsplash.it/1200/768.jpg?image=256"
+                    data-toggle="lightbox"
+                    data-gallery="example-gallery"
+                    class="col-sm-4 mb-3"
+                  >
+                    <img src="https://unsplash.it/600.jpg?image=256" class="img-fluid" />
+                  </a>
+                </div>
+              </div>
             </div>
-            <!-- github -->
-            <div class="icon-container">
-              <a href="https://github.com/justintsugranes" target="_blank" class="social-link"
-                ><i class="fa-brands fa-github fa-lg icon"></i>
-              </a>
-            </div>
-            <!-- medium -->
-            <div class="icon-container">
-              <a href="https://justintsugranes.medium.com/" target="_blank" class="social-link">
-                <i class="fa-brands fa-medium fa-lg icon"></i>
-              </a>
-            </div>
-            <!-- spotify -->
-            <div class="icon-container">
-              <a href="https://open.spotify.com/artist/4vV18ClJAixgpNfKaJkEmR" target="_blank" class="social-link"
-                ><i class="fa-brands fa-spotify fa-lg icon"></i>
-              </a>
-            </div>
-            <!-- instagram -->
-            <div class="icon-container">
-              <a href="https://instagram.com/justintsugranes" target="_blank" class="social-link"
-                ><i class="fa-brands fa-instagram fa-lg icon"></i>
-              </a>
+            <div class="modal-footer">
+              <!-- footer content -->
             </div>
           </div>
         </div>
-
-        <!-- Footer Terms, Conditions, and Policies Section-->
-        <div class="container flex-row">
-          <p class="policies-text font-sm wrapper">Copyright 2022 misfitDodo Media. All Rights Reserved</p>
-        </div>
       </div>
-    </footer>
+    </div>
+    <!-- /Modal One -->
 
-    <!-- JAVASCRIPT-->
-    <!-- <script src="js/scripts.js"></script> -->
-    <script src="/js/navbar.js"></script>
-    <script src="/js/gallery.js"></script>
+    <!-- Core JavaScript -->
+    <!-- Bootstrap -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+      crossorigin="anonymous"
+    ></script>
+    <!-- https://trvswgnr.github.io/bs5-lightbox/ -->
+    <script src="https://cdn.jsdelivr.net/npm/bs5-lightbox@1.8.2/dist/index.bundle.min.js"></script>
+    <script src="js/index.js"></script>
   </body>
 </html>
