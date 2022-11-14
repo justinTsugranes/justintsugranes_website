@@ -206,6 +206,10 @@ a:hover {
   color: var(--light-blue);
 }
 
+.key-tech-title {
+  margin-bottom: 0.35em;
+}
+
 /*----  Contact Form  ----*/
 
 /* Anti Spam Bot Field */
