@@ -25,7 +25,7 @@ export default function ContactForm() {
         id="contact-form"
         name="contact"
         method="POST"
-        netlify
+        // netlify
         data-netlify="true"
         data-netlify-honeypot="bot-field"
         data-netlify-recaptcha="true"

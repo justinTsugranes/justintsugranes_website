@@ -1,4 +1,5 @@
 import React from 'react';
+// import { Link } from 'react-router-dom';
 import { Container, Row, Col } from 'react-bootstrap';
 import userData from '../constants/data.js';
 import LinkedInIcon from './icons/LinkedInIcon.js';
@@ -9,7 +10,11 @@ import Spotify from './icons/Spotify.js';
 import InstagramIcon from './icons/InstagramIcon.js';
 
 export default function Footer() {
-  const { name, designation, linkedin, github, codepen, medium, spotify, instagram } = userData;
+  const {
+    name,
+    designation,
+    socialLinks: { linkedin, github, codepen, medium, spotify, instagram }
+  } = userData;
   return (
     <Container fluid className="p-0">
       <Col className="p-5 bg-dark text-white text-center position-relative">
