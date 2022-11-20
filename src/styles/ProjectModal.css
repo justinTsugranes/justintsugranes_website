@@ -1,0 +1,11 @@
+/* TODO can this move to global modal styles? */
+#modal-body {
+  border: none;
+  margin: 0;
+  border-radius: 0;
+}
+
+/* TODO can you use inline bootstrap styles? */
+.key-tech-title {
+  margin-bottom: 0.35em;
+}

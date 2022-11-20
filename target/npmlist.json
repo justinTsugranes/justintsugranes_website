@@ -1,0 +1,20 @@
+{
+  "version": "0.1.0",
+  "name": "my-app",
+  "dependencies": {
+    "@fortawesome/fontawesome-svg-core": { "version": "6.2.0" },
+    "@testing-library/jest-dom": { "version": "5.16.5" },
+    "@testing-library/react": { "version": "13.4.0" },
+    "@testing-library/user-event": { "version": "13.5.0" },
+    "@types/jest": { "version": "29.2.3" },
+    "@types/node": { "version": "18.11.9" },
+    "@types/react-dom": { "version": "18.0.9" },
+    "@types/react": { "version": "18.0.25" },
+    "react-dom": { "version": "18.2.0" },
+    "react-router-dom": { "version": "6.4.3" },
+    "react-scripts": { "version": "5.0.1" },
+    "react": { "version": "18.2.0" },
+    "typescript": { "version": "4.8.4" },
+    "web-vitals": { "version": "2.1.4" }
+  }
+}
