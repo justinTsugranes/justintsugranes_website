@@ -29,8 +29,8 @@ const userData = {
   //     company: 'misfitDodo Media',
   //     year: '2021',
   //     companyLink: '',
-  //     desc: ''
-  //   }
+  //     description: ''
+  //   },
   // ],
 
   // resumeUrl:
