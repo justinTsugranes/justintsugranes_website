@@ -1,6 +1,6 @@
-/* body {
+body {
   background: hsl(210, 11%, 15%);
-} */
+}
 
 body::before {
   display: block;
