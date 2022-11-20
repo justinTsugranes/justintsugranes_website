@@ -20,7 +20,6 @@ export default function ContactForm() {
       <Form
         noValidate
         validated={validated}
-        onClick={handleSubmit}
         onSubmit="submit"
         id="contact-form"
         name="contact"
