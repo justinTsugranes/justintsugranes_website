@@ -1,23 +1,7 @@
 /*----  Project Cards  ----*/
 /* https://codepen.io/donho_zamo/pen/YzXzPXZ */
 
-.projCardImg {
-  -webkit-transition: all 0.9s ease;
-  -moz-transition: all 0.9s ease;
-  -o-transition: all 0.9s ease;
-  -ms-transition: all 0.9s ease;
-  width: 100%;
-  height: 250px;
-  /* overflow: hidden; */
-}
-.projCardImg:hover {
-  -webkit-transform: scale(1.15);
-  -moz-transform: scale(1.15);
-  -ms-transform: scale(1.15);
-  -o-transform: scale(1.15);
-  /* opacity: 0.7; */
-}
-.card-container {
+.proj-card-container {
   -webkit-transition: all 0.2s ease-in;
   -moz-transition: all 0.2s ease-in;
   -ms-transition: all 0.2s ease-in;
@@ -27,7 +11,7 @@
   height: 100%;
   overflow: hidden;
 }
-.card-container:hover {
+.proj-card-container:hover {
   -webkit-transition: all 0.2s ease-in;
   -moz-transition: all 0.2s ease-in;
   -ms-transition: all 0.2s ease-in;
@@ -36,10 +20,19 @@
   box-shadow: 0px 15px 26px rgba(0, 0, 0, 0.5);
   cursor: pointer;
 }
-
-/* .project-title {
-  font-weight: bold;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  color: var(--light-blue);
-} */
+.proj-card-img {
+  -webkit-transition: all 0.9s ease;
+  -moz-transition: all 0.9s ease;
+  -o-transition: all 0.9s ease;
+  -ms-transition: all 0.9s ease;
+  width: 100%;
+  height: 250px;
+  /* overflow: hidden; */
+}
+.proj-card-img:hover {
+  -webkit-transform: scale(1.15);
+  -moz-transform: scale(1.15);
+  -ms-transform: scale(1.15);
+  -o-transform: scale(1.15);
+  /* opacity: 0.7; */
+}

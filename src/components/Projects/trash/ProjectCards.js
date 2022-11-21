@@ -1,16 +1,17 @@
 import React from 'react';
-import '../styles/ProjectCards.css';
+// import '../styles/ProjectCards.css';
+import '../../../styles/ProjectCards.css';
 import { Container, CardGroup, Row, Col } from 'react-bootstrap';
-import CrashCourses from './Projects/CrashCourses';
-import FrontendBootcamp from './Projects/FrontendBootcamp';
-import LandingPage from './Projects/LandingPage';
-import MegaMask from './Projects/MegaMask';
-import NextTailwindBlog from './Projects/NextTailwindBlog';
-import PasswordGenerator from './Projects/PasswordGenerator';
-import ReactTodo from './Projects/ReactTodo';
-import Recipes from './Projects/BreakfastRecipes';
+import CrashCourses from '../CrashCourses';
+import FrontendBootcamp from '../FrontendBootcamp';
+import LandingPage from '../LandingPage';
+import MegaMask from '../MegaMask';
+import NextTailwindBlog from '../NextTailwindBlog';
+import PasswordGenerator from '../PasswordGenerator';
+import ReactTodo from '../ReactTodo';
+import Recipes from '../BreakfastRecipes';
 
-export default function ProjectCards() {
+export default function OldProjectCards() {
   return (
     <>
       <CardGroup>

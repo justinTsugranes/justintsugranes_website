@@ -2,7 +2,8 @@ import React from 'react';
 import '../styles/App.css';
 import { Container, Row, Col } from 'react-bootstrap';
 import ProjectsShowcase from '../components/ProjectsShowcase';
-import ProjectCards from '../components/Project-Cards';
+// import ProjectCards from '../components/ProjectCards';
+import OldProjectCards from '../components/Projects/trash/ProjectCards.js';
 
 export default function Projects() {
   return (
@@ -18,7 +19,8 @@ export default function Projects() {
             <h2 className="d-sm-none d-lg-block light-blue text-center">Coding Projects</h2>
           </Row>
           <Row>
-            <ProjectCards />
+            {/* <ProjectCards /> */}
+            <OldProjectCards />
           </Row>
         </Col>
       </Row>

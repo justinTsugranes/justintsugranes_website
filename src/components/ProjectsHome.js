@@ -2,7 +2,8 @@ import React from 'react';
 import '../styles/ProjectCards.css';
 import { Container, Row, Col, Button } from 'react-bootstrap';
 import { useNavigate } from 'react-router-dom';
-import ProjectCards from './Project-Cards';
+// import ProjectCards from './ProjectCards';
+import OldProjectCards from './Projects/trash/ProjectCards';
 
 export default function ProjectCardsHome() {
   const navigate = useNavigate();
@@ -12,7 +13,8 @@ export default function ProjectCardsHome() {
         <h2 className="light-blue">Some of my recent projects</h2>
       </Row>
       <Row className="my-4">
-        <ProjectCards />
+        {/* <ProjectCards /> */}
+        <OldProjectCards />
       </Row>
       <Row>
         <Col>

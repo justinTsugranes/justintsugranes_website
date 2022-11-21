@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { CloseButton, Card, Modal, Container, Col, Row, Image } from 'react-bootstrap';
-import projectData from '../../constants/ProjectData';
+import projectData from '../../constants/ProjectDataObject';
 import DemoIcon from '../icons/DemoIcon';
 import GithubIcon from '../icons/GithubIcon';
 
@@ -14,8 +14,8 @@ export default function BreakfastRecipes() {
   return (
     <>
       <Container fluid className="m-0 p-0">
-        <Card className="card-container border-0" onClick={handleShow}>
-          <Image fluid variant="top" className="projCardImg hover-zoom" src={imageUrl} alt="" />
+        <Card className="proj-card-container border-0" onClick={handleShow}>
+          <Image fluid variant="top" className="proj-card-img hover-zoom" src={imageUrl} alt="" />
           {/* <Card.Body className="project-title d-flex flex-column justify-content-center align-content-center">
           <Card.Title>{title}</Card.Title>
           </Card.Body> */}
