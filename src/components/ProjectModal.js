@@ -1,28 +1,29 @@
-import React, { useState } from 'react';
+/* eslint-disable react/prop-types */
+import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { CloseButton, Modal, Container, Col, Row, Image } from 'react-bootstrap';
-import projectData from '../../constants/ProjectData';
-import DemoIcon from '../icons/DemoIcon';
-import GithubIcon from '../icons/GithubIcon';
+// import projectData from '../../constants/ProjectData';
+import projectData from '../constants/ProjectData.json';
+import DemoIcon from '../components/icons/DemoIcon';
 
-export default function ProjectModal() {
+import GithubIcon from '../components/icons/GithubIcon';
+
+const ProjectModal = (props) => {
   const { title, descr, tech, demo, repo, imageUrl } = projectData.recipes;
-  const [show, setShow] = useState(false);
-  const handleClose = () => setShow(false);
-  // const handleShow = () => setShow(true);
 
+  console.log('PROPS in MODAL', props);
   return (
     <>
       <Modal
-        show={show}
-        onHide={handleClose}
+        show={props.show}
+        cancel={props.close}
         size="lg"
         centered
         aria-labelledby="contained-project-modal">
         <Container fluid className="border-0 m-0 p-0 bg-dark">
           <Modal.Header className="text-light border-0">
             <Modal.Title>{title}</Modal.Title>
-            <CloseButton variant="white" aria-label="Close" onClick={handleClose} />
+            <CloseButton variant="white" aria-label="Close" onClick={props.close} />
           </Modal.Header>
 
           <Modal.Body className="modal-lg text-light" id="modal-body">
@@ -58,4 +59,6 @@ export default function ProjectModal() {
       </Modal>
     </>
   );
-}
+};
+
+export default ProjectModal;

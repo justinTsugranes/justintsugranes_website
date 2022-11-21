@@ -1,8 +1,8 @@
 import React from 'react';
 import { Container, Row, Col, Button } from 'react-bootstrap';
 import ContactModal from './ContactModal';
-import PreFooterImg from '../assets/img/heros/pre-footer.jpg';
-import PreFooterGraphic from '../assets/img/svg/connect.svg';
+import PreFooterImg from '../img/heros/pre-footer.jpg';
+import PreFooterGraphic from '../img/svg/connect.svg';
 
 export default function PreFooter() {
   return (

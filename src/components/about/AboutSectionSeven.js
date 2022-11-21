@@ -1,23 +1,23 @@
 import React from 'react';
 import { Container, Row } from 'react-bootstrap';
 // Import Swiper React components
-import { Swiper, SwiperSlide } from 'swiper/react';
+// import { Swiper, SwiperSlide } from 'swiper/react';
 // Import Swiper styles
 import '../../styles/MySwiper.css';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 // import required modules
-import { Navigation, Pagination, Mousewheel, Keyboard } from 'swiper';
+// import { Navigation, Pagination, Mousewheel, Keyboard } from 'swiper';
 /* import projects for swiper */
-import CrashCourses from '../Projects/CrashCourses';
-import FrontendBootcamp from '../Projects/FrontendBootcamp';
-import LandingPage from '../Projects/LandingPage';
-import MegaMask from '../Projects/MegaMask';
-import NextTailwindBlog from '../Projects/NextTailwindBlog';
-import PasswordGenerator from '../Projects/PasswordGenerator';
-import ReactTodo from '../Projects/ReactTodo';
-import Recipes from '../Projects/BreakfastRecipes';
+// import CrashCourses from '../Projects/CrashCourses';
+// import FrontendBootcamp from '../Projects/FrontendBootcamp';
+// import LandingPage from '../Projects/LandingPage';
+// import MegaMask from '../Projects/MegaMask';
+// import NextTailwindBlog from '../Projects/NextTailwindBlog';
+// import PasswordGenerator from '../Projects/PasswordGenerator';
+// import ReactTodo from '../Projects/ReactTodo';
+// import Recipes from '../Projects/BreakfastRecipes';
 
 export default function AboutSectionSeven() {
   return (
@@ -26,7 +26,7 @@ export default function AboutSectionSeven() {
         <Row>
           <h2 className="text-light mb-5 text-center">Always building things</h2>
         </Row>
-        <Row>
+        {/* <Row>
           <Swiper
             slidesPerView={1}
             spaceBetween={10}
@@ -83,7 +83,7 @@ export default function AboutSectionSeven() {
               <Recipes />
             </SwiperSlide>
           </Swiper>
-        </Row>
+        </Row> */}
       </Container>
     </>
   );

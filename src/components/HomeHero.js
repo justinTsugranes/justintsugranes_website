@@ -1,7 +1,7 @@
 import React from 'react';
 import '../styles/Hero.css';
 import { Row, Container, Col } from 'react-bootstrap';
-import heroImage from '../assets/img/heros/hero-index.png';
+import heroImage from '../img/heros/hero-index.png';
 
 export default function Hero() {
   return (

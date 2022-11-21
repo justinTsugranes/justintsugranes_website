@@ -9,14 +9,14 @@ import 'swiper/css/pagination';
 
 import '../styles/MySwper.css';
 // Import Image
-import Headshot01 from '../assets/img/headshots/headshot-01.jpg';
-import Headshot02 from '../assets/img/headshots/headshot-02.jpg';
-import Headshot03 from '../assets/img/headshots/headshot-03.jpg';
-import Headshot04 from '../assets/img/headshots/headshot-04.jpg';
-import Headshot05 from '../assets/img/headshots/headshot-05.jpg';
-import Headshot06 from '../assets/img/headshots/headshot-06.jpg';
-import Headshot07 from '../assets/img/headshots/headshot-07.jpg';
-import Headshot08 from '../assets/img/headshots/headshot-08.jpg';
+import Headshot01 from '../public/img/headshots/headshot-01.jpg';
+import Headshot02 from '../public/img/headshots/headshot-02.jpg';
+import Headshot03 from '../public/img/headshots/headshot-03.jpg';
+import Headshot04 from '../public/img/headshots/headshot-04.jpg';
+import Headshot05 from '../public/img/headshots/headshot-05.jpg';
+import Headshot06 from '../public/img/headshots/headshot-06.jpg';
+import Headshot07 from '../public/img/headshots/headshot-07.jpg';
+import Headshot08 from '../public/img/headshots/headshot-08.jpg';
 import { Container } from 'react-bootstrap';
 
 export default function SwiperCube() {

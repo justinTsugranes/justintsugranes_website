@@ -2,7 +2,7 @@ import React from 'react';
 import userData from '../../constants/data.js';
 import { Container, Row, Col } from 'react-bootstrap';
 import { Parallax } from 'react-parallax';
-import Headshot01 from '../../assets/img/headshots/headshot-01.jpg';
+import Headshot01 from '../../img/headshots/headshot-01.jpg';
 
 const AboutSectionFour = () => {
   return (
