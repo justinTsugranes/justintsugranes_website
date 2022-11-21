@@ -1,65 +1,47 @@
+// eslint-disable-next-line no-unused-vars
 import React, { useState } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { Image, Container, Col, Card, Modal, CloseButton } from 'react-bootstrap';
-import data from '../../constants/ProjectData';
-import GithubIcon from '../icons/GithubIcon';
-import DemoIcon from '../icons/DemoIcon';
+import { CardGroup, Container, Card, Row, Image } from 'react-bootstrap';
+import data from './Data';
+// import GithubIcon from '../icons/GithubIcon';
+// import DemoIcon from '../icons/DemoIcon';
 
-const { title, descr, tech, demo, repo, imageUrl } = data;
-const [show, setShow] = useState(false);
-const handleClose = () => setShow(false);
-const handleShow = () => setShow(true);
+// const { title } = data;
+// const [show, setShow] = useState(false);
+// const handleClose = () => setShow(false);
+// const handleShow = () => setShow(true);
 
-export default function NewTest() {
+export default function ProjectCard() {
   return (
-    <Col xs={12} md={4} lg={3}>
-      {data.map((project) => (
-        <ProjectCard key={project.id} project={project} />
-      ))}
-    </Col>
+    <Container fluid className="p-0 d-flex justify-content-evenly">
+      <CardGroup xs={12} md={6} lg={4}>
+        <Row
+          sm={1}
+          md={3}
+          lg={5}
+          className="d-flex justify-content-evenly text-center gap-3 gy-2 my-5">
+          {data.map(({ title, imageUrl }, index) => {
+            return (
+              <Container className="mt-sm-1" fluid key={index}>
+                <Container fluid className="m-0 p-0">
+                  <Card className="card-container border-0">
+                    <Image
+                      fluid
+                      variant="top"
+                      className="projCardImg hover-zoom"
+                      src={imageUrl}
+                      alt=""
+                    />
+                    <Card.Body className="project-title d-flex flex-column justify-content-center align-content-center">
+                      <Card.Title>{title}</Card.Title>
+                    </Card.Body>
+                  </Card>
+                </Container>
+              </Container>
+            );
+          })}
+        </Row>
+      </CardGroup>
+    </Container>
   );
 }
-
-const ProjectCard = () => {
-  return (
-    <>
-      <Card className="card-container image-box border-0" onClick={handleShow}>
-        <Image fluid className="projCardImg hover-zoom" src={imageUrl} alt="" />
-        <Card.Body className="project-title d-flex flex-column justify-content-center align-content-center">
-          <Card.Title>{title}</Card.Title>
-        </Card.Body>
-      </Card>
-
-      <Modal show={show} onHide={handleClose} size="lg" centered>
-        <Container fluid className="border-0 m-0 p-0 bg-dark">
-          <Modal.Header className="text-light border-0">
-            <Modal.Title>{title}</Modal.Title>
-            <CloseButton variant="white" aria-label="Close" onClick={handleClose} />
-          </Modal.Header>
-
-          <Modal.Body className="modal-lg text-light" id="modal-body">
-            <a href={demo} target="_blank" rel="noreferrer">
-              <img src={imageUrl} className="img-fluid" alt="..." />
-            </a>
-            <p className="mt-1">{descr}</p>
-            <h5 className="key-tech-title text-warning">Key Tech</h5>
-            <p>{tech}</p>
-          </Modal.Body>
-
-          <Modal.Footer className="border-0">
-            <div className="h2 mb-3">
-              <a href={repo} target="_blank" rel="noreferrer" className="text-light">
-                <GithubIcon />
-              </a>
-            </div>
-            <div className="h2 mb-3">
-              <a href={demo} target="_blank" rel="noreferrer" className="text-light">
-                <DemoIcon />
-              </a>
-            </div>
-          </Modal.Footer>
-        </Container>
-      </Modal>
-    </>
-  );
-};
