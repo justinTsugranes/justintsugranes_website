@@ -14,12 +14,12 @@ export default function ProjectCards() {
   return (
     <>
       <CardGroup>
-        <Container className="my-5 mt-sm-1" fluid>
+        <Container className="mt-sm-1" fluid>
           <Row
             sm={1}
             md={3}
             lg={5}
-            className="d-flex justify-content-evenly text-center gap-3 gy-2">
+            className="d-flex justify-content-evenly text-center gap-3 gy-2 my-5">
             <Col className="col-sm p-0">
               <FrontendBootcamp />
             </Col>

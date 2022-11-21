@@ -1,5 +1,6 @@
 import React from 'react';
 import '../styles/About.css';
+import { Container } from 'react-bootstrap';
 import AboutSectionOne from '../components/about/AboutSectionOne';
 import AboutSectionTwo from '../components/about/AboutSectionTwo';
 import AboutSectionThree from '../components/about/AboutSectionThree';
@@ -10,7 +11,7 @@ import AboutSectionSeven from '../components/about/AboutSectionSeven';
 
 export default function About() {
   return (
-    <>
+    <Container fluid className="p-0">
       <AboutSectionOne />
       <AboutSectionTwo />
       <AboutSectionThree />
@@ -18,6 +19,6 @@ export default function About() {
       {/* <AboutSectionFive /> */}
       <AboutSectionSix />
       <AboutSectionSeven />
-    </>
+    </Container>
   );
 }

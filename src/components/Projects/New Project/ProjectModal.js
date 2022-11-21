@@ -13,7 +13,12 @@ export default function ProjectModal() {
 
   return (
     <>
-      <Modal show={show} onHide={handleClose} size="lg" centered>
+      <Modal
+        show={show}
+        onHide={handleClose}
+        size="lg"
+        centered
+        aria-labelledby="contained-project-modal">
         <Container fluid className="border-0 m-0 p-0 bg-dark">
           <Modal.Header className="text-light border-0">
             <Modal.Title>{title}</Modal.Title>

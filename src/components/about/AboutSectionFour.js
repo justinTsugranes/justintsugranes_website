@@ -6,7 +6,7 @@ import Headshot01 from '../../assets/img/headshots/headshot-01.jpg';
 
 const AboutSectionFour = () => {
   return (
-    <Container className="section-container" fluid>
+    <Container className="section-container p-0" fluid>
       <Row>
         <Col>
           <Parallax

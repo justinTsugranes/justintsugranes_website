@@ -13,12 +13,14 @@ export default function NextTailwindBlog() {
 
   return (
     <>
-      <Card className="card-container image-box border-0" onClick={handleShow}>
-        <Image fluid className="projCardImg hover-zoom" src={imageUrl} alt="" />
-        <Card.Body className="project-title d-flex flex-column justify-content-center align-content-center">
+      <Container fluid className="m-0 p-0">
+        <Card className="card-container border-0" onClick={handleShow}>
+          <Image fluid variant="top" className="projCardImg hover-zoom" src={imageUrl} alt="" />
+          {/* <Card.Body className="project-title d-flex flex-column justify-content-center align-content-center">
           <Card.Title>{title}</Card.Title>
-        </Card.Body>
-      </Card>
+          </Card.Body> */}
+        </Card>
+      </Container>
 
       <Modal show={show} onHide={handleClose} size="lg" centered>
         <Container fluid className="border-0 m-0 p-0 bg-dark">

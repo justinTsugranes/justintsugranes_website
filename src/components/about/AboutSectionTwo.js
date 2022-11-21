@@ -5,7 +5,7 @@ import heroAbout from '../../assets/img/heros/hero-about.jpg';
 
 const AboutSectionTwo = () => {
   return (
-    <Container className="section-container" fluid>
+    <Container fluid className="section-container p-0">
       <Parallax bgImage={heroAbout} bgImageAlt="" strength={400}>
         <div style={{ height: '750px' }} />
       </Parallax>

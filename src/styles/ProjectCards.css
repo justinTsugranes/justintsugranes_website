@@ -1,19 +1,6 @@
 /*----  Project Cards  ----*/
 /* https://codepen.io/donho_zamo/pen/YzXzPXZ */
 
-.card-content {
-  visibility: hidden;
-}
-
-.card-content:hover {
-  visibility: visible;
-}
-
-.image-box {
-  overflow: hidden;
-  /* box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.5); */
-}
-
 .projCardImg {
   -webkit-transition: all 0.9s ease;
   -moz-transition: all 0.9s ease;
@@ -21,7 +8,7 @@
   -ms-transition: all 0.9s ease;
   width: 100%;
   height: 250px;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 .projCardImg:hover {
   -webkit-transform: scale(1.15);
@@ -37,22 +24,22 @@
   -o-transition: all 0.2s ease-in;
   transition: all 0.2s ease-in;
   box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.5);
-  /* border-radius: 5px; */
   height: 100%;
-  cursor: pointer;
+  overflow: hidden;
 }
 .card-container:hover {
-  box-shadow: 0px 15px 26px rgba(0, 0, 0, 0.5);
   -webkit-transition: all 0.2s ease-in;
   -moz-transition: all 0.2s ease-in;
   -ms-transition: all 0.2s ease-in;
   -o-transition: all 0.2s ease-in;
   transition: all 0.2s ease-in;
+  box-shadow: 0px 15px 26px rgba(0, 0, 0, 0.5);
+  cursor: pointer;
 }
 
-.card-container .card-title {
+/* .project-title {
   font-weight: bold;
   text-transform: uppercase;
   letter-spacing: 1px;
   color: var(--light-blue);
-}
+} */

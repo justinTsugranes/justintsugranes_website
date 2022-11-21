@@ -5,15 +5,13 @@ import Headshot03 from '../../assets/img/headshots/headshot-03.jpg';
 
 const AboutSectionSix = () => {
   return (
-    <>
-      <Container className="section-container" fluid>
-        <Row>
-          <Parallax bgImage={Headshot03} bgImageAlt="" strength={500}>
-            <div style={{ height: '750px' }} />
-          </Parallax>
-        </Row>
-      </Container>
-    </>
+    <Container className="section-container p-0 m-0" fluid>
+      <Row>
+        <Parallax bgImage={Headshot03} bgImageAlt="" strength={500}>
+          <div style={{ height: '750px' }} />
+        </Parallax>
+      </Row>
+    </Container>
   );
 };
 
