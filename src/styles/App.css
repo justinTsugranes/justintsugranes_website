@@ -211,4 +211,7 @@ Image,
   .about-image {
     filter: none;
   }
+  .projCardImg {
+    height: 500px;
+  }
 }

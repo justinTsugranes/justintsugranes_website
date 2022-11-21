@@ -17,68 +17,79 @@ import EthereumIcon from './icons/EthereumIcon';
 export default function ProjectsShowcase() {
   return (
     <>
-      <section className="bg-dark text-light p-5 p-lg-0 pt-lg-5 text-center text-sm-start d-none d-md-block">
-        <Container>
-          <Row className="d-sm-flex align-items-center justify-content-around">
-            <Col>
-              <Row>
-                <h1>
-                  <span className="text-warning">Some Tech</span> I&apos;ve Worked With
-                </h1>
-              </Row>
-              <Row>
-                <Col className="col-sm-offset-1 col-xs-12 col-sm-6 col-md-10">
-                  <Row className="row mt-3 text-center">
-                    <Row>
-                      <Col>
-                        <ReactIcon />
-                      </Col>
-                      <Col>
-                        <JsIcon />
-                      </Col>
-                      <Col>
-                        <NodeIcon />
-                      </Col>
-                      <Col>
-                        <HtmlIcon />
-                      </Col>
-                    </Row>
-                    <Row>
-                      <Col>
-                        <CssIcon />
-                      </Col>
-                      <Col>
-                        <BootstrapIcon />
-                      </Col>
-                      <Col>
-                        <SassIcon />
-                      </Col>
-                      <Col>
-                        <GitIcon />
-                      </Col>
-                    </Row>
-                    <Row>
-                      <Col>
-                        <FigmaIcon />
-                      </Col>
-                      <Col>
-                        <SalesforceIcon />
-                      </Col>
-                      <Col>
-                        <WordpressIcon />
-                      </Col>
-                      <Col>
-                        <EthereumIcon />
-                      </Col>
-                    </Row>
+      <Container className="bg-dark text-light p-5 p-lg-0 pt-lg-5 text-center text-md-center" fluid>
+        {/* main row */}
+        <Row className="d-sm-flex align-items-center justify-content-around">
+          {/* main column 1 */}
+          <Col>
+            {/* heading row */}
+            <Row className="text-sm-center">
+              {/* title on small-medium screens */}
+              <h1 className="text-warning d-lg-none">Coding Projects</h1>
+              {/* title on large screens */}
+              <h1 className="d-sm-none d-lg-block">
+                <span className="text-warning">Some Tech</span>
+                <br></br> I&apos;ve Worked With
+              </h1>
+            </Row>
+            {/* icon row: hide on sm-md screens */}
+            <Row className="d-none d-lg-block px-5">
+              {/* main icon column */}
+              <Col className="d-flex justify-content-evenly">
+                <Row className="mt-3">
+                  <Row>
+                    <Col>
+                      <ReactIcon />
+                    </Col>
+                    <Col>
+                      <JsIcon />
+                    </Col>
+                    <Col>
+                      <NodeIcon />
+                    </Col>
+                    <Col>
+                      <HtmlIcon />
+                    </Col>
                   </Row>
-                </Col>
-              </Row>
-            </Col>
-            <Image className="img-fluid w-50 pt-5 d-none d-sm-block" src={TechImg} alt=""></Image>
-          </Row>
-        </Container>
-      </section>
+                  <Row>
+                    <Col>
+                      <CssIcon />
+                    </Col>
+                    <Col>
+                      <BootstrapIcon />
+                    </Col>
+                    <Col>
+                      <SassIcon />
+                    </Col>
+                    <Col>
+                      <GitIcon />
+                    </Col>
+                  </Row>
+                  <Row>
+                    <Col>
+                      <FigmaIcon />
+                    </Col>
+                    <Col>
+                      <SalesforceIcon />
+                    </Col>
+                    <Col>
+                      <WordpressIcon />
+                    </Col>
+                    <Col>
+                      <EthereumIcon />
+                    </Col>
+                  </Row>
+                </Row>
+              </Col>
+            </Row>
+            {/* end icon row */}
+          </Col>
+          {/* main column 2 */}
+          <Col>
+            <Image className="img-fluid w-75 pt-5" src={TechImg} alt="..."></Image>
+          </Col>
+        </Row>
+      </Container>
     </>
   );
 }

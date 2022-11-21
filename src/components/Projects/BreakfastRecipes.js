@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { CloseButton, Card, Modal, Container } from 'react-bootstrap';
+import { CloseButton, Card, Modal, Container, Col, Row, Image } from 'react-bootstrap';
 import projectData from '../../constants/ProjectData';
 import DemoIcon from '../icons/DemoIcon';
 import GithubIcon from '../icons/GithubIcon';
@@ -13,15 +13,11 @@ export default function BreakfastRecipes() {
 
   return (
     <>
-      <Card className="card-container border-0">
-        <div className="" onClick={handleShow}>
-          <div className="image-box">
-            <Card.Img className="projCardImg" src={imageUrl} alt="" />
-          </div>
-          <Card.Body className="project-title text-box text-container d-flex flex-column justify-content-center">
-            <h6>{title}</h6>
-          </Card.Body>
-        </div>
+      <Card className="card-container image-box border-0" onClick={handleShow}>
+        <Image fluid className="projCardImg hover-zoom" src={imageUrl} alt="" />
+        <Card.Body className="project-title d-flex flex-column justify-content-center align-content-center">
+          <Card.Title>{title}</Card.Title>
+        </Card.Body>
       </Card>
 
       <Modal show={show} onHide={handleClose} size="lg" centered>
@@ -32,25 +28,33 @@ export default function BreakfastRecipes() {
           </Modal.Header>
 
           <Modal.Body className="modal-lg text-light" id="modal-body">
-            <a href={demo} target="_blank" rel="noreferrer">
-              <img src={imageUrl} className="img-fluid" alt="..." />
-            </a>
-            <p className="mt-1">{descr}</p>
-            <h5 className="key-tech-title text-warning">Key Tech</h5>
-            <p>{tech}</p>
+            <Col>
+              <Row>
+                <a href={demo} target="_blank" rel="noreferrer">
+                  <Image fluid src={imageUrl} alt="..." />
+                </a>
+              </Row>
+              <Row>
+                <p className="my-4">{descr}</p>
+                <h5 className="key-tech-title text-warning">Key Tech</h5>
+                <p className="mb-0">{tech}</p>
+              </Row>
+            </Col>
           </Modal.Body>
 
           <Modal.Footer className="border-0">
-            <div className="h2 mb-3">
-              <a href={repo} target="_blank" rel="noreferrer" className="text-light">
-                <GithubIcon />
-              </a>
-            </div>
-            <div className="h2 mb-3">
-              <a href={demo} target="_blank" rel="noreferrer" className="text-light">
-                <DemoIcon />
-              </a>
-            </div>
+            <Row>
+              <Col className="h2 mb-3">
+                <a href={repo} target="_blank" rel="noreferrer" className="text-light">
+                  <GithubIcon />
+                </a>
+              </Col>
+              <Col className="h2 mb-3">
+                <a href={demo} target="_blank" rel="noreferrer" className="text-light">
+                  <DemoIcon />
+                </a>
+              </Col>
+            </Row>
           </Modal.Footer>
         </Container>
       </Modal>

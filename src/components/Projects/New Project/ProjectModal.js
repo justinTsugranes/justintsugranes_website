@@ -1,25 +1,18 @@
 import React, { useState } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { Image, Container, Card, Modal, Col, Row, CloseButton } from 'react-bootstrap';
+import { CloseButton, Modal, Container, Col, Row, Image } from 'react-bootstrap';
 import projectData from '../../constants/ProjectData';
-import GithubIcon from '../icons/GithubIcon';
 import DemoIcon from '../icons/DemoIcon';
+import GithubIcon from '../icons/GithubIcon';
 
-export default function NextTailwindBlog() {
-  const { title, descr, tech, demo, repo, imageUrl } = projectData.nexttailwindblog;
+export default function ProjectModal() {
+  const { title, descr, tech, demo, repo, imageUrl } = projectData.recipes;
   const [show, setShow] = useState(false);
   const handleClose = () => setShow(false);
-  const handleShow = () => setShow(true);
+  // const handleShow = () => setShow(true);
 
   return (
     <>
-      <Card className="card-container image-box border-0" onClick={handleShow}>
-        <Image fluid className="projCardImg hover-zoom" src={imageUrl} alt="" />
-        <Card.Body className="project-title d-flex flex-column justify-content-center align-content-center">
-          <Card.Title>{title}</Card.Title>
-        </Card.Body>
-      </Card>
-
       <Modal show={show} onHide={handleClose} size="lg" centered>
         <Container fluid className="border-0 m-0 p-0 bg-dark">
           <Modal.Header className="text-light border-0">

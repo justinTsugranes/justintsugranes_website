@@ -13,14 +13,16 @@ export default function Projects() {
             <ProjectsShowcase />
           </Col>
         </Row>
-        <Col className="section-container">
-          <Row>
-            <h2 className="light-blue text-center">Coding Projects</h2>
-          </Row>
-          <Row>
-            <ProjectCards />
-          </Row>
-        </Col>
+        <Row>
+          <Col className="section-container mt-sm-5">
+            <Row>
+              <h2 className="d-sm-none d-lg-block light-blue text-center">Coding Projects</h2>
+            </Row>
+            <Row>
+              <ProjectCards />
+            </Row>
+          </Col>
+        </Row>
       </Container>
     </>
   );
