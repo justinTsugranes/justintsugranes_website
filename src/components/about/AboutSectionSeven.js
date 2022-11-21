@@ -50,7 +50,7 @@ export default function AboutSectionSeven() {
           }}
           modules={[Navigation, Pagination, Mousewheel, Keyboard]}
           className="mySwiper">
-          {projectData.slice(0, 8).map(({ title, imageUrl }, index) => {
+          {projectData.map(({ imageUrl }, index) => {
             return (
               <SwiperSlide key={index}>
                 <Col className="col-sm p-0">
@@ -64,9 +64,9 @@ export default function AboutSectionSeven() {
                           src={imageUrl}
                           alt=""
                         />
-                        <Card.Body className="d-flex flex-column justify-content-center align-content-center light-blue text-uppercase fw-bold">
+                        {/* <Card.Body className="d-flex flex-column justify-content-center align-content-center light-blue text-uppercase fw-bold">
                           <Card.Title>{title}</Card.Title>
-                        </Card.Body>
+                        </Card.Body> */}
                       </Card>
                     </Container>
                   </Container>
