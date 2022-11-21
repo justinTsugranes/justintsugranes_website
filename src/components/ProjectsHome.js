@@ -1,11 +1,11 @@
 import React from 'react';
 import '../styles/ProjectCards.css';
-import { Container, Row } from 'react-bootstrap';
-import /* useNavigate */ 'react-router-dom';
+import { Container, Row, Col, Button } from 'react-bootstrap';
+import { useNavigate } from 'react-router-dom';
 import ProjectCards from './ProjectCards';
 
 export default function ProjectCardsHome() {
-  // const navigate = useNavigate();
+  const navigate = useNavigate();
   return (
     <Container fluid className="section-container text-center">
       <Row>
@@ -14,13 +14,13 @@ export default function ProjectCardsHome() {
       <Row className="my-2">
         <ProjectCards />
       </Row>
-      {/* <Row>
+      <Row>
         <Col>
           <Button className="button rounded-pill" onClick={() => navigate('projects')}>
             View More Projects
           </Button>
         </Col>
-      </Row> */}
+      </Row>
     </Container>
   );
 }

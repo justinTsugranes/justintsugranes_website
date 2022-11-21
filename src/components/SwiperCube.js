@@ -21,47 +21,45 @@ import { Container } from 'react-bootstrap';
 
 export default function SwiperCube() {
   return (
-    <>
-      <Container>
-        <Swiper
-          effect={'cube'}
-          grabCursor={true}
-          cubeEffect={{
-            shadow: true,
-            slideShadows: true,
-            shadowOffset: 20,
-            shadowScale: 0.94
-          }}
-          modules={[EffectCube, Pagination, Mousewheel, Keyboard]}
-          mousewheel={true}
-          keyboard={true}
-          className="mySwiper">
-          <SwiperSlide>
-            <img src={Headshot01} />
-          </SwiperSlide>
-          <SwiperSlide>
-            <img src={Headshot02} />
-          </SwiperSlide>
-          <SwiperSlide>
-            <img src={Headshot03} />
-          </SwiperSlide>
-          <SwiperSlide>
-            <img src={Headshot04} />
-          </SwiperSlide>
-          <SwiperSlide>
-            <img src={Headshot05} />
-          </SwiperSlide>
-          <SwiperSlide>
-            <img src={Headshot06} />
-          </SwiperSlide>
-          <SwiperSlide>
-            <img src={Headshot07} />
-          </SwiperSlide>
-          <SwiperSlide>
-            <img src={Headshot08} />
-          </SwiperSlide>
-        </Swiper>
-      </Container>
-    </>
+    <Container>
+      <Swiper
+        effect={'cube'}
+        grabCursor={true}
+        cubeEffect={{
+          shadow: true,
+          slideShadows: true,
+          shadowOffset: 20,
+          shadowScale: 0.94
+        }}
+        modules={[EffectCube, Pagination, Mousewheel, Keyboard]}
+        mousewheel={true}
+        keyboard={true}
+        className="mySwiper">
+        <SwiperSlide>
+          <img src={Headshot01} />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src={Headshot02} />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src={Headshot03} />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src={Headshot04} />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src={Headshot05} />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src={Headshot06} />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src={Headshot07} />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src={Headshot08} />
+        </SwiperSlide>
+      </Swiper>
+    </Container>
   );
 }

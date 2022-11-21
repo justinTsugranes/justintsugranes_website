@@ -16,7 +16,7 @@ import EthereumIcon from './icons/EthereumIcon';
 
 export default function ProjectsShowcase() {
   return (
-    <Container className="bg-dark text-light p-5 p-lg-0 pt-lg-5 text-center text-md-center" fluid>
+    <Container className="bg-dark text-light p-lg-0 pt-lg-5 text-center text-md-center" fluid>
       {/* main row */}
       <Row className="d-sm-flex align-items-center justify-content-around">
         {/* main column 1 */}

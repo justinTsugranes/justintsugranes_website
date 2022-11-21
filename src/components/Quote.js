@@ -4,7 +4,7 @@ import { Container, Card } from 'react-bootstrap';
 
 export default function Quote() {
   return (
-    <Container className="my-5 d-flex justify-content-center">
+    <Container fluid className="my-5 d-flex justify-content-center">
       <Card className="w-75 bg-dark text-white rounded-3 shadow-lg m-5 mb-0">
         <Card.Body className="p-4 d-flex align-items-center">
           <blockquote className="blockquote text-center p-4">

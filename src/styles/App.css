@@ -1,5 +1,6 @@
 body {
-  background: hsl(210, 11%, 15%);
+  background: var(--color-bg);
+  color: var(--color-white);
 }
 
 body::before {
@@ -8,27 +9,10 @@ body::before {
   height: 60px;
 }
 
-/*---- SKIP LINK ----*/
-
-/* Hide the skip link */
-.skip {
-  position: absolute;
-  left: -10000px;
-  top: auto;
-  width: 1px;
-  height: 1px;
-  overflow: hidden;
+html {
+  scroll-behavior: smooth;
 }
-
-/* Show Skip Link when Focused */
-.skip:focus {
-  position: static;
-  width: auto;
-  height: auto;
-}
-
-/* Anti Spam Bot Field */
-#bot-field {
+::-webkit-scrollbar {
   display: none;
 }
 
@@ -36,6 +20,18 @@ body::before {
 
 :root {
   --light-blue: hsl(200, 100%, 70%);
+  --color-bg: hsl(210, 11%, 15%);
+  --color-bg-variant: #2c2c6c;
+  --color-primary: #4db5ff;
+  --color-primary-variant: rgba(77, 181, 255, 0.4);
+  --color-white: #fff;
+  --color-light: rgba(255, 255, 255, 0.6);
+
+  --transition: all 400ms ease;
+
+  --container-width-lg: 75%;
+  --container-width-md: 86%;
+  --container-width-sm: 90%;
 }
 
 .light-blue {
@@ -155,16 +151,22 @@ p {
   font-size: 1rem;
   letter-spacing: 1.25px;
   font-weight: medium;
-  background: var(--light-blue);
   border: none;
-  padding: 1em 2em;
-  /* margin: auto auto; */
-  /* width: auto; */
+  width: max-content;
+  display: inline-block;
+  background: var(--light-blue);
+  color: black;
+  padding: 0.75em 1.5em;
+  border-radius: 0.4rem;
+  cursor: pointer;
+  transition: var(--transition);
 }
 
 .button:hover {
   background: #ece8ef;
   color: black;
+  /* background: var(--color-white);
+  color: var(--color-bg); */
 }
 
 #contact-btn {
@@ -188,6 +190,8 @@ Image,
 .img,
 .image {
   display: block;
+  width: 100%;
+  object-fit: cover;
 }
 
 /*---- RESPONSIVENESS ----*/
@@ -217,4 +221,26 @@ Image,
   }
 }
 
-/*---- SPECIFIC STYLING ----*/
+/*---- SKIP LINK ----*/
+
+/* Hide the skip link */
+.skip {
+  position: absolute;
+  left: -10000px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
+/* Show Skip Link when Focused */
+.skip:focus {
+  position: static;
+  width: auto;
+  height: auto;
+}
+
+/* Anti Spam Bot Field */
+#bot-field {
+  display: none;
+}

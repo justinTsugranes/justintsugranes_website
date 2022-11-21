@@ -7,7 +7,7 @@ import projectData from '../constants/ProjectData.json';
 export default function ProjectCards() {
   return (
     <>
-      <Container fluid className="p-0 d-flex justify-content-evenly">
+      <Container fluid className="d-flex justify-content-evenly">
         <CardGroup>
           <Row
             sm={1}

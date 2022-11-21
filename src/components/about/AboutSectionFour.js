@@ -6,14 +6,15 @@ import Headshot01 from '../../img/headshots/headshot-01.jpg';
 
 const AboutSectionFour = () => {
   return (
-    <Container className="section-container p-0" fluid>
+    <Container fluid className="section-container p-0">
       <Row>
         <Col>
           <Parallax
             bgImage={Headshot01}
             bgImageAlt=""
             strength={300}
-            className="about-image img-fluid shadow">
+            fluid
+            className="about-image shadow">
             <div style={{ height: '600px', width: '800px' }} />
           </Parallax>
         </Col>
