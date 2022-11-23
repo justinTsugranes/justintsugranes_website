@@ -141,6 +141,7 @@ p {
 /*---- NAV LINKS ----*/
 .nav-link {
   transition: all 0.5s;
+  font-size: 1.5rem;
 }
 .nav-link:hover {
   color: var(--light-blue);
@@ -170,7 +171,7 @@ p {
 }
 
 #contact-btn {
-  font-size: 1rem;
+  font-size: 1.5rem;
   letter-spacing: 1.25px;
   font-weight: medium;
 }
