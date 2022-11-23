@@ -20,8 +20,8 @@
   {
     "id": "frontendbootcamp",
     "title": "Frontend Bootcamp",
-    "descr": "An example of a landing page for a Frontend Bootcamp where I learned more about using Bootstrap",
-    "tech": "Bootstrap, HTML, CSS",
+    "descr": "An example of a landing page for a Frontend Bootcamp where I learned more about using Bootstrap and React",
+    "tech": "React, Bootstrap, HTML, CSS",
     "imageUrl": "image/project-images/frontend-bootcamp.jpg",
     "demo": "https://justin-tsugranes-bootstrap-example01.netlify.app",
     "repo": "https://github.com/justinTsugranes/project_bootstrap-frontend-example"
