@@ -64,9 +64,6 @@ export default function AboutSectionSeven() {
                           src={imageUrl}
                           alt=""
                         />
-                        {/* <Card.Body className="d-flex flex-column justify-content-center align-content-center light-blue text-uppercase fw-bold">
-                          <Card.Title>{title}</Card.Title>
-                        </Card.Body> */}
                       </Card>
                     </Container>
                   </Container>
