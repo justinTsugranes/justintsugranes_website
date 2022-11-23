@@ -32,8 +32,8 @@
     "descr": "A company landing page website based on a Figma design spec",
     "tech": "HTML, CSS, Figma",
     "imageUrl": "image/project-images/landing-page.jpg",
-    "demo": "https://justin-tsugranes-company-landing-ex.netlify.app",
-    "repo": "https://github.com/justinTsugranes/project_landing-page"
+    "demo": "https://justin-tsugranes-landing-page-example.netlify.app/",
+    "repo": "https://github.com/justinTsugranes/project_react_landing_page"
   },
   {
     "id": "megamask",

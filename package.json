@@ -28,6 +28,7 @@
     "react-dom": "^18.2.0",
     "react-parallax": "^3.5.1",
     "react-scripts": "5.0.1",
+    "react-type-animation": "^2.1.2",
     "swiper": "^8.4.4",
     "web-vitals": "^2.1.4"
   },
