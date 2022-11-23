@@ -8,7 +8,7 @@ export default function Quote() {
       <Card className="w-75 bg-dark text-white rounded-3 shadow-lg m-5 mb-0">
         <Card.Body className="p-4 d-flex align-items-center">
           <blockquote className="blockquote text-center p-4">
-            <p>{userData.about.quote}</p>
+            <p className="fs-1">{userData.about.quote}</p>
           </blockquote>
         </Card.Body>
       </Card>

@@ -176,10 +176,6 @@ p {
 }
 
 /*---- CONTAINERS ----*/
-Container {
-  padding: 0;
-}
-
 .section-container {
   margin: 15em auto;
 }

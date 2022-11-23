@@ -13,25 +13,27 @@ export default function ProjectCards() {
           md={3}
           lg={5}
           className="d-flex justify-content-evenly text-center gap-3 gy-2 my-5">
-          {projectData.slice(0, 8).map(({ title, imageUrl }, index) => {
+          {projectData.slice(0, 8).map(({ title, demo, imageUrl }, index) => {
             return (
               <Col className="col-sm p-0" key={index}>
-                <Container className="mt-sm-1" fluid>
-                  <Container fluid className="m-0 p-0">
-                    <Card className="proj-card-container border-0">
-                      <Image
-                        fluid
-                        variant="top"
-                        className="proj-card-img hover-zoom"
-                        src={imageUrl}
-                        alt=""
-                      />
-                      <Card.Body className="d-flex flex-column justify-content-center align-content-center light-blue text-uppercase fw-bold">
-                        <Card.Title>{title}</Card.Title>
-                      </Card.Body>
-                    </Card>
+                <a href={demo} rel="noreferrer" target="_blank">
+                  <Container className="mt-sm-1" fluid>
+                    <Container fluid className="m-0 p-0">
+                      <Card className="proj-card-container border-0">
+                        <Image
+                          fluid
+                          variant="top"
+                          className="proj-card-img hover-zoom"
+                          src={imageUrl}
+                          alt=""
+                        />
+                        <Card.Body className="d-flex flex-column justify-content-center align-content-center light-blue text-uppercase fw-bold">
+                          <Card.Title>{title}</Card.Title>
+                        </Card.Body>
+                      </Card>
+                    </Container>
                   </Container>
-                </Container>
+                </a>
               </Col>
             );
           })}

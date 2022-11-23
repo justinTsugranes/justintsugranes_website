@@ -1,23 +1,5 @@
 [
   {
-    "id": "recipes",
-    "title": "Recipes",
-    "descr": "A website showcasing my favorite carb-loaded breakfast recipes",
-    "tech": "HTML, CSS",
-    "imageUrl": "image/project-images/recipes.jpg",
-    "demo": "https://justin-tsugranes-breakfast-recipes.netlify.app",
-    "repo": "https://github.com/justinTsugranes/project_recipe-website"
-  },
-  {
-    "id": "crashcourse",
-    "title": "Crash Courses",
-    "descr": "A website I created from my notes from all of the Codevolution crash courses",
-    "tech": "JavaScript, HTML, CSS, Netlify",
-    "imageUrl": "image/project-images/crashcourses.jpg",
-    "demo": "https://justin-tsugranes-coding-crash-courses.netlify.app",
-    "repo": "https://github.com/justinTsugranes/project_codevolution-crash-courses"
-  },
-  {
     "id": "frontendbootcamp",
     "title": "Frontend Bootcamp",
     "descr": "An example of a landing page for a Frontend Bootcamp where I learned more about using Bootstrap and React",
@@ -34,6 +16,24 @@
     "imageUrl": "image/project-images/landing-page.jpg",
     "demo": "https://justin-tsugranes-landing-page-example.netlify.app/",
     "repo": "https://github.com/justinTsugranes/project_react_landing_page"
+  },
+  {
+    "id": "recipes",
+    "title": "Recipes",
+    "descr": "A website showcasing my favorite carb-loaded breakfast recipes",
+    "tech": "HTML, CSS",
+    "imageUrl": "image/project-images/recipes.jpg",
+    "demo": "https://justin-tsugranes-breakfast-recipes.netlify.app",
+    "repo": "https://github.com/justinTsugranes/project_recipe-website"
+  },
+  {
+    "id": "crashcourse",
+    "title": "Crash Courses",
+    "descr": "A website I created from my notes from all of the Codevolution crash courses",
+    "tech": "JavaScript, HTML, CSS, Netlify",
+    "imageUrl": "image/project-images/crashcourses.jpg",
+    "demo": "https://justin-tsugranes-coding-crash-courses.netlify.app",
+    "repo": "https://github.com/justinTsugranes/project_codevolution-crash-courses"
   },
   {
     "id": "megamask",
