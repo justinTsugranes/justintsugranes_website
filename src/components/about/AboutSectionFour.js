@@ -6,9 +6,11 @@ import Headshot01 from '../../img/headshots/headshot-01.jpg';
 
 const AboutSectionFour = () => {
   return (
-    <Container fluid className="section-container p-0">
-      <Row>
-        <Col>
+    <Container
+      fluid
+      className="section-container d-flex align-items-center justify-content-between p-0 bg-secondary">
+      <Row className="d-sm-block d-md-flex">
+        <Col className="mb-sm-4">
           <Parallax
             bgImage={Headshot01}
             bgImageAlt=""
@@ -18,9 +20,11 @@ const AboutSectionFour = () => {
             <div style={{ height: '600px', width: '800px' }} />
           </Parallax>
         </Col>
-        <Col>
-          <h2 className="light-blue mt-3">My Background</h2>
-          <p className="pt-4 text-light">{userData.about.bioTwo}</p>
+        <Col className="p-md-5">
+          <Container>
+            <h2 className="mb-sm-4 light-blue">My Background</h2>
+            <p className="text-light">{userData.about.bioTwo}</p>
+          </Container>
         </Col>
       </Row>
     </Container>
