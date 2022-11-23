@@ -29,7 +29,7 @@ export default function Hero() {
             <TypeAnimation
               sequence={[
                 2500,
-                'JavaScript - React.js - Bootstrap - Adobe Creative Cloud - Figma',
+                'JavaScript - React.js - Bootstrap - Adobe Creative Cloud - Figma', //
                 () => {
                   console.log('Done typing!'); // Place optional callbacks anywhere in the array
                 }
@@ -38,6 +38,7 @@ export default function Hero() {
               cursor={false}
               // repeat={Infinity}
               style={{ fontSize: '2em' }}
+              className="mb-3 light-blue"
             />
           </Col>
         </Row>
