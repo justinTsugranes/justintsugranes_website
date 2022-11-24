@@ -1,11 +1,8 @@
 /* eslint-disable react/prop-types */
 import React from 'react';
-import 'bootstrap/dist/css/bootstrap.min.css';
 import { CloseButton, Modal, Container, Col, Row, Image } from 'react-bootstrap';
-// import projectData from '../../constants/ProjectData';
 import projectData from '../constants/ProjectData.json';
 import DemoIcon from '../components/icons/DemoIcon';
-
 import GithubIcon from '../components/icons/GithubIcon';
 
 const ProjectModal = (props) => {
@@ -35,7 +32,7 @@ const ProjectModal = (props) => {
               </Row>
               <Row>
                 <p className="my-4">{descr}</p>
-                <h5 className="key-tech-title text-warning">Key Tech</h5>
+                <h5 className="key-tech-title text-warning mt-2">Key Tech</h5>
                 <p className="mb-0">{tech}</p>
               </Row>
             </Col>

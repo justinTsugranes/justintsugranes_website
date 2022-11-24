@@ -1,10 +1,15 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Container, Row, Col, Button } from 'react-bootstrap';
 import ContactModal from './ContactModal';
 import PreFooterImg from '../img/heros/pre-footer.jpg';
 import PreFooterGraphic from '../img/svg/connect.svg';
+import { useSpring, animated } from 'react-spring';
 
 export default function PreFooter() {
+  const [toggle, setToggle] = useState({ online: false, outMouse: false });
+  const buttonScale = useSpring({
+    transform: toggle.online ? 'scale(1.05)' : 'scale(1)'
+  });
   return (
     <Container fluid className="p-0">
       <div className="masthead" style={{ backgroundImage: `url(${PreFooterImg})` }}>
@@ -25,9 +30,14 @@ export default function PreFooter() {
 
                 <Row className="text-center">
                   <Col>
-                    <Button className="button rounded-pill m-0 mt-4">
-                      <ContactModal />
-                    </Button>
+                    <animated.div
+                      style={buttonScale}
+                      onMouseEnter={() => setToggle({ online: true })}
+                      onMouseLeave={() => setToggle({ online: false })}>
+                      <Button className="button rounded-pill m-0 mt-4">
+                        <ContactModal />
+                      </Button>
+                    </animated.div>
                   </Col>
                 </Row>
               </div>

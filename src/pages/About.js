@@ -1,5 +1,4 @@
 import React from 'react';
-import '../styles/About.css';
 import { Container } from 'react-bootstrap';
 import AboutSectionOne from '../components/about/AboutSectionOne';
 import AboutSectionTwo from '../components/about/AboutSectionTwo';

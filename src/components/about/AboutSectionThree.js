@@ -6,7 +6,7 @@ const AboutSectionThree = () => {
   return (
     <Container className="section-container d-flex align-items-center justify-content-between p-0">
       <Row className="d-sm-block">
-        <Col className="mb-sm-4 light-blue">
+        <Col className="mb-xs-4 light-blue">
           <h2>{userData.name}</h2>
         </Col>
         <Col className="text-light">

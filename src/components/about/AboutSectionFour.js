@@ -10,21 +10,25 @@ const AboutSectionFour = () => {
       fluid
       className="section-container d-flex align-items-center justify-content-between p-0 bg-secondary">
       <Row className="d-sm-block d-md-flex">
-        <Col className="mb-sm-4">
+        <Col>
           <Parallax
             bgImage={Headshot01}
-            bgImageAlt=""
+            bgImageAlt="photo of a man"
             strength={300}
             fluid
-            className="about-image shadow">
-            <div style={{ height: '600px', width: '800px' }} />
+            className="image about-image shadow">
+            <div className="about-headshot" />
           </Parallax>
         </Col>
-        <Col className="p-md-5">
-          <Container>
-            <h2 className="mb-sm-4 light-blue">My Background</h2>
-            <p className="text-light">{userData.about.bioTwo}</p>
-          </Container>
+        <Col className="mb-sm-4 p-md-5">
+          <Row className="d-sm-block p-sm-4">
+            <Col className="mb-sm-4 light-blue">
+              <h2 className="mb-4 light-blue">My Background</h2>
+            </Col>
+            <Col className="text-light">
+              <p className="text-light">{userData.about.bioTwo}</p>
+            </Col>
+          </Row>
         </Col>
       </Row>
     </Container>

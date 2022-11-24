@@ -7,7 +7,7 @@ const AboutSectionSix = () => {
   return (
     <Container className="section-container p-0 m-0" fluid>
       <Row>
-        <Parallax bgImage={Headshot03} bgImageAlt="" strength={500}>
+        <Parallax bgImage={Headshot03} bgImageAlt="" strength={500} fluid>
           <div style={{ height: '750px' }} />
         </Parallax>
       </Row>

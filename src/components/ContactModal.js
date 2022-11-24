@@ -22,11 +22,11 @@ export default function ContactModal() {
 
   return (
     <>
-      <p id="contact-btn" className="m-0 p-0" onClick={handleShow}>
+      <p className="contact-btn m-0 p-0" onClick={handleShow}>
         Contact
       </p>
 
-      <Modal show={show} onHide={handleClose} size="lg" centered>
+      <Modal show={show} onHide={handleClose} size="lg" centered className="text-dark">
         <Container>
           <Modal.Header className="d-flex justify-content-center">
             <Modal.Title>Contact Me</Modal.Title>
