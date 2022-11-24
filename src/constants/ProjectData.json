@@ -18,6 +18,15 @@
     "repo": "https://github.com/justinTsugranes/project_react_landing_page"
   },
   {
+    "id": "coworkingspaces",
+    "title": "Coworking Space App",
+    "descr": "An app for booking coworking space",
+    "tech": "React, JavaScript",
+    "imageUrl": "image/project-images/coworking-space.jpg",
+    "demo": "https://justin-tsugranes-coworking-space-app.netlify.app/",
+    "repo": "https://github.com/justinTsugranes/project_coworking-spaces"
+  },
+  {
     "id": "recipes",
     "title": "Recipes",
     "descr": "A website showcasing my favorite carb-loaded breakfast recipes",
