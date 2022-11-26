@@ -1,6 +1,6 @@
 import React from 'react';
-import TechImg from '../img/svg/programming.svg';
 import { Container, Row, Col, Image } from 'react-bootstrap';
+import TechImg from '../img/svg/programming.svg';
 import ReactIcon from './icons/ReactIcon';
 import JsIcon from './icons/JsIcon';
 import NodeIcon from './icons/NodeIcon';

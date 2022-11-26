@@ -1,7 +1,7 @@
 import React from 'react';
 import { Container } from 'react-bootstrap';
-import { Parallax } from 'react-parallax';
 import heroAbout from '../../img/heros/hero-about.jpg';
+import { Parallax } from 'react-parallax';
 
 const AboutSectionTwo = () => {
   return (

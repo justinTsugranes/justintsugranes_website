@@ -203,6 +203,7 @@ p {
 /*---- CONTAINERS ----*/
 .section-container {
   margin: 15em auto;
+  padding: 0;
 }
 /*---- /CONTAINERS ----*/
 

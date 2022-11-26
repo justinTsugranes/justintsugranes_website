@@ -1,6 +1,6 @@
 import React from 'react';
-import userData from '../constants/data.js';
 import { Container, Card } from 'react-bootstrap';
+import userData from '../constants/data.js';
 
 export default function Quote() {
   return (

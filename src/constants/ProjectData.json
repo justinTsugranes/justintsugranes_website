@@ -135,6 +135,15 @@
     "repo": "https://github.com/justinTsugranes/project_scorecard"
   },
   {
+    "id": "lotto",
+    "title": "Justin's Lucky Lottery",
+    "descr": "A project that maps shapes over an image using coordinates and makes those areas interactive",
+    "tech": "JavaScript, HTML, CSS",
+    "imageUrl": "image/project-images/lotto.jpg",
+    "demo": "https://justin-tsugranes-lotto-app.netlify.app/",
+    "repo": "https://github.com/justinTsugranes/project_lotto"
+  },
+  {
     "id": "lucycounter",
     "title": "Celebrity Counter",
     "descr": "A counter app inspired by the “I Love Lucy” episode Hollywood at Last",
