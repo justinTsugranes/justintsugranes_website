@@ -23,7 +23,7 @@ export default function ProjectCards() {
                           src={imageUrl}
                           alt="..."
                         />
-                        <Card.Body className="d-flex flex-column light-blue text-uppercase fw-bold">
+                        <Card.Body className="d-flex flex-column light-blue text-uppercase fw-bold fs-4 pt-4">
                           <Card.Title>{title}</Card.Title>
                         </Card.Body>
                       </Card>
