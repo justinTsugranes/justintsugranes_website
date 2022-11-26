@@ -7,7 +7,7 @@ export default function Navigation() {
   return (
     <Navbar bg="dark" expand="lg" className="navbar-dark shadow fixed-top">
       <Container fluid className="mx-5 px-5 py-3">
-        <Navbar.Brand href="/" className="text-uppercase fs-2">
+        <Navbar.Brand href="/" className="text-uppercase fs-3">
           {userData.name}
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="navbar"></Navbar.Toggle>

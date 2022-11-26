@@ -19,7 +19,7 @@ export default function Hero() {
               wrapper="div"
               cursor={false}
               // repeat={Infinity}
-              style={{ fontSize: '4em' }}
+              style={{ fontSize: '3em' }}
             />
             <TypeAnimation
               sequence={[
@@ -32,7 +32,7 @@ export default function Hero() {
               wrapper="div"
               cursor={false}
               // repeat={Infinity}
-              style={{ fontSize: '2em' }}
+              style={{ fontSize: '1.5em' }}
               className="mb-3 light-blue"
             />
           </Col>
