@@ -117,12 +117,21 @@
     "repo": "https://github.com/justinTsugranes/justintsugranes_website"
   },
   {
+    "id": "weblog",
+    "title": "Blog using Fetch",
+    "descr": "An example blog app where I learned more about REST APIs, resources, parameters, queries, HTTP Requests, URL endpoints, methods, and headers. Project uses the JSONPLaceholder API",
+    "tech": "JavaScript, Fetch, HTML, CSS",
+    "imageUrl": "image/project-images/weblog.jpg",
+    "demo": "https://justin-tsugranes-blog-example.netlify.app",
+    "repo": "https://github.com/justinTsugranes/project_weblog"
+  },
+  {
     "id": "boredomterminator",
     "title": "Boredom Terminator",
     "descr": "An idea generator app that uses the App uses the Bored API where I leared more about Servers and Clients, Request/Response Cycle, APIs, JSON, fetch syntax",
     "tech": "JavaScript, Fetch, HTML, CSS",
     "imageUrl": "image/project-images/boredomterminator.jpg",
-    "demo": "https://justin-tsugranes-boredom-terminator.netlify.app/",
+    "demo": "https://justin-tsugranes-boredom-terminator.netlify.app",
     "repo": "https://github.com/justinTsugranes/project_boredom-terminator"
   },
   {
