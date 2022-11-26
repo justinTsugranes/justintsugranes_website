@@ -117,6 +117,15 @@
     "repo": "https://github.com/justinTsugranes/justintsugranes_website"
   },
   {
+    "id": "boredomterminator",
+    "title": "Boredom Terminator",
+    "descr": "An idea generator app that uses the App uses the Bored API where I leared more about Servers and Clients, Request/Response Cycle, APIs, JSON, fetch syntax",
+    "tech": "JavaScript, Fetch, HTML, CSS",
+    "imageUrl": "image/project-images/boredomterminator.jpg",
+    "demo": "https://justin-tsugranes-boredom-terminator.netlify.app/",
+    "repo": "https://github.com/justinTsugranes/project_boredom-terminator"
+  },
+  {
     "id": "blackjack",
     "title": "Blackjack",
     "descr": "A JavaScript implementation of the classic casino game, Blackjack where I learned more about data types, if/else statements, loops, Math objects, and object-oriented programming",
