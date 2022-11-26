@@ -117,6 +117,15 @@
     "repo": "https://github.com/justinTsugranes/justintsugranes_website"
   },
   {
+    "id": "museract",
+    "title": "Museract",
+    "descr": "A social media messaging app for musicians. From this project, I learned about the JS .forEach() method, using CDNs, and how to conditionally render styles",
+    "tech": "JavaScript, HTML, CSS, FontAwesome, UUIDs",
+    "imageUrl": "image/project-images/museract.jpg",
+    "demo": "https://justin-tsugranes-museract-app.netlify.app",
+    "repo": "https://github.com/justinTsugranes/project_museract"
+  },
+  {
     "id": "weblog",
     "title": "Blog using Fetch",
     "descr": "An example blog app where I learned more about REST APIs, resources, parameters, queries, HTTP Requests, URL endpoints, methods, and headers. Project uses the JSONPLaceholder API",
