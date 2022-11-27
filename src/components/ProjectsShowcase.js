@@ -17,7 +17,6 @@ import EthereumIcon from './icons/EthereumIcon';
 export default function ProjectsShowcase() {
   return (
     <Row className="py-5 px-3 d-flex align-items-center justify-content-around text-light text-center text-md-center">
-      {/* Col 1 */}
       <Col>
         <Row className="text-center">
           {/* title on small-medium screens */}
@@ -78,13 +77,10 @@ export default function ProjectsShowcase() {
           </Col>
         </Row>
       </Col>
-      {/* /Col 1 */}
 
-      {/* Col 2 */}
       <Col>
         <img className="img-fluid w-75" src={TechImg} alt="..." />
       </Col>
-      {/* /Col 2 */}
     </Row>
   );
 }

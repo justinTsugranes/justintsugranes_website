@@ -15,7 +15,7 @@ export default function PreFooter() {
       <div className="masthead" style={{ backgroundImage: `url(${PreFooterImg})` }}>
         <Row className="color-overlay d-flex justify-content-center align-items-center text-center px-md-3">
           <Col className="d-none d-md-block">
-            <Image src={PreFooterGraphic} fluid alt="" id="connect-img" />
+            <Image src={PreFooterGraphic} fluid alt="graphic of the world" id="connect-img" />
           </Col>
 
           <Col className="d-flex flex-column px-3">

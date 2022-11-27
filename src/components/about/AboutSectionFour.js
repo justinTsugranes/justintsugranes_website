@@ -20,12 +20,8 @@ const AboutSectionFour = () => {
         </Row>
       </Col>
       <Col className="d-flex flex-column p-4">
-        <Col className="light-blue">
-          <h3>My Background</h3>
-        </Col>
-        <Col className="text-light">
-          <p>{userData.about.bioTwo}</p>
-        </Col>
+        <h3 className="light-blue">My Background</h3>
+        <p className="text-light bioTwo fs-3">{userData.about.bioTwo}</p>
       </Col>
     </Row>
   );
