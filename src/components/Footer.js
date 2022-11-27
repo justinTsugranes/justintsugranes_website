@@ -16,7 +16,7 @@ export default function Footer() {
   } = userData;
   return (
     <Container fluid className="p-0">
-      <Col className="p-5 m-3 bg-dark text-white text-center position-relative">
+      <Col className="py-5 my-3 bg-dark text-white text-center position-relative">
         <h2 className="text-uppercase mb-3 h3 light-blue">{name}</h2>
         <p className="mb-5">{designation}</p>
         <h3 className="text-uppercase h4 light-blue">Get In Touch</h3>

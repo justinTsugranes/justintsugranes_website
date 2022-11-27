@@ -5,7 +5,7 @@ import { Parallax } from 'react-parallax';
 
 const AboutSectionSix = () => {
   return (
-    <Container className="section-container" fluid>
+    <Container fluid className="section-container p-0">
       <Row>
         <Parallax bgImage={Headshot03} bgImageAlt="" strength={500}>
           <div style={{ height: '750px' }} />

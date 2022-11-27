@@ -50,8 +50,8 @@ export default function ContactModal() {
               data-netlify-recaptcha="true"
               // action="/contact-success"
             >
-              <input type="hidden" name="form-name" value="contact" />
               {/* bot field */}
+              <input type="hidden" name="form-name" value="contact" />
               <Form.Control type="hidden" id="bot-field" name="bot-field" />
               {/* default email subject */}
               <Form.Control

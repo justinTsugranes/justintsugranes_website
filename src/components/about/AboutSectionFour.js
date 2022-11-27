@@ -7,7 +7,7 @@ import Headshot01 from '../../img/headshots/headshot-01.jpg';
 const AboutSectionFour = () => {
   return (
     <Container fluid className="section-container p-0 bg-secondary">
-      <Row className="d-flex flex-column align-items-center justify-content-between">
+      <Row className="d-flex flex-column align-items-center justify-content-center flex-md-row">
         <Col>
           <Parallax
             bgImage={Headshot01}
@@ -19,7 +19,7 @@ const AboutSectionFour = () => {
           </Parallax>
         </Col>
         <Col className="p-4 p-md-5">
-          <Row className="">
+          <Row className="d-flex flex-column">
             <Col className="light-blue">
               <h2 className="mb-4">My Background</h2>
             </Col>
