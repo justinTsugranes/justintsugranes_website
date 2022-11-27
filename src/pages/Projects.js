@@ -18,7 +18,6 @@ export default function Projects() {
             <h2 className="d-sm-none d-lg-block light-blue text-center">Coding Projects</h2>
           </Row>
           <Row>
-            {/* <Container fluid className="p-0"> */}
             <CardGroup>
               <Row className="d-flex justify-content-evenly gap-3 m-3 row-cols-1 row-cols-md-3 row-cols-lg-5">
                 {projectData.map(({ demo, imageUrl }, index) => {
@@ -47,7 +46,6 @@ export default function Projects() {
                 })}
               </Row>
             </CardGroup>
-            {/* </Container> */}
           </Row>
         </Col>
       </Row>
