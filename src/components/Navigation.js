@@ -7,7 +7,7 @@ export default function Navigation() {
   const { name } = userData;
   return (
     <Row>
-      <Navbar expand="lg" className="navbar-dark shadow px-4">
+      <Navbar expand="lg" className="navbar-dark shadow px-4 px-md-5">
         <Navbar.Brand href="/" className="text-uppercase fs-3">
           {name}
         </Navbar.Brand>
