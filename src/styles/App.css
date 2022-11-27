@@ -230,7 +230,7 @@ p {
 /*---- /CONTAINERS ----*/
 
 /*---- QUOTE CARD ----*/
-.quote-card {
+.quote-card:hover {
   box-shadow: var(--light-blue) 0px 19px 38px, var(--light-blue) 0px 15px 12px;
 }
 /*---- /QUOTE CARD ----*/
