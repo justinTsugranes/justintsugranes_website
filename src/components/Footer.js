@@ -1,5 +1,5 @@
 import React from 'react';
-import { Container, Row, Col } from 'react-bootstrap';
+import { Row, Col } from 'react-bootstrap';
 import userData from '../constants/data.js';
 import LinkedInIcon from './icons/LinkedInIcon.js';
 import GithubIcon from './icons/GithubIcon.js';
@@ -15,8 +15,8 @@ export default function Footer() {
     socialLinks: { linkedin, github, codepen, medium, spotify, instagram }
   } = userData;
   return (
-    <Container fluid className="p-0">
-      <Col className="py-5 my-3 bg-dark text-white text-center position-relative">
+    <Row>
+      <Col className="p-5 text-center position-relative text-light ">
         <h2 className="text-uppercase mb-3 h3 light-blue">{name}</h2>
         <p className="mb-5">{designation}</p>
         <h3 className="text-uppercase h4 light-blue">Get In Touch</h3>
@@ -78,6 +78,6 @@ export default function Footer() {
           <p className="text-secondary fs-6">Copyright © 2021 misfitDodo Media</p>
         </Row>
       </Col>
-    </Container>
+    </Row>
   );
 }

@@ -5,7 +5,7 @@ const userData = {
   email: 'justintsugranes@proton.me',
   about: {
     quote:
-      'I believe the best designs are drive user-centered, equity-focused principles that ensure any user from any nation can interact with your product from any device and any internet connection',
+      'I believe the best designs are driven by user-centered, equity-focused principles that ensure any user from any nation can interact with your product from any device and any internet connection',
     bioOne: `I am a frontend web developer with 2 years of experience designing, building, and
     implementing web applications using JavaScript, JavaScript frameworks (React.js,
       Next.js), HTML, CSS, and CSS frameworks (Bootstrap).`,

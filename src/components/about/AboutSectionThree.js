@@ -1,19 +1,18 @@
 import React from 'react';
 import userData from '../../constants/data.js';
-import { Container, Col, Row } from 'react-bootstrap';
+import { Col, Row } from 'react-bootstrap';
 
 const AboutSectionThree = () => {
   return (
-    <Container className="section-container d-flex align-items-center justify-content-between p-0">
-      <Row className="d-sm-block">
-        <Col className="mb-xs-4 light-blue">
-          <h2>{userData.name}</h2>
-        </Col>
-        <Col className="text-light">
-          <p>{userData.about.bioOne}</p>
-        </Col>
-      </Row>
-    </Container>
+    // <Row className="d-sm-block d-flex align-items-center justify-content-between">
+    <Row className="d-block p-3 p-md-5">
+      <Col className="mb-xs-4 light-blue">
+        <h3>What I Do</h3>
+      </Col>
+      <Col className="text-light">
+        <p>{userData.about.bioOne}</p>
+      </Col>
+    </Row>
   );
 };
 

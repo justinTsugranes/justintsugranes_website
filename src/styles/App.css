@@ -4,19 +4,11 @@ body {
   color: var(--color-white);
 }
 
-body::before {
+/* body::before {
   display: block;
   content: '';
-  height: 70px;
-}
-
-html {
-  scroll-behavior: smooth;
-}
-::-webkit-scrollbar {
-  display: none;
-}
-/*---- /GLOBAL ----*/
+  height: 60px;
+} */
 
 /*---- SKIP LINK ----*/
 /* Hide the skip link */
@@ -172,7 +164,7 @@ p {
 
 /*---- BUTTONS ----*/
 .button {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   letter-spacing: 1.25px;
   font-weight: medium;
   border: none;
@@ -198,7 +190,7 @@ p {
 
 /*---- CONTAINERS ----*/
 .container {
-  width: 100vw;
+  width: 100%;
   padding: 0;
   margin: 0;
 }
@@ -206,8 +198,15 @@ p {
 .section-container {
   margin: 12em 0;
   padding: 0;
+  margin: 0;
 }
 /*---- /CONTAINERS ----*/
+
+/*---- QUOTE CARD ----*/
+.quote-card {
+  box-shadow: var(--light-blue) 0px 19px 38px, var(--light-blue) 0px 15px 12px;
+}
+/*---- /QUOTE CARD ----*/
 
 /*---- IMAGES ----*/
 .about-image,
@@ -221,8 +220,13 @@ p {
 }
 
 .about-headshot {
-  height: 600px;
-  width: 100%;
+  /* height: 600px; */
+  /* width: 100%; */
+}
+
+#connect.img {
+  max-height: 50px;
+  max-width: 50px;
 }
 
 /*---- HERO ----*/
@@ -233,7 +237,7 @@ p {
   background-position: bottom center;
   background-repeat: no-repeat;
   min-height: 60vh;
-  /* width: 100vw; */
+  width: 100%;
   text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
 }
 .color-overlay {
@@ -255,14 +259,10 @@ p {
 /*---- RESPONSIVENESS ----*/
 @media (max-width: 768px) {
   .masthead {
-    min-height: 50vh;
+    /* min-height: 50vh; */
     filter: none;
   }
   .about-image {
     filter: none;
-  }
-  .quote-card {
-    margin: 0;
-    padding: 0;
   }
 }
