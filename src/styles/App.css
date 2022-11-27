@@ -230,8 +230,8 @@ p {
 /*---- /CONTAINERS ----*/
 
 /*---- QUOTE CARD ----*/
-.quote-card:hover {
-  box-shadow: var(--light-blue) 0px 19px 38px, var(--light-blue) 0px 15px 12px;
+.quote-card {
+  /* TODO set margin top and box shadow or something */
 }
 /*---- /QUOTE CARD ----*/
 
@@ -244,6 +244,7 @@ p {
 .about-image:hover,
 .masthead:hover {
   filter: none;
+  box-shadow: var(--light-blue) 0px 19px 38px, var(--light-blue) 0px 15px 12px;
 }
 
 .about-headshot {

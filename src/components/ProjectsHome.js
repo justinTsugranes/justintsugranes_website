@@ -19,7 +19,7 @@ export default function ProjectCardsHome() {
       </Col>
 
       <Col>
-        <Row className="d-flex justify-content-evenly gap-3 row-cols-1 row-cols-md-3 row-cols-lg-5">
+        <Row className="d-flex justify-content-center gap-5 row-cols-1 row-cols-md-3 row-cols-lg-5">
           {projectData.slice(0, 8).map(({ demo, imageUrl }, index) => {
             return (
               <Col key={index}>
