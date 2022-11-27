@@ -15,8 +15,8 @@ export default function Footer() {
     socialLinks: { linkedin, github, codepen, medium, spotify, instagram }
   } = userData;
   return (
-    <Container fluid>
-      <Col className="p-5 bg-dark text-white text-center position-relative">
+    <Container fluid className="p-0">
+      <Col className="p-5 m-3 bg-dark text-white text-center position-relative">
         <h2 className="text-uppercase mb-3 h3 light-blue">{name}</h2>
         <p className="mb-5">{designation}</p>
         <h3 className="text-uppercase h4 light-blue">Get In Touch</h3>

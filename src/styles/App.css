@@ -7,7 +7,7 @@ body {
 body::before {
   display: block;
   content: '';
-  height: 60px;
+  height: 70px;
 }
 
 html {
@@ -47,17 +47,13 @@ html {
 :root {
   --light-blue: hsl(200, 100%, 70%);
   --color-bg: hsl(210, 11%, 15%);
-  --color-bg-variant: #2c2c6c;
+  /* --color-bg-variant: #2c2c6c;
   --color-primary: #4db5ff;
   --color-primary-variant: rgba(77, 181, 255, 0.4);
   --color-white: #fff;
   --color-light: rgba(255, 255, 255, 0.6);
 
-  --transition: all 400ms ease;
-
-  --container-width-lg: 75%;
-  --container-width-md: 86%;
-  --container-width-sm: 90%;
+  --transition: all 400ms ease; */
 }
 
 .light-blue {
@@ -201,29 +197,24 @@ p {
 /*---- /BUTTONS ----*/
 
 /*---- CONTAINERS ----*/
+.container {
+  width: 100vw;
+  padding: 0;
+  margin: 0;
+}
+
 .section-container {
-  margin: 15em auto;
+  margin: 12em 0;
   padding: 0;
 }
 /*---- /CONTAINERS ----*/
 
 /*---- IMAGES ----*/
-img,
-Image,
-.img,
-.image {
-  height: 100%;
-  width: 100%;
-  display: block;
-  object-fit: cover;
-}
-/* add grayfiler to about me image */
 .about-image,
 .masthead {
   filter: grayscale(100%);
   transition: filter 0.5s;
 }
-/* remove grayfilter on hover */
 .about-image:hover,
 .masthead:hover {
   filter: none;
@@ -239,9 +230,10 @@ Image,
   position: relative;
   background-size: cover;
   background-attachment: fixed;
-  background-position: bottom;
+  background-position: bottom center;
   background-repeat: no-repeat;
   min-height: 60vh;
+  /* width: 100vw; */
   text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
 }
 .color-overlay {
@@ -261,28 +253,16 @@ Image,
 /*---- /MODALS ----*/
 
 /*---- RESPONSIVENESS ----*/
-
 @media (max-width: 768px) {
-  h1 {
-    font-size: calc(3rem + 1.3vw);
-  }
-  h2 {
-    font-size: calc(1.5rem + 1.3vw);
-  }
-  h3 {
-    font-size: calc(1rem + 1.3vw);
-  }
-  h4 {
-    display: none;
-    font-size: calc(0.5rem + 1.3vw);
-  }
-  p {
-  }
   .masthead {
-    min-height: 30vh;
+    min-height: 50vh;
     filter: none;
   }
   .about-image {
     filter: none;
+  }
+  .quote-card {
+    margin: 0;
+    padding: 0;
   }
 }

@@ -6,29 +6,25 @@ import projectData from '../constants/ProjectData.json';
 
 export default function ProjectCards() {
   return (
-    <Container fluid className="d-flex justify-content-evenly">
+    <Container fluid className="p-0">
       <CardGroup>
-        <Row sm={1} md={3} lg={5} className="d-flex justify-content-evenly gap-3 gy-2 my-5">
-          {projectData.slice(0, 8).map(({ title, demo, imageUrl }, index) => {
+        <Row className="d-flex justify-content-evenly gap-3 m-3 row-cols-1 row-cols-md-3 row-cols-lg-5">
+          {projectData.slice(0, 8).map(({ demo, imageUrl }, index) => {
             return (
-              <Col className="col-sm p-0" key={index}>
+              <Col key={index}>
                 <a href={demo} rel="noreferrer" target="_blank" className="text-decoration-none">
-                  <Container className="mt-sm-1" fluid>
-                    <Container fluid className="m-0 p-0">
-                      <Card className="proj-card-container border-0">
-                        <Image
-                          fluid
-                          variant="top"
-                          className="proj-card-img hover-zoom"
-                          src={imageUrl}
-                          alt="..."
-                        />
-                        <Card.Body className="d-flex flex-column light-blue text-uppercase fw-bold fs-4 pt-4">
-                          <Card.Title>{title}</Card.Title>
-                        </Card.Body>
-                      </Card>
-                    </Container>
-                  </Container>
+                  <Card className="proj-card-container border-0">
+                    <Image
+                      fluid
+                      variant="top"
+                      className="proj-card-img hover-zoom shadow"
+                      src={imageUrl}
+                      alt="..."
+                    />
+                    {/* <Card.Body className="light-blue text-uppercase fw-bold fs-4">
+                      <Card.Title className="pt-3">{title}</Card.Title>
+                    </Card.Body> */}
+                  </Card>
                 </a>
               </Col>
             );

@@ -13,23 +13,23 @@ export default function PreFooter() {
   return (
     <Container fluid className="p-0">
       <div className="masthead" style={{ backgroundImage: `url(${PreFooterImg})` }}>
-        <div className="color-overlay d-flex justify-content-center align-items-center h-100">
-          <Container>
-            <div className="row align-items-center justify-content-between">
-              <div className="col-md d-none d-md-block">
-                <img src={PreFooterGraphic} className="img-fluid" alt="" id="connect-img" />
-              </div>
-              <div className="col-md d-flex flex-column">
-                <h2 className="light-blue align-self-sm-center text-center">
-                  I&apos;m always looking to connect
-                </h2>
-                <p className="text-light text-center d-none d-md-block mt-2">
-                  Although, I&apos;m currently based in the US, I love making friends and working
-                  with teams from all around the globe.
-                </p>
+        <Col>
+          <div className="color-overlay d-flex justify-content-center align-items-center h-100">
+            <Container>
+              <Row className="align-items-center justify-content-between">
+                <Col className="col-md d-none d-md-block">
+                  <img src={PreFooterGraphic} className="img-fluid" alt="" id="connect-img" />
+                </Col>
+                <Col className="col-md d-flex flex-column p-0">
+                  <h3 className="light-blue align-self-sm-center text-center">
+                    I&apos;m always looking to connect
+                  </h3>
+                  <p className="text-light text-center d-none d-md-block mt-2">
+                    Although, I&apos;m currently based in the US, I love making friends and working
+                    with teams from all around the globe.
+                  </p>
 
-                <Row className="text-center">
-                  <Col>
+                  <Row className="text-center">
                     <animated.div
                       style={buttonScale}
                       onMouseEnter={() => setToggle({ online: true })}
@@ -38,12 +38,12 @@ export default function PreFooter() {
                         <ContactModal />
                       </Button>
                     </animated.div>
-                  </Col>
-                </Row>
-              </div>
-            </div>
-          </Container>
-        </div>
+                  </Row>
+                </Col>
+              </Row>
+            </Container>
+          </div>
+        </Col>
       </div>
     </Container>
   );

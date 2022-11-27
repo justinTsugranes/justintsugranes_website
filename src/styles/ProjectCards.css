@@ -8,8 +8,8 @@
   -o-transition: all 0.2s ease-in;
   transition: all 0.2s ease-in;
   box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.5);
-  height: 100%;
   overflow: hidden;
+  max-width: ;
 }
 .proj-card-container:hover {
   -webkit-transition: all 0.2s ease-in;
@@ -25,9 +25,9 @@
   -moz-transition: all 0.9s ease;
   -o-transition: all 0.9s ease;
   -ms-transition: all 0.9s ease;
-  width: 100%;
+  width: fit;
   height: 250px;
-  overflow: hidden;
+  object-fit: cover;
 }
 .proj-card-img:hover {
   -webkit-transform: scale(1.15);

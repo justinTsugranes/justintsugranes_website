@@ -12,11 +12,11 @@ export default function ProjectCardsHome() {
   });
   const navigate = useNavigate();
   return (
-    <Container fluid className="section-container text-center">
+    <Container fluid className="section-container text-center p-0">
       <Row>
         <h3 className="light-blue">Some of my recent projects</h3>
       </Row>
-      <Row className="my-2">
+      <Row className="my-4">
         <ProjectCards />
       </Row>
       <Row>
@@ -25,7 +25,7 @@ export default function ProjectCardsHome() {
             style={buttonScale}
             onMouseEnter={() => setToggle({ online: true })}
             onMouseLeave={() => setToggle({ online: false })}>
-            <Button className="button rounded-pill m-0 mt-4" onClick={() => navigate('projects')}>
+            <Button className="button rounded-pill" onClick={() => navigate('projects')}>
               View More Projects
             </Button>
           </animated.div>
