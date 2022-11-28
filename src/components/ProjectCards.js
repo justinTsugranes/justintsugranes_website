@@ -6,7 +6,7 @@ import projectData from '../constants/ProjectData.json';
 
 export default function ProjectCards() {
   return (
-    <Row className="d-flex justify-content-evenly row-cols-1 row-cols-md-3 row-cols-lg-5 gap-4 mb-3">
+    <Row className="d-flex justify-content-evenly row-cols-1 row-cols-md-3 row-cols-lg-5 gap-5 mb-3">
       {projectData.map(({ demo, imageUrl }, index) => {
         return (
           <Col key={index}>
