@@ -6,8 +6,8 @@ import { Parallax } from 'react-parallax';
 const AboutSectionTwo = () => {
   return (
     <Row>
-      <Parallax bgImage={heroAbout} bgImageAlt="" strength={400}>
-        <div style={{ height: '750px' }} />
+      <Parallax bgImage={heroAbout} bgImageAlt="a man overlooking the forest" strength={500}>
+        <div style={{ height: '75vh' }} />
       </Parallax>
     </Row>
   );

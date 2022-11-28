@@ -6,7 +6,7 @@ import Headshot01 from '../../img/headshots/headshot-01.jpg';
 
 const AboutSectionFour = () => {
   return (
-    <Row className="bg-secondary d-flex flex-column align-items-center justify-content-center flex-md-row mb-md-5">
+    <Row className="section-container bg-secondary d-flex flex-column align-items-center justify-content-center flex-md-row">
       <Col>
         <Row>
           <Parallax
@@ -20,7 +20,7 @@ const AboutSectionFour = () => {
         </Row>
       </Col>
       <Col className="d-flex flex-column p-4">
-        <h3 className="light-blue">My Background</h3>
+        <h3 className="mb-4 light-blue">My Background</h3>
         <p className="text-light bioTwo fs-3">{userData.about.bioTwo}</p>
       </Col>
     </Row>

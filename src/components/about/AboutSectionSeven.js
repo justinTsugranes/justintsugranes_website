@@ -17,8 +17,8 @@ SwiperCore.use([Navigation, Pagination, Mousewheel, Keyboard]);
 
 export default function AboutSectionSeven() {
   return (
-    <Row className="my-5 mb-md-5">
-      <h3 className="light-blue text-center mb-2">Always building things</h3>
+    <Row className="section-container">
+      <h3 className="light-blue text-center mb-4">Always building things</h3>
       <div className="swiper-container">
         <Swiper
           grabCursor={true}

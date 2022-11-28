@@ -6,7 +6,7 @@ import heroImage from '../img/heros/hero-index.png';
 export default function Hero() {
   return (
     <Row>
-      <div className="masthead m-0 p-0" style={{ backgroundImage: `url(${heroImage})` }}>
+      <div className="hero m-0 p-0" style={{ backgroundImage: `url(${heroImage})` }}>
         <div className="color-overlay d-flex justify-content-center align-items-center text-center p-0">
           <Col className="text-white px-3">
             <TypeAnimation

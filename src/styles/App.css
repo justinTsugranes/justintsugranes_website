@@ -216,49 +216,15 @@ p {
 /*---- /BUTTONS ----*/
 
 /*---- CONTAINERS ----*/
-.container {
-  width: 100%;
-  padding: 0;
-  margin: 0;
-}
-
 .section-container {
-  margin: 12em 0;
-  padding: 0;
-  margin: 0;
+  margin-top: 12em;
+  margin-bottom: 12em;
 }
 /*---- /CONTAINERS ----*/
 
-/*---- QUOTE CARD ----*/
-.quote-card {
-  /* TODO set margin top and box shadow or something */
-}
-/*---- /QUOTE CARD ----*/
-
-/*---- IMAGES ----*/
-.about-image,
-.masthead {
-  filter: grayscale(100%);
-  transition: filter 0.5s;
-}
-.about-image:hover,
-.masthead:hover {
-  filter: none;
-  box-shadow: var(--light-blue) 0px 19px 38px, var(--light-blue) 0px 15px 12px;
-}
-
-.about-headshot {
-  /* height: 600px; */
-  /* width: 100%; */
-}
-
-#connect.img {
-  max-height: 50px;
-  max-width: 50px;
-}
-
 /*---- HERO ----*/
-.masthead {
+.hero,
+.pre-footer {
   position: relative;
   background-size: cover;
   background-attachment: fixed;
@@ -274,6 +240,18 @@ p {
   height: 100%;
   background-color: rgba(0, 0, 0, 0.2);
 }
+.hero,
+.pre-footer {
+  filter: grayscale(100%);
+  transition: filter 0.5s;
+}
+.hero:hover {
+  box-shadow: var(--light-blue) 0px 19px 38px, var(--light-blue) 0px 15px 12px;
+}
+.pre-footer:hover,
+.hero:hover {
+  filter: none;
+}
 /*---- /HERO ----*/
 
 /*---- MODALS ----*/
@@ -286,11 +264,8 @@ p {
 
 /*---- RESPONSIVENESS ----*/
 @media (max-width: 768px) {
-  .masthead {
-    /* min-height: 50vh; */
-    filter: none;
-  }
-  .about-image {
+  .hero,
+  .pre-footer {
     filter: none;
   }
 }

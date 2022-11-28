@@ -4,14 +4,10 @@ import { Row } from 'react-bootstrap';
 
 const AboutSectionThree = () => {
   return (
-    <Row className="p-3 p-md-5">
-      <div className="m-md-5 p-md-5 d-flex flex-column justify-content-center align-items-center">
-        {/* <Col> */}
-        <h3 className="mb-xs-4 light-blue">What I Do</h3>
-        {/* </Col> */}
-        {/* <Col className="text-light"> */}
+    <Row className="p-3 section-container">
+      <div className="d-flex flex-column justify-content-center align-items-center">
+        <h3 className="mb-4 light-blue">What I Do</h3>
         <p className="bioOne text-light fs-3">{userData.about.bioOne}</p>
-        {/* </Col> */}
       </div>
     </Row>
   );
