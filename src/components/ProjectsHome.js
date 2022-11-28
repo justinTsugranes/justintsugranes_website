@@ -13,7 +13,7 @@ export default function ProjectCardsHome() {
   });
   const navigate = useNavigate();
   return (
-    <Row className="d-flex flex-column text-center">
+    <Row className="section-container d-flex flex-column text-center">
       <Col>
         <h3 className="light-blue py-5 pb-3">Some of my recent projects</h3>
       </Col>
