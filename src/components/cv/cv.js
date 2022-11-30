@@ -3,30 +3,23 @@ import React from 'react';
 const Cv = () => {
   return (
     <div>
-      <header>
-        <h1>Justin Tsugranes</h1>
+      <h1>Justin Tsugranes</h1>
+      <h2>Front-End Web Developer, and Digital Media Creator based in Los Angeles, California</h2>
 
-        <h2>Front-End Web Developer, and Digital Media Creator based in Los Angeles, California</h2>
-
-        <nav>
-          <ul>
-            <li>Bio</li>
-            <li>Education</li>
-            <li>Tech Related Certificates, Courses and Bootcamps</li>
-            <li>Professional Experience</li>
-            <li>Performance Experience</li>
-            <li>Volunteer Experience</li>
-            <li>MUSICAL THEATRE PRODUCTION</li>
-            <li>VOLUNTEER EXPERIENCE</li>
-            <li>PUBLIC SPEAKING</li>
-            <li>Awards and Accomplishments</li>
-            <li>All Awards, Certificates, Courses, Seminars, and Conventions</li>
-            <li>Major Professors and Masterclasses</li>
-            <li>Transcriptions, Etudes, and Compositions</li>
-            <li>Skills</li>
-          </ul>
-        </nav>
-      </header>
+      <a href="#">Bio</a>
+      <a href="#">Education</a>
+      <a href="#">Tech Related Certificates, Courses and Bootcamps</a>
+      <a href="#">Professional Experience</a>
+      <a href="#">Performance Experience</a>
+      <a href="#">Volunteer Experience</a>
+      <a href="#">MUSICAL THEATRE PRODUCTION</a>
+      <a href="#">VOLUNTEER EXPERIENCE</a>
+      <a href="#">PUBLIC SPEAKING</a>
+      <a href="#">Awards and Accomplishments</a>
+      <a href="#">All Awards, Certificates, Courses, Seminars, and Conventions</a>
+      <a href="#">Major Professors and Masterclasses</a>
+      <a href="#">Transcriptions, Etudes, and Compositions</a>
+      <a href="#">Skills</a>
 
       <p>
         Back in my day, we just had the telephone and dial-up internet. Here are all of the ways you
@@ -36,17 +29,20 @@ const Cv = () => {
       </p>
 
       <p>
+        <a href="https://www.justintsugranes.com/">Official Website</a>
+        <a href="mailto:justintsugranes@proton.me">Email</a>
+        <a href="https://www.linkedin.com/in/justintsugranes/">LinkedIn</a>
+        <a href="https://github.com/justintsugranes/">GitHub</a>
+        <a href="">StackBlitz</a>
+        <a href="">CodePen</a>
         <a href="https://stock.adobe.com/cr/contributor/210844067/justintsugranes">
           Adobe Stock Portfolio
         </a>
-        <a href="https://audius.co/themisfitdodo">Audius</a>
-        <a href="mailto:justintsugranes@proton.me">Email</a>
         <a href="https://flic.kr/ps/3YkmsL">Flickr</a>
-        <a href="https://github.com/justintsugranes/">GitHub</a>
-        <a href="https://instagram.com/justintsugranes">Instagram</a>
-        <a href="https://www.linkedin.com/in/justintsugranes/">LinkedIn</a>
-        <a href="https://www.justintsugranes.com/">Official Website</a>
+        <a href="">Spotify</a>
+        <a href="https://audius.co/themisfitdodo">Audius</a>
         <a href="https://justintsugranes.medium.com/">Medium</a>
+        <a href="https://instagram.com/justintsugranes">Instagram</a>
         <a href="https://twitter.com/justintsugranes/">Twitter</a>
       </p>
 
@@ -134,7 +130,7 @@ const Cv = () => {
       </p>
 
       <p>
-        <strong>Intro Mobile Development</strong>
+        <strong>Intro to Mobile Development</strong>
         <a href="https://coursera.org/verify/ATXN75RWFRSS">Certificate from Meta</a>
         <em>(2022)</em>
       </p>

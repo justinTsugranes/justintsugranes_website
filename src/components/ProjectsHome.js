@@ -11,6 +11,7 @@ export default function ProjectCardsHome() {
   const buttonScale = useSpring({
     transform: toggle.online ? 'scale(1.05)' : 'scale(1)'
   });
+
   const navigate = useNavigate();
   return (
     <Row className="section-container d-flex flex-column text-center">
@@ -32,6 +33,7 @@ export default function ProjectCardsHome() {
                       src={imageUrl}
                       alt="..."
                     />
+
                     {/* <Card.Body className="light-blue text-uppercase fw-bold fs-4">
                       <Card.Title className="pt-3">{title}</Card.Title>
                     </Card.Body> */}
