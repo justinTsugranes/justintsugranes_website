@@ -2,6 +2,7 @@ import '../src/styles/App.css';
 import { Routes, Route } from 'react-router-dom';
 import About from './pages/About';
 import Home from './pages/Home';
+import Cv from './components/cv/cv';
 import Projects from './pages/Projects';
 import ContactSuccess from './components/ContactSuccess';
 import Footer from './components/Footer';
@@ -18,6 +19,7 @@ function App() {
         <Route path="/" element={<Home />}></Route>
         <Route path="projects" element={<Projects />}></Route>
         <Route path="about" element={<About />}></Route>
+        <Route path="cv" element={<Cv />}></Route>
         <Route path="contact-success" element={<ContactSuccess />}></Route>
       </Routes>
       <PreFooter />

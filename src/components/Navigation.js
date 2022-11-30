@@ -16,6 +16,7 @@ export default function Navigation() {
           <Nav className="ms-auto dropstart text-end text-uppercase">
             <Nav.Link href="/projects">Projects</Nav.Link>
             <Nav.Link href="/about">About</Nav.Link>
+            <Nav.Link href="/cv">CV</Nav.Link>
             <Nav.Link id="contactLink">
               <ContactModal />
             </Nav.Link>
