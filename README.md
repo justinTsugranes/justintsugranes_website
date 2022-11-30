@@ -61,6 +61,14 @@
 [![Issues][issues-shield]][issues-url]
 [![MIT License][license-shield]][license-url]
 
+This is my personal website that is currently built with React and Bootstrap. I originally built it using JavaScript, HTML, and CSS. Then I rebuilt it with bootstrap. This time around, I used React-Bootstrap.
+
+The site is deployed via Netlify. The contact form uses Netlify form control.abs
+
+For the next build, I'll use Next.js and Tailwind (or styled-components). I want to integrate my blog Next is great for blogs, SEO, and page routing without having to use React-Router. I'll probably integrate Sanity for the CMS.
+
+I'd love to hear any feedback or just thoughts. Feel free to reach out at my contact info below. Cheers!
+
 ### Built With
 
 [![React][react.js]][react-url]
@@ -143,9 +151,9 @@ Project Link: [https://github.com/justintsugranes/justintsugranes_website](https
 
 ## 🤝 Support
 
-Contributions, issues, and feature requests are welcome!
+Give a ⭐️ if you like this project and if you like my work, maybe you would like to
 
-Give a ⭐️ if you like this project!
+<a href="https://www.buymeacoffee.com/tsugranes" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-red.png" alt="Buy Me A Coffee" width="150"></a>
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
