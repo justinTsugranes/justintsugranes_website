@@ -1,6 +1,6 @@
 import React from 'react';
-import userData from '../../constants/data.js';
 import { Row } from 'react-bootstrap';
+import userData from '../../constants/data.js';
 
 const AboutSectionThree = () => {
   return (

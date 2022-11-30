@@ -1,26 +1,43 @@
 /* eslint-disable react/prop-types */
-import React from 'react';
-import { CloseButton, Modal, Container, Col, Row, Image } from 'react-bootstrap';
-import projectData from '../constants/ProjectData.json';
-import DemoIcon from '../components/icons/DemoIcon';
-import GithubIcon from '../components/icons/GithubIcon';
+// eslint-disable-next-line no-unused-vars
+import React, { useState } from 'react';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import { Modal, Container, CloseButton, Row, Card, Col, Image } from 'react-bootstrap';
+import GithubIcon from './icons/GithubIcon';
+import DemoIcon from './icons/DemoIcon';
 
-const ProjectModal = (props) => {
-  const { title, descr, tech, demo, repo, imageUrl } = projectData.recipes;
+export default function ProjectCard(props) {
+  const [show, setShow] = useState(false);
+  const handleClose = () => setShow(false);
+  const handleShow = () => setShow(true);
 
-  console.log('PROPS in MODAL', props);
+  const { index, imageUrl, title, descr, tech, repo, demo, close } = props;
+
   return (
     <>
+      <Col key={index}>
+        <Card className="proj-card-container border-0" onClick={handleShow}>
+          <Image
+            fluid
+            variant="top"
+            className="proj-card-img hover-zoom shadow"
+            src={imageUrl}
+            alt="..."
+          />
+        </Card>
+      </Col>
+
+      {/* MODAL */}
       <Modal
-        show={props.show}
-        cancel={props.close}
+        show={show}
+        onHide={handleClose}
         size="lg"
         centered
         aria-labelledby="contained-project-modal">
         <Container fluid className="border-0 m-0 bg-dark">
           <Modal.Header className="text-light border-0">
             <Modal.Title>{title}</Modal.Title>
-            <CloseButton variant="white" aria-label="Close" onClick={props.close} />
+            <CloseButton variant="white" aria-label="Close" onClick={close} />
           </Modal.Header>
 
           <Modal.Body className="modal-lg text-light" id="modal-body">
@@ -56,6 +73,4 @@ const ProjectModal = (props) => {
       </Modal>
     </>
   );
-};
-
-export default ProjectModal;
+}
