@@ -1,7 +1,7 @@
 import React from 'react';
 import { Row } from 'react-bootstrap';
-import heroAbout from '../../img/heros/hero-about.jpg';
 import { Parallax } from 'react-parallax';
+import heroAbout from '../../img/heros/hero-about.jpg';
 
 const AboutSectionTwo = () => {
   return (

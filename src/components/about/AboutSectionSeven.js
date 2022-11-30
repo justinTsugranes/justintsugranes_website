@@ -1,9 +1,12 @@
 import React from 'react';
 import { Container, Card, Col, Row, Image } from 'react-bootstrap';
+
 /* import projects for swiper */
-import projectData from '../../constants/ProjectData.json';
+import data from '../../constants/ProjectData';
+
 // Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';
+
 // Import Swiper styles
 import '../../styles/MySwiper.css';
 import 'swiper/css';
@@ -50,9 +53,9 @@ export default function AboutSectionSeven() {
             }
           }}
           className="mySwiper">
-          {projectData.map(({ imageUrl, demo }, index) => {
+          {data.map(({ imageUrl, demo }, slideID) => {
             return (
-              <SwiperSlide key={index}>
+              <SwiperSlide key={slideID}>
                 <Col className="col-lg p-0 m-0">
                   <Container className="mt-sm-1" fluid>
                     <Container fluid className="m-0 p-0">

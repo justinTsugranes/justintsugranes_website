@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Modal, CloseButton, Container, Form, Button, FloatingLabel } from 'react-bootstrap';
+import { useNavigate } from 'react-router-dom';
 
 export default function ContactModal() {
   /* show/hide the contact modal */
@@ -16,9 +17,10 @@ export default function ContactModal() {
       event.preventDefault();
       event.stopPropagation();
     }
-
     setValidated(true);
   };
+
+  const navigate = useNavigate();
 
   return (
     <>
@@ -48,8 +50,7 @@ export default function ContactModal() {
               data-netlify="true"
               data-netlify-honeypot="bot-field"
               data-netlify-recaptcha="true"
-              // action="/contact-success"
-            >
+              action={() => navigate('contact-success')}>
               {/* bot field */}
               <input type="hidden" name="form-name" value="contact" />
               <Form.Control type="hidden" id="bot-field" name="bot-field" />

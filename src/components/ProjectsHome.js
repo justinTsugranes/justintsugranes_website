@@ -1,12 +1,26 @@
+import '../styles/ProjectCards.css';
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { Row, Col, Button, Card, Image } from 'react-bootstrap';
 import { useSpring, animated } from 'react-spring';
-import '../styles/ProjectCards.css';
-import projectData from '../constants/ProjectData.json';
-// import ProjectCards from './ProjectCards';
+import { Row, Col, Button } from 'react-bootstrap';
+import data from '../constants/ProjectData';
+import ProjectCard from '../components/ProjectCard';
 
-export default function ProjectCardsHome() {
+export default function ProjectsHome() {
+  const cards = data.slice(0, 8).map((card) => {
+    return (
+      <ProjectCard
+        key={card.id}
+        title={card.title}
+        descr={card.descr}
+        imageUrl={card.imageUrl}
+        demo={card.demo}
+        repo={card.repo}
+        tech={card.tech}
+      />
+    );
+  });
+
   const [toggle, setToggle] = useState({ online: false, outMouse: false });
   const buttonScale = useSpring({
     transform: toggle.online ? 'scale(1.05)' : 'scale(1)'
@@ -21,27 +35,7 @@ export default function ProjectCardsHome() {
 
       <Col>
         <Row className="d-flex justify-content-center gap-5 row-cols-1 row-cols-md-3 row-cols-lg-5">
-          {projectData.slice(0, 8).map(({ demo, imageUrl }, index) => {
-            return (
-              <Col key={index}>
-                <a href={demo} rel="noreferrer" target="_blank" className="text-decoration-none">
-                  <Card className="proj-card-container border-0">
-                    <Image
-                      fluid
-                      variant="top"
-                      className="proj-card-img hover-zoom"
-                      src={imageUrl}
-                      alt="..."
-                    />
-
-                    {/* <Card.Body className="light-blue text-uppercase fw-bold fs-4">
-                      <Card.Title className="pt-3">{title}</Card.Title>
-                    </Card.Body> */}
-                  </Card>
-                </a>
-              </Col>
-            );
-          })}
+          {cards}
         </Row>
       </Col>
 

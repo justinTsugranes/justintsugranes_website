@@ -1,7 +1,7 @@
 import React from 'react';
-import userData from '../../constants/data.js';
 import { Row, Col } from 'react-bootstrap';
 import { Parallax } from 'react-parallax';
+import userData from '../../constants/data.js';
 import Headshot01 from '../../img/headshots/headshot-01.jpg';
 
 const AboutSectionFour = () => {
