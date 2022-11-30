@@ -127,7 +127,7 @@ See the [open issues](https://github.com/justintsugranes/justintsugranes_website
 
 ## License
 
-Distributed under the MIT License. See `LICENSE.txt` for more information.
+Distributed under the MIT License. See `LICENSE.md` for more information.
 
 <!-- CONTACT -->
 
