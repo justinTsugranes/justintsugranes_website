@@ -1,4 +1,4 @@
-const data = {
+export default {
   home: {
     href: '/'
   },
@@ -55,5 +55,3 @@ const data = {
   // resumeUrl:
   //   'https://docs.google.com/document/d/1gY7devKB9AqWcEZWi5jYOk-nbw-d6eSrRxpIUg9Uxtw/edit?usp=sharing',
 };
-
-export default data;
