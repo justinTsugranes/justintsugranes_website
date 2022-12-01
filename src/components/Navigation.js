@@ -6,10 +6,6 @@ import ContactModal from './ContactModal';
 export default function Navigation() {
   const { name, projects, about } = data;
 
-  const contact = () => {
-    return <ContactModal />;
-  };
-
   return (
     <Row>
       <Navbar expand="lg" className="navbar-dark shadow px-4 px-md-5">
@@ -21,10 +17,9 @@ export default function Navigation() {
           <Nav className="ms-auto dropstart text-end text-uppercase">
             <Nav.Link href={projects.href}>{projects.title}</Nav.Link>
             <Nav.Link href={about.href}>{about.title}</Nav.Link>
-            {/* <Nav.Link href="/cv">CV</Nav.Link> */}
+            {/* <Nav.Link href={cv.href}>{cv.title}</Nav.Link> */}
             <Nav.Link id="contactLink">
-              {/* <ContactModal /> */}
-              {contact}
+              <ContactModal />
             </Nav.Link>
           </Nav>
         </Navbar.Collapse>
