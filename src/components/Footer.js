@@ -1,6 +1,6 @@
 import React from 'react';
 import { Row, Col } from 'react-bootstrap';
-import userData from '../constants/data.js';
+import data from '../constants/data.js';
 import LinkedInIcon from './icons/LinkedInIcon.js';
 import GithubIcon from './icons/GithubIcon.js';
 import CodepenIcon from './icons/CodepenIcon.js';
@@ -13,7 +13,7 @@ export default function Footer() {
     name,
     designation,
     socialLinks: { linkedin, github, codepen, medium, spotify, instagram }
-  } = userData;
+  } = data;
   return (
     <Row>
       <Col className="p-5 text-center position-relative text-light ">

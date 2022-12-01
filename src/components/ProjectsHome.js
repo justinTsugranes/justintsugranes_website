@@ -6,7 +6,7 @@ import { Row, Col, Button } from 'react-bootstrap';
 import data from '../constants/ProjectData';
 import ProjectCard from '../components/ProjectCard';
 
-export default function ProjectsHome() {
+function MapProjects() {
   const cards = data.slice(0, 8).map((card) => {
     return (
       <ProjectCard
@@ -20,13 +20,17 @@ export default function ProjectsHome() {
       />
     );
   });
+  return cards;
+}
 
+export default function ProjectsHome() {
   const [toggle, setToggle] = useState({ online: false, outMouse: false });
   const buttonScale = useSpring({
     transform: toggle.online ? 'scale(1.05)' : 'scale(1)'
   });
 
   const navigate = useNavigate();
+
   return (
     <Row className="section-container d-flex flex-column text-center">
       <Col>
@@ -35,7 +39,7 @@ export default function ProjectsHome() {
 
       <Col>
         <Row className="d-flex justify-content-center gap-5 row-cols-1 row-cols-md-3 row-cols-lg-5">
-          {cards}
+          <MapProjects />
         </Row>
       </Col>
 

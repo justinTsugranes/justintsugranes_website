@@ -13,7 +13,7 @@ export default function Hero() {
               sequence={[
                 'Web Developer, Digital Media Creator',
                 () => {
-                  console.log('Done typing!'); // Place optional callbacks anywhere in the array
+                  console.log('Done typing!');
                 }
               ]}
               wrapper="div"
@@ -25,7 +25,7 @@ export default function Hero() {
                 2750,
                 'JavaScript - React.js - Bootstrap - Adobe Creative Cloud - Figma', //
                 () => {
-                  console.log('Done typing!'); // Place optional callbacks anywhere in the array
+                  console.log('Done typing!');
                 }
               ]}
               wrapper="div"

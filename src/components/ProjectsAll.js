@@ -4,7 +4,7 @@ import { Row } from 'react-bootstrap';
 import ProjectCard from './ProjectCard';
 import data from '../constants/ProjectData';
 
-export default function AllProjects() {
+function MapProjects() {
   const cards = data.map((card) => {
     return (
       <ProjectCard
@@ -18,11 +18,14 @@ export default function AllProjects() {
       />
     );
   });
+  return cards;
+}
 
+export default function AllProjects() {
   return (
     <>
       <Row className="d-flex justify-content-evenly row-cols-1 row-cols-md-3 row-cols-lg-5 gap-5 mb-3">
-        {cards}
+        <MapProjects />
       </Row>
     </>
   );
