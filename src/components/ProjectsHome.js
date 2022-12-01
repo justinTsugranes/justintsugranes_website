@@ -28,7 +28,6 @@ export default function ProjectsHome() {
   const buttonScale = useSpring({
     transform: toggle.online ? 'scale(1.05)' : 'scale(1)'
   });
-
   const navigate = useNavigate();
 
   return (
