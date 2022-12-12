@@ -179,15 +179,7 @@ export default [
     demo: 'https://justin-tsugranes-lotto-app.netlify.app/',
     repo: 'https://github.com/justinTsugranes/project_lotto'
   },
-  {
-    id: 'lucycounter',
-    title: 'Celebrity Counter',
-    descr: 'A counter app inspired by the “I Love Lucy” episode Hollywood at Last',
-    tech: 'JavaScript, HTML, CSS',
-    imageUrl: 'image/project-images/ilovelucy.jpg',
-    demo: 'https://justin-tsugranes-counter.netlify.app',
-    repo: 'https://github.com/justinTsugranes/project_counter'
-  },
+
   {
     id: 'mangataandgallo',
     title: 'Mangata and Gallo',
@@ -196,43 +188,5 @@ export default [
     imageUrl: 'image/project-images/mangata.jpg',
     demo: 'https://justin-tsugranes-mangata-and-gallo.netlify.app',
     repo: 'https://github.com/justinTsugranes/project_mangata-and-gallo'
-  },
-  {
-    id: 'digitalbusinesscard',
-    title: 'Digital Business Card',
-    descr: 'A digital business card built using HTML and CSS',
-    tech: 'HTML, CSS',
-    imageUrl: 'image/project-images/business-card.jpg',
-    demo: 'https://justin-tsugranes-business-card.netlify.app',
-    repo: 'https://github.com/justinTsugranes/personal_business-card'
-  },
-  {
-    id: 'kittystories',
-    title: 'Digital Business Card',
-    descr:
-      "The project focused on replicating the 'stories' feature on Instagram using TailwindCSS",
-    tech: 'HTML, CSS',
-    imageUrl: 'image/project-images/kitty-stories.jpg',
-    demo: 'https://play.tailwindcss.com/m0vJbNyJyi?size=540x720&file=config',
-    repo: 'https://github.com/justinTsugranes/tutorial_instagram-stories-ui-tailwind'
-  },
-  {
-    id: 'reacttactoe',
-    title: 'React Tic Tac Toe',
-    descr: 'The classic game, Tic Tac Toe built using React.js',
-    tech: 'React, JavaScript',
-    imageUrl: 'image/project-images/react-tac-toe.jpg',
-    demo: 'https://tic-tac-toe-react-app.stackblitz.io',
-    repo: 'https://github.com/justinTsugranes/tut_tic-tac-toe-react'
-  },
-  {
-    id: 'imagemapping',
-    title: 'Image Mapping',
-    descr:
-      'A project that maps shapes over an image using coordinates and makes those areas interactive',
-    tech: 'React, JavaScript',
-    imageUrl: 'image/project-images/image-mapping.jpg',
-    demo: 'https://justin-tsugranes-image-mapping.netlify.app',
-    repo: 'https://github.com/justinTsugranes/tutorial_image-mapping'
   }
 ];

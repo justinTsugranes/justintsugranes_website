@@ -23,6 +23,10 @@ export default {
     including media &amp; entertainment, IT, sales, marketing, real estate, and
     hospitality.`
   },
+  cv: {
+    href: './cv',
+    title: 'CV'
+  },
   githubUsername: 'justintsugranes',
   name: 'Justin Tsugranes',
   designation: 'Web Developer, Digital Media Creator',
