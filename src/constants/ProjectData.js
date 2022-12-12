@@ -3,7 +3,7 @@ export default [
     id: 'frontendbootcamp',
     title: 'Frontend Bootcamp',
     descr:
-      'An example of a landing page for a Frontend Bootcamp where I learned more about using Bootstrap and React',
+      'An example of a landing page for a Frontend Bootcamp where I learned more about using Bootstrap and React. I used MapBox GL for the contact section, unDraw for the graphics, fontawesome icons, and lorempicsum for the avatars',
     tech: 'React, Bootstrap, HTML, CSS',
     imageUrl: 'image/project-images/frontend-bootcamp.jpg',
     demo: 'https://justin-tsugranes-bootstrap-example01.netlify.app',
@@ -13,7 +13,7 @@ export default [
     id: 'landingpage',
     title: 'Landing Page',
     descr: 'A company landing page website based on a Figma design spec',
-    tech: 'HTML, CSS, Figma',
+    tech: 'React, Bootstrap, HTML, CSS, Figma',
     imageUrl: 'image/project-images/landing-page.jpg',
     demo: 'https://justin-tsugranes-landing-page-example.netlify.app',
     repo: 'https://github.com/justinTsugranes/project_react_landing_page'
@@ -178,15 +178,5 @@ export default [
     imageUrl: 'image/project-images/lotto.jpg',
     demo: 'https://justin-tsugranes-lotto-app.netlify.app/',
     repo: 'https://github.com/justinTsugranes/project_lotto'
-  },
-
-  {
-    id: 'mangataandgallo',
-    title: 'Mangata and Gallo',
-    descr: 'A website loosely modeled after the Tiffany & Co. website',
-    tech: 'HTML, CSS',
-    imageUrl: 'image/project-images/mangata.jpg',
-    demo: 'https://justin-tsugranes-mangata-and-gallo.netlify.app',
-    repo: 'https://github.com/justinTsugranes/project_mangata-and-gallo'
   }
 ];
