@@ -93,15 +93,6 @@ export default [
     repo: 'https://github.com/justinTsugranes/project_oldagram'
   },
   {
-    id: 'unitconverter',
-    title: 'Unit Converter',
-    descr: 'Ui for a Metric Converter',
-    tech: 'HTML, CSS',
-    imageUrl: 'image/project-images/unit-converter.jpg',
-    demo: 'https://justin-tsugranes-unit-converter.netlify.app',
-    repo: 'https://github.com/justinTsugranes/project_unit-converter'
-  },
-  {
     id: 'bandwebsite',
     title: 'Band Website',
     descr: 'A band website built using vanilla JavaScript, HTML, and CSS',
@@ -159,6 +150,15 @@ export default [
     imageUrl: 'image/project-images/blackjack.jpg',
     demo: 'https://justin-tsugranes-blackjack.netlify.app',
     repo: 'https://github.com/justinTsugranes/project_blackjack'
+  },
+  {
+    id: 'unitconverter',
+    title: 'Unit Converter',
+    descr: 'Ui for a Metric Converter',
+    tech: 'HTML, CSS',
+    imageUrl: 'image/project-images/unit-converter.jpg',
+    demo: 'https://justin-tsugranes-unit-converter.netlify.app',
+    repo: 'https://github.com/justinTsugranes/project_unit-converter'
   },
   {
     id: 'scorecard',

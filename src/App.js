@@ -16,11 +16,11 @@ function App() {
       <ScrollToTop />
       <Navigation />
       <Routes>
-        <Route path="/" element={<Home />}></Route>
-        <Route path="projects" element={<Projects />}></Route>
-        <Route path="about" element={<About />}></Route>
-        <Route path="cv" element={<Cv />}></Route>
-        <Route path="contact-success" element={<ContactSuccess />}></Route>
+        <Route exact path="/" element={<Home />} />
+        <Route exact path="projects" element={<Projects />} />
+        <Route exact path="about" element={<About />} />
+        <Route exact path="cv" element={<Cv />} />
+        <Route exact path="contact-success" element={<ContactSuccess />} />
       </Routes>
       <PreFooter />
       <Footer />
