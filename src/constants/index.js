@@ -28,22 +28,20 @@ export const nav = {
   }
 };
 
-export const socialLinks = [
-  {
-    adobe: 'https://justintsugranes.myportfolio.com/',
-    audius: '',
-    codepen: 'https://codepen.io/justintsugranes',
-    github: `https://github.com/justintsugranes`,
-    flickr: '',
-    instagram: 'https://instagram.com/justintsugranes',
-    linkedin: 'https://linkedin.com/in/justintsugranes',
-    medium: 'https://justintsugranes.medium.com',
-    spotify: 'https://open.spotify.com/artist/4vV18ClJAixgpNfKaJkEmR?si=bOY2nkJXT_esmViVXk6GbA',
-    stackblitz: 'https://stackblitz.com/@justinTsugranes',
-    twitter: 'http://twitter.com/justintsugranes',
-    website: 'https://justintsugranes.com'
-  }
-];
+export const socialLinks = {
+  adobe: 'https://justintsugranes.myportfolio.com/',
+  audius: '',
+  codepen: 'https://codepen.io/justintsugranes',
+  github: `https://github.com/justintsugranes`,
+  flickr: '',
+  instagram: 'https://instagram.com/justintsugranes',
+  linkedin: 'https://linkedin.com/in/justintsugranes',
+  medium: 'https://justintsugranes.medium.com',
+  spotify: 'https://open.spotify.com/artist/4vV18ClJAixgpNfKaJkEmR?si=bOY2nkJXT_esmViVXk6GbA',
+  stackblitz: 'https://stackblitz.com/@justinTsugranes',
+  twitter: 'http://twitter.com/justintsugranes',
+  website: 'https://justintsugranes.com'
+};
 
 export const socialTags = [
   {
