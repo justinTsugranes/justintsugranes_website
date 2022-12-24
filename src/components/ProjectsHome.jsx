@@ -6,7 +6,7 @@ import '../styles/ProjectCards.css';
 import projects from '../constants/ProjectData';
 import ProjectCard from './ProjectCard';
 
-export default function ProjectsHome() {
+const ProjectsHome = () => {
   const navigate = useNavigate();
   const [toggle, setToggle] = useState({ online: false, outMouse: false });
   const buttonScale = useSpring({
@@ -39,4 +39,6 @@ export default function ProjectsHome() {
       </Col>
     </Row>
   );
-}
+};
+
+export default ProjectsHome;

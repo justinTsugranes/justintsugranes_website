@@ -4,7 +4,7 @@ import { useSpring, animated } from 'react-spring';
 import ContactModal from './ContactModal';
 import { preFooterImg, preFooterGraphic } from '../assets/index';
 
-export default function PreFooter() {
+const PreFooter = () => {
   const [toggle, setToggle] = useState({ online: false, outMouse: false });
   const buttonScale = useSpring({
     transform: toggle.online ? 'scale(1.05)' : 'scale(1)'
@@ -41,4 +41,6 @@ export default function PreFooter() {
       </div>
     </Row>
   );
-}
+};
+
+export default PreFooter;

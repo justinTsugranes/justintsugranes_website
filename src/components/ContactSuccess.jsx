@@ -1,7 +1,7 @@
 import { Button } from 'react-bootstrap';
 import { useNavigate } from 'react-router-dom';
 
-export default function ContactSuccess() {
+const ContactSuccess = () => {
   const navigate = useNavigate();
   return (
     <div className="card bg-success text-dark rounded-3 shadow-lg m-5 mb-0">
@@ -15,4 +15,6 @@ export default function ContactSuccess() {
       </div>
     </div>
   );
-}
+};
+
+export default ContactSuccess;

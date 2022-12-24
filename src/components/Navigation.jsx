@@ -3,7 +3,7 @@ import navLinks from '../constants/data.js';
 // import { navLinks } from '../constants/data.js';
 import ContactModal from './ContactModal.jsx';
 
-export default function Navigation() {
+const Navigation = () => {
   const { name, projects, about } = navLinks;
 
   return (
@@ -31,4 +31,6 @@ export default function Navigation() {
       </Navbar>
     </Row>
   );
-}
+};
+
+export default Navigation;

@@ -4,7 +4,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import { Modal, Container, CloseButton, Row, Card, Col, Image } from 'react-bootstrap';
 import { GithubIcon, DemoIcon } from './icons/index';
 
-export default function ProjectCard({ index, imageUrl, title, descr, tech, repo, demo, close }) {
+const ProjectCard = ({ index, imageUrl, title, descr, tech, repo, demo, close }) => {
   const [show, setShow] = useState(false);
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
@@ -69,4 +69,6 @@ export default function ProjectCard({ index, imageUrl, title, descr, tech, repo,
       </Modal>
     </>
   );
-}
+};
+
+export default ProjectCard;

@@ -9,7 +9,7 @@ import {
   InstagramIcon
 } from './icons/index';
 
-export default function Footer() {
+const Footer = () => {
   const {
     name,
     designation,
@@ -82,4 +82,6 @@ export default function Footer() {
       </Col>
     </Row>
   );
-}
+};
+
+export default Footer;

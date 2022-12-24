@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Modal, CloseButton, Container, Form, Button, FloatingLabel } from 'react-bootstrap';
 import { useNavigate } from 'react-router-dom';
 
-export default function ContactModal() {
+const ContactModal = () => {
   /* show/hide the contact modal */
   const [show, setShow] = useState(false);
   const handleClose = () => setShow(false);
@@ -125,4 +125,6 @@ export default function ContactModal() {
       </Modal>
     </>
   );
-}
+};
+
+export default ContactModal;

@@ -8,16 +8,16 @@ import {
   AboutSectionSeven
 } from '../components/about/index';
 
-export default function About() {
-  return (
-    <>
-      <AboutSectionOne />
-      <AboutSectionTwo />
-      <AboutSectionThree />
-      <AboutSectionFour />
-      {/* <AboutSectionFive /> */}
-      <AboutSectionSix />
-      <AboutSectionSeven />
-    </>
-  );
-}
+const About = () => (
+  <>
+    <AboutSectionOne />
+    <AboutSectionTwo />
+    <AboutSectionThree />
+    <AboutSectionFour />
+    {/* <AboutSectionFive /> */}
+    <AboutSectionSix />
+    <AboutSectionSeven />
+  </>
+);
+
+export default About;
