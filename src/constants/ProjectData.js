@@ -1,80 +1,104 @@
-export default [
-  // RPG game
-  // Game of war
-  // watchlist
-  // restaurant app
-  // react digital business card
-  // airbnb clone
-  // travel journal
-  // traversy ai image gen
-  // traversy react stripe store
-  // traversy mern goals app
-  // edrow mern social app
-  // dave gray mern project
-  // chrome extension
-  // api dashboard
+import {
+  bandWebsite,
+  blackjack,
+  boredomterminator,
+  // businessCard,
+  coworkingSpace,
+  crashCourses,
+  frontendBootcamp,
+  // goople,
+  // ilovelucy,
+  // imageMapping,
+  // kittyStories,
+  landingPage,
+  lotto,
+  // mangata,
+  megamask,
+  museract,
+  // nextBlog,
+  nextTailwindBlog,
+  oldagram,
+  passwordGenerator,
+  personalWebsite,
+  // reactTacToe,
+  reactTodo,
+  recipes,
+  scoreCard,
+  unitConverter,
+  // webFlix,
+  weblog
+} from '../assets';
 
+// RPG game
+// Game of war
+// watchlist
+// restaurant app
+// react digital business card
+// airbnb clone
+// travel journal
+// traversy ai image gen
+// traversy react stripe store
+// traversy mern goals app
+// edrow mern social app
+// dave gray mern project
+// chrome extension
+// api dashboard
+
+const github = 'https://github.com/justintsugranes/';
+
+export default [
   // {
-  //   id: '',
+  //   id: 'template',
   //   title: '',
   //   descr: '',
   //   tech: '',
-  //   imageUrl: 'image/project-images/.jpg',
+  //   imageUrl: ,
   //   demo: '',
   //   repo: 'https://github.com/justinTsugranes/'
   // },
-  {
-    id: '',
-    title: '',
-    descr: '',
-    tech: '',
-    imageUrl: 'image/project-images/.jpg',
-    demo: '',
-    repo: 'https://github.com/justinTsugranes/'
-  },
   {
     id: 'frontendbootcamp',
     title: 'Frontend Bootcamp',
     descr:
       'An example of a landing page for a Frontend Bootcamp where I learned more about using Bootstrap and React. I used MapBox GL for the contact section, unDraw for the graphics, fontawesome icons, and lorempicsum for the avatars',
     tech: 'React, Bootstrap, HTML, CSS',
-    imageUrl: 'image/project-images/frontend-bootcamp.jpg',
+    imageUrl: frontendBootcamp,
     demo: 'https://justin-tsugranes-bootstrap-example01.netlify.app',
-    repo: 'https://github.com/justinTsugranes/project_bootstrap-frontend-example'
+    repo: `${github}project_bootstrap-frontend-example`
   },
   {
     id: 'landingpage',
     title: 'Landing Page',
     descr: 'A company landing page website based on a Figma design spec',
     tech: 'React, Bootstrap, HTML, CSS, Figma',
-    imageUrl: 'image/project-images/landing-page.jpg',
+    imageUrl: landingPage,
     demo: 'https://justin-tsugranes-landing-page-example.netlify.app',
-    repo: 'https://github.com/justinTsugranes/project_react_landing_page'
+    repo: `${github}project_react_landing_page`
   },
   {
     id: 'coworkingspaces',
     title: 'Coworking Space App',
     descr: 'An app for booking coworking space',
     tech: 'React, JavaScript',
-    imageUrl: 'image/project-images/coworking-space.jpg',
+    imageUrl: coworkingSpace,
     demo: 'https://justin-tsugranes-coworking-space-app.netlify.app',
-    repo: 'https://github.com/justinTsugranes/project_coworking-spaces'
+    repo: `${github}project_coworking-spaces`
   },
   {
     id: 'recipes',
     title: 'Recipes',
     descr: 'A website showcasing my favorite carb-loaded breakfast recipes',
     tech: 'HTML, CSS',
-    imageUrl: 'image/project-images/recipes.jpg',
+    imageUrl: recipes,
     demo: 'https://justin-tsugranes-breakfast-recipes.netlify.app',
-    repo: 'https://github.com/justinTsugranes/project_recipe-website'
+    repo: `${github}project_recipe-website`
   },
   {
     id: 'crashcourse',
     title: 'Crash Courses',
     descr: 'A website I created from my notes from all of the Codevolution crash courses',
     tech: 'JavaScript, HTML, CSS, Netlify',
-    imageUrl: 'image/project-images/crashcourses.jpg',
+    imageUrl: crashCourses,
     demo: 'https://justin-tsugranes-coding-crash-courses.netlify.app',
     repo: 'https://github.com/justinTsugranes/project_codevolution-crash-courses'
   },
@@ -83,7 +107,7 @@ export default [
     title: 'MegaMask',
     descr: 'A UI clone of the popular Web3 Wallet, MetaMask',
     tech: 'JavaScript, HTML, CSS',
-    imageUrl: 'image/project-images/megamask.jpg',
+    imageUrl: megamask,
     demo: 'https://justin-tsugranes-megamask.netlify.app',
     repo: 'https://github.com/justinTsugranes/project_metamask-clone'
   },
@@ -93,17 +117,17 @@ export default [
     descr:
       'Interactive Blog project where I learned more about Next.js routing, TailwindCSS, API fetching, using Swiper for interactive scrolling, and working with React Functional Components',
     tech: 'HTML, CSS',
-    imageUrl: 'image/project-images/next-tailwind-blog.jpg',
+    imageUrl: nextTailwindBlog,
     demo: 'https://blog-website-using-next-tailwind.vercel.app',
     repo: 'https://github.com/justinTsugranes/tutorial_blog-website-using-next-tailwind'
   },
   {
-    id: 'passwordmanager',
+    id: 'passwordgenerator',
     title: 'Password Generator',
     descr:
       'A random password generator that is written in JavaScript, HTML, and CSS where I learned more about random number generation',
     tech: 'JavaScript, HTML, CSS',
-    imageUrl: 'image/project-images/password-generator.jpg',
+    imageUrl: passwordGenerator,
     demo: 'https://justin-tsugranes-password-generator.netlify.app',
     repo: 'https://github.com/justinTsugranes/project_password-generator'
   },
@@ -112,7 +136,7 @@ export default [
     title: 'React Todo',
     descr: 'A To-Do App built using React.js',
     tech: 'HTML, CSS',
-    imageUrl: 'image/project-images/react-todo.jpg',
+    imageUrl: reactTodo,
     demo: 'https://to-do-react-app.stackblitz.io',
     repo: 'https://github.com/justinTsugranes/tut_todo-react-app'
   },
@@ -121,7 +145,7 @@ export default [
     title: 'Oldagram',
     descr: 'A UI clone of Instagram',
     tech: 'JavaScript, HTML, CSS',
-    imageUrl: 'image/project-images/oldagram.jpg',
+    imageUrl: oldagram,
     demo: 'https://justin-tsugranes-oldagram.netlify.app',
     repo: 'https://github.com/justinTsugranes/project_oldagram'
   },
@@ -130,7 +154,7 @@ export default [
     title: 'Band Website',
     descr: 'A band website built using vanilla JavaScript, HTML, and CSS',
     tech: 'JavaScript, HTML, CSS',
-    imageUrl: 'image/project-images/band-website.jpg',
+    imageUrl: bandWebsite,
     demo: 'https://justin-tsugranes-band-website-ex.netlify.app',
     repo: 'https://github.com/justinTsugranes/proj_band-website'
   },
@@ -141,7 +165,7 @@ export default [
       'My personal portfolio website that showcases my recent coding projects. CI through GitHub, Deployed through Netlify.',
     tech: 'React, Bootstrap, HTML, CSS, Swiper, Type-Animation',
     imageUrl: 'image/project-images/personal-website.jpg',
-    demo: 'https://www.justintsugranes.com',
+    demo: personalWebsite,
     repo: 'https://github.com/justinTsugranes/justintsugranes_website'
   },
   {
@@ -150,7 +174,7 @@ export default [
     descr:
       'A social media messaging app for musicians. From this project, I learned about the JS .forEach() method, using CDNs, and how to conditionally render styles',
     tech: 'JavaScript, HTML, CSS, FontAwesome, UUIDs',
-    imageUrl: 'image/project-images/museract.jpg',
+    imageUrl: museract,
     demo: 'https://justin-tsugranes-museract-app.netlify.app',
     repo: 'https://github.com/justinTsugranes/project_museract'
   },
@@ -160,7 +184,7 @@ export default [
     descr:
       'An example blog app where I learned more about REST APIs, resources, parameters, queries, HTTP Requests, URL endpoints, methods, and headers. Project uses the JSONPLaceholder API',
     tech: 'JavaScript, Fetch, HTML, CSS',
-    imageUrl: 'image/project-images/weblog.jpg',
+    imageUrl: weblog,
     demo: 'https://justin-tsugranes-blog-example.netlify.app',
     repo: 'https://github.com/justinTsugranes/project_weblog'
   },
@@ -170,7 +194,7 @@ export default [
     descr:
       'An idea generator app that uses the App uses the Bored API where I leared more about Servers and Clients, Request/Response Cycle, APIs, JSON, fetch syntax',
     tech: 'JavaScript, Fetch, HTML, CSS',
-    imageUrl: 'image/project-images/boredomterminator.jpg',
+    imageUrl: boredomterminator,
     demo: 'https://justin-tsugranes-boredom-terminator.netlify.app',
     repo: 'https://github.com/justinTsugranes/project_boredom-terminator'
   },
@@ -180,7 +204,7 @@ export default [
     descr:
       'A JavaScript implementation of the classic casino game, Blackjack where I learned more about data types, if/else statements, loops, Math objects, and object-oriented programming',
     tech: 'JavaScript, HTML, CSS',
-    imageUrl: 'image/project-images/blackjack.jpg',
+    imageUrl: blackjack,
     demo: 'https://justin-tsugranes-blackjack.netlify.app',
     repo: 'https://github.com/justinTsugranes/project_blackjack'
   },
@@ -189,7 +213,7 @@ export default [
     title: 'Unit Converter',
     descr: 'Ui for a Metric Converter',
     tech: 'HTML, CSS',
-    imageUrl: 'image/project-images/unit-converter.jpg',
+    imageUrl: unitConverter,
     demo: 'https://justin-tsugranes-unit-converter.netlify.app',
     repo: 'https://github.com/justinTsugranes/project_unit-converter'
   },
@@ -199,7 +223,7 @@ export default [
     descr: 'A basketball scorecard that keeps track of the scores of two teams',
     tech: 'JavaScript, HTML, CSS',
     imageUrl: 'image/project-images/scorecard.jpg',
-    demo: 'https://justin-tsugranes-scorecard.netlify.app',
+    demo: scoreCard,
     repo: 'https://github.com/justinTsugranes/project_scorecard'
   },
   {
@@ -209,7 +233,7 @@ export default [
       'A project that maps shapes over an image using coordinates and makes those areas interactive',
     tech: 'JavaScript, HTML, CSS',
     imageUrl: 'image/project-images/lotto.jpg',
-    demo: 'https://justin-tsugranes-lotto-app.netlify.app/',
+    demo: lotto,
     repo: 'https://github.com/justinTsugranes/project_lotto'
   }
 ];

@@ -1,7 +1,7 @@
 import { Row, Col } from 'react-bootstrap';
 import { Parallax } from 'react-parallax';
 import userData from '../../constants/data.js';
-import Headshot01 from '../../img/headshots/headshot-01.jpg';
+import { headShot01 } from '../../assets/index';
 
 const AboutSectionFour = () => {
   return (
@@ -9,7 +9,7 @@ const AboutSectionFour = () => {
       <Col>
         <Row>
           <Parallax
-            bgImage={Headshot01}
+            bgImage={headShot01}
             bgImageAlt="photo of a man"
             strength={300}
             fluid

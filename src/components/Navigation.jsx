@@ -1,9 +1,10 @@
 import { Row, Nav, Navbar } from 'react-bootstrap';
-import data from '../constants/data.js';
+import navLinks from '../constants/data.js';
+// import { navLinks } from '../constants/data.js';
 import ContactModal from './ContactModal.jsx';
 
 export default function Navigation() {
-  const { name, projects, about } = data;
+  const { name, projects, about } = navLinks;
 
   return (
     <Row>
@@ -14,8 +15,13 @@ export default function Navigation() {
         <Navbar.Toggle aria-controls="navbar"></Navbar.Toggle>
         <Navbar.Collapse>
           <Nav className="ms-auto dropstart text-end text-uppercase">
-            <Nav.Link href={projects.href}>{projects.title}</Nav.Link>
-            <Nav.Link href={about.href}>{about.title}</Nav.Link>
+            {/* {navLinks.map((nav) => (
+              <Nav.Link key={nav.id} href={`id`}>
+                {nav.title}
+              </Nav.Link>
+            ))} */}
+            <Nav.Link href={projects.id}>{projects.title}</Nav.Link>
+            <Nav.Link href={about.id}>{about.title}</Nav.Link>
             {/* <Nav.Link href={cv.href}>{cv.title}</Nav.Link> */}
             <Nav.Link id="contactLink">
               <ContactModal />

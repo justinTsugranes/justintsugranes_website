@@ -2,8 +2,7 @@ import { useState } from 'react';
 import { Row, Col, Button, Image } from 'react-bootstrap';
 import { useSpring, animated } from 'react-spring';
 import ContactModal from './ContactModal';
-import PreFooterImg from '../img/heros/pre-footer.jpg';
-import PreFooterGraphic from '../img/svg/connect.svg';
+import { preFooterImg, preFooterGraphic } from '../assets/index';
 
 export default function PreFooter() {
   const [toggle, setToggle] = useState({ online: false, outMouse: false });
@@ -12,10 +11,10 @@ export default function PreFooter() {
   });
   return (
     <Row>
-      <div className="pre-footer" style={{ backgroundImage: `url(${PreFooterImg})` }}>
+      <div className="pre-footer" style={{ backgroundImage: `url(${preFooterImg})` }}>
         <Row className="color-overlay d-flex justify-content-center align-items-center text-center px-md-3">
           <Col className="d-none d-md-block">
-            <Image src={PreFooterGraphic} fluid alt="graphic of the world" id="connect-img" />
+            <Image src={preFooterGraphic} fluid alt="graphic of the world" id="connect-img" />
           </Col>
 
           <Col className="d-flex flex-column px-3">

@@ -1,11 +1,11 @@
 import { Row, Col } from 'react-bootstrap';
 import { TypeAnimation } from 'react-type-animation';
-import heroImage from '../img/heros/hero-index.png';
+import { heroIndex } from '../assets';
 
 export default function Hero() {
   return (
     <Row>
-      <div className="hero m-0 p-0" style={{ backgroundImage: `url(${heroImage})` }}>
+      <div className="hero m-0 p-0" style={{ backgroundImage: `url(${heroIndex})` }}>
         <div className="color-overlay d-flex justify-content-center align-items-center text-center p-0">
           <Col className="text-white px-3">
             <TypeAnimation

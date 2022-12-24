@@ -15,6 +15,7 @@ export default function Footer() {
     designation,
     socialLinks: { linkedin, github, codepen, medium, spotify, instagram }
   } = data;
+
   return (
     <Row>
       <Col className="p-5 text-center position-relative text-light ">

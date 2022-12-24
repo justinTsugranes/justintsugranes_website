@@ -1,5 +1,5 @@
 import { Row, Col } from 'react-bootstrap';
-import TechImg from '../img/svg/programming.svg';
+import { programmer } from '../assets/index.js';
 import {
   ReactIcon,
   JsIcon,
@@ -80,7 +80,7 @@ export default function ProjectsShowcase() {
       </Col>
 
       <Col>
-        <img className="img-fluid w-75" src={TechImg} alt="..." />
+        <img className="img-fluid w-75" src={programmer} alt="..." />
       </Col>
     </Row>
   );

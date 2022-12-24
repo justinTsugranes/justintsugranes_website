@@ -1,11 +1,11 @@
 import { Row } from 'react-bootstrap';
 import { Parallax } from 'react-parallax';
-import Headshot03 from '../../img/headshots/headshot-03.jpg';
+import { headShot03 } from '../../assets/index';
 
 const AboutSectionSix = () => {
   return (
     <Row>
-      <Parallax bgImage={Headshot03} bgImageAlt="picture of a man in the desert" strength={500}>
+      <Parallax bgImage={headShot03} bgImageAlt="picture of a man in the desert" strength={500}>
         <div style={{ height: '750px' }} />
       </Parallax>
     </Row>

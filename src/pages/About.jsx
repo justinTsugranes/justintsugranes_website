@@ -3,6 +3,7 @@ import {
   AboutSectionTwo,
   AboutSectionThree,
   AboutSectionFour,
+  // AboutSectionFive,
   AboutSectionSix,
   AboutSectionSeven
 } from '../components/about/index';
