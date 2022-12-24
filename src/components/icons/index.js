@@ -16,14 +16,14 @@ import GithubIcon from './GithubIcon.jsx';
 import InstagramIcon from './InstagramIcon.jsx';
 import LinkedInIcon from './LinkedInIcon.jsx';
 import MediumIcon from './MediumIcon.jsx';
-import Spotify from './Spotify.jsx';
+import SpotifyIcon from './SpotifyIcon.jsx';
 
 export {
   LinkedInIcon,
   GithubIcon,
   CodepenIcon,
   MediumIcon,
-  Spotify,
+  SpotifyIcon,
   InstagramIcon,
   BootstrapIcon,
   CssIcon,

@@ -44,7 +44,7 @@ import {
 // chrome extension
 // api dashboard
 
-export default [
+export const projects = [
   // {
   //   id: 'template',
   //   title: '',

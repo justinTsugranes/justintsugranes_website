@@ -1,9 +1,3 @@
-const InstagramIcon = () => {
-  return (
-    <div>
-      <i className="fa-brands fa-instagram fa-lg" />
-    </div>
-  );
-};
+const InstagramIcon = () => <i className="fa-brands fa-instagram fa-lg" />;
 
 export default InstagramIcon;

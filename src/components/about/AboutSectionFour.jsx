@@ -1,6 +1,6 @@
 import { Row, Col } from 'react-bootstrap';
 import { Parallax } from 'react-parallax';
-import userData from '../../constants/data.js';
+import { about } from '../../constants/index.js';
 import { headShot01 } from '../../assets/index';
 
 const AboutSectionFour = () => (
@@ -19,7 +19,7 @@ const AboutSectionFour = () => (
     </Col>
     <Col className="d-flex flex-column p-4">
       <h3 className="mb-4 light-blue">My Background</h3>
-      <p className="text-light bioTwo fs-3">{userData.about.bioTwo}</p>
+      <p className="text-light bioTwo fs-3">{about.bioTwo}</p>
     </Col>
   </Row>
 );

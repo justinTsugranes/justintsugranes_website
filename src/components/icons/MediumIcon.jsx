@@ -1,9 +1,3 @@
-const MediumIcon = () => {
-  return (
-    <div>
-      <i className="fa-brands fa-medium fa-lg" />
-    </div>
-  );
-};
+const MediumIcon = () => <i className="fa-brands fa-medium fa-lg" />;
 
 export default MediumIcon;

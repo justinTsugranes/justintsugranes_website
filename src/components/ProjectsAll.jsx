@@ -1,6 +1,6 @@
 // import '../styles/App.css';
 import { Row } from 'react-bootstrap';
-import projects from '../constants/ProjectData';
+import { projects } from '../constants/ProjectData';
 import ProjectCard from './ProjectCard';
 
 const AllProjects = () => (

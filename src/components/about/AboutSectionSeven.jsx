@@ -1,6 +1,6 @@
 import { Container, Card, Col, Row, Image } from 'react-bootstrap';
 /* import projects for swiper */
-import projects from '../../constants/ProjectData';
+import { projects } from '../../constants/ProjectData';
 // Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';
 // Import Swiper styles

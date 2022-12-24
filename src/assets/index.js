@@ -56,6 +56,7 @@ import webFlix from './project-images/webflix.jpg';
 import weblog from './project-images/weblog.jpg';
 
 export {
+  // heroes
   heroAbout,
   heroContact,
   heroIndex,
