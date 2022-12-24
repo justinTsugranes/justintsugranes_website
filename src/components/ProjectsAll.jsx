@@ -3,6 +3,18 @@ import { Row } from 'react-bootstrap';
 import ProjectCard from './ProjectCard';
 import projects from '../constants/ProjectData';
 
+// const Project = ({ id, title, desc, imageUrl, demo, repo, tech }) => (
+//   <Card
+//     key={id}
+//     title={title}
+//     descr={descr}
+//     imageUrl={imageUrl}
+//     demo={demo}
+//     repo={repo}
+//     tech={tech}
+//   />
+// );
+
 function Projects() {
   const cards = projects.map((card) => {
     return (

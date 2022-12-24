@@ -44,8 +44,6 @@ import {
 // chrome extension
 // api dashboard
 
-const github = 'https://github.com/justintsugranes/';
-
 export default [
   // {
   //   id: 'template',
@@ -64,7 +62,7 @@ export default [
     tech: 'React, Bootstrap, HTML, CSS',
     imageUrl: frontendBootcamp,
     demo: 'https://justin-tsugranes-bootstrap-example01.netlify.app',
-    repo: `${github}project_bootstrap-frontend-example`
+    repo: `https://github.com/justintsugranes/project_bootstrap-frontend-example`
   },
   {
     id: 'landingpage',
@@ -73,7 +71,7 @@ export default [
     tech: 'React, Bootstrap, HTML, CSS, Figma',
     imageUrl: landingPage,
     demo: 'https://justin-tsugranes-landing-page-example.netlify.app',
-    repo: `${github}project_react_landing_page`
+    repo: `https://github.com/justintsugranes/project_react_landing_page`
   },
   {
     id: 'coworkingspaces',
@@ -82,7 +80,7 @@ export default [
     tech: 'React, JavaScript',
     imageUrl: coworkingSpace,
     demo: 'https://justin-tsugranes-coworking-space-app.netlify.app',
-    repo: `${github}project_coworking-spaces`
+    repo: `https://github.com/justintsugranes/project_coworking-spaces`
   },
   {
     id: 'recipes',
@@ -91,7 +89,7 @@ export default [
     tech: 'HTML, CSS',
     imageUrl: recipes,
     demo: 'https://justin-tsugranes-breakfast-recipes.netlify.app',
-    repo: `${github}project_recipe-website`
+    repo: `https://github.com/justintsugranes/project_recipe-website`
   },
   {
     id: 'crashcourse',

@@ -5,12 +5,10 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import { Modal, Container, CloseButton, Row, Card, Col, Image } from 'react-bootstrap';
 import { GithubIcon, DemoIcon } from './icons/index';
 
-export default function ProjectCard(props) {
+export default function ProjectCard({ index, imageUrl, title, descr, tech, repo, demo, close }) {
   const [show, setShow] = useState(false);
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
-
-  const { index, imageUrl, title, descr, tech, repo, demo, close } = props;
 
   return (
     <>
@@ -21,7 +19,7 @@ export default function ProjectCard(props) {
             variant="top"
             className="proj-card-img hover-zoom shadow"
             src={imageUrl}
-            alt="..."
+            alt={title}
           />
         </Card>
       </Col>
