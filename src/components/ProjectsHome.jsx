@@ -6,29 +6,12 @@ import '../styles/ProjectCards.css';
 import projects from '../constants/ProjectData';
 import ProjectCard from './ProjectCard';
 
-function MapProjects() {
-  const cards = projects.slice(0, 8).map((card) => {
-    return (
-      <ProjectCard
-        key={card.id}
-        title={card.title}
-        descr={card.descr}
-        imageUrl={card.imageUrl}
-        demo={card.demo}
-        repo={card.repo}
-        tech={card.tech}
-      />
-    );
-  });
-  return cards;
-}
-
 export default function ProjectsHome() {
+  const navigate = useNavigate();
   const [toggle, setToggle] = useState({ online: false, outMouse: false });
   const buttonScale = useSpring({
     transform: toggle.online ? 'scale(1.05)' : 'scale(1)'
   });
-  const navigate = useNavigate();
 
   return (
     <Row className="section-container d-flex flex-column text-center">
@@ -38,7 +21,9 @@ export default function ProjectsHome() {
 
       <Col>
         <Row className="d-flex justify-content-center gap-5 row-cols-1 row-cols-md-3 row-cols-lg-5">
-          <MapProjects />
+          {projects.slice(0, 8).map((project, index) => (
+            <ProjectCard key={project.id} {...project} index={index} />
+          ))}
         </Row>
       </Col>
 

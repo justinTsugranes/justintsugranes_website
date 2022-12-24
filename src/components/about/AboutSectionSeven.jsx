@@ -1,11 +1,8 @@
 import { Container, Card, Col, Row, Image } from 'react-bootstrap';
-
 /* import projects for swiper */
-import data from '../../constants/ProjectData';
-
+import projects from '../../constants/ProjectData';
 // Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';
-
 // Import Swiper styles
 import '../../styles/MySwiper.css';
 import 'swiper/css';
@@ -52,7 +49,7 @@ export default function AboutSectionSeven() {
             }
           }}
           className="mySwiper">
-          {data.map(({ imageUrl, demo }, slideID) => {
+          {projects.map(({ imageUrl, demo }, slideID) => {
             return (
               <SwiperSlide key={slideID}>
                 <Col className="col-lg p-0 m-0">

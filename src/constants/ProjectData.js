@@ -162,8 +162,8 @@ export default [
     descr:
       'My personal portfolio website that showcases my recent coding projects. CI through GitHub, Deployed through Netlify.',
     tech: 'React, Bootstrap, HTML, CSS, Swiper, Type-Animation',
-    imageUrl: 'image/project-images/personal-website.jpg',
-    demo: personalWebsite,
+    imageUrl: personalWebsite,
+    demo: 'http://www.justintsugranes.com',
     repo: 'https://github.com/justinTsugranes/justintsugranes_website'
   },
   {
@@ -220,8 +220,8 @@ export default [
     title: 'Scorecard',
     descr: 'A basketball scorecard that keeps track of the scores of two teams',
     tech: 'JavaScript, HTML, CSS',
-    imageUrl: 'image/project-images/scorecard.jpg',
-    demo: scoreCard,
+    imageUrl: scoreCard,
+    demo: 'https://justin-tsugranes-scorecard.netlify.app/',
     repo: 'https://github.com/justinTsugranes/project_scorecard'
   },
   {
@@ -230,8 +230,8 @@ export default [
     descr:
       'A project that maps shapes over an image using coordinates and makes those areas interactive',
     tech: 'JavaScript, HTML, CSS',
-    imageUrl: 'image/project-images/lotto.jpg',
-    demo: lotto,
+    imageUrl: lotto,
+    demo: 'https://justin-tsugranes-lotto-app.netlify.app/',
     repo: 'https://github.com/justinTsugranes/project_lotto'
   }
 ];
