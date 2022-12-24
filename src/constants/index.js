@@ -29,28 +29,33 @@ export const nav = {
 };
 
 export const socialLinks = {
-  adobe: 'https://justintsugranes.myportfolio.com/',
+  adobe: `https://${tags.adobe}.myportfolio.com/`,
   audius: '',
-  codepen: 'https://codepen.io/justintsugranes',
-  github: `https://github.com/justintsugranes`,
+  codepen: `https://codepen.io/${tags.codepen}`,
+  github: `https://github.com/${tags.github}`,
   flickr: '',
-  instagram: 'https://instagram.com/justintsugranes',
-  linkedin: 'https://linkedin.com/in/justintsugranes',
-  medium: 'https://justintsugranes.medium.com',
-  spotify: 'https://open.spotify.com/artist/4vV18ClJAixgpNfKaJkEmR?si=bOY2nkJXT_esmViVXk6GbA',
-  stackblitz: 'https://stackblitz.com/@justinTsugranes',
-  twitter: 'http://twitter.com/justintsugranes',
-  website: 'https://justintsugranes.com'
+  instagram: `https://instagram.com/${tags.instagram}`,
+  linkedin: `https://linkedin.com/in/${tags.linkedin}`,
+  medium: `https://${tags.medium}.medium.com`,
+  spotify: `https://open.spotify.com/artist/4vV18ClJAixgpNfKaJkEmR?si=bOY2nkJXT_esmViVXk6GbA`,
+  stackblitz: `https://stackblitz.com/@${tags.stackblitz}`,
+  twitter: `http://twitter.com/${tags.twitter}`,
+  website: `https://justintsugranes.com`
 };
 
-export const socialTags = [
-  {
-    adobe: '',
-    audius: '',
-    email: 'justintsugranes@proton.me',
-    github: 'justintsugranes'
-  }
-];
+export const tags = {
+  adobe: 'justintsugranes',
+  audius: '',
+  codepen: 'justintsugranes',
+  github: 'justintsugranes',
+  flickr: '',
+  instagram: 'justintsugranes',
+  linkedin: 'justin-tsugranes',
+  medium: 'justintsugranes',
+  spotify: 'https://open.spotify.com/artist/4vV18ClJAixgpNfKaJkEmR?si=bOY2nkJXT_esmViVXk6GbA',
+  stackblitz: 'justinTsugranes',
+  twitter: 'justintsugranes'
+};
 
 export const socialMedia = [
   {
