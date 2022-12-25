@@ -1,8 +1,8 @@
 import { useState } from 'react';
 import { Row, Col, Button, Image } from 'react-bootstrap';
 import { useSpring, animated } from 'react-spring';
-import ContactModal from './ContactModal';
-import { preFooterImg, preFooterGraphic } from '../assets/index';
+import { ContactModal } from '../components';
+import { preFooterImg, preFooterGraphic } from '../assets';
 
 const PreFooter = () => {
   const [toggle, setToggle] = useState({ online: false, outMouse: false });

@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import { Modal, CloseButton, Container, Form, Button, FloatingLabel } from 'react-bootstrap';
 import { useNavigate } from 'react-router-dom';
+import { Modal, CloseButton, Container, Form, Button, FloatingLabel } from 'react-bootstrap';
 
 const ContactModal = () => {
   /* show/hide the contact modal */

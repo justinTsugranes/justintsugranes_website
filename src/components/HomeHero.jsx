@@ -2,7 +2,7 @@ import { Row, Col } from 'react-bootstrap';
 import { TypeAnimation } from 'react-type-animation';
 import { heroIndex } from '../assets';
 
-const Hero = () => (
+const HomeHero = () => (
   <Row>
     <div className="hero m-0 p-0" style={{ backgroundImage: `url(${heroIndex})` }}>
       <div className="color-overlay d-flex justify-content-center align-items-center text-center p-0">
@@ -37,4 +37,4 @@ const Hero = () => (
   </Row>
 );
 
-export default Hero;
+export default HomeHero;

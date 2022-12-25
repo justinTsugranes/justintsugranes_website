@@ -5,7 +5,7 @@ import {
   MediumIcon,
   SpotifyIcon,
   InstagramIcon
-} from '../components/icons';
+} from '../assets';
 
 export const nav = {
   home: {
@@ -55,36 +55,84 @@ export const socialLinks = {
 
 export const socialMedia = [
   {
-    id: 'social-media-1',
-    icon: LinkedInIcon,
-    link: socialLinks.linkedin
+    id: 'linkedin',
+    icon: <LinkedInIcon />,
+    link: `https://linkedin.com/in/${tags.linkedin}`
   },
   {
-    id: 'social-media-2',
-    icon: GithubIcon,
-    link: socialLinks.github
+    id: 'github',
+    icon: <GithubIcon />,
+    link: `https://github.com/${tags.github}`
   },
   {
-    id: 'social-media-3',
-    icon: CodepenIcon,
-    link: socialLinks.codepen
+    id: 'codepen',
+    icon: <CodepenIcon />,
+    link: `https://codepen.io/${tags.codepen}`
   },
   {
-    id: 'social-media-4',
-    icon: MediumIcon,
-    link: socialLinks.medium
+    id: 'medium',
+    icon: <MediumIcon />,
+    link: `https://${tags.medium}.medium.com`
   },
   {
-    id: 'social-media-5',
-    icon: SpotifyIcon,
-    link: socialLinks.spotify
+    id: 'spotify',
+    icon: <SpotifyIcon />,
+    link: `https://open.spotify.com/artist/4vV18ClJAixgpNfKaJkEmR?si=bOY2nkJXT_esmViVXk6GbA`
   },
   {
-    id: 'social-media-6',
-    icon: InstagramIcon,
-    link: socialLinks.instagram
+    id: 'instagram',
+    icon: <InstagramIcon />,
+    link: `https://instagram.com/${tags.instagram}`
   }
+  // {
+  //   id: 'adobe',
+  //   icon: <AdobeIcon/>,
+  //   link: `https://${tags.adobe}.myportfolio.com/`
+  // },
+  // {
+  //   id: 'stackblitz',
+  //   icon: <StackBlitzIcon/>,
+  //   link: `https://stackblitz.com/@${tags.stackblitz}`
+  // },
+  // {
+  //   id: 'twitter',
+  //   icon: <TwitterIcon/>,
+  //   link: `http://twitter.com/${tags.twitter}`
+  // },
 ];
+
+// export const socialMedia = [
+//   {
+//     id: 'social-media-1',
+//     icon: LinkedInIcon,
+//     link: socialLinks.linkedin
+//   },
+//   {
+//     id: 'social-media-2',
+//     icon: GithubIcon,
+//     link: socialLinks.github
+//   },
+//   {
+//     id: 'social-media-3',
+//     icon: CodepenIcon,
+//     link: socialLinks.codepen
+//   },
+//   {
+//     id: 'social-media-4',
+//     icon: MediumIcon,
+//     link: socialLinks.medium
+//   },
+//   {
+//     id: 'social-media-5',
+//     icon: SpotifyIcon,
+//     link: socialLinks.spotify
+//   },
+//   {
+//     id: 'social-media-6',
+//     icon: InstagramIcon,
+//     link: socialLinks.instagram
+//   }
+// ];
 
 export const user = {
   name: 'Justin Tsugranes',

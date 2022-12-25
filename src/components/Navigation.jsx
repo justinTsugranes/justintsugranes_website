@@ -1,5 +1,5 @@
 import { Row, Nav, Navbar } from 'react-bootstrap';
-import { user, nav } from '../constants/index.js';
+import { user, nav } from '../constants';
 
 import ContactModal from './ContactModal.jsx';
 

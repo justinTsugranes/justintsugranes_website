@@ -6,7 +6,7 @@ import { EffectCube, Pagination, Mousewheel, Keyboard } from 'swiper';
 import 'swiper/css';
 import 'swiper/css/effect-cube';
 import 'swiper/css/pagination';
-import '../styles/MySwper.css';
+import '../styles/MySwiper.css';
 
 import { Container } from 'react-bootstrap';
 
@@ -20,7 +20,7 @@ import {
   headShot06,
   headShot07,
   headShot08
-} from '../assets/index';
+} from '../assets';
 
 const SwiperCube = () => (
   <Container>

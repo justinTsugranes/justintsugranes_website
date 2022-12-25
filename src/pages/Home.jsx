@@ -1,10 +1,8 @@
-import Hero from '../components/HomeHero';
-import Quote from '../components/Quote';
-import ProjectsHome from '../components/ProjectsHome';
+import { HomeHero, Quote, ProjectsHome } from '../components';
 
 const Home = () => (
   <>
-    <Hero />
+    <HomeHero />
     <Quote />
     <ProjectsHome />
   </>

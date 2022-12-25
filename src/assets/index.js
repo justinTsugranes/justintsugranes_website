@@ -12,6 +12,27 @@ import preFooterGraphic from './graphics/pre-footer-graphic.svg';
 import programmer from './graphics/programmer.svg';
 import showcase from './graphics/showcase.svg';
 
+// ICONS
+import BootstrapIcon from './icons/BootstrapIcon.jsx';
+import CssIcon from './icons/CssIcon.jsx';
+import DemoIcon from './icons/DemoIcon.jsx';
+import EthereumIcon from './icons/EthereumIcon.jsx';
+import FigmaIcon from './icons/FigmaIcon.jsx';
+import GitIcon from './icons/GitIcon.jsx';
+import HtmlIcon from './icons/HtmlIcon.jsx';
+import JsIcon from './icons/JsIcon.jsx';
+import NodeIcon from './icons/NodeIcon.jsx';
+import ReactIcon from './icons/ReactIcon.jsx';
+import SalesforceIcon from './icons/SalesforceIcon.jsx';
+import SassIcon from './icons/SassIcon.jsx';
+import WordpressIcon from './icons/WordpressIcon.jsx';
+import CodepenIcon from './icons/CodepenIcon.jsx';
+import GithubIcon from './icons/GithubIcon.jsx';
+import InstagramIcon from './icons/InstagramIcon.jsx';
+import LinkedInIcon from './icons/LinkedInIcon.jsx';
+import MediumIcon from './icons/MediumIcon.jsx';
+import SpotifyIcon from './icons/SpotifyIcon.jsx';
+
 // HEADSHOTS
 import headShot01 from './headshots/headshot-01.jpg';
 import headShot02 from './headshots/headshot-02.jpg';
@@ -68,6 +89,26 @@ export {
   pageNotFound,
   programmer,
   showcase,
+  // icons
+  LinkedInIcon,
+  GithubIcon,
+  CodepenIcon,
+  MediumIcon,
+  SpotifyIcon,
+  InstagramIcon,
+  BootstrapIcon,
+  CssIcon,
+  DemoIcon,
+  EthereumIcon,
+  FigmaIcon,
+  GitIcon,
+  HtmlIcon,
+  JsIcon,
+  NodeIcon,
+  ReactIcon,
+  SalesforceIcon,
+  SassIcon,
+  WordpressIcon,
   // headshots
   headShot01,
   headShot02,

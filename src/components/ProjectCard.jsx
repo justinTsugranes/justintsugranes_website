@@ -2,7 +2,7 @@
 import { useState } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Modal, Container, CloseButton, Row, Card, Col, Image } from 'react-bootstrap';
-import { GithubIcon, DemoIcon } from './icons/index';
+import { GithubIcon, DemoIcon } from '../assets';
 
 const ProjectCard = ({ index, imageUrl, title, descr, tech, repo, demo, close }) => {
   const [show, setShow] = useState(false);

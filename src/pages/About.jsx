@@ -6,7 +6,7 @@ import {
   // AboutSectionFive,
   AboutSectionSix,
   AboutSectionSeven
-} from '../components/about/index';
+} from '../components/about';
 
 const About = () => (
   <>

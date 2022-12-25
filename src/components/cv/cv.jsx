@@ -1,13 +1,12 @@
-import React from 'react';
-import { Tabs, Tab, Container } from 'react-bootstrap';
+import { Container, Tab, Tabs } from 'react-bootstrap';
 import Awards from './awards';
 import Certificates from './certificates';
 import Education from './education';
+import Links from './links';
 import Musicals from './musicals';
 import Professonalexp from './professonalexp';
 import Professors from './professors';
 import Skills from './skills';
-import Links from './links';
 import Speaking from './speaking';
 import Transcriptions from './transcriptions';
 import Volunteer from './volunteer';

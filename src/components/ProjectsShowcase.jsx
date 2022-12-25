@@ -1,6 +1,6 @@
 import { Row, Col } from 'react-bootstrap';
-import { programmer } from '../assets/index.js';
 import {
+  programmer,
   ReactIcon,
   JsIcon,
   NodeIcon,
@@ -13,7 +13,7 @@ import {
   SalesforceIcon,
   WordpressIcon,
   EthereumIcon
-} from './icons/index';
+} from '../assets';
 
 const ProjectsShowcase = () => (
   <Row className="py-5 px-3 d-flex align-items-center justify-content-around text-light text-center text-md-center">
