@@ -46,6 +46,22 @@ import headShot09 from './headshots/headshot-09.jpg';
 import headShot10 from './headshots/headshot-10.jpeg';
 import headShot11 from './headshots/headshot-11.jpg';
 
+const headShots = [
+  {
+    headShot01: './headshots/headshot-01.jpg',
+    headShot02: './headshots/headshot-02.jpg',
+    headShot03: './headshots/headshot-03.jpg',
+    headShot04: './headshots/headshot-04.jpg',
+    headShot05: './headshots/headshot-05.jpg',
+    headShot06: './headshots/headshot-06.jpg',
+    headShot07: './headshots/headshot-07.jpg',
+    headShot08: './headshots/headshot-08.jpg',
+    headShot09: './headshots/headshot-09.jpg',
+    headShot10: './headshots/headshot-10.jpeg',
+    headShot11: './headshots/headshot-11.jpg'
+  }
+];
+
 // PROJECT SCREENSHOTS
 import bandWebsite from './project-images/band-website.jpg';
 import blackjack from './project-images/blackjack.jpg';
@@ -121,6 +137,7 @@ export {
   headShot09,
   headShot10,
   headShot11,
+  headShots,
   bandWebsite,
   // projects
   blackjack,

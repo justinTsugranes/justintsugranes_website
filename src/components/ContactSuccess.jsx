@@ -3,6 +3,7 @@ import { Button } from 'react-bootstrap';
 
 const ContactSuccess = () => {
   const navigate = useNavigate();
+
   return (
     <div className="card bg-success text-dark rounded-3 shadow-lg m-5 mb-0">
       <div className="card-body p-4">

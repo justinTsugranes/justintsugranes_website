@@ -1,5 +1,5 @@
 import { Row, Card } from 'react-bootstrap';
-import { about } from '../constants/index.js';
+import { about } from '../constants';
 
 const Quote = () => (
   <Row className="bg-dark d-flex justify-content-center py-5">

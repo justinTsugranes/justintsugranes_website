@@ -79,7 +79,7 @@ const ProjectsShowcase = () => (
     </Col>
 
     <Col>
-      <img className="img-fluid w-75" src={programmer} alt="..." />
+      <img className="img-fluid w-75" src={programmer} alt="programmer graphic" />
     </Col>
   </Row>
 );

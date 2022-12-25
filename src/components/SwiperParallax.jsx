@@ -1,13 +1,11 @@
 // Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';
-
+// import required modules
+import { Parallax, Pagination, Navigation } from 'swiper';
 // Import Swiper styles
 import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
-// import './styles.css';
-// import required modules
-import { Parallax, Pagination, Navigation } from 'swiper';
 
 const SwiperParallax = () => (
   <Swiper

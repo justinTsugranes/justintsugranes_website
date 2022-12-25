@@ -11,16 +11,7 @@ import '../styles/MySwiper.css';
 import { Container } from 'react-bootstrap';
 
 // Import Images
-import {
-  headShot01,
-  headShot02,
-  headShot03,
-  headShot04,
-  headShot05,
-  headShot06,
-  headShot07,
-  headShot08
-} from '../assets';
+import { headShots } from '../assets';
 
 const SwiperCube = () => (
   <Container>
@@ -37,30 +28,11 @@ const SwiperCube = () => (
       mousewheel={true}
       keyboard={true}
       className="mySwiper">
-      <SwiperSlide>
-        <img src={headShot01} />
-      </SwiperSlide>
-      <SwiperSlide>
-        <img src={headShot02} />
-      </SwiperSlide>
-      <SwiperSlide>
-        <img src={headShot03} />
-      </SwiperSlide>
-      <SwiperSlide>
-        <img src={headShot04} />
-      </SwiperSlide>
-      <SwiperSlide>
-        <img src={headShot05} />
-      </SwiperSlide>
-      <SwiperSlide>
-        <img src={headShot06} />
-      </SwiperSlide>
-      <SwiperSlide>
-        <img src={headShot07} />
-      </SwiperSlide>
-      <SwiperSlide>
-        <img src={headShot08} />
-      </SwiperSlide>
+      {headShots.map((image) => (
+        <SwiperSlide key={headShots.index}>
+          <img src={image} alt="photo of a man" />
+        </SwiperSlide>
+      ))}
     </Swiper>
   </Container>
 );

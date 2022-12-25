@@ -9,9 +9,9 @@ import ProjectsAll from './ProjectsAll';
 import ProjectsHome from './ProjectsHome';
 import ProjectsShowcase from './ProjectsShowcase';
 import Quote from './Quote';
-import ScrollToTop from './ScrollToTop';
 import SwiperCube from './SwiperCube';
 import SwiperParallax from './SwiperParallax';
+import ScrollToTop from './ScrollToTop';
 
 export {
   ContactModal,

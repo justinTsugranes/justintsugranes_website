@@ -1,10 +1,10 @@
 import { Row, Nav, Navbar } from 'react-bootstrap';
-import { user, nav } from '../constants';
+import { user, navLinks } from '../constants';
 
 import ContactModal from './ContactModal.jsx';
 
 const Navigation = () => {
-  const { home, projects, about } = nav;
+  const { home, projects, about } = navLinks;
 
   return (
     <Row>
