@@ -1,31 +1,14 @@
-import ContactModal from './ContactModal';
-import ContactSuccess from './ContactSuccess';
-import Footer from './Footer';
-import HomeHero from './HomeHero';
-import Navigation from './Navigation';
-import PreFooter from './PreFooter';
-import ProjectCard from './ProjectCard';
-import ProjectsAll from './ProjectsAll';
-import ProjectsHome from './ProjectsHome';
-import ProjectsShowcase from './ProjectsShowcase';
-import Quote from './Quote';
-import SwiperCube from './SwiperCube';
-import SwiperParallax from './SwiperParallax';
-import ScrollToTop from './ScrollToTop';
-
-export {
-  ContactModal,
-  ContactSuccess,
-  Footer,
-  HomeHero,
-  PreFooter,
-  ProjectCard,
-  ProjectsAll,
-  ProjectsHome,
-  ProjectsShowcase,
-  Quote,
-  Navigation,
-  ScrollToTop,
-  SwiperCube,
-  SwiperParallax
-};
+export { default as ContactModal } from './ContactModal';
+export { default as ContactSuccess } from './ContactSuccess';
+export { default as Footer } from './Footer';
+export { default as HomeHero } from './HomeHero';
+export { default as Navigation } from './Navigation';
+export { default as PreFooter } from './PreFooter';
+export { default as ProjectCard } from './ProjectCard';
+export { default as ProjectsAll } from './ProjectsAll';
+export { default as ProjectsHome } from './ProjectsHome';
+export { default as ProjectsShowcase } from './ProjectsShowcase';
+export { default as Quote } from './Quote';
+export { default as SwiperCube } from './SwiperCube';
+export { default as SwiperParallax } from './SwiperParallax';
+export { default as ScrollToTop } from './ScrollToTop';
