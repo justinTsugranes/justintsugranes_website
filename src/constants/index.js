@@ -28,12 +28,22 @@ export const nav = {
   }
 };
 
+export const tags = {
+  adobe: 'justintsugranes',
+  codepen: 'justintsugranes',
+  github: 'justintsugranes',
+  instagram: 'justintsugranes',
+  linkedin: 'justin-tsugranes',
+  medium: 'justintsugranes',
+  spotify: 'https://open.spotify.com/artist/4vV18ClJAixgpNfKaJkEmR?si=bOY2nkJXT_esmViVXk6GbA',
+  stackblitz: 'justinTsugranes',
+  twitter: 'justintsugranes'
+};
+
 export const socialLinks = {
   adobe: `https://${tags.adobe}.myportfolio.com/`,
-  audius: '',
   codepen: `https://codepen.io/${tags.codepen}`,
   github: `https://github.com/${tags.github}`,
-  flickr: '',
   instagram: `https://instagram.com/${tags.instagram}`,
   linkedin: `https://linkedin.com/in/${tags.linkedin}`,
   medium: `https://${tags.medium}.medium.com`,
@@ -41,20 +51,6 @@ export const socialLinks = {
   stackblitz: `https://stackblitz.com/@${tags.stackblitz}`,
   twitter: `http://twitter.com/${tags.twitter}`,
   website: `https://justintsugranes.com`
-};
-
-export const tags = {
-  adobe: 'justintsugranes',
-  audius: '',
-  codepen: 'justintsugranes',
-  github: 'justintsugranes',
-  flickr: '',
-  instagram: 'justintsugranes',
-  linkedin: 'justin-tsugranes',
-  medium: 'justintsugranes',
-  spotify: 'https://open.spotify.com/artist/4vV18ClJAixgpNfKaJkEmR?si=bOY2nkJXT_esmViVXk6GbA',
-  stackblitz: 'justinTsugranes',
-  twitter: 'justintsugranes'
 };
 
 export const socialMedia = [
@@ -92,7 +88,7 @@ export const socialMedia = [
 
 export const user = {
   name: 'Justin Tsugranes',
-  designation: 'Web Developer, Digital Media Creator'
+  title: 'Web Developer, Digital Media Creator'
 };
 
 export const about = {

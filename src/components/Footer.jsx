@@ -17,7 +17,7 @@ const Footer = () => {
     <Row>
       <Col className="p-5 text-center position-relative text-light ">
         <h2 className="text-uppercase mb-3 h3 light-blue">{user.name}</h2>
-        <p className="mb-5">{user.designation}</p>
+        <p className="mb-5">{user.title}</p>
         <h3 className="text-uppercase h4 light-blue">Get In Touch</h3>
         {/* Grid container */}
         <Row className="p-4 pb-0">
