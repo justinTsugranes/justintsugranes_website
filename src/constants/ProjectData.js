@@ -29,21 +29,6 @@ import {
   weblog
 } from '../assets';
 
-// RPG game
-// Game of war
-// watchlist
-// restaurant app
-// react digital business card
-// airbnb clone
-// travel journal
-// traversy ai image gen
-// traversy react stripe store
-// traversy mern goals app
-// edrow mern social app
-// dave gray mern project
-// chrome extension
-// api dashboard
-
 export const projects = [
   // {
   //   id: 'template',

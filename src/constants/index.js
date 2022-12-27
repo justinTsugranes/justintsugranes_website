@@ -89,6 +89,11 @@ export const socialMedia = [
   //   icon: <TwitterIcon/>,
   //   link: `http://twitter.com/${tags.twitter}`
   // },
+  // {
+  //   id: 'devto',
+  //   icon: <DevToIcon/>,
+  //   link: ``
+  // },
 ];
 
 export const user = {
