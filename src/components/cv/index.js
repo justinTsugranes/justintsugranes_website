@@ -1,0 +1,11 @@
+export { default as Awards } from './awards';
+export { default as Certificates } from './certificates';
+export { default as Education } from './education';
+export { default as Links } from './links';
+export { default as Musicals } from './musicals';
+export { default as Professonalexp } from './professonalexp';
+export { default as Professors } from './professors';
+export { default as Skills } from './skills';
+export { default as Speaking } from './speaking';
+export { default as Transcriptions } from './transcriptions';
+export { default as Volunteer } from './volunteer';

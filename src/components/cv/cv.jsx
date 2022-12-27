@@ -1,15 +1,17 @@
 import { Container, Tab, Tabs } from 'react-bootstrap';
-import Awards from './awards';
-import Certificates from './certificates';
-import Education from './education';
-import Links from './links';
-import Musicals from './musicals';
-import Professonalexp from './professonalexp';
-import Professors from './professors';
-import Skills from './skills';
-import Speaking from './speaking';
-import Transcriptions from './transcriptions';
-import Volunteer from './volunteer';
+import {
+  Professonalexp,
+  Education,
+  Certificates,
+  Volunteer,
+  Awards,
+  Professors,
+  Skills,
+  Speaking,
+  Transcriptions,
+  Musicals,
+  Links
+} from './index.js';
 
 const Cv = () => (
   <div className="text-light">
