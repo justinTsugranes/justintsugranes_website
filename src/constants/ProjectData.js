@@ -1,5 +1,6 @@
 import {
   bandWebsite,
+  bankingApp,
   blackjack,
   boredomterminator,
   // businessCard,
@@ -7,6 +8,7 @@ import {
   crashCourses,
   frontendBootcamp,
   // goople,
+  gpt3,
   // ilovelucy,
   // imageMapping,
   // kittyStories,
@@ -37,8 +39,26 @@ export const projects = [
   //   tech: '',
   //   imageUrl: ,
   //   demo: '',
-  //   repo: 'https://github.com/justinTsugranes/'
+  //   repo: ''
   // },
+  {
+    id: 'bankingapp',
+    title: 'Modern Banking App',
+    descr: 'Frontend for a Modern Banking App',
+    tech: 'React, TailwindCSS',
+    imageUrl: bankingApp,
+    demo: 'https://justintsugranes-modern-bank-app.netlify.app/',
+    repo: 'https://github.com/justinTsugranes/project_modern-bank-app'
+  },
+  {
+    id: 'gpt3',
+    title: 'GPT-3 Landing Page',
+    descr: 'Frontend for a GPT-3 AI ',
+    tech: 'React.js, HTML, CSS',
+    imageUrl: gpt3,
+    demo: 'https://justin-tsugranes-gpt3.netlify.app/',
+    repo: 'https://github.com/justinTsugranes/project_jsm-gpt-3'
+  },
   {
     id: 'frontendbootcamp',
     title: 'Frontend Bootcamp',

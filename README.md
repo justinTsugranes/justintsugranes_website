@@ -94,7 +94,7 @@ Give a ⭐️ if you like this project and if you like my work, maybe you would 
 [issues-shield]: https://img.shields.io/github/issues/justintsugranes/justintsugranes_website.svg?style=for-the-badge
 [issues-url]: https://github.com/justintsugranes/justintsugranes_website/issues
 [license-shield]: https://img.shields.io/github/license/justintsugranes/justintsugranes_website.svg?style=for-the-badge
-[license-url]: https://github.com/justintsugranes/justintsugranes_website/blob/master/LICENSE.txt
+[license-url]: https://github.com/justinTsugranes/justintsugranes_website/blob/main/LICENSE.md
 
 <!-- TECH SHIELDS -->
 
