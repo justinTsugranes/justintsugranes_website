@@ -45,7 +45,7 @@ const ProjectCard = ({ index, imageUrl, title, descr, tech, repo, demo, close })
               </Row>
               <Row>
                 <p className="my-4">{descr}</p>
-                <h5 className="key-tech-title text-warning mt-2">Key Tech</h5>
+                <h5 className="key-tech-title orange-gradient mt-2">Key Tech</h5>
                 <p className="mb-0">{tech}</p>
               </Row>
             </Col>
