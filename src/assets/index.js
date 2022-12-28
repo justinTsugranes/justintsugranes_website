@@ -67,6 +67,7 @@ export { default as businessCard } from './project-images/business-card.jpg';
 export { default as coworkingSpace } from './project-images/coworking-space.jpg';
 export { default as crashCourses } from './project-images/crashcourses.jpg';
 export { default as frontendBootcamp } from './project-images/frontend-bootcamp.jpg';
+export { default as fullstackStore } from './project-images/fullstack-store.jpg';
 export { default as goople } from './project-images/goople.jpg';
 export { default as gpt3 } from './project-images/gpt3.jpg';
 export { default as ilovelucy } from './project-images/ilovelucy.jpg';

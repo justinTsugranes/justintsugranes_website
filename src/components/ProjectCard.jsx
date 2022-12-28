@@ -40,7 +40,7 @@ const ProjectCard = ({ index, imageUrl, title, descr, tech, repo, demo, close })
             <Col>
               <Row>
                 <a href={demo} target="_blank" rel="noreferrer">
-                  <Image fluid src={imageUrl} alt="..." />
+                  <Image fluid src={imageUrl} alt="..." className="proj-card-img-modal" />
                 </a>
               </Row>
               <Row>
