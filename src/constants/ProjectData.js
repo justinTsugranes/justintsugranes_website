@@ -13,7 +13,7 @@ import {
   // imageMapping,
   // kittyStories,
   landingPage,
-  lotto,
+  // lotto,
   // mangata,
   megamask,
   museract,
@@ -64,7 +64,7 @@ export const projects = [
     title: 'Frontend Bootcamp',
     descr:
       'An example of a landing page for a Frontend Bootcamp where I learned more about using Bootstrap and React. I used MapBox GL for the contact section, unDraw for the graphics, fontawesome icons, and lorempicsum for the avatars',
-    tech: 'React, Bootstrap, HTML, CSS',
+    tech: 'Bootstrap, React',
     imageUrl: frontendBootcamp,
     demo: 'https://justin-tsugranes-bootstrap-example01.netlify.app',
     repo: `https://github.com/justintsugranes/project_bootstrap-frontend-example`
@@ -228,15 +228,15 @@ export const projects = [
     imageUrl: scoreCard,
     demo: 'https://justin-tsugranes-scorecard.netlify.app/',
     repo: 'https://github.com/justinTsugranes/project_scorecard'
-  },
-  {
-    id: 'lotto',
-    title: "Justin's Lucky Lottery",
-    descr:
-      'A project that maps shapes over an image using coordinates and makes those areas interactive',
-    tech: 'JavaScript, HTML, CSS',
-    imageUrl: lotto,
-    demo: 'https://justin-tsugranes-lotto-app.netlify.app/',
-    repo: 'https://github.com/justinTsugranes/project_lotto'
   }
+  // {
+  //   id: 'lotto',
+  //   title: "Justin's Lucky Lottery",
+  //   descr:
+  //     'A project that maps shapes over an image using coordinates and makes those areas interactive',
+  //   tech: 'JavaScript, HTML, CSS',
+  //   imageUrl: lotto,
+  //   demo: 'https://justin-tsugranes-lotto-app.netlify.app/',
+  //   repo: 'https://github.com/justinTsugranes/project_lotto'
+  // }
 ];
