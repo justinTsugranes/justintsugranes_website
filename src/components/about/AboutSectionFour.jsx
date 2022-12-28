@@ -1,7 +1,7 @@
 import { Row, Col } from 'react-bootstrap';
 import { Parallax } from 'react-parallax';
-import { about } from '../../constants/index.js';
-import { headShot01 } from '../../assets/index';
+import { about } from '../../constants';
+import { headShot01 } from '../../assets';
 
 const AboutSectionFour = () => (
   <Row className="section-container bg-secondary d-flex flex-column align-items-center justify-content-center flex-md-row">
@@ -18,7 +18,7 @@ const AboutSectionFour = () => (
       </Row>
     </Col>
     <Col className="d-flex flex-column p-4">
-      <h3 className="mb-4 light-blue">My Background</h3>
+      <h3 className="mb-4 text-gradient">My Background</h3>
       <p className="text-light bioTwo fs-3">{about.bioTwo}</p>
     </Col>
   </Row>

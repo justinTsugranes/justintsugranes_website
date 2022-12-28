@@ -1,6 +1,8 @@
+import { SiDocker } from 'react-icons/si';
+
 const DockerIcon = () => (
   <a href="https://getbootstrap.com/" target="_blank" rel="noreferrer">
-    <i className="fa-brands fa-bootstrap text-light h1" />
+    <SiDocker className="fa-brands fa-bootstrap text-light h1" />
   </a>
 );
 

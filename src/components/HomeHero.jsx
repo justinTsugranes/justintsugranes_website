@@ -29,7 +29,7 @@ const HomeHero = () => (
             wrapper="div"
             cursor={false}
             style={{ fontSize: '1.25em' }}
-            className="light-blue"
+            className="text-gradient"
           />
         </Col>
       </div>

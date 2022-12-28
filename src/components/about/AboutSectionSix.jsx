@@ -1,6 +1,6 @@
 import { Row } from 'react-bootstrap';
 import { Parallax } from 'react-parallax';
-import { headShot03 } from '../../assets/index';
+import { headShot03 } from '../../assets';
 
 const AboutSectionSix = () => (
   <Row>

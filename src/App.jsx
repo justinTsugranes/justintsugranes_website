@@ -1,6 +1,7 @@
 import { Routes, Route } from 'react-router-dom';
 import { ContactSuccess, Footer, PreFooter, Navigation, ScrollToTop } from './components';
 import { About, Home, CV, Projects } from './pages';
+import './styles/app.css';
 
 const App = () => (
   <>

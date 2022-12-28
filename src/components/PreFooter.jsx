@@ -14,12 +14,12 @@ const PreFooter = () => {
       <div className="pre-footer" style={{ backgroundImage: `url(${preFooterImg})` }}>
         <Row className="color-overlay d-flex justify-content-center align-items-center text-center px-md-3">
           <Col className="d-none d-md-block">
-            <Image src={preFooterGraphic} fluid alt="graphic of the world" id="connect-img" />
+            <Image src={preFooterGraphic} alt="graphic of the world" id="connect-img" />
           </Col>
 
           <Col className="d-flex flex-column px-3">
             <Row>
-              <h3 className="light-blue">I&apos;m always looking to connect</h3>
+              <h3 className="text-gradient">I&apos;m always looking to connect</h3>
               <p className="text-light d-none d-md-block mt-2">
                 Although, I&apos;m currently based in the US, I love making friends and working with
                 teams from all around the globe.

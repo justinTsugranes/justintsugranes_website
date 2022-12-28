@@ -1,7 +1,7 @@
 import {
   bandWebsite,
   bankingApp,
-  blackjack,
+  // blackjack,
   boredomterminator,
   // businessCard,
   coworkingSpace,
@@ -202,16 +202,6 @@ export const projects = [
     repo: 'https://github.com/justinTsugranes/project_boredom-terminator'
   },
   {
-    id: 'blackjack',
-    title: 'Blackjack',
-    descr:
-      'A JavaScript implementation of the classic casino game, Blackjack where I learned more about data types, if/else statements, loops, Math objects, and object-oriented programming',
-    tech: 'JavaScript, HTML, CSS',
-    imageUrl: blackjack,
-    demo: 'https://justin-tsugranes-blackjack.netlify.app',
-    repo: 'https://github.com/justinTsugranes/project_blackjack'
-  },
-  {
     id: 'unitconverter',
     title: 'Unit Converter',
     descr: 'Ui for a Metric Converter',
@@ -229,6 +219,16 @@ export const projects = [
     demo: 'https://justin-tsugranes-scorecard.netlify.app/',
     repo: 'https://github.com/justinTsugranes/project_scorecard'
   }
+  // {
+  //   id: 'blackjack',
+  //   title: 'Blackjack',
+  //   descr:
+  //     'A JavaScript implementation of the classic casino game, Blackjack where I learned more about data types, if/else statements, loops, Math objects, and object-oriented programming',
+  //   tech: 'JavaScript, HTML, CSS',
+  //   imageUrl: blackjack,
+  //   demo: 'https://justin-tsugranes-blackjack.netlify.app',
+  //   repo: 'https://github.com/justinTsugranes/project_blackjack'
+  // },
   // {
   //   id: 'lotto',
   //   title: "Justin's Lucky Lottery",

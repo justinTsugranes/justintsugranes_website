@@ -108,7 +108,7 @@ export const about = {
     'I believe the best designs are driven by user-centered, equity-focused principles that ensure any user from any nation can interact with your product from any device and any internet connection',
   bioOne: `I am a frontend web developer with 2 years of experience designing, building, and
       implementing web applications using JavaScript, JavaScript frameworks (React.js,
-        Next.js), HTML, CSS, and CSS frameworks (Bootstrap).`,
+        Next.js), HTML, CSS, and CSS frameworks (TailwindCSS and Bootstrap). I have also used UI Libraries like Material UI, React-Bootstrap, and Chakra UI to build React apps.`,
   bioTwo: `I hold a Master of Arts degree, served 13 years as a member of the US Army Band,
       and have over 20 years of combined experience working with government entities,
       Fortune 500 companies, and international organizations across several industries,

@@ -7,23 +7,25 @@ import {
   HtmlIcon,
   CssIcon,
   BootstrapIcon,
-  SassIcon,
-  GitIcon,
+  DockerIcon,
   FigmaIcon,
-  SalesforceIcon,
-  WordpressIcon,
-  EthereumIcon
+  JenkinsIcon,
+  MongoIcon,
+  NextIcon,
+  TailwindIcon
 } from '../assets';
+
+// TODO! use CSS Grid and .map() to render icons
 
 const ProjectsShowcase = () => (
   <Row className="py-5 px-3 d-flex align-items-center justify-content-around text-light text-center text-md-center">
     <Col>
       <Row className="text-center">
         {/* title on small-medium screens */}
-        <h2 className="text-warning d-lg-none">Coding Projects</h2>
+        <h2 className="text-gradient d-lg-none">Coding Projects</h2>
         {/* title on large screens */}
         <h2 className="d-none d-lg-block">
-          <span className="text-warning">Some Tech</span>
+          <span className="text-gradient">Some Tech</span>
           <br></br> I&apos;ve Worked With
         </h2>
       </Row>
@@ -36,16 +38,19 @@ const ProjectsShowcase = () => (
                 <ReactIcon />
               </Col>
               <Col>
+                <NextIcon />
+              </Col>
+              <Col>
                 <JsIcon />
               </Col>
               <Col>
                 <NodeIcon />
               </Col>
+            </Row>
+            <Row>
               <Col>
                 <HtmlIcon />
               </Col>
-            </Row>
-            <Row>
               <Col>
                 <CssIcon />
               </Col>
@@ -53,24 +58,21 @@ const ProjectsShowcase = () => (
                 <BootstrapIcon />
               </Col>
               <Col>
-                <SassIcon />
-              </Col>
-              <Col>
-                <GitIcon />
+                <TailwindIcon />
               </Col>
             </Row>
             <Row>
               <Col>
+                <MongoIcon />
+              </Col>
+              <Col>
+                <DockerIcon />
+              </Col>
+              <Col>
+                <JenkinsIcon />
+              </Col>
+              <Col>
                 <FigmaIcon />
-              </Col>
-              <Col>
-                <SalesforceIcon />
-              </Col>
-              <Col>
-                <WordpressIcon />
-              </Col>
-              <Col>
-                <EthereumIcon />
               </Col>
             </Row>
           </Row>

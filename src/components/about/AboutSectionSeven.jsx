@@ -1,6 +1,4 @@
 import { Container, Card, Col, Row, Image } from 'react-bootstrap';
-/* import projects for swiper */
-import { projects } from '../../constants/ProjectData';
 // Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';
 // Import Swiper styles
@@ -10,13 +8,15 @@ import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 // import required modules
 import SwiperCore, { Navigation, Pagination, Mousewheel, Keyboard } from 'swiper';
+/* import projects data for swiper */
+import { projects } from '../../constants/ProjectData';
 
 // configure Swiper to use modules
 SwiperCore.use([Navigation, Pagination, Mousewheel, Keyboard]);
 
 const AboutSectionSeven = () => (
   <Row className="section-container">
-    <h3 className="light-blue text-center mb-4">Always building things</h3>
+    <h3 className="text-gradient text-center mb-4">Always building things</h3>
     <div className="swiper-container">
       <Swiper
         grabCursor={true}

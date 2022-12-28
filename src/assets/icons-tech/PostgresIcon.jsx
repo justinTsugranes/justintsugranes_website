@@ -1,6 +1,8 @@
+import { SiPostgresql } from 'react-icons/si';
+
 const PostgresIcon = () => (
   <a href="https://getbootstrap.com/" target="_blank" rel="noreferrer">
-    <i className="fa-brands fa-bootstrap text-light h1" />
+    <SiPostgresql className="fa-brands fa-bootstrap text-light h1" />
   </a>
 );
 

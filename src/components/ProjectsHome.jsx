@@ -4,7 +4,7 @@ import { useSpring, animated } from 'react-spring';
 import { Row, Col, Button } from 'react-bootstrap';
 import '../styles/ProjectCards.css';
 import { projects } from '../constants/ProjectData';
-import ProjectCard from './ProjectCard';
+import { ProjectCard } from './';
 
 const ProjectsHome = () => {
   const navigate = useNavigate();
@@ -16,23 +16,23 @@ const ProjectsHome = () => {
   return (
     <Row className="section-container d-flex flex-column text-center">
       <Col>
-        <h3 className="light-blue py-5 pb-3">Some of my recent projects</h3>
+        <h3 className="text-gradient py-3">Some of my recent projects</h3>
       </Col>
 
       <Col>
-        <Row className="d-flex justify-content-center gap-5 row-cols-1 row-cols-md-3 row-cols-lg-5">
+        <Row className="d-flex justify-content-center gap-5 row-cols-1 row-cols-md-3 row-cols-lg-5 my-3">
           {projects.slice(0, 8).map((project, index) => (
             <ProjectCard key={project.id} {...project} index={index} />
           ))}
         </Row>
       </Col>
 
-      <Col className="py-5">
+      <Col>
         <animated.div
           style={buttonScale}
           onMouseEnter={() => setToggle({ online: true })}
           onMouseLeave={() => setToggle({ online: false })}>
-          <Button className="button rounded-pill" onClick={() => navigate('projects')}>
+          <Button className="button rounded-pill mt-5" onClick={() => navigate('projects')}>
             View More Projects
           </Button>
         </animated.div>
