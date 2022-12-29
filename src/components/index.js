@@ -1,5 +1,4 @@
 export { default as ContactModal } from './ContactModal';
-export { default as ContactSuccess } from './ContactSuccess';
 export { default as Footer } from './Footer';
 export { default as HomeHero } from './HomeHero';
 export { default as Navigation } from './Navigation';

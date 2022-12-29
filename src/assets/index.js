@@ -9,6 +9,7 @@ export { default as fundamentals } from './graphics/fundamentals.svg';
 export { default as pageNotFound } from './graphics/pagenotfound.svg';
 export { default as preFooterGraphic } from './graphics/pre-footer-graphic.svg';
 export { default as programmer } from './graphics/programmer.svg';
+export { default as sent } from './graphics/sent.svg';
 export { default as showcase } from './graphics/showcase.svg';
 // HEADSHOTS
 export { default as headShot01 } from './headshots/headshot-01.jpg';

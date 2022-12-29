@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { Modal, CloseButton, Container, Form, Button, FloatingLabel } from 'react-bootstrap';
+import { sent } from '../assets';
 // import Confetti from 'react-confetti';
 
 const ContactModal = () => {
@@ -10,7 +11,7 @@ const ContactModal = () => {
   // form validation
   const [validated, setValidated] = useState(false);
   // success honeypot
-  const [success, setSuccess] = useState(false);
+  const [success, setSuccess] = useState(true);
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -131,17 +132,25 @@ const ContactModal = () => {
       ) : (
         <Modal show={show} onHide={handleClose} size="lg" centered className="text-dark">
           {/* <Confetti height={height} width={width} /> */}
-          <Container>
-            <Modal.Header className="d-flex justify-content-center">
+          <Container className="d-flex flex-column">
+            <Modal.Header className="d-flex justify-content-around">
               <Modal.Title>Success!</Modal.Title>
               <CloseButton variant="dark" aria-label="Close" onClick={handleClose} />
             </Modal.Header>
 
-            <Modal.Body className="modal-lg" id="modal-body">
-              <p className="lead">
-                Your message was successfully sent! Thank you for contacting me.
+            <Modal.Body className="modal-lg text-center" id="modal-body">
+              <img src={sent} alt="message sent" style={{ width: '100%', maxHeight: '200px' }} />
+              <p className="lead pt-2">
+                Your message was successfully sent! <br />
+                <br />
+                Thank you for contacting me. I&apos;m looking forward to your message.
               </p>
             </Modal.Body>
+            <Modal.Footer>
+              <Button onClick={handleClose} className="mb-3 w-25" style={{ background: '#33bbcf' }}>
+                Go Back
+              </Button>
+            </Modal.Footer>
           </Container>
         </Modal>
       )}

@@ -14,7 +14,10 @@ const ProjectCard = ({ index, imageUrl, title, descr, tech, repo, demo }) => {
     <>
       <Col key={index}>
         <Card className="proj-card-container border-0" onClick={handleShow}>
-          <div className="title">{title}</div>
+          <div className="text-center" id="title">
+            {title}
+          </div>
+          <div className="mask"></div>
           <Image
             fluid
             variant="top"
