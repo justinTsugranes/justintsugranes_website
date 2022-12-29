@@ -7,7 +7,6 @@ const ContactModal = () => {
   const [show, setShow] = useState(false);
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
-
   // form validation
   const [validated, setValidated] = useState(false);
   // success honeypot
@@ -18,8 +17,8 @@ const ContactModal = () => {
     e.preventDefault();
     if (form.checkValidity() === false) {
       e.stopPropagation();
-      setValidated(true);
     } else {
+      setValidated(true);
       setSuccess(true);
     }
   };
