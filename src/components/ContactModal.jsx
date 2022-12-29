@@ -13,25 +13,29 @@ const ContactModal = () => {
   // success honeypot
   const [success, setSuccess] = useState(false);
 
-  // const handleSubmit = (e) => {
-  //   if (!validated) {
-  //     e.preventDefault();
-  //     e.stopPropagation();
-  //   } else {
-  //     setValidated(true);
-  //     setSuccess(true);
-  //   }
-  // };
-
   const handleSubmit = (e) => {
+    // Prevent the browser from reloading the page
     e.preventDefault();
+    // Read the form data
     const form = e.currentTarget;
     if (form.checkValidity() === false) {
-      setValidated(true);
+      e.preventDefault();
+      e.stopPropagation();
     } else {
+      setValidated(true);
       setSuccess(true);
     }
   };
+
+  // const handleSubmit = (e) => {
+  //   e.preventDefault();
+  //   const form = e.currentTarget;
+  //   if (form.checkValidity() === false) {
+  //     setValidated(true);
+  //   } else {
+  //     setSuccess(true);
+  //   }
+  // };
 
   return (
     <>
@@ -54,7 +58,7 @@ const ContactModal = () => {
               <Form
                 noValidate
                 validated={validated}
-                onSubmit={handleSubmit}
+                onSubmit="submit"
                 id="contact-form"
                 name="contact"
                 method="POST"
@@ -97,6 +101,7 @@ const ContactModal = () => {
                       placeholder="name@example.com"
                       aria-label="Enter email"
                       required
+                      pattern="^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)*$"
                     />
                     <Form.Control.Feedback>Looks good!</Form.Control.Feedback>
                     <Form.Control.Feedback type="invalid">
