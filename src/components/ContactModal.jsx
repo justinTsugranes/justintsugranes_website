@@ -11,7 +11,7 @@ const ContactModal = () => {
   // form validation
   const [validated, setValidated] = useState(false);
   // success honeypot
-  const [success, setSuccess] = useState(true);
+  const [success, setSuccess] = useState(false);
 
   const handleSubmit = (e) => {
     e.preventDefault();
