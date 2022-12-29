@@ -116,8 +116,9 @@ const ContactModal = () => {
                 <Button
                   onClick={handleSubmit}
                   type="submit"
-                  variant="dark"
-                  className="rounded-pill px-4 py-2">
+                  // variant="dark"
+                  className="rounded-pill px-4 py-2"
+                  style={{ background: '#33bbcf', border: 'none' }}>
                   Send
                 </Button>
               </Form>
@@ -147,7 +148,10 @@ const ContactModal = () => {
               </p>
             </Modal.Body>
             <Modal.Footer>
-              <Button onClick={handleClose} className="mb-3 w-25" style={{ background: '#33bbcf' }}>
+              <Button
+                onClick={handleClose}
+                className="mb-3 w-25"
+                style={{ background: '#33bbcf', border: 'none' }}>
                 Go Back
               </Button>
             </Modal.Footer>
