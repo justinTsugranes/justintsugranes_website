@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useSpring, animated } from 'react-spring';
 import { Row, Col, Button } from 'react-bootstrap';
-import '../styles/ProjectCards.css';
+// import '../styles/ProjectCards.css';
 import { projects } from '../constants/ProjectData';
 import { ProjectCard } from './';
 

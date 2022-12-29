@@ -1,6 +1,7 @@
 /* eslint-disable react/prop-types */
 import { useState } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import './../styles/ProjectCards.css';
 import { Modal, Container, CloseButton, Row, Card, Col, Image } from 'react-bootstrap';
 import { GithubIcon, DemoIcon } from '../assets';
 
@@ -13,6 +14,7 @@ const ProjectCard = ({ index, imageUrl, title, descr, tech, repo, demo }) => {
     <>
       <Col key={index}>
         <Card className="proj-card-container border-0" onClick={handleShow}>
+          <div className="title">{title}</div>
           <Image
             fluid
             variant="top"
