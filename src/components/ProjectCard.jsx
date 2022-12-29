@@ -4,7 +4,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import { Modal, Container, CloseButton, Row, Card, Col, Image } from 'react-bootstrap';
 import { GithubIcon, DemoIcon } from '../assets';
 
-const ProjectCard = ({ index, imageUrl, title, descr, tech, repo, demo, close }) => {
+const ProjectCard = ({ index, imageUrl, title, descr, tech, repo, demo }) => {
   const [show, setShow] = useState(false);
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
@@ -33,7 +33,7 @@ const ProjectCard = ({ index, imageUrl, title, descr, tech, repo, demo, close })
         <Container fluid className="border-0 m-0 bg-dark">
           <Modal.Header className="text-light border-0">
             <Modal.Title>{title}</Modal.Title>
-            <CloseButton variant="white" aria-label="Close" onClick={close} />
+            <CloseButton variant="white" aria-label="Close" onClick={handleClose} />
           </Modal.Header>
 
           <Modal.Body className="modal-lg text-light" id="modal-body">
