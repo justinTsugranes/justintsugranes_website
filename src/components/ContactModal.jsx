@@ -13,11 +13,20 @@ const ContactModal = () => {
   // success honeypot
   const [success, setSuccess] = useState(false);
 
+  // const handleSubmit = (e) => {
+  //   if (!validated) {
+  //     e.preventDefault();
+  //     e.stopPropagation();
+  //   } else {
+  //     setValidated(true);
+  //     setSuccess(true);
+  //   }
+  // };
+
   const handleSubmit = (e) => {
     e.preventDefault();
-    // const form = e.currentTarget;
-    if (!validated) {
-      e.stopPropagation();
+    const form = e.currentTarget;
+    if (form.checkValidity() === false) {
       setValidated(true);
     } else {
       setSuccess(true);
