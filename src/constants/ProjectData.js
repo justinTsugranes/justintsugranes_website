@@ -14,6 +14,7 @@ import {
   // bandWebsite,
   // scoreCard,
   // unitConverter,
+  // recipes,
   bankingApp,
   boredomterminator,
   coworkingSpace,
@@ -27,8 +28,8 @@ import {
   nextTailwindBlog,
   passwordGenerator,
   personalWebsite,
+  restaurantApp,
   reactTodo,
-  recipes,
   weblog
 } from '../assets';
 
@@ -43,10 +44,19 @@ export const projects = [
   //   repo: ''
   // },
   {
+    id: 'restaurantapp',
+    title: 'Fine Dining Restaurant App',
+    descr: 'Mobile First app for a fine dining restaurant',
+    tech: 'React, React Icons, Netlify',
+    imageUrl: restaurantApp,
+    demo: 'https://justintsugranes-restaurant-app.netlify.app/',
+    repo: 'https://github.com/justinTsugranes/project_restaurant-app'
+  },
+  {
     id: 'bankingapp',
     title: 'Modern Banking App',
     descr: 'Frontend for a Modern Banking App',
-    tech: 'React, TailwindCSS',
+    tech: 'React, TailwindCSS, Netlify',
     imageUrl: bankingApp,
     demo: 'https://justintsugranes-modern-bank-app.netlify.app/',
     repo: 'https://github.com/justinTsugranes/project_modern-bank-app'
@@ -55,7 +65,7 @@ export const projects = [
     id: 'gpt3',
     title: 'GPT-3 Landing Page',
     descr: 'Frontend for a GPT-3 AI ',
-    tech: 'React.js, HTML, CSS',
+    tech: 'React.js, HTML, CSS, Netlify',
     imageUrl: gpt3,
     demo: 'https://justin-tsugranes-gpt3.netlify.app/',
     repo: 'https://github.com/justinTsugranes/project_jsm-gpt-3'
@@ -65,7 +75,7 @@ export const projects = [
     title: 'Frontend Bootcamp',
     descr:
       'An example of a landing page for a Frontend Bootcamp where I learned more about using Bootstrap and React. I used MapBox GL for the contact section, unDraw for the graphics, fontawesome icons, and lorempicsum for the avatars',
-    tech: 'Bootstrap, React',
+    tech: 'Bootstrap, React Netlify',
     imageUrl: frontendBootcamp,
     demo: 'https://justin-tsugranes-bootstrap-example01.netlify.app',
     repo: `https://github.com/justintsugranes/project_bootstrap-frontend-example`
@@ -74,7 +84,7 @@ export const projects = [
     id: 'fullstackstore',
     title: 'Fullstack Stripe Store',
     descr: 'An full-stack ecommerce app that has Stripe integration',
-    tech: 'React-Bootstrap, React, Express, Node.js, Stripe',
+    tech: 'React-Bootstrap, React, Express, Node.js, Stripe, Netlify',
     imageUrl: fullstackStore,
     demo: 'https://justintsugranes-react-stripe-store.netlify.app/',
     repo: `https://github.com/justinTsugranes/project_react-stripe-store`
@@ -146,15 +156,6 @@ export const projects = [
     repo: 'https://github.com/justinTsugranes/justintsugranes_website'
   },
   {
-    id: 'recipes',
-    title: 'Recipes',
-    descr: 'A website showcasing my favorite carb-loaded breakfast recipes',
-    tech: 'HTML, CSS',
-    imageUrl: recipes,
-    demo: 'https://justin-tsugranes-breakfast-recipes.netlify.app',
-    repo: `https://github.com/justintsugranes/project_recipe-website`
-  },
-  {
     id: 'museract',
     title: 'Museract',
     descr:
@@ -193,6 +194,15 @@ export const projects = [
     demo: 'https://justin-tsugranes-boredom-terminator.netlify.app',
     repo: 'https://github.com/justinTsugranes/project_boredom-terminator'
   }
+  // {
+  //   id: 'recipes',
+  //   title: 'Recipes',
+  //   descr: 'A website showcasing my favorite carb-loaded breakfast recipes',
+  //   tech: 'HTML, CSS',
+  //   imageUrl: recipes,
+  //   demo: 'https://justin-tsugranes-breakfast-recipes.netlify.app',
+  //   repo: `https://github.com/justintsugranes/project_recipe-website`
+  // },
   // {
   //   id: 'oldagram',
   //   title: 'Oldagram',

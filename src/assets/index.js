@@ -85,6 +85,7 @@ export { default as passwordGenerator } from './project-images/password-generato
 export { default as personalWebsite } from './project-images/personal-website.jpg';
 export { default as reactTacToe } from './project-images/react-tac-toe.jpg';
 export { default as reactTodo } from './project-images/react-todo.jpg';
+export { default as restaurantApp } from './project-images/restaurant-app.jpg';
 export { default as recipes } from './project-images/recipes.jpg';
 export { default as scoreCard } from './project-images/scorecard.jpg';
 export { default as unitConverter } from './project-images/unit-converter.jpg';
