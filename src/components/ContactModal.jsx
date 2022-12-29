@@ -9,7 +9,7 @@ const ContactModal = () => {
   const handleShow = () => setShow(true);
 
   /* form validation */
-  const [validated, setValidated] = useState(false);
+  // const [validated, setValidated] = useState(false);
 
   const handleSubmit = (e) => {
     const form = e.currentTarget;
@@ -17,7 +17,7 @@ const ContactModal = () => {
       e.preventDefault();
       e.stopPropagation();
     }
-    setValidated(true);
+    // setValidated(true);
   };
 
   const navigate = useNavigate();
@@ -36,12 +36,12 @@ const ContactModal = () => {
           </Modal.Header>
 
           <Modal.Body className="modal-lg" id="modal-body">
-            <p className="lead text-dark">
+            <p className="lead">
               Hi! Fill out the form below to send a message directly to my personal email.
             </p>
             <Form
               noValidate
-              validated={validated}
+              // validated={validated}
               onSubmit="submit"
               id="contact-form"
               name="contact"
@@ -115,7 +115,7 @@ const ContactModal = () => {
               <Button
                 onClick={handleSubmit}
                 type="submit"
-                variant="primary"
+                variant="dark"
                 className="rounded-pill px-4 py-2">
                 Send
               </Button>

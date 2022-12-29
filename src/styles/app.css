@@ -143,9 +143,6 @@ p {
   letter-spacing: 1.25px;
   font-weight: medium;
 }
-.button:hover {
-  border: 1px solid var(--color-white);
-}
 /*---- /BUTTONS ----*/
 
 /*---- CONTAINERS ----*/
