@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { Modal, CloseButton, Container, Form, Button, FloatingLabel } from 'react-bootstrap';
+// import Confetti from 'react-confetti';
 
 const ContactModal = () => {
   /* show/hide the contact modal */
@@ -129,6 +130,7 @@ const ContactModal = () => {
         </Modal>
       ) : (
         <Modal show={show} onHide={handleClose} size="lg" centered className="text-dark">
+          {/* <Confetti height={height} width={width} /> */}
           <Container>
             <Modal.Header className="d-flex justify-content-center">
               <Modal.Title>Success!</Modal.Title>
