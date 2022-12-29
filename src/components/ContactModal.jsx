@@ -1,5 +1,5 @@
-import React, { useState } from 'react';
-import { useNavigate } from 'react-router-dom';
+import { useState } from 'react';
+// import { useNavigate } from 'react-router-dom';
 import { Modal, CloseButton, Container, Form, Button, FloatingLabel } from 'react-bootstrap';
 
 const ContactModal = () => {
@@ -8,19 +8,23 @@ const ContactModal = () => {
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
 
-  /* form validation */
-  // const [validated, setValidated] = useState(false);
+  // form validation
+  const [validated, setValidated] = useState(false);
+  // success honeypot
+  const [success, setSuccess] = useState(false);
 
   const handleSubmit = (e) => {
     const form = e.currentTarget;
+    e.preventDefault();
     if (form.checkValidity() === false) {
-      e.preventDefault();
       e.stopPropagation();
+      setValidated(true);
+    } else {
+      setSuccess(true);
     }
-    // setValidated(true);
   };
 
-  const navigate = useNavigate();
+  // const navigate = useNavigate();
 
   return (
     <>
@@ -41,8 +45,8 @@ const ContactModal = () => {
             </p>
             <Form
               noValidate
-              // validated={validated}
-              onSubmit="submit"
+              validated={validated}
+              onSubmit={handleSubmit}
               id="contact-form"
               name="contact"
               method="POST"
@@ -50,7 +54,8 @@ const ContactModal = () => {
               data-netlify="true"
               data-netlify-honeypot="bot-field"
               data-netlify-recaptcha="true"
-              action={() => navigate('contact-success')}>
+              // action={() => navigate('contact-success')}
+            >
               {/* bot field */}
               <input type="hidden" name="form-name" value="contact" />
               <Form.Control type="hidden" id="bot-field" name="bot-field" />
@@ -120,6 +125,11 @@ const ContactModal = () => {
                 Send
               </Button>
             </Form>
+            {success && (
+              <p className="text-success">
+                Your message was successfully sent! Thank you for contacting me.
+              </p>
+            )}
           </Modal.Body>
         </Container>
       </Modal>
