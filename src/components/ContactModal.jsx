@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { useNavigate } from 'react-router-dom';
+// import { useNavigate } from 'react-router-dom';
 import { Modal, CloseButton, Container, Form, Button, FloatingLabel } from 'react-bootstrap';
 
 const ContactModal = () => {
@@ -13,18 +13,16 @@ const ContactModal = () => {
   const [success, setSuccess] = useState(false);
 
   const handleSubmit = (e) => {
+    e.preventDefault();
     const form = e.currentTarget;
     if (form.checkValidity() === false) {
       e.stopPropagation();
-      e.preventDefault();
-    } else {
-      e.preventDefault();
-      setValidated(true);
-      setSuccess(true);
     }
+    setValidated(true);
+    setSuccess(true);
   };
 
-  const navigate = useNavigate();
+  // const navigate = useNavigate();
 
   return (
     <>
@@ -55,7 +53,8 @@ const ContactModal = () => {
                 data-netlify="true"
                 data-netlify-honeypot="bot-field"
                 data-netlify-recaptcha="true"
-                action={() => navigate('contact-success')}>
+                // action={() => navigate('contact-success')}
+              >
                 {/* bot field */}
                 <input type="hidden" name="form-name" value="contact" />
                 <Form.Control type="hidden" id="bot-field" name="bot-field" />
