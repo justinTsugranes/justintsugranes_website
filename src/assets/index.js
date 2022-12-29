@@ -89,6 +89,7 @@ export { default as reactTodo } from './project-images/react-todo.jpg';
 export { default as restaurantApp } from './project-images/restaurant-app.jpg';
 export { default as recipes } from './project-images/recipes.jpg';
 export { default as scoreCard } from './project-images/scorecard.jpg';
+export { default as shareme } from './project-images/shareme.jpg';
 export { default as unitConverter } from './project-images/unit-converter.jpg';
 export { default as webFlix } from './project-images/webflix.jpg';
 export { default as weblog } from './project-images/weblog.jpg';

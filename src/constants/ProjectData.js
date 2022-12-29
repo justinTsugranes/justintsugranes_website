@@ -30,7 +30,8 @@ import {
   personalWebsite,
   restaurantApp,
   reactTodo,
-  weblog
+  weblog,
+  shareme
 } from '../assets';
 
 export const projects = [
@@ -43,6 +44,16 @@ export const projects = [
   //   demo: '',
   //   repo: ''
   // },
+  {
+    id: 'shareme',
+    title: 'ShareMe',
+    descr:
+      'A Full Stack Social App built with React. Project includes TailwindCSS, Sanity CMS, and Google Auth',
+    tech: 'React.js, TailwindCSS, Sanity CMS, Google Auth',
+    imageUrl: shareme,
+    demo: 'https://github.com/justinTsugranes/project_shareme',
+    repo: 'https://github.com/justinTsugranes/project_shareme'
+  },
   {
     id: 'restaurantapp',
     title: 'Fine Dining Restaurant App',
