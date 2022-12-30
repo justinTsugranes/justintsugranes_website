@@ -7,9 +7,10 @@ import {
   AboutSectionSix,
   AboutSectionSeven
 } from '../components/about';
+import { motion } from 'framer-motion';
 
 const About = () => (
-  <>
+  <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }}>
     <AboutSectionOne />
     <AboutSectionTwo />
     <AboutSectionThree />
@@ -17,7 +18,7 @@ const About = () => (
     {/* <AboutSectionFive /> */}
     <AboutSectionSix />
     <AboutSectionSeven />
-  </>
+  </motion.div>
 );
 
 export default About;
