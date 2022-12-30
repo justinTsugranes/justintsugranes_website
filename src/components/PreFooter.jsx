@@ -5,8 +5,8 @@ import { preFooterImg, preFooterGraphic } from '../assets';
 
 const PreFooter = () => {
   return (
-    <Row>
-      <div className="pre-footer" style={{ backgroundImage: `url(${preFooterImg})` }}>
+    <Row className="overflow-hidden min-vh-50">
+      <Row className="pre-footer" style={{ backgroundImage: `url(${preFooterImg})` }}>
         <Row className="color-overlay d-flex justify-content-center align-items-center text-center px-md-3">
           <Col className="d-none d-md-block">
             <Image src={preFooterGraphic} alt="graphic of the world" id="connect-img" />
@@ -31,7 +31,7 @@ const PreFooter = () => {
             </Row>
           </Col>
         </Row>
-      </div>
+      </Row>
     </Row>
   );
 };

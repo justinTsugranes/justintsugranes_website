@@ -8,9 +8,9 @@ const ProjectsHome = () => {
   const navigate = useNavigate();
 
   return (
-    <Row className="section section-container d-flex flex-column text-center">
+    <motion.div className="row section-container d-flex flex-column text-center">
       <Col>
-        <h3 className="text-gradient py-3">Some of my recent projects</h3>
+        <h3 className="text-gradient py-3 mb-4">Some of my recent projects</h3>
       </Col>
 
       <Col>
@@ -21,16 +21,17 @@ const ProjectsHome = () => {
         </Row>
       </Col>
 
-      <Col>
+      <motion.div className="col">
         <motion.button
           className="button rounded-pill mt-5"
           whileHover={{ scale: 1.2 }}
           whileTap={{ scale: 0.9 }}
+          transition={{ type: 'spring', stiffness: 400, damping: 10 }}
           onClick={() => navigate('projects')}>
           View More Projects
         </motion.button>
-      </Col>
-    </Row>
+      </motion.div>
+    </motion.div>
   );
 };
 

@@ -1,17 +1,28 @@
-function animate() {
-  const observer = new IntersectionObserver((entries) => {
-    entries.forEach((entry) => {
-      console.log(entry);
-      if (entry.isIntersecting) {
-        entry.target.classList.add('show');
-      } else {
-        entry.target.classList.remove('show');
-      }
-    });
-  });
+// import { useEffect } from 'react';
+// import { useAnimation } from 'framer-motion';
+// import { useInView } from 'react-intersection-observer';
 
-  const hiddenElements = document.querySelectorAll('.hidden');
-  hiddenElements.forEach((el) => observer.observer(el));
-}
+// export const animate = () => {
+//   const { inView } = useInView({
+//     threshold: 0.3
+//   });
+//   const animation = useAnimation();
 
-export default animate;
+//   useEffect(() => {
+//     if (inView) {
+//       animation.start({
+//         x: 0,
+//         transition: {
+//           type: 'spring',
+//           duration: 1,
+//           bounce: 0.3
+//         }
+//       });
+//     }
+//     if (!inView) {
+//       animation.start({
+//         x: '-100vw'
+//       });
+//     }
+//   }, [inView]);
+// };
