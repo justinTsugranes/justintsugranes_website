@@ -2,8 +2,9 @@
 import { useState } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './../styles/ProjectCards.css';
-import { Modal, Container, CloseButton, Row, Card, Col, Image } from 'react-bootstrap';
+import { Modal, Container, CloseButton, Row, Col, Image } from 'react-bootstrap';
 import { GithubIcon, DemoIcon } from '../assets';
+import { motion } from 'framer-motion';
 
 const ProjectCard = ({ index, imageUrl, title, descr, tech, repo, demo }) => {
   const [show, setShow] = useState(false);
@@ -12,21 +13,30 @@ const ProjectCard = ({ index, imageUrl, title, descr, tech, repo, demo }) => {
 
   return (
     <>
-      <Col key={index}>
-        <Card className="proj-card-container border-0" onClick={handleShow}>
-          <div className="text-center" id="title">
+      <motion.div
+        className="col"
+        key={index}
+        initial={{ opacity: 0.6 }}
+        whileHover={{
+          scale: 1.1,
+          transition: { duration: 0.5 }
+        }}
+        whileTap={{ scale: 0.9 }}
+        whileInView={{ opacity: 1 }}>
+        <motion.div className="card proj-card-container border-0" onClick={handleShow}>
+          <motion.div className="text-center" id="title">
             {title}
-          </div>
+          </motion.div>
           {/* <div className="mask"></div> */}
-          <Image
+          <img
             // fluid
             // variant="top"
-            className="proj-card-img shadow"
+            className="image proj-card-img shadow"
             src={imageUrl}
             alt={title}
           />
-        </Card>
-      </Col>
+        </motion.div>
+      </motion.div>
 
       {/* MODAL */}
       <Modal
