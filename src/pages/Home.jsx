@@ -2,7 +2,10 @@ import { HomeHero, Quote, ProjectsHome } from '../components';
 import { motion } from 'framer-motion';
 
 const Home = () => (
-  <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }}>
+  <motion.div
+    initial={{ opacity: 0 }}
+    animate={{ opacity: 1 }}
+    exit={{ opacity: 0, transition: { duration: 0.1 } }}>
     <HomeHero />
     <Quote />
     <ProjectsHome />
