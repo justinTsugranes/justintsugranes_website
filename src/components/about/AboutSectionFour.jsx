@@ -4,7 +4,7 @@ import { about } from '../../constants';
 import { headShot01 } from '../../assets';
 
 const AboutSectionFour = () => (
-  <Row className="section-container bg-secondary d-flex flex-column align-items-center justify-content-center flex-md-row">
+  <Row className="bg-secondary d-flex flex-column align-items-center justify-content-center flex-md-row">
     <Col>
       <Row>
         <Parallax

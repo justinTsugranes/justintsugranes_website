@@ -15,8 +15,8 @@ import {
   // scoreCard,
   // unitConverter,
   // recipes,
+  // boredomterminator,
   bankingApp,
-  boredomterminator,
   coworkingSpace,
   crashCourses,
   frontendBootcamp,
@@ -194,17 +194,17 @@ export const projects = [
     imageUrl: weblog,
     demo: 'https://justin-tsugranes-blog-example.netlify.app',
     repo: 'https://github.com/justinTsugranes/project_weblog'
-  },
-  {
-    id: 'boredomterminator',
-    title: 'Boredom Terminator',
-    descr:
-      'An idea generator app that uses the App uses the Bored API where I leared more about Servers and Clients, Request/Response Cycle, APIs, JSON, fetch syntax',
-    tech: 'JavaScript, Fetch, HTML, CSS',
-    imageUrl: boredomterminator,
-    demo: 'https://justin-tsugranes-boredom-terminator.netlify.app',
-    repo: 'https://github.com/justinTsugranes/project_boredom-terminator'
   }
+  // {
+  //   id: 'boredomterminator',
+  //   title: 'Boredom Terminator',
+  //   descr:
+  //     'An idea generator app that uses the App uses the Bored API where I leared more about Servers and Clients, Request/Response Cycle, APIs, JSON, fetch syntax',
+  //   tech: 'JavaScript, Fetch, HTML, CSS',
+  //   imageUrl: boredomterminator,
+  //   demo: 'https://justin-tsugranes-boredom-terminator.netlify.app',
+  //   repo: 'https://github.com/justinTsugranes/project_boredom-terminator'
+  // }
   // {
   //   id: 'recipes',
   //   title: 'Recipes',

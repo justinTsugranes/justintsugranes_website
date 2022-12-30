@@ -1,20 +1,14 @@
-import { useState } from 'react';
+import { motion } from 'framer-motion';
+import { Col, Row } from 'react-bootstrap';
 import { useNavigate } from 'react-router-dom';
-import { useSpring, animated } from 'react-spring';
-import { Row, Col, Button } from 'react-bootstrap';
-// import '../styles/ProjectCards.css';
 import { projects } from '../constants/ProjectData';
 import { ProjectCard } from './';
 
 const ProjectsHome = () => {
   const navigate = useNavigate();
-  const [toggle, setToggle] = useState({ online: false, outMouse: false });
-  const buttonScale = useSpring({
-    transform: toggle.online ? 'scale(1.05)' : 'scale(1)'
-  });
 
   return (
-    <Row className="section-container d-flex flex-column text-center">
+    <Row className="section section-container d-flex flex-column text-center">
       <Col>
         <h3 className="text-gradient py-3">Some of my recent projects</h3>
       </Col>
@@ -28,14 +22,13 @@ const ProjectsHome = () => {
       </Col>
 
       <Col>
-        <animated.div
-          style={buttonScale}
-          onMouseEnter={() => setToggle({ online: true })}
-          onMouseLeave={() => setToggle({ online: false })}>
-          <Button className="button rounded-pill mt-5" onClick={() => navigate('projects')}>
-            View More Projects
-          </Button>
-        </animated.div>
+        <motion.button
+          className="button rounded-pill mt-5"
+          whileHover={{ scale: 1.2 }}
+          whileTap={{ scale: 0.9 }}
+          onClick={() => navigate('projects')}>
+          View More Projects
+        </motion.button>
       </Col>
     </Row>
   );

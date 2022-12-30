@@ -17,11 +17,11 @@ const ProjectCard = ({ index, imageUrl, title, descr, tech, repo, demo }) => {
           <div className="text-center" id="title">
             {title}
           </div>
-          <div className="mask"></div>
+          {/* <div className="mask"></div> */}
           <Image
-            fluid
-            variant="top"
-            className="proj-card-img hover-zoom shadow"
+            // fluid
+            // variant="top"
+            className="proj-card-img shadow"
             src={imageUrl}
             alt={title}
           />
