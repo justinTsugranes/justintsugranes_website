@@ -8,7 +8,11 @@ const Navigation = () => {
   const { home, projects, about } = navLinks;
 
   return (
-    <motion.div variants={navVariants} initial="hidden" whileInView="show">
+    <motion.div
+      variants={navVariants}
+      initial="hidden"
+      whileInView="show"
+      viewport={{ once: true, amount: 0.2 }}>
       <Navbar expand="lg" className="navbar-dark bg-none px-4 px-md-5">
         <Navbar.Brand href={home.id} className="text-uppercase fs-3">
           {user.name}

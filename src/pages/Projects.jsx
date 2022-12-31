@@ -6,7 +6,7 @@ const Projects = () => (
     className="mb-5"
     initial={{ opacity: 0 }}
     animate={{ opacity: 1 }}
-    exit={{ opacity: 0, transition: { duration: 0.1 } }}>
+    exit={{ opacity: 0, transition: { duration: 0.05 } }}>
     <ProjectsShowcase />
     <h2 className="d-none d-lg-block text-gradient text-center m-0 my-5">Coding Projects</h2>
     <ProjectsAll />
