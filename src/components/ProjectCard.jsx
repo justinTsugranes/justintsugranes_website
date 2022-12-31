@@ -37,14 +37,7 @@ const ProjectCard = ({ index, imageUrl, title, descr, tech, repo, demo }) => {
           <motion.div className="text-center" id="title">
             {title}
           </motion.div>
-          {/* <div className="mask"></div> */}
-          <img
-            // fluid
-            // variant="top"
-            className="image proj-card-img shadow"
-            src={imageUrl}
-            alt={title}
-          />
+          <img className="image proj-card-img shadow" src={imageUrl} alt={title} />
         </motion.div>
       </motion.div>
 
