@@ -1,7 +1,9 @@
 import { Row, Col } from 'react-bootstrap';
 import { Parallax } from 'react-parallax';
 import { about } from '../../constants';
+import { fadeIn } from '../../utils/motion';
 import { headShot01 } from '../../assets';
+import { motion } from 'framer-motion';
 
 const AboutSectionFour = () => {
   return (
@@ -18,10 +20,15 @@ const AboutSectionFour = () => {
           </Parallax>
         </Row>
       </Col>
-      <div className="col d-flex flex-column p-4">
+      <motion.div
+        className="col d-flex flex-column p-4"
+        initial="hidden"
+        whileInView="show"
+        viewport={{ once: false, amount: 0.25 }}
+        variants={fadeIn('up', 'tween', 0.1, 1)}>
         <h3 className="mb-4 text-gradient">My Background</h3>
         <p className="text-light bioTwo fs-3">{about.bioTwo}</p>
-      </div>
+      </motion.div>
     </Row>
   );
 };
