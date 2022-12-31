@@ -1,5 +1,6 @@
 import { Row, Col } from 'react-bootstrap';
 import { socialMedia, user } from '../constants';
+import { motion } from 'framer-motion';
 
 const Footer = () => (
   <Row>
@@ -10,19 +11,25 @@ const Footer = () => (
       {/* Grid container */}
       <Row className="p-4 pb-0">
         {/* Section: Social media */}
-        <Col className="mb-4">
+        <div className="mb-4">
           {socialMedia.map((social) => (
-            <a
+            <motion.div
               key={social.id}
-              href={social.link}
-              target="_blank"
-              rel="noreferrer"
-              role="button"
-              className="btn btn-link btn-floating btn-lg text-light m-1 icon">
-              {social.icon}
-            </a>
+              whileHover={{ scale: 1.2 }}
+              whileTap={{ scale: 0.9 }}
+              transition={{ type: 'spring', stiffness: 400, damping: 17 }}
+              className="btn btn-link btn-floating btn-lg m-1 icon">
+              <a
+                href={social.link}
+                target="_blank"
+                rel="noreferrer"
+                role="button"
+                className="text-light">
+                {social.icon}
+              </a>
+            </motion.div>
           ))}
-        </Col>
+        </div>
       </Row>
       <Row>
         <p className="text-secondary fs-6">Copyright © 2021 misfitDodo Media</p>
