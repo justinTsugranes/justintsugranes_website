@@ -9,7 +9,7 @@ const Navigation = () => {
 
   return (
     <motion.div variants={navVariants} initial="hidden" whileInView="show">
-      <Navbar expand="lg" className="navbar-dark shadow px-4 px-md-5">
+      <Navbar expand="lg" className="navbar-dark bg-none px-4 px-md-5">
         <Navbar.Brand href={home.id} className="text-uppercase fs-3">
           {user.name}
         </Navbar.Brand>
