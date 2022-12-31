@@ -7,12 +7,15 @@ const ContactModal = () => {
   /* show/hide the contact modal */
   const [show, setShow] = useState(false);
   const handleClose = () => setShow(false);
-  const handleShow = () => setShow(true);
+  const handleOpen = () => setShow(true);
+
   // form validation
   const [validated, setValidated] = useState(false);
+
   // success honeypot
   const [success, setSuccess] = useState(false);
 
+  // contact submit
   const handleSubmit = (e) => {
     // Prevent the browser from reloading the page
     e.preventDefault();
@@ -38,7 +41,7 @@ const ContactModal = () => {
 
   return (
     <>
-      <p className="contact-btn m-0 p-0" onClick={handleShow}>
+      <p className="contact-btn m-0 p-0" onClick={handleOpen}>
         Contact
       </p>
 

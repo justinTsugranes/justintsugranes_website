@@ -1,12 +1,14 @@
-import { Row, Nav, Navbar } from 'react-bootstrap';
+import { Nav, Navbar } from 'react-bootstrap';
 import { user, navLinks } from '../constants';
 import { ContactModal } from './';
+import { motion } from 'framer-motion';
+import { navVariants } from '../utils/motion';
 
 const Navigation = () => {
   const { home, projects, about } = navLinks;
 
   return (
-    <Row>
+    <motion.div variants={navVariants} initial="hidden" whileInView="show">
       <Navbar expand="lg" className="navbar-dark shadow px-4 px-md-5">
         <Navbar.Brand href={home.id} className="text-uppercase fs-3">
           {user.name}
@@ -22,7 +24,7 @@ const Navigation = () => {
           </Nav>
         </Navbar.Collapse>
       </Navbar>
-    </Row>
+    </motion.div>
   );
 };
 
