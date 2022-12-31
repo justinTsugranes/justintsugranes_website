@@ -78,6 +78,7 @@ export { default as landingPage } from './project-images/landing-page.jpg';
 export { default as lotto } from './project-images/lotto.jpg';
 export { default as mangata } from './project-images/mangata.jpg';
 export { default as megamask } from './project-images/megamask.jpg';
+export { default as metaversus } from './project-images/metaversus.jpg';
 export { default as museract } from './project-images/museract.jpg';
 export { default as nextBlog } from './project-images/next-blog.jpg';
 export { default as nextTailwindBlog } from './project-images/next-tailwind-blog.jpg';

@@ -1,6 +1,5 @@
 import { useRef } from 'react';
 import { Row } from 'react-bootstrap';
-// import styles from '../../styles';
 import { staggerContainer, textVariant } from '../../utils/motion';
 import { motion } from 'framer-motion';
 

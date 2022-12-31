@@ -2,7 +2,17 @@
 import { useState } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './../styles/ProjectCards.css';
-import { Modal, Container, CloseButton, Row, Col, Image } from 'react-bootstrap';
+import {
+  Modal,
+  ModalHeader,
+  ModalBody,
+  ModalFooter,
+  Container,
+  CloseButton,
+  Row,
+  Col,
+  Image
+} from 'react-bootstrap';
 import { GithubIcon, DemoIcon } from '../assets';
 import { motion } from 'framer-motion';
 
@@ -44,14 +54,15 @@ const ProjectCard = ({ index, imageUrl, title, descr, tech, repo, demo }) => {
         onHide={handleClose}
         size="lg"
         centered
+        fullscreen="xl-"
         aria-labelledby="contained-project-modal">
-        <Container fluid className="border-0 m-0 bg-dark">
-          <Modal.Header className="text-light border-0">
+        <Container fluid className="bg-dark">
+          <ModalHeader className="text-light">
             <Modal.Title>{title}</Modal.Title>
             <CloseButton variant="white" aria-label="Close" onClick={handleClose} />
-          </Modal.Header>
+          </ModalHeader>
 
-          <Modal.Body className="modal-lg text-light" id="modal-body">
+          <ModalBody className="modal-lg text-light" id="modal-body">
             <Col>
               <Row>
                 <a href={demo} target="_blank" rel="noreferrer">
@@ -64,22 +75,30 @@ const ProjectCard = ({ index, imageUrl, title, descr, tech, repo, demo }) => {
                 <p className="mb-0">{tech}</p>
               </Row>
             </Col>
-          </Modal.Body>
+          </ModalBody>
 
-          <Modal.Footer className="border-0">
+          <ModalFooter className="border-0">
             <Row>
-              <Col className="h2 mb-3">
+              <motion.div
+                className="col h2 mb-3"
+                whileHover={{ scale: 1.2 }}
+                whileTap={{ scale: 0.9 }}
+                transition={{ type: 'spring', stiffness: 400, damping: 17 }}>
                 <a href={repo} target="_blank" rel="noreferrer" className="text-light">
                   <GithubIcon />
                 </a>
-              </Col>
-              <Col className="h2 mb-3">
+              </motion.div>
+              <motion.div
+                className="col h2 mb-3"
+                whileHover={{ scale: 1.2 }}
+                whileTap={{ scale: 0.9 }}
+                transition={{ type: 'spring', stiffness: 400, damping: 17 }}>
                 <a href={demo} target="_blank" rel="noreferrer" className="text-light">
                   <DemoIcon />
                 </a>
-              </Col>
+              </motion.div>
             </Row>
-          </Modal.Footer>
+          </ModalFooter>
         </Container>
       </Modal>
     </>
