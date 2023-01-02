@@ -24,7 +24,7 @@ import {
   gpt3,
   landingPage,
   megamask,
-  // metaversus,
+  metaversus,
   museract,
   nextTailwindBlog,
   passwordGenerator,
@@ -45,16 +45,16 @@ export const projects = [
   //   demo: '',
   //   repo: ''
   // },
-  // {
-  //   id: 'metaversus',
-  //   title: 'MetaVersus',
-  //   descr:
-  //     'A Full Stack Social App built with React. Project includes TailwindCSS, Sanity CMS, and Google Auth',
-  //   tech: 'React.js, TailwindCSS, Sanity CMS, Google Auth',
-  //   imageUrl: metaversus,
-  //   demo: 'https://github.com/justinTsugranes/project_metaversus',
-  //   repo: 'https://github.com/justinTsugranes/project_metaversus'
-  // },
+  {
+    id: 'metaversus',
+    title: 'MetaVersus',
+    descr:
+      'A Full Stack Social App built with React. Project includes TailwindCSS, Sanity CMS, and Google Auth',
+    tech: 'React.js, TailwindCSS, Sanity CMS, Google Auth',
+    imageUrl: metaversus,
+    demo: 'https://github.com/justinTsugranes/project_metaversus',
+    repo: 'https://github.com/justinTsugranes/project_metaversus'
+  },
   {
     id: 'shareme',
     title: 'ShareMe',
