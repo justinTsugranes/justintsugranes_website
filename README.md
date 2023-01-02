@@ -54,6 +54,9 @@ _I'd love to hear any feedback or just thoughts. Feel free to reach out at my co
 
 [![React][react.js]][react-url]
 [![Bootstrap][bootstrap.com]][bootstrap-url]
+[![framer]][framer-url]
+[![swiper]][swiper-url]
+[react-icons](https://www.npmjs.com/package/react-icons)
 
 <!-- LICENSE -->
 
@@ -102,3 +105,7 @@ Give a ⭐️ if you like this project and if you like my work, maybe you would 
 [react-url]: https://reactjs.org/
 [bootstrap.com]: https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white
 [bootstrap-url]: https://getbootstrap.com
+[framer]: https://img.shields.io/badge/Framer-0055FF?style=for-the-badge&logo=framer&logoColor=white
+[framer-url]: https://www.framer.com/motion/
+[swiper]: https://img.shields.io/badge/Swiper-6332F6?style=for-the-badge&logo=swiper&logoColor=white
+[swiper-url]: https://swiperjs.com/

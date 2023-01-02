@@ -6,11 +6,14 @@
   "keywords": [
     "react",
     "create-react-app",
-    "reactjs",
+    "react.js",
     "react-router",
     "react-router-dom",
     "ESLint",
-    "prettier"
+    "prettier",
+    "framer-motion",
+    "bootstrap",
+    "react-bootstrap"
   ],
   "dependencies": {
     "@fortawesome/fontawesome-free": "^6.2.0",

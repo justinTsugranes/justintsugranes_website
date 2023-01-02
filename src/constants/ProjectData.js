@@ -1,5 +1,7 @@
 import {
+  // bandWebsite,
   // blackjack,
+  // boredomterminator,
   // businessCard,
   // goople,
   // ilovelucy,
@@ -10,12 +12,11 @@ import {
   // nextBlog,
   // oldagram,
   // reactTacToe,
-  // webFlix,
-  // bandWebsite,
+  // recipes,
   // scoreCard,
   // unitConverter,
-  // recipes,
-  // boredomterminator,
+  // weblog,
+  // webFlix,
   bankingApp,
   coworkingSpace,
   crashCourses,
@@ -31,7 +32,6 @@ import {
   personalWebsite,
   restaurantApp,
   reactTodo,
-  weblog,
   shareme
 } from '../assets';
 
@@ -49,10 +49,10 @@ export const projects = [
     id: 'metaversus',
     title: 'MetaVersus',
     descr:
-      'A Full Stack Social App built with React. Project includes TailwindCSS, Sanity CMS, and Google Auth',
-    tech: 'React.js, TailwindCSS, Sanity CMS, Google Auth',
+      'Responsive, animated landing page for a metaverse company. Project was built using Next.js 13, Tailwind, and makes heavy use of Framer Motion animations. Project was based off of a Figma design by One Week Wonders Agency',
+    tech: 'Next.js, TailwindCSS, Framer Motion',
     imageUrl: metaversus,
-    demo: 'https://github.com/justinTsugranes/project_metaversus',
+    demo: 'https://justin-tsugranes-metaversus.vercel.app/',
     repo: 'https://github.com/justinTsugranes/project_metaversus'
   },
   {
@@ -195,17 +195,17 @@ export const projects = [
     imageUrl: reactTodo,
     demo: 'https://to-do-react-app.stackblitz.io',
     repo: 'https://github.com/justinTsugranes/tut_todo-react-app'
-  },
-  {
-    id: 'weblog',
-    title: 'Blog using Fetch',
-    descr:
-      'An example blog app where I learned more about REST APIs, resources, parameters, queries, HTTP Requests, URL endpoints, methods, and headers. Project uses the JSONPLaceholder API',
-    tech: 'JavaScript, Fetch, HTML, CSS',
-    imageUrl: weblog,
-    demo: 'https://justin-tsugranes-blog-example.netlify.app',
-    repo: 'https://github.com/justinTsugranes/project_weblog'
   }
+  // {
+  //   id: 'weblog',
+  //   title: 'Blog using Fetch',
+  //   descr:
+  //     'An example blog app where I learned more about REST APIs, resources, parameters, queries, HTTP Requests, URL endpoints, methods, and headers. Project uses the JSONPLaceholder API',
+  //   tech: 'JavaScript, Fetch, HTML, CSS',
+  //   imageUrl: weblog,
+  //   demo: 'https://justin-tsugranes-blog-example.netlify.app',
+  //   repo: 'https://github.com/justinTsugranes/project_weblog'
+  // }
   // {
   //   id: 'boredomterminator',
   //   title: 'Boredom Terminator',
