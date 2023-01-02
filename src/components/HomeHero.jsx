@@ -21,7 +21,7 @@ const HomeHero = () => (
           <TypeAnimation
             sequence={[
               2750,
-              'JavaScript - React.js - Bootstrap - Adobe Creative Cloud - Figma', //
+              'JavaScript - React.js - Node.js - MongoDB - TailwindCSS - Figma', //
               () => {
                 console.log('Done typing!');
               }
