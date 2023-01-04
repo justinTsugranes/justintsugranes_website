@@ -53,13 +53,11 @@
   display: block;
 }
 
-/* .mask {
-  display: none;
-  background: linear-gradient(45deg, rgba(29, 236, 197, 0.7), rgba(91, 14, 214, 0.7) 100%);
-  z-index: 50;
-  position: absolute;
+.proj-card-img-modal {
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.6);
 }
 
-.project-card-container:hover .mask {
-  display: block;
-} */
+.key-tech-title {
+  font-weight: 600;
+  letter-spacing: 2px;
+}

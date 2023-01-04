@@ -50,21 +50,21 @@ const ProjectCard = ({ index, imageUrl, title, descr, tech, repo, demo }) => {
         fullscreen="xl-"
         aria-labelledby="contained-project-modal">
         <Container fluid className="bg-dark">
-          <ModalHeader className="text-light">
-            <Modal.Title>{title}</Modal.Title>
+          <ModalHeader className="modal-header">
+            <Modal.Title className="text-uppercase">{title}</Modal.Title>
             <CloseButton variant="white" aria-label="Close" onClick={handleClose} />
           </ModalHeader>
 
-          <ModalBody className="modal-lg text-light" id="modal-body">
+          <ModalBody className="text-light" id="modal-body">
             <Col>
               <Row>
                 <a href={demo} target="_blank" rel="noreferrer">
-                  <Image fluid src={imageUrl} alt="..." className="proj-card-img-modal" />
+                  <Image fluid src={imageUrl} alt="..." className="proj-card-img-modal rounded-4" />
                 </a>
               </Row>
               <Row>
                 <p className="my-4">{descr}</p>
-                <h5 className="key-tech-title orange-gradient mt-2">Key Tech</h5>
+                <h5 className="key-tech-title text-gradient mt-2">KEY TECH</h5>
                 <p className="mb-0">{tech}</p>
               </Row>
             </Col>
@@ -77,7 +77,7 @@ const ProjectCard = ({ index, imageUrl, title, descr, tech, repo, demo }) => {
                 whileHover={{ scale: 1.2 }}
                 whileTap={{ scale: 0.9 }}
                 transition={{ type: 'spring', stiffness: 400, damping: 17 }}>
-                <a href={repo} target="_blank" rel="noreferrer" className="text-light">
+                <a href={repo} target="_blank" rel="noreferrer" className="text-gradient">
                   <GithubIcon />
                 </a>
               </motion.div>
@@ -86,7 +86,7 @@ const ProjectCard = ({ index, imageUrl, title, descr, tech, repo, demo }) => {
                 whileHover={{ scale: 1.2 }}
                 whileTap={{ scale: 0.9 }}
                 transition={{ type: 'spring', stiffness: 400, damping: 17 }}>
-                <a href={demo} target="_blank" rel="noreferrer" className="text-light">
+                <a href={demo} target="_blank" rel="noreferrer" className="text-gradient">
                   <DemoIcon />
                 </a>
               </motion.div>
