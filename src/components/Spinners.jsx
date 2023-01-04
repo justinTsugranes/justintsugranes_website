@@ -1,5 +1,7 @@
+import { Spinner } from 'react-bootstrap';
+
 const Spinners = () => {
-  return <div>Spinners</div>;
+  return <Spinner animation="border" variant="primary" />;
 };
 
 export default Spinners;

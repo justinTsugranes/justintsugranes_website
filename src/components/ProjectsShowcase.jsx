@@ -1,4 +1,5 @@
 import { Row, Col } from 'react-bootstrap';
+import { motion } from 'framer-motion';
 import {
   programmer,
   ReactIcon,
@@ -15,7 +16,11 @@ import {
   TailwindIcon
 } from '../assets';
 
-// TODO! use CSS Grid and .map() to render icons
+const iconRows = [
+  [ReactIcon, NextIcon, JsIcon, NodeIcon],
+  [HtmlIcon, CssIcon, BootstrapIcon, TailwindIcon],
+  [MongoIcon, DockerIcon, JenkinsIcon, FigmaIcon]
+];
 
 const ProjectsShowcase = () => (
   <Row className="py-5 px-3 d-flex align-items-center justify-content-around text-light text-center text-md-center">
@@ -29,57 +34,25 @@ const ProjectsShowcase = () => (
           <br></br> I&apos;ve Worked With
         </h2>
       </Row>
-      {/* icon row: hide on sm-md screens */}
+      {/* icon rows */}
       <Row className="d-none d-lg-block px-5">
-        <Col className="d-flex justify-content-evenly">
-          <Row className="mt-3">
-            <Row>
-              <Col>
-                <ReactIcon />
-              </Col>
-              <Col>
-                <NextIcon />
-              </Col>
-              <Col>
-                <JsIcon />
-              </Col>
-              <Col>
-                <NodeIcon />
-              </Col>
-            </Row>
-            <Row>
-              <Col>
-                <HtmlIcon />
-              </Col>
-              <Col>
-                <CssIcon />
-              </Col>
-              <Col>
-                <BootstrapIcon />
-              </Col>
-              <Col>
-                <TailwindIcon />
-              </Col>
-            </Row>
-            <Row>
-              <Col>
-                <MongoIcon />
-              </Col>
-              <Col>
-                <DockerIcon />
-              </Col>
-              <Col>
-                <JenkinsIcon />
-              </Col>
-              <Col>
-                <FigmaIcon />
-              </Col>
-            </Row>
+        {iconRows.map((row, index) => (
+          <Row key={index} className="mt-3 d-flex justify-content-evenly">
+            {row.map((Icon, index) => (
+              <motion.div
+                key={index}
+                className="col"
+                whileHover={{ scale: 1.2 }}
+                whileTap={{ scale: 0.9 }}
+                transition={{ type: 'spring', stiffness: 400, damping: 10 }}>
+                <Icon />
+              </motion.div>
+            ))}
           </Row>
-        </Col>
+        ))}
       </Row>
     </Col>
-
+    {/* Column containing the programmer graphic */}
     <Col>
       <img className="img-fluid w-75" src={programmer} alt="programmer graphic" />
     </Col>

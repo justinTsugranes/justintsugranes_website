@@ -49,7 +49,7 @@ export const projects = [
     id: 'metaversus',
     title: 'MetaVersus',
     descr:
-      'Responsive, animated landing page for a metaverse company. Project was built using Next.js 13, Tailwind, and makes heavy use of Framer Motion animations. Project was based off of a Figma design by One Week Wonders Agency',
+      'MetaVersus is a responsive and animated landing page for a metaverse company. The project was built using Next.js 13 and Tailwind CSS, with a focus on using Framer Motion animations to bring the design to life. The project was based off of a Figma design by One Week Wonders Agency, and was designed to showcase the capabilities of a metaverse company.',
     tech: 'Next.js, TailwindCSS, Framer Motion',
     imageUrl: metaversus,
     demo: 'https://justin-tsugranes-metaversus.vercel.app/',
@@ -59,7 +59,7 @@ export const projects = [
     id: 'shareme',
     title: 'ShareMe',
     descr:
-      'A Full Stack Social App built with React. Project includes TailwindCSS, Sanity CMS, and Google Auth',
+      'ShareMe is a full stack social app built with React.js. The project utilizes TailwindCSS for styling, Sanity CMS for content management, and Google Auth for user authentication. It is designed to allow users to connect with one another and share their interests and experiences.',
     tech: 'React.js, TailwindCSS, Sanity CMS, Google Auth',
     imageUrl: shareme,
     demo: 'https://github.com/justinTsugranes/project_shareme',
@@ -68,7 +68,8 @@ export const projects = [
   {
     id: 'restaurantapp',
     title: 'Fine Dining Restaurant App',
-    descr: 'Mobile First app for a fine dining restaurant',
+    descr:
+      "A mobile-first web application designed for a fictional fine dining restaurant. The app was built using React and features a variety of React Icons for a visually appealing and intuitive user experience. The app is hosted on Netlify and allows users to browse the restaurant's menu, make reservations, and learn more about the restaurant's history and mission. The app also includes a contact form for users to reach out to the restaurant with any inquiries or special requests. Overall, The design aims to provide a convenient and seamless way for users to discover and engage with the restaurant, making it an essential tool for any fine dining establishment.",
     tech: 'React, React Icons, Netlify',
     imageUrl: restaurantApp,
     demo: 'https://justintsugranes-restaurant-app.netlify.app/',
@@ -77,7 +78,8 @@ export const projects = [
   {
     id: 'bankingapp',
     title: 'Modern Banking App',
-    descr: 'Frontend for a Modern Banking App',
+    descr:
+      'This Modern Banking App is a responsive frontend web application designed to provide a sleek and intuitive interface for managing personal finances. Built using React and TailwindCSS, the app features a clean and modern design that is easy to navigate and use.',
     tech: 'React, TailwindCSS, Netlify',
     imageUrl: bankingApp,
     demo: 'https://justintsugranes-modern-bank-app.netlify.app/',

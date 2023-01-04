@@ -22,22 +22,11 @@ const ContactModal = () => {
     // Read the form data
     const form = e.currentTarget;
     if (form.checkValidity() === false) {
-      e.stopPropagation();
       setValidated(true);
     } else {
       setSuccess(true);
     }
   };
-
-  // const handleSubmit = (e) => {
-  //   e.preventDefault();
-  //   const form = e.currentTarget;
-  //   if (form.checkValidity() === false) {
-  //     setValidated(true);
-  //   } else {
-  //     setSuccess(true);
-  //   }
-  // };
 
   return (
     <>
@@ -45,6 +34,7 @@ const ContactModal = () => {
         Contact
       </p>
 
+      {/* contact form modal */}
       {!success ? (
         <Modal show={show} onHide={handleClose} size="lg" centered className="text-dark">
           <Container>
@@ -132,17 +122,11 @@ const ContactModal = () => {
                 <Button
                   onClick={handleSubmit}
                   type="submit"
-                  // variant="dark"
                   className="rounded-pill px-4 py-2"
                   style={{ background: '#33bbcf', border: 'none' }}>
                   Send
                 </Button>
               </Form>
-              {success && (
-                <p className="text-success">
-                  Your message was successfully sent! Thank you for contacting me.
-                </p>
-              )}
             </Modal.Body>
           </Container>
         </Modal>
