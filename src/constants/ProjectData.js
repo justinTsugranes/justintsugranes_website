@@ -69,7 +69,7 @@ export const projects = [
     id: 'restaurantapp',
     title: 'Fine Dining Restaurant App',
     descr:
-      "A mobile-first web application designed for a fictional fine dining restaurant. The app was built using React and features a variety of React Icons for a visually appealing and intuitive user experience. The app is hosted on Netlify and allows users to browse the restaurant's menu, make reservations, and learn more about the restaurant's history and mission. The app also includes a contact form for users to reach out to the restaurant with any inquiries or special requests. Overall, The design aims to provide a convenient and seamless way for users to discover and engage with the restaurant, making it an essential tool for any fine dining establishment.",
+      "A mobile-first web application created for a fictitious fine dining establishment. The app was created with React and includes several React Icons for a visually appealing and intuitive user experience. Users can browse the restaurant's menu, make reservations, and learn more about the restaurant's history and mission through the app, which is hosted on Netlify. The app also includes a contact form where users can contact the restaurant with questions or special requests. Overall, the design aims to provide users with a simple and seamless way to discover and interact with the restaurant",
     tech: 'React, React Icons, Netlify',
     imageUrl: restaurantApp,
     demo: 'https://justintsugranes-restaurant-app.netlify.app/',
@@ -88,7 +88,8 @@ export const projects = [
   {
     id: 'gpt3',
     title: 'GPT-3 Landing Page',
-    descr: 'Frontend for a GPT-3 AI ',
+    descr:
+      'Frontend application built using React.js that utilizes HTML and CSS for styling and layout. The user interface is clean, visually appealing, responsive, and user-friendly, allowing users to easily navigate and learn about GPT-3 AI.',
     tech: 'React.js, HTML, CSS, Netlify',
     imageUrl: gpt3,
     demo: 'https://justin-tsugranes-gpt3.netlify.app/',
@@ -98,7 +99,7 @@ export const projects = [
     id: 'frontendbootcamp',
     title: 'Frontend Bootcamp',
     descr:
-      'An example of a landing page for a Frontend Bootcamp where I learned more about using Bootstrap and React. I used MapBox GL for the contact section, unDraw for the graphics, fontawesome icons, and lorempicsum for the avatars',
+      'This Frontend Bootcamp project is a responsive landing page that was created to showcase an example of a bootcamp program focused on frontend development. The page features a clean, modern design, with various sections detailing the curriculum and instructors. The page makes use of Bootstrap and React to provide a seamless user experience, with MapBox GL used for the contact section, unDraw for the graphics, and FontAwesome and LoremPicsum for the avatars. The project was deployed using Netlify, and the code is available for viewing on GitHub.',
     tech: 'Bootstrap, React Netlify',
     imageUrl: frontendBootcamp,
     demo: 'https://justin-tsugranes-bootstrap-example01.netlify.app',
@@ -107,7 +108,8 @@ export const projects = [
   {
     id: 'fullstackstore',
     title: 'Fullstack Stripe Store',
-    descr: 'An full-stack ecommerce app that has Stripe integration',
+    descr:
+      'The Fullstack Stripe Store is a full-stack ecommerce application that allows users to purchase products using the Stripe payment platform. The frontend of the application was built with React and React-Bootstrap, while the backend was built with Express and Node.js. The application also utilizes Netlify for deployment. With this project, I gained experience in creating a complete ecommerce solution, including handling payment processing and securely storing sensitive customer information. The project also included features such as a shopping cart and a product catalog. Overall, this project provided me with a comprehensive understanding of how to build a full-stack ecommerce application from start to finish.',
     tech: 'React-Bootstrap, React, Express, Node.js, Stripe, Netlify',
     imageUrl: fullstackStore,
     demo: 'https://justintsugranes-react-stripe-store.netlify.app/',
@@ -116,7 +118,8 @@ export const projects = [
   {
     id: 'landingpage',
     title: 'Landing Page',
-    descr: 'A company landing page website based on a Figma design spec',
+    descr:
+      "This 'Landing Page' project is a responsive website designed for a fictional company. It was built using React and Bootstrap, and follows a design specification created in Figma. The project theoritically includes several pages, including a home page, about us page, and contact page. The home page features a full-width hero image, along with sections for product features, customer testimonials, and a call to action. Overall, the project showcases my ability to create a visually appealing and functional landing page website using modern web development tools.",
     tech: 'React, Bootstrap, HTML, CSS, Figma',
     imageUrl: landingPage,
     demo: 'https://justin-tsugranes-landing-page-example.netlify.app',
@@ -126,7 +129,7 @@ export const projects = [
     id: 'nexttailwindblog',
     title: 'Next.js Tailwind Blog',
     descr:
-      'Interactive Blog project where I learned more about Next.js routing, TailwindCSS, API fetching, using Swiper for interactive scrolling, and working with React Functional Components',
+      'The Next.js Tailwind Blog is an interactive project that demonstrates my skills in building a responsive and feature-rich blog website using Next.js and TailwindCSS. This project required me to utilize Next.js routing and API fetching, as well as implementing Swiper for interactive scrolling and working with React functional components. In addition, I was able to showcase my proficiency in HTML and CSS through the design and layout of the website. ',
     tech: 'HTML, CSS',
     imageUrl: nextTailwindBlog,
     demo: 'https://blog-website-using-next-tailwind.vercel.app',
@@ -135,7 +138,8 @@ export const projects = [
   {
     id: 'crashcourse',
     title: 'Crash Courses',
-    descr: 'A website I created from my notes from all of the Codevolution crash courses',
+    descr:
+      'The Crash Courses project is a website that I developed to consolidate my notes from a variety of coding crash courses that I completed on the Codevolution YouTube channel. These courses covered a range of topics, including HTML, CSS, Flexbox, Grid, and JavaScript. I used JavaScript, HTML, and CSS to create the website, which was then deployed on Netlify. The website serves as a reference resource for me to quickly access the key concepts and techniques that I learned from the crash courses, and also serves as a portfolio piece to showcase my skills in web development.',
     tech: 'JavaScript, HTML, CSS, Netlify',
     imageUrl: crashCourses,
     demo: 'https://justin-tsugranes-coding-crash-courses.netlify.app',
@@ -144,7 +148,8 @@ export const projects = [
   {
     id: 'coworkingspaces',
     title: 'Coworking Space App',
-    descr: 'An app for booking coworking space',
+    descr:
+      'The Coworking Space App is a web application that allows users to book coworking spaces in their local area. The app has a responsive design and is optimized for mobile use. It was built using React and JavaScript, and features a clean and modern user interface.',
     tech: 'React, JavaScript',
     imageUrl: coworkingSpace,
     demo: 'https://justin-tsugranes-coworking-space-app.netlify.app',
@@ -153,7 +158,8 @@ export const projects = [
   {
     id: 'megamask',
     title: 'MegaMask',
-    descr: 'A UI clone of the popular Web3 Wallet, MetaMask',
+    descr:
+      'MegaMask is a user interface (UI) clone of the popular Web3 Wallet, MetaMask. It was built using JavaScript, HTML, and CSS. The project aims to replicate the look and feel of the original MetaMask app, including its features and functionality. This project was created as a way to familiarize myself with the design and functionality of Web3 Wallets and to practice my front-end development skills.',
     tech: 'JavaScript, HTML, CSS',
     imageUrl: megamask,
     demo: 'https://justin-tsugranes-megamask.netlify.app',
@@ -163,7 +169,7 @@ export const projects = [
     id: 'passwordgenerator',
     title: 'Password Generator',
     descr:
-      'A random password generator that is written in JavaScript, HTML, and CSS where I learned more about random number generation',
+      'A web-based tool for generating secure, random passwords. The tool allows users to specify the length of the password and is setup to be deployed in the Chrome Web Store as a Chrome Extension. This project was built using JavaScript, HTML, and CSS, and was an opportunity to learn more about random number generation and implementing user input in a web application',
     tech: 'JavaScript, HTML, CSS',
     imageUrl: passwordGenerator,
     demo: 'https://justin-tsugranes-password-generator.netlify.app',
@@ -173,8 +179,8 @@ export const projects = [
     id: 'personalwebsite',
     title: 'My Personal Website',
     descr:
-      'My personal portfolio website that showcases my recent coding projects. CI through GitHub, Deployed through Netlify.',
-    tech: 'React, Bootstrap, HTML, CSS, Swiper, Type-Animation',
+      'My personal website is a portfolio website that showcases my recent coding projects. It was built using React, Bootstrap, HTML, and CSS, and makes use of the Swiper library for interactive scrolling, the Framer Motion library for animations, and Type-Animation for engaging text effects on the home page. The website is continuously integrated through GitHub and deployed on Netlify. The website serves as a platform for me to share my work and connect with potential employers or clients..',
+    tech: 'React, Bootstrap, HTML, CSS, Framer Motion, Swiper, Type-Animation',
     imageUrl: personalWebsite,
     demo: 'http://www.justintsugranes.com',
     repo: 'https://github.com/justinTsugranes/justintsugranes_website'
@@ -183,7 +189,7 @@ export const projects = [
     id: 'museract',
     title: 'Museract',
     descr:
-      'A social media messaging app for musicians. From this project, I learned about the JS .forEach() method, using CDNs, and how to conditionally render styles',
+      'Museract is a social media messaging app for musicians. With this project, I had the opportunity to learn about the JS .forEach() method, how to use CDNs, and how to conditionally render styles. The app allows musicians to create profiles, connect with other musicians, and send messages to each other. It was built using JavaScript, HTML, and CSS, and includes features such as FontAwesome icons and the use of UUIDs to uniquely identify users. The app is deployed on Netlify',
     tech: 'JavaScript, HTML, CSS, FontAwesome, UUIDs',
     imageUrl: museract,
     demo: 'https://justin-tsugranes-museract-app.netlify.app',
@@ -192,8 +198,9 @@ export const projects = [
   {
     id: 'reacttodo',
     title: 'React Todo',
-    descr: 'A To-Do App built using React.js',
-    tech: 'HTML, CSS',
+    descr:
+      'The React Todo project is a web app that allows users to create and manage their own personal to-do lists. The project was built using React.js and makes use of HTML and CSS for the front-end styling. The project includes features such as adding, editing, and deleting to-do items, as well as marking items as complete or incomplete. The project is hosted on StackBlitz and the source code is available on GitHub for anyone to view or use as a reference.',
+    tech: 'React, JavaScript, HTML, CSS',
     imageUrl: reactTodo,
     demo: 'https://to-do-react-app.stackblitz.io',
     repo: 'https://github.com/justinTsugranes/tut_todo-react-app'
