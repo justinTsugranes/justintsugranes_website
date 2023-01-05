@@ -15,6 +15,7 @@ import {
 } from 'react-bootstrap';
 import { GithubIcon, DemoIcon } from '../assets';
 import { motion } from 'framer-motion';
+// import TechIcon from './TechIcon';
 
 const ProjectCard = ({ index, imageUrl, title, descr, tech, repo, demo }) => {
   const [show, setShow] = useState(false);
@@ -46,16 +47,17 @@ const ProjectCard = ({ index, imageUrl, title, descr, tech, repo, demo }) => {
         show={show}
         onHide={handleClose}
         size="lg"
+        fullscreen="md-down"
         centered
-        fullscreen="xl-"
-        aria-labelledby="contained-project-modal">
+        aria-labelledby="contained-project-modal"
+        className="text-light">
         <Container fluid className="bg-dark">
-          <ModalHeader className="modal-header">
-            <Modal.Title className="text-uppercase">{title}</Modal.Title>
+          <ModalHeader>
+            <Modal.Title className="text-uppercase text-gradient">{title}</Modal.Title>
             <CloseButton variant="white" aria-label="Close" onClick={handleClose} />
           </ModalHeader>
 
-          <ModalBody className="text-light" id="modal-body">
+          <ModalBody>
             <Col>
               <Row>
                 <a href={demo} target="_blank" rel="noreferrer">
@@ -65,7 +67,22 @@ const ProjectCard = ({ index, imageUrl, title, descr, tech, repo, demo }) => {
               <Row>
                 <p className="my-4">{descr}</p>
                 <h5 className="key-tech-title text-gradient mt-2">KEY TECH</h5>
+                {/* showing tech titles */}
                 <p className="mb-0">{tech}</p>
+                {/* showing list icons */}
+                {/* <ul className="d-flex">
+                  {tech.split(', ').map((tech, i) => {
+                    return <li key={i}>{tech}</li>;
+                  })}
+                </ul> */}
+                {/* showing row icons */}
+                {/* <div className="d-flex">
+                  {tech.map((tech) => (
+                    <div key={tech} className="mr-3">
+                      <TechIcon tech={tech} />
+                    </div>
+                  ))}
+                </div> */}
               </Row>
             </Col>
           </ModalBody>
@@ -77,7 +94,7 @@ const ProjectCard = ({ index, imageUrl, title, descr, tech, repo, demo }) => {
                 whileHover={{ scale: 1.2 }}
                 whileTap={{ scale: 0.9 }}
                 transition={{ type: 'spring', stiffness: 400, damping: 17 }}>
-                <a href={repo} target="_blank" rel="noreferrer" className="text-gradient">
+                <a href={repo} target="_blank" rel="noreferrer" className="text-light">
                   <GithubIcon />
                 </a>
               </motion.div>
@@ -86,7 +103,7 @@ const ProjectCard = ({ index, imageUrl, title, descr, tech, repo, demo }) => {
                 whileHover={{ scale: 1.2 }}
                 whileTap={{ scale: 0.9 }}
                 transition={{ type: 'spring', stiffness: 400, damping: 17 }}>
-                <a href={demo} target="_blank" rel="noreferrer" className="text-gradient">
+                <a href={demo} target="_blank" rel="noreferrer" className="text-light">
                   <DemoIcon />
                 </a>
               </motion.div>

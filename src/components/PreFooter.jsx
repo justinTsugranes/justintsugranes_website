@@ -7,17 +7,17 @@ import { preFooterImg, preFooterGraphic } from '../assets';
 const PreFooter = () => {
   return (
     // Display a full-height row with a background image
-    <Row className="overflow-hidden min-vh-50">
+    <Row className="overflow-hidden min-vh-50 min-height-0">
       <Row className="pre-footer" style={{ backgroundImage: `url(${preFooterImg})` }}>
         {/* Add a colored overlay on top of the background image */}
         <Row className="color-overlay d-flex justify-content-center align-items-center text-center px-md-3">
           {/* Display a hidden column with an image on medium and up screens */}
-          <Col className="d-none d-md-block">
+          <Col className="d-none d-md-block w-100">
             <Image src={preFooterGraphic} alt="graphic of the world" id="connect-img" />
           </Col>
           {/* Display a column with text and a button on all screens */}
           <Col className="d-flex flex-column px-3">
-            <Row>
+            <Row className="flex-column">
               {/* Display a heading with a gradient text color */}
               <h3 className="text-gradient">I&apos;m always looking to connect</h3>
               {/* Display a paragraph with light text color on medium and up screens */}

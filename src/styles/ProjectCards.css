@@ -53,6 +53,8 @@
   display: block;
 }
 
+/*---- MODALS ----*/
+
 .proj-card-img-modal {
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.6);
 }
@@ -61,3 +63,5 @@
   font-weight: 600;
   letter-spacing: 2px;
 }
+
+/*---- /MODALS ----*/

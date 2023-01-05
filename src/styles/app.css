@@ -105,6 +105,10 @@ p {
   font-weight: normal;
 }
 
+.text-shadow {
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
 /*---- NAV LINKS ----*/
 .nav-link {
   transition: all 0.5s;
@@ -196,15 +200,8 @@ p {
   height: 100%;
   width: 100%;
   max-height: 500px;
+  object-fit: contain;
 }
-
-/*---- MODALS ----*/
-#modal-body {
-  border: none;
-  margin: 0;
-  border-radius: 0;
-}
-/*---- /MODALS ----*/
 
 /*---- RESPONSIVENESS ----*/
 @media (max-width: 768px) {
