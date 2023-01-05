@@ -21,7 +21,7 @@ const PreFooter = () => {
               {/* Display a heading with a gradient text color */}
               <h3 className="text-gradient">I&apos;m always looking to connect</h3>
               {/* Display a paragraph with light text color on medium and up screens */}
-              <p className="text-light d-none d-md-block mt-2">
+              <p className="text-light text-shadow d-none d-md-block mt-2">
                 Although, I&apos;m currently based in the US, I love making friends and working with
                 teams from all around the globe.
               </p>

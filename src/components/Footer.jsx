@@ -4,8 +4,8 @@ import { motion } from 'framer-motion';
 
 // Footer component that displays social media links and copyright information
 const Footer = () => (
-  <Row>
-    <Col className="p-5 text-center position-relative text-light ">
+  <Row className="py-5">
+    <Col className="mx-auto text-center text-light">
       {/* Display user name */}
       <h2 className="text-uppercase mb-3 h3 text-gradient">{user.name}</h2>
       {/* Display user title */}
@@ -13,7 +13,7 @@ const Footer = () => (
       {/* Display heading for social media section */}
       <h3 className="text-uppercase h4 text-gradient">Get In Touch</h3>
       {/* Grid container */}
-      <Row className="p-4 pb-0">
+      <Row className="d-flex justify-content-around py-4 pb-0">
         {/* Section: Social media */}
         <div className="mb-4">
           {/* Map through social media links and display them as buttons */}
@@ -30,7 +30,7 @@ const Footer = () => (
                 target="_blank"
                 rel="noreferrer"
                 role="button"
-                className="text-light">
+                className="text-light btn-outline-light">
                 {/* Display social media icon */}
                 {social.icon}
               </a>
@@ -40,7 +40,7 @@ const Footer = () => (
       </Row>
       {/* Display copyright information */}
       <Row>
-        <p className="text-secondary fs-6">Copyright © 2021 misfitDodo Media</p>
+        <p className="text-secondary fs-6 mb-0">Copyright © 2021 misfitDodo Media</p>
       </Row>
     </Col>
   </Row>
