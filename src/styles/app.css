@@ -64,11 +64,6 @@
 
 /*---- MAIN TYPOGRAPHY ----*/
 
-.bioOne,
-.bioTwo {
-  max-width: 75ch;
-}
-
 h1 {
   font-size: 6rem;
   text-spacing: -1.5px;
