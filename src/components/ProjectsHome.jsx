@@ -18,7 +18,7 @@ const ProjectsHome = () => {
         <Row className="d-flex justify-content-center gap-5 row-cols-1 row-cols-md-3 row-cols-lg-5 my-3">
           {/* Mapping over the first 8 projects from the projects data and rendering a ProjectCard component for each project */}
           {projects.slice(0, 8).map((project, index) => (
-            <ProjectCard key={project.id} {...project} index={index} />
+            <ProjectCard key={project.id} {...project} index={index} projectData={projects} />
           ))}
         </Row>
       </Col>
