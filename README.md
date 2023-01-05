@@ -2,15 +2,12 @@
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/a8ec3265-e384-4caa-a137-408fa79c33e8/deploy-status)](https://app.netlify.com/sites/justintsugranes/deploys)
 
-<!-- PROJECT LOGO -->
 <br />
 <div align="center">
   <a href="https://github.com/justintsugranes/">
     <img src="src/assets/logo.jpg" alt="Logo" width="80" height="80">
   </a>
   </div>
-
-  <!-- TODO: ADD TITLE-->
 
 # [My Personal Website][project-url]
 
@@ -44,9 +41,7 @@
 [![Issues][issues-shield]][issues-url]
 [![MIT License][license-shield]][license-url]
 
-This is my personal website that is currently built with React and Bootstrap. I originally built it using JavaScript, HTML, and CSS. Then I rebuilt it with bootstrap. This time around, I used `React-Bootstrap`. The site also makes use of `react-type-animation` and `react-parallax`
-
-The site is deployed via Netlify. The contact form uses Netlify form control.
+My personal website is a portfolio website that showcases my recent coding projects. It was built using React, Bootstrap, HTML, and CSS, and makes use of the Swiper library for interactive scrolling, the Framer Motion library for animations, and Type-Animation for engaging text effects on the home page. The website is continuously integrated through GitHub and deployed on Netlify. The website serves as a platform for me to share my work and connect with potential employers or clients.
 
 _I'd love to hear any feedback or just thoughts. Feel free to reach out at my contact info below. Cheers!_
 

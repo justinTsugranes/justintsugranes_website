@@ -1,8 +1,8 @@
 import { motion } from 'framer-motion';
 import { Col, Row } from 'react-bootstrap';
 import { useNavigate } from 'react-router-dom';
-import { projects } from '../constants/ProjectData';
 import { ProjectCard } from './';
+import { projects } from '../constants/ProjectData';
 
 const ProjectsHome = () => {
   const navigate = useNavigate();
