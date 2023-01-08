@@ -1,5 +1,5 @@
 /* eslint-disable react/prop-types */
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './../styles/ProjectCards.css';
 import {
@@ -15,11 +15,39 @@ import {
 } from 'react-bootstrap';
 import { GithubIcon, DemoIcon } from '../assets';
 import { motion } from 'framer-motion';
+import { projects } from '../constants/ProjectData';
+// import TechIcon from './TechIcon';
 
 const ProjectCard = ({ index, imageUrl, title, descr, tech, repo, demo }) => {
   const [show, setShow] = useState(false);
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
+
+  const [currentIndex, setCurrentIndex] = useState(0);
+  const [projectData, setProjectData] = useState([]);
+
+  // Load project data from data.js file on mount
+  useEffect(() => {
+    setProjectData(projects);
+  }, []);
+
+  const handlePrevious = ({ projectData }) => {
+    const newIndex = currentIndex - 1;
+    // Check if the new index is within the range of the project data array
+    if (newIndex >= 0 && newIndex < projectData.length) {
+      // Update the currentIndex state with the new index
+      setCurrentIndex(newIndex);
+    }
+  };
+
+  const handleNext = ({ projectData }) => {
+    const newIndex = currentIndex + 1;
+    // Check if the new index is within the range of the project data array
+    if (newIndex >= 0 && newIndex < projectData.length) {
+      // Update the currentIndex state with the new index
+      setCurrentIndex(newIndex);
+    }
+  };
 
   return (
     <>
@@ -88,6 +116,18 @@ const ProjectCard = ({ index, imageUrl, title, descr, tech, repo, demo }) => {
 
           <ModalFooter className="border-0">
             <Row>
+              {index > 0 && (
+                <motion.div
+                  className="col h2 mb-3"
+                  whileHover={{ scale: 1.2 }}
+                  whileTap={{ scale: 0.9 }}
+                  transition={{ type: 'spring', stiffness: 400, damping: 17 }}>
+                  <button onClick={handlePrevious} className="bg-transparent">
+                    <i className="fas fa-angle-left text-gradient" />
+                  </button>
+                </motion.div>
+              )}
+
               <motion.div
                 className="col h2 mb-3"
                 whileHover={{ scale: 1.2 }}
@@ -106,6 +146,18 @@ const ProjectCard = ({ index, imageUrl, title, descr, tech, repo, demo }) => {
                   <DemoIcon />
                 </a>
               </motion.div>
+
+              {index < projectData.length - 1 && (
+                <motion.div
+                  className="col h2 mb-3"
+                  whileHover={{ scale: 1.2 }}
+                  whileTap={{ scale: 0.9 }}
+                  transition={{ type: 'spring', stiffness: 400, damping: 17 }}>
+                  <button onClick={handleNext} className="bg-transparent">
+                    <i className="fas fa-angle-right text-gradient" />
+                  </button>
+                </motion.div>
+              )}
             </Row>
           </ModalFooter>
         </Container>

@@ -67,6 +67,7 @@ export { default as boredomterminator } from './project-images/boredomterminator
 export { default as businessCard } from './project-images/business-card.jpg';
 export { default as coworkingSpace } from './project-images/coworking-space.jpg';
 export { default as crashCourses } from './project-images/crashcourses.jpg';
+export { default as ecommerce } from './project-images/ecommerce.jpeg';
 export { default as frontendBootcamp } from './project-images/frontend-bootcamp.jpg';
 export { default as fullstackStore } from './project-images/fullstack-store.jpg';
 export { default as goople } from './project-images/goople.jpg';

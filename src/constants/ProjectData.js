@@ -12,6 +12,7 @@ import {
   // nextBlog,
   // oldagram,
   // reactTacToe,
+  // reactTodo,
   // recipes,
   // scoreCard,
   // unitConverter,
@@ -20,6 +21,7 @@ import {
   bankingApp,
   coworkingSpace,
   crashCourses,
+  ecommerce,
   frontendBootcamp,
   fullstackStore,
   gpt3,
@@ -31,7 +33,6 @@ import {
   passwordGenerator,
   personalWebsite,
   restaurantApp,
-  reactTodo,
   shareme
 } from '../assets';
 
@@ -45,6 +46,16 @@ export const projects = [
   //   demo: '',
   //   repo: ''
   // },
+  {
+    id: 'ecommerce',
+    title: 'e-Commerce App',
+    descr:
+      'This is an ecommerce app built with the Next.js framework and Sanity CMS as the backend. It features a homepage that displays a hero banner and a list of products. The hero banner and products are sourced from the Sanity CMS. The app also has a footer banner that is sourced from the Sanity CMS. Users can browse and purchase the products. The app uses the Stripe API to handle payments.',
+    tech: 'Next.js, Sanity CMS, Stripe',
+    imageUrl: ecommerce,
+    demo: 'https://justintsugranes-ecommerce-next-sanity-stripe.vercel.app/',
+    repo: 'https://github.com/justinTsugranes/project_ecommerce-next-sanity-stripe'
+  },
   {
     id: 'metaversus',
     title: 'MetaVersus',
@@ -194,17 +205,17 @@ export const projects = [
     imageUrl: museract,
     demo: 'https://justin-tsugranes-museract-app.netlify.app',
     repo: 'https://github.com/justinTsugranes/project_museract'
-  },
-  {
-    id: 'reacttodo',
-    title: 'React Todo',
-    descr:
-      'The React Todo project is a web app that allows users to create and manage their own personal to-do lists. The project was built using React.js and makes use of HTML and CSS for the front-end styling. The project includes features such as adding, editing, and deleting to-do items, as well as marking items as complete or incomplete. The project is hosted on StackBlitz and the source code is available on GitHub for anyone to view or use as a reference.',
-    tech: 'React, JavaScript, HTML, CSS',
-    imageUrl: reactTodo,
-    demo: 'https://to-do-react-app.stackblitz.io',
-    repo: 'https://github.com/justinTsugranes/tut_todo-react-app'
   }
+  // {
+  //   id: 'reacttodo',
+  //   title: 'React Todo',
+  //   descr:
+  //     'The React Todo project is a web app that allows users to create and manage their own personal to-do lists. The project was built using React.js and makes use of HTML and CSS for the front-end styling. The project includes features such as adding, editing, and deleting to-do items, as well as marking items as complete or incomplete. The project is hosted on StackBlitz and the source code is available on GitHub for anyone to view or use as a reference.',
+  //   tech: 'React, JavaScript, HTML, CSS',
+  //   imageUrl: reactTodo,
+  //   demo: 'https://to-do-react-app.stackblitz.io',
+  //   repo: 'https://github.com/justinTsugranes/tut_todo-react-app'
+  // }
   // {
   //   id: 'weblog',
   //   title: 'Blog using Fetch',

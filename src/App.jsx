@@ -1,4 +1,3 @@
-import React from 'react';
 import { Routes, Route } from 'react-router-dom';
 import { Footer, PreFooter, Navigation, ScrollToTop } from './components';
 import { Home, Projects, About, CV } from './pages';
