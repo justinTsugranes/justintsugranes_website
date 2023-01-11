@@ -39,7 +39,7 @@ import {
 
 export const projects = [
   // {
-  //   id: 'template',
+  //   id: 'project_template',
   //   title: '',
   //   descr: '',
   //   tech: '',
