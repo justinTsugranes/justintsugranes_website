@@ -3,6 +3,7 @@ import {
   // blackjack,
   // boredomterminator,
   // businessCard,
+  // coworkingSpace,
   // goople,
   // ilovelucy,
   // imageMapping,
@@ -19,7 +20,6 @@ import {
   // weblog,
   // webFlix,
   bankingApp,
-  coworkingSpace,
   crashCourses,
   ecommerce,
   frontendBootcamp,
@@ -28,6 +28,7 @@ import {
   landingPage,
   megamask,
   metaversus,
+  misfitdodo,
   museract,
   nextTailwindBlog,
   passwordGenerator,
@@ -46,6 +47,16 @@ export const projects = [
   //   demo: '',
   //   repo: ''
   // },
+  {
+    id: 'misfitdodo',
+    title: 'misfitDodo Official Website',
+    descr:
+      'The official website for misfitDodo Media. The website was built using React.js and SanityCMS. The website features Framer Motion.',
+    tech: 'React.js, Sanity CMS, Framer Motion',
+    imageUrl: misfitdodo,
+    demo: 'https://misfitdodo.vercel.app/',
+    repo: 'https://github.com/justinTsugranes/project_misfitdodo-website'
+  },
   {
     id: 'ecommerce',
     title: 'e-Commerce App',
@@ -157,16 +168,6 @@ export const projects = [
     repo: 'https://github.com/justinTsugranes/project_codevolution-crash-courses'
   },
   {
-    id: 'coworkingspaces',
-    title: 'Coworking Space App',
-    descr:
-      'The Coworking Space App is a web application that allows users to book coworking spaces in their local area. The app has a responsive design and is optimized for mobile use. It was built using React and JavaScript, and features a clean and modern user interface.',
-    tech: 'React, JavaScript',
-    imageUrl: coworkingSpace,
-    demo: 'https://justin-tsugranes-coworking-space-app.netlify.app',
-    repo: `https://github.com/justintsugranes/project_coworking-spaces`
-  },
-  {
     id: 'megamask',
     title: 'MegaMask',
     descr:
@@ -206,6 +207,16 @@ export const projects = [
     demo: 'https://justin-tsugranes-museract-app.netlify.app',
     repo: 'https://github.com/justinTsugranes/project_museract'
   }
+  // {
+  //   id: 'coworkingspaces',
+  //   title: 'Coworking Space App',
+  //   descr:
+  //     'The Coworking Space App is a web application that allows users to book coworking spaces in their local area. The app has a responsive design and is optimized for mobile use. It was built using React and JavaScript, and features a clean and modern user interface.',
+  //   tech: 'React, JavaScript',
+  //   imageUrl: coworkingSpace,
+  //   demo: 'https://justin-tsugranes-coworking-space-app.netlify.app',
+  //   repo: `https://github.com/justintsugranes/project_coworking-spaces`
+  // },
   // {
   //   id: 'reacttodo',
   //   title: 'React Todo',
