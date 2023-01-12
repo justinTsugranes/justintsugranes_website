@@ -25,6 +25,8 @@ import {
   // gpt3,
   // metaversus,
   // misfitdodo,
+  // restaurantApp,
+  // shareme
   crashCourses,
   fullstackStore,
   landingPage,
@@ -32,9 +34,7 @@ import {
   museract,
   nextTailwindBlog,
   passwordGenerator,
-  personalWebsite,
-  restaurantApp,
-  shareme
+  personalWebsite
 } from '../assets';
 
 export const projects = [
