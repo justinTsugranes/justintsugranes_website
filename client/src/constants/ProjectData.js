@@ -49,7 +49,7 @@ export const projects = [
   // },
   {
     id: 'misfitdodo',
-    title: 'misfitDodo Official Website',
+    title: 'misfitDodo Media',
     descr:
       'The official website for misfitDodo Media. The website was built using React.js and SanityCMS. The website features Framer Motion.',
     tech: 'React.js, Sanity CMS, Framer Motion',
