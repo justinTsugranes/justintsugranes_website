@@ -9,12 +9,16 @@ import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 // import required modules
 import SwiperCore, { Navigation, Pagination, Mousewheel, Keyboard } from 'swiper';
+
 /* import projects data for swiper */
-import { projects } from '../../constants/ProjectData';
+import { useFetchData } from '../../hooks/useFetchData';
+import { urlFor } from '../../lib/client';
 
 function useSwiper() {
   const swiperRef = useRef(null);
 
+  // Use the useEffect hook to call the SwiperCore.use function
+  // with the necessary modules for the Swiper component
   useEffect(() => {
     SwiperCore.use([Navigation, Pagination, Mousewheel, Keyboard]);
   }, []);
@@ -23,7 +27,16 @@ function useSwiper() {
 }
 
 const AboutSectionSeven = () => {
+  // Create a reference to the Swiper component
   const swiperRef = useSwiper();
+
+  // Use the useFetchData hook to fetch data from the Sanity CMS
+  const { data, error } = useFetchData(`*[_type == "project"]`);
+
+  // If there's an error with fetching the data, return an error message
+  if (error) {
+    return <p>{error.message}</p>;
+  }
 
   return (
     <Row className="section-container">
@@ -60,14 +73,15 @@ const AboutSectionSeven = () => {
             }
           }}
           className="mySwiper">
-          {projects.map(({ imageUrl, demo, title }, slideID) => {
+          {/* For each item in the data array, create a new SwiperSlide element and pass in the properties of the current item as props */}
+          {data.map(({ image, title, demoLink }, slideID) => {
             return (
               <SwiperSlide key={slideID}>
                 <Col className="col-lg p-0 m-0">
                   <Container className="mt-sm-1" fluid>
                     <Container fluid className="m-0 p-0">
                       <a
-                        href={demo}
+                        href={demoLink}
                         rel="noreferrer"
                         target="_blank"
                         className="text-decoration-none">
@@ -76,8 +90,8 @@ const AboutSectionSeven = () => {
                             fluid
                             variant="top"
                             className="proj-card-img proj-about hover-zoom"
-                            src={imageUrl}
-                            alt="project-img"
+                            src={urlFor(image)}
+                            alt={title}
                             title={title}
                             style={{ height: '250px' }}
                           />
