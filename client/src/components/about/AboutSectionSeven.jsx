@@ -76,7 +76,7 @@ const AboutSectionSeven = () => {
           {/* For each item in the data array, create a new SwiperSlide element and pass in the properties of the current item as props */}
           {data.map(({ image, title, demoLink }, slideID) => {
             return (
-              <SwiperSlide key={slideID}>
+              <SwiperSlide key={slideID} lazy>
                 <Col className="col-lg p-0 m-0">
                   <Container className="mt-sm-1" fluid>
                     <Container fluid className="m-0 p-0">
