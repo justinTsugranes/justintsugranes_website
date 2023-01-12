@@ -1,13 +1,13 @@
 import {
   // AdobeIcon,
+  // MediumIcon,
+  // StackBlitzIcon,
+  // TwitterIcon
   CodepenIcon,
   GithubIcon,
   InstagramIcon,
   LinkedInIcon,
-  MediumIcon,
   SpotifyIcon
-  // StackBlitzIcon,
-  // TwitterIcon
 } from '../assets';
 
 export const navLinks = {
@@ -31,38 +31,21 @@ export const navLinks = {
   }
 };
 
-export const tags = {
-  adobe: 'justintsugranes',
-  codepen: 'justintsugranes',
-  github: 'justintsugranes',
-  instagram: 'justintsugranes',
-  linkedin: 'justin-tsugranes',
-  medium: 'justintsugranes',
-  spotify: 'https://open.spotify.com/artist/4vV18ClJAixgpNfKaJkEmR?si=bOY2nkJXT_esmViVXk6GbA',
-  stackblitz: 'justinTsugranes',
-  twitter: 'justintsugranes'
-};
-
 export const socialMedia = [
   {
     id: 'linkedin',
     icon: <LinkedInIcon />,
-    link: `https://linkedin.com/in/${tags.linkedin}`
+    link: `https://linkedin.com/in/justin-tsugranes`
   },
   {
     id: 'github',
     icon: <GithubIcon />,
-    link: `https://github.com/${tags.github}`
+    link: `https://github.com/justintsugranes`
   },
   {
     id: 'codepen',
     icon: <CodepenIcon />,
-    link: `https://codepen.io/${tags.codepen}`
-  },
-  {
-    id: 'medium',
-    icon: <MediumIcon />,
-    link: `https://${tags.medium}.medium.com`
+    link: `https://codepen.io/justintsugranes`
   },
   {
     id: 'spotify',
@@ -72,8 +55,13 @@ export const socialMedia = [
   {
     id: 'instagram',
     icon: <InstagramIcon />,
-    link: `https://instagram.com/${tags.instagram}`
+    link: `https://instagram.com/justintsugranes`
   }
+  // {
+  //   id: 'medium',
+  //   icon: <MediumIcon />,
+  //   link: `https://justintsugranes.medium.com`
+  // },
   // {
   //   id: 'adobe',
   //   icon: <AdobeIcon/>,
@@ -115,13 +103,3 @@ export const about = {
       including media &amp; entertainment, IT, sales, marketing, real estate, and
       hospitality.`
 };
-
-export const experience = [
-  {
-    title: 'Frontend Developer',
-    company: 'misfitDodo Media',
-    year: '2021',
-    companyLink: '',
-    description: ''
-  }
-];
