@@ -1,7 +1,4 @@
-/* eslint-disable react/prop-types */
-import { useState } from 'react';
-import 'bootstrap/dist/css/bootstrap.min.css';
-import './../styles/ProjectCards.css';
+import React from 'react';
 import {
   Modal,
   ModalHeader,
@@ -13,52 +10,10 @@ import {
   Col,
   Image
 } from 'react-bootstrap';
-import { GithubIcon, DemoIcon } from '../assets';
 import { motion } from 'framer-motion';
-// import { projects } from '../constants/ProjectData';
 
-const ProjectCard = ({ index, projects }) => {
-  const [showModal, setShowModal] = useState(false);
-
-  const toggleShowModal = () => {
-    setShowModal((prevShowModal) => !prevShowModal);
-  };
-
-  return (
-    <>
-      <motion.div
-        className="col"
-        key={index}
-        initial={{ opacity: 0.6 }}
-        whileHover={{
-          scale: 1.1,
-          transition: { duration: 0.5 }
-        }}
-        whileTap={{ scale: 0.9 }}
-        whileInView={{ opacity: 1 }}>
-        <motion.div className="card proj-card-container border-0" onClick={toggleShowModal}>
-          <motion.div className="text-center">{projects.title}</motion.div>
-          <img
-            className="image proj-card-img shadow"
-            src={projects.imageUrl}
-            alt={projects.title}
-          />
-        </motion.div>
-      </motion.div>
-
-      <ProjectModal
-        show={showModal}
-        onHide={toggleShowModal}
-        title={projects.title}
-        imageUrl={projects.imageUrl}
-        descr={projects.descr}
-        tech={projects.tech}
-        repo={projects.repo}
-        demo={projects.demo}
-      />
-    </>
-  );
-};
+import { GithubIcon, DemoIcon } from '../assets';
+import './../styles/ProjectCards.css';
 
 const ProjectModal = ({ show, onHide, projects }) => (
   <Modal
@@ -92,6 +47,20 @@ const ProjectModal = ({ show, onHide, projects }) => (
             <h5 className="key-tech-title text-gradient mt-2">KEY TECH</h5>
             {/* showing tech titles */}
             <p className="mb-0">{projects.tech}</p>
+            {/* showing list icons */}
+            {/* <ul className="d-flex">
+                  {tech.split(', ').map((tech, i) => {
+                    return <li key={i}>{tech}</li>;
+                  })}
+                </ul> */}
+            {/* showing row icons */}
+            {/* <div className="d-flex">
+                  {tech.map((tech) => (
+                    <div key={tech} className="mr-3">
+                      <TechIcon tech={tech} />
+                    </div>
+                  ))}
+                </div> */}
           </Row>
         </Col>
       </ModalBody>
@@ -122,27 +91,4 @@ const ProjectModal = ({ show, onHide, projects }) => (
   </Modal>
 );
 
-export default ProjectCard;
-
-{
-  /* showing list icons */
-}
-{
-  /* <ul className="d-flex">
-  {tech.split(', ').map((tech, i) => {
-    return <li key={i}>{tech}</li>;
-  })}
-</ul> */
-}
-{
-  /* showing row icons */
-}
-{
-  /* <div className="d-flex">
-  {tech.map((tech) => (
-    <div key={tech} className="mr-3">
-      <TechIcon tech={tech} />
-    </div>
-  ))}
-</div> */
-}
+export default ProjectModal;

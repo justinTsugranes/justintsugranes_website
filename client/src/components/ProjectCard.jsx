@@ -1,7 +1,5 @@
 /* eslint-disable react/prop-types */
 import { useState } from 'react';
-import 'bootstrap/dist/css/bootstrap.min.css';
-import './../styles/ProjectCards.css';
 import {
   Modal,
   ModalHeader,
@@ -10,13 +8,16 @@ import {
   Container,
   CloseButton,
   Row,
-  Col,
-  Image
+  Col
 } from 'react-bootstrap';
-import { GithubIcon, DemoIcon } from '../assets';
 import { motion } from 'framer-motion';
 
-const ProjectCard = ({ index, imageUrl, title, descr, tech, repo, demo }) => {
+import { GithubIcon, DemoIcon } from '../assets';
+
+import { urlFor } from '../lib/client';
+import './projects/projects.css';
+
+const ProjectCard = ({ index, image, title, description, technologies, demoLink, repoLink }) => {
   const [show, setShow] = useState(false);
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
@@ -37,7 +38,7 @@ const ProjectCard = ({ index, imageUrl, title, descr, tech, repo, demo }) => {
           <motion.div className="text-center" id="title">
             {title}
           </motion.div>
-          <img className="image proj-card-img shadow" src={imageUrl} alt={title} />
+          <img className="image proj-card-img shadow" src={urlFor(image)} alt={title} />
         </motion.div>
       </motion.div>
 
@@ -59,29 +60,18 @@ const ProjectCard = ({ index, imageUrl, title, descr, tech, repo, demo }) => {
           <ModalBody>
             <Col>
               <Row>
-                <a href={demo} target="_blank" rel="noreferrer">
-                  <Image fluid src={imageUrl} alt="..." className="proj-card-img-modal rounded-4" />
+                <a href={demoLink} target="_blank" rel="noreferrer">
+                  <img
+                    src={urlFor(image)}
+                    alt={title}
+                    className="proj-card-img-modal fluid rounded-4"
+                  />
                 </a>
               </Row>
               <Row>
-                <p className="my-4">{descr}</p>
+                <p className="my-4">{description}</p>
                 <h5 className="key-tech-title text-gradient mt-2">KEY TECH</h5>
-                {/* showing tech titles */}
-                <p className="mb-0">{tech}</p>
-                {/* showing list icons */}
-                {/* <ul className="d-flex">
-                  {tech.split(', ').map((tech, i) => {
-                    return <li key={i}>{tech}</li>;
-                  })}
-                </ul> */}
-                {/* showing row icons */}
-                {/* <div className="d-flex">
-                  {tech.map((tech) => (
-                    <div key={tech} className="mr-3">
-                      <TechIcon tech={tech} />
-                    </div>
-                  ))}
-                </div> */}
+                <p className="mb-0">{technologies.join(', ')}</p>
               </Row>
             </Col>
           </ModalBody>
@@ -93,7 +83,7 @@ const ProjectCard = ({ index, imageUrl, title, descr, tech, repo, demo }) => {
                 whileHover={{ scale: 1.2 }}
                 whileTap={{ scale: 0.9 }}
                 transition={{ type: 'spring', stiffness: 400, damping: 17 }}>
-                <a href={repo} target="_blank" rel="noreferrer" className="text-light">
+                <a href={repoLink} target="_blank" rel="noreferrer" className="text-light">
                   <GithubIcon />
                 </a>
               </motion.div>
@@ -102,7 +92,7 @@ const ProjectCard = ({ index, imageUrl, title, descr, tech, repo, demo }) => {
                 whileHover={{ scale: 1.2 }}
                 whileTap={{ scale: 0.9 }}
                 transition={{ type: 'spring', stiffness: 400, damping: 17 }}>
-                <a href={demo} target="_blank" rel="noreferrer" className="text-light">
+                <a href={demoLink} target="_blank" rel="noreferrer" className="text-light">
                   <DemoIcon />
                 </a>
               </motion.div>

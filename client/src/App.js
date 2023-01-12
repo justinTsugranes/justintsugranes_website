@@ -4,7 +4,6 @@ import { Home, Projects, About, CV } from './pages';
 // Lazy Loading
 // const LazyProjects = React.lazy(() => import('./pages/Projects'));
 // const LazyAbout = React.lazy(() => import('./pages/About'));
-import './styles/app.css';
 
 const App = () => (
   <>

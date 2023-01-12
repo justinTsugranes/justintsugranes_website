@@ -8,6 +8,4 @@ export { default as ProjectsAll } from './ProjectsAll';
 export { default as ProjectsHome } from './ProjectsHome';
 export { default as ProjectsShowcase } from './ProjectsShowcase';
 export { default as Quote } from './Quote';
-export { default as SwiperCube } from './SwiperCube';
-export { default as SwiperParallax } from './SwiperParallax';
 export { default as ScrollToTop } from './ScrollToTop';

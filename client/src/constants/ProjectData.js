@@ -122,7 +122,7 @@ export const projects = [
     title: 'Frontend Bootcamp',
     descr:
       'This Frontend Bootcamp project is a responsive landing page that was created to showcase an example of a bootcamp program focused on frontend development. The page features a clean, modern design, with various sections detailing the curriculum and instructors. The page makes use of Bootstrap and React to provide a seamless user experience, with MapBox GL used for the contact section, unDraw for the graphics, and FontAwesome and LoremPicsum for the avatars. The project was deployed using Netlify, and the code is available for viewing on GitHub.',
-    tech: 'Bootstrap, React Netlify',
+    tech: 'Bootstrap, React, Netlify',
     imageUrl: frontendBootcamp,
     demo: 'https://justin-tsugranes-bootstrap-example01.netlify.app',
     repo: `https://github.com/justintsugranes/project_bootstrap-frontend-example`

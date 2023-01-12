@@ -1,9 +1,3 @@
-import { SwiperParallax } from '../../components';
-
-const AboutSectionFive = () => (
-  <>
-    <SwiperParallax />
-  </>
-);
+const AboutSectionFive = () => <></>;
 
 export default AboutSectionFive;
