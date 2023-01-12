@@ -1,5 +1,5 @@
 import { Row, Col } from 'react-bootstrap';
-import { socialMedia, user } from '../constants';
+import { socialMedia, about } from '../constants';
 import { motion } from 'framer-motion';
 
 // Footer component that displays social media links and copyright information
@@ -7,9 +7,9 @@ const Footer = () => (
   <Row className="py-5">
     <Col className="mx-auto text-center text-light">
       {/* Display user name */}
-      <h2 className="text-uppercase mb-3 h3 text-gradient">{user.name}</h2>
+      <h2 className="text-uppercase mb-3 h3 text-gradient">{about.name}</h2>
       {/* Display user title */}
-      <p className="mb-5">{user.title}</p>
+      <p className="mb-5">{about.title}</p>
       {/* Display heading for social media section */}
       <h3 className="text-uppercase h4 text-gradient">Get In Touch</h3>
       {/* Grid container */}

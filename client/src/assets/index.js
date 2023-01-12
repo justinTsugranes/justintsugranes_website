@@ -1,16 +1,12 @@
 // HERO IMAGES
 export { default as heroAbout } from './heros/hero-about.jpg';
-export { default as heroContact } from './heros/hero-contact.jpg';
 export { default as heroIndex } from './heros/hero-index.png';
-export { default as heroProjects } from './heros/hero-projects.jpg';
 export { default as preFooterImg } from './heros/pre-footer.jpg';
 // GRAPHICS
-export { default as fundamentals } from './graphics/fundamentals.svg';
 export { default as pageNotFound } from './graphics/pagenotfound.svg';
 export { default as preFooterGraphic } from './graphics/pre-footer-graphic.svg';
 export { default as programmer } from './graphics/programmer.svg';
 export { default as sent } from './graphics/sent.svg';
-export { default as showcase } from './graphics/showcase.svg';
 // HEADSHOTS
 export { default as headShot01 } from './headshots/headshot-01.jpg';
 export { default as headShot02 } from './headshots/headshot-02.jpg';
@@ -22,13 +18,11 @@ export { default as headShot07 } from './headshots/headshot-07.jpg';
 export { default as headShot08 } from './headshots/headshot-08.jpg';
 export { default as headShot09 } from './headshots/headshot-09.jpg';
 export { default as headShot10 } from './headshots/headshot-10.jpeg';
-export { default as headShot11 } from './headshots/headshot-11.jpg';
 // SOCIAL_ICONS
 export { default as CodepenIcon } from './icons-social/CodepenIcon.jsx';
 export { default as GithubIcon } from './icons-social/GithubIcon.jsx';
 export { default as InstagramIcon } from './icons-social/InstagramIcon.jsx';
 export { default as LinkedInIcon } from './icons-social/LinkedInIcon.jsx';
-export { default as MediumIcon } from './icons-social/MediumIcon.jsx';
 export { default as SpotifyIcon } from './icons-social/SpotifyIcon.jsx';
 // TECH_ICONS
 export { default as BootstrapIcon } from './icons-tech/BootstrapIcon.jsx';
@@ -61,24 +55,6 @@ export { default as VercelIcon } from './icons-tech/VercelIcon.jsx';
 export { default as WordpressIcon } from './icons-tech/WordpressIcon.jsx';
 
 // PROJECT_SCREENSHOTS
-// export { default as bandWebsite } from './project-images/band-website.webp';
-// export { default as blackjack } from './project-images/blackjack.webp';
-// export { default as boredomterminator } from './project-images/boredomterminator.webp';
-// export { default as businessCard } from './project-images/business-card.webp';
-// export { default as coworkingSpace } from './project-images/coworking-space.webp';
-// export { default as goople } from './project-images/goople.webp';
-// export { default as ilovelucy } from './project-images/ilovelucy.jpg';
-// export { default as imageMapping } from './project-images/image-mapping.webp';
-// export { default as kittyStories } from './project-images/kitty-stories.jpg';
-// export { default as lotto } from './project-images/lotto.webp';
-// export { default as mangata } from './project-images/mangata.webp';
-// export { default as nextBlog } from './project-images/next-blog.webp';
-// export { default as oldagram } from './project-images/oldagram.webp';
-// export { default as reactTacToe } from './project-images/react-tac-toe.webp';
-// export { default as reactTodo } from './project-images/react-todo.webp';
-// export { default as recipes } from './project-images/recipes.webp';
-// export { default as unitConverter } from './project-images/unit-converter.webp';
-// export { default as weblog } from './project-images/weblog.webp';
 export { default as bankingApp } from './project-images/banking-app.webp';
 export { default as crashCourses } from './project-images/crashcourses.webp';
 export { default as ecommerce } from './project-images/ecommerce.webp';

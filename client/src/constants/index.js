@@ -1,8 +1,5 @@
 import {
-  // AdobeIcon,
-  // MediumIcon,
   // StackBlitzIcon,
-  // TwitterIcon
   CodepenIcon,
   GithubIcon,
   InstagramIcon,
@@ -58,36 +55,11 @@ export const socialMedia = [
     link: `https://instagram.com/justintsugranes`
   }
   // {
-  //   id: 'medium',
-  //   icon: <MediumIcon />,
-  //   link: `https://justintsugranes.medium.com`
-  // },
-  // {
-  //   id: 'adobe',
-  //   icon: <AdobeIcon/>,
-  //   link: `https://${tags.adobe}.myportfolio.com/`
-  // },
-  // {
   //   id: 'stackblitz',
   //   icon: <StackBlitzIcon/>,
   //   link: `https://stackblitz.com/@${tags.stackblitz}`
   // },
-  // {
-  //   id: 'twitter',
-  //   icon: <TwitterIcon/>,
-  //   link: `http://twitter.com/${tags.twitter}`
-  // },
-  // {
-  //   id: 'devto',
-  //   icon: <DevToIcon/>,
-  //   link: ``
-  // },
 ];
-
-export const user = {
-  name: 'Justin Tsugranes',
-  title: 'Web Developer, Digital Media Creator'
-};
 
 export const about = {
   name: 'Justin Tsugranes',

@@ -19,16 +19,16 @@ import {
   // unitConverter,
   // weblog,
   // webFlix,
-  bankingApp,
+  // bankingApp,
+  // ecommerce,
+  // frontendBootcamp,
+  // gpt3,
+  // metaversus,
+  // misfitdodo,
   crashCourses,
-  ecommerce,
-  frontendBootcamp,
   fullstackStore,
-  gpt3,
   landingPage,
   megamask,
-  metaversus,
-  misfitdodo,
   museract,
   nextTailwindBlog,
   passwordGenerator,
@@ -47,86 +47,86 @@ export const projects = [
   //   demo: '',
   //   repo: ''
   // },
-  {
-    id: 'misfitdodo',
-    title: 'misfitDodo Media',
-    descr:
-      'The official website for misfitDodo Media. The website was built using React.js and SanityCMS. The website features Framer Motion.',
-    tech: 'React.js, Sanity CMS, Framer Motion',
-    imageUrl: misfitdodo,
-    demo: 'https://misfitdodo.vercel.app/',
-    repo: 'https://github.com/justinTsugranes/project_misfitdodo-website'
-  },
-  {
-    id: 'ecommerce',
-    title: 'e-Commerce App',
-    descr:
-      'This is an ecommerce app built with the Next.js framework and Sanity CMS as the backend. It features a homepage that displays a hero banner and a list of products. The hero banner and products are sourced from the Sanity CMS. The app also has a footer banner that is sourced from the Sanity CMS. Users can browse and purchase the products. The app uses the Stripe API to handle payments.',
-    tech: 'Next.js, Sanity CMS, Stripe',
-    imageUrl: ecommerce,
-    demo: 'https://justintsugranes-ecommerce-next-sanity-stripe.vercel.app/',
-    repo: 'https://github.com/justinTsugranes/project_ecommerce-next-sanity-stripe'
-  },
-  {
-    id: 'metaversus',
-    title: 'MetaVersus',
-    descr:
-      'MetaVersus is a responsive and animated landing page for a metaverse company. The project was built using Next.js 13 and Tailwind CSS, with a focus on using Framer Motion animations to bring the design to life. The project was based off of a Figma design by One Week Wonders Agency, and was designed to showcase the capabilities of a metaverse company.',
-    tech: 'Next.js, TailwindCSS, Framer Motion',
-    imageUrl: metaversus,
-    demo: 'https://justin-tsugranes-metaversus.vercel.app/',
-    repo: 'https://github.com/justinTsugranes/project_metaversus'
-  },
-  {
-    id: 'shareme',
-    title: 'ShareMe',
-    descr:
-      'ShareMe is a full stack social app built with React.js. The project utilizes TailwindCSS for styling, Sanity CMS for content management, and Google Auth for user authentication. It is designed to allow users to connect with one another and share their interests and experiences.',
-    tech: 'React.js, TailwindCSS, Sanity CMS, Google Auth',
-    imageUrl: shareme,
-    demo: 'https://github.com/justinTsugranes/project_shareme',
-    repo: 'https://github.com/justinTsugranes/project_shareme'
-  },
-  {
-    id: 'restaurantapp',
-    title: 'Fine Dining Restaurant App',
-    descr:
-      "A mobile-first web application created for a fictitious fine dining establishment. The app was created with React and includes several React Icons for a visually appealing and intuitive user experience. Users can browse the restaurant's menu, make reservations, and learn more about the restaurant's history and mission through the app, which is hosted on Netlify. The app also includes a contact form where users can contact the restaurant with questions or special requests. Overall, the design aims to provide users with a simple and seamless way to discover and interact with the restaurant",
-    tech: 'React, React Icons, Netlify',
-    imageUrl: restaurantApp,
-    demo: 'https://justintsugranes-restaurant-app.netlify.app/',
-    repo: 'https://github.com/justinTsugranes/project_restaurant-app'
-  },
-  {
-    id: 'bankingapp',
-    title: 'Modern Banking App',
-    descr:
-      'This Modern Banking App is a responsive frontend web application designed to provide a sleek and intuitive interface for managing personal finances. Built using React and TailwindCSS, the app features a clean and modern design that is easy to navigate and use.',
-    tech: 'React, TailwindCSS, Netlify',
-    imageUrl: bankingApp,
-    demo: 'https://justintsugranes-modern-bank-app.netlify.app/',
-    repo: 'https://github.com/justinTsugranes/project_modern-bank-app'
-  },
-  {
-    id: 'gpt3',
-    title: 'GPT-3 Landing Page',
-    descr:
-      'Frontend application built using React.js that utilizes HTML and CSS for styling and layout. The user interface is clean, visually appealing, responsive, and user-friendly, allowing users to easily navigate and learn about GPT-3 AI.',
-    tech: 'React.js, HTML, CSS, Netlify',
-    imageUrl: gpt3,
-    demo: 'https://justin-tsugranes-gpt3.netlify.app/',
-    repo: 'https://github.com/justinTsugranes/project_jsm-gpt-3'
-  },
-  {
-    id: 'frontendbootcamp',
-    title: 'Frontend Bootcamp',
-    descr:
-      'This Frontend Bootcamp project is a responsive landing page that was created to showcase an example of a bootcamp program focused on frontend development. The page features a clean, modern design, with various sections detailing the curriculum and instructors. The page makes use of Bootstrap and React to provide a seamless user experience, with MapBox GL used for the contact section, unDraw for the graphics, and FontAwesome and LoremPicsum for the avatars. The project was deployed using Netlify, and the code is available for viewing on GitHub.',
-    tech: 'Bootstrap, React, Netlify',
-    imageUrl: frontendBootcamp,
-    demo: 'https://justin-tsugranes-bootstrap-example01.netlify.app',
-    repo: `https://github.com/justintsugranes/project_bootstrap-frontend-example`
-  },
+  // {
+  //   id: 'misfitdodo',
+  //   title: 'misfitDodo Media',
+  //   descr:
+  //     'The official website for misfitDodo Media. The website was built using React.js and SanityCMS. The website features Framer Motion.',
+  //   tech: 'React.js, Sanity CMS, Framer Motion',
+  //   imageUrl: misfitdodo,
+  //   demo: 'https://misfitdodo.vercel.app/',
+  //   repo: 'https://github.com/justinTsugranes/project_misfitdodo-website'
+  // },
+  // {
+  //   id: 'ecommerce',
+  //   title: 'e-Commerce App',
+  //   descr:
+  //     'This is an ecommerce app built with the Next.js framework and Sanity CMS as the backend. It features a homepage that displays a hero banner and a list of products. The hero banner and products are sourced from the Sanity CMS. The app also has a footer banner that is sourced from the Sanity CMS. Users can browse and purchase the products. The app uses the Stripe API to handle payments.',
+  //   tech: 'Next.js, Sanity CMS, Stripe',
+  //   imageUrl: ecommerce,
+  //   demo: 'https://justintsugranes-ecommerce-next-sanity-stripe.vercel.app/',
+  //   repo: 'https://github.com/justinTsugranes/project_ecommerce-next-sanity-stripe'
+  // },
+  // {
+  //   id: 'metaversus',
+  //   title: 'MetaVersus',
+  //   descr:
+  //     'MetaVersus is a responsive and animated landing page for a metaverse company. The project was built using Next.js 13 and Tailwind CSS, with a focus on using Framer Motion animations to bring the design to life. The project was based off of a Figma design by One Week Wonders Agency, and was designed to showcase the capabilities of a metaverse company.',
+  //   tech: 'Next.js, TailwindCSS, Framer Motion',
+  //   imageUrl: metaversus,
+  //   demo: 'https://justin-tsugranes-metaversus.vercel.app/',
+  //   repo: 'https://github.com/justinTsugranes/project_metaversus'
+  // },
+  // {
+  //   id: 'shareme',
+  //   title: 'ShareMe',
+  //   descr:
+  //     'ShareMe is a full stack social app built with React.js. The project utilizes TailwindCSS for styling, Sanity CMS for content management, and Google Auth for user authentication. It is designed to allow users to connect with one another and share their interests and experiences.',
+  //   tech: 'React.js, TailwindCSS, Sanity CMS, Google Auth',
+  //   imageUrl: shareme,
+  //   demo: 'https://github.com/justinTsugranes/project_shareme',
+  //   repo: 'https://github.com/justinTsugranes/project_shareme'
+  // },
+  // {
+  //   id: 'restaurantapp',
+  //   title: 'Fine Dining Restaurant App',
+  //   descr:
+  //     "A mobile-first web application created for a fictitious fine dining establishment. The app was created with React and includes several React Icons for a visually appealing and intuitive user experience. Users can browse the restaurant's menu, make reservations, and learn more about the restaurant's history and mission through the app, which is hosted on Netlify. The app also includes a contact form where users can contact the restaurant with questions or special requests. Overall, the design aims to provide users with a simple and seamless way to discover and interact with the restaurant",
+  //   tech: 'React, React Icons, Netlify',
+  //   imageUrl: restaurantApp,
+  //   demo: 'https://justintsugranes-restaurant-app.netlify.app/',
+  //   repo: 'https://github.com/justinTsugranes/project_restaurant-app'
+  // },
+  // {
+  //   id: 'bankingapp',
+  //   title: 'Modern Banking App',
+  //   descr:
+  //     'This Modern Banking App is a responsive frontend web application designed to provide a sleek and intuitive interface for managing personal finances. Built using React and TailwindCSS, the app features a clean and modern design that is easy to navigate and use.',
+  //   tech: 'React, TailwindCSS, Netlify',
+  //   imageUrl: bankingApp,
+  //   demo: 'https://justintsugranes-modern-bank-app.netlify.app/',
+  //   repo: 'https://github.com/justinTsugranes/project_modern-bank-app'
+  // },
+  // {
+  //   id: 'gpt3',
+  //   title: 'GPT-3 Landing Page',
+  //   descr:
+  //     'Frontend application built using React.js that utilizes HTML and CSS for styling and layout. The user interface is clean, visually appealing, responsive, and user-friendly, allowing users to easily navigate and learn about GPT-3 AI.',
+  //   tech: 'React.js, HTML, CSS, Netlify',
+  //   imageUrl: gpt3,
+  //   demo: 'https://justin-tsugranes-gpt3.netlify.app/',
+  //   repo: 'https://github.com/justinTsugranes/project_jsm-gpt-3'
+  // },
+  // {
+  //   id: 'frontendbootcamp',
+  //   title: 'Frontend Bootcamp',
+  //   descr:
+  //     'This Frontend Bootcamp project is a responsive landing page that was created to showcase an example of a bootcamp program focused on frontend development. The page features a clean, modern design, with various sections detailing the curriculum and instructors. The page makes use of Bootstrap and React to provide a seamless user experience, with MapBox GL used for the contact section, unDraw for the graphics, and FontAwesome and LoremPicsum for the avatars. The project was deployed using Netlify, and the code is available for viewing on GitHub.',
+  //   tech: 'Bootstrap, React, Netlify',
+  //   imageUrl: frontendBootcamp,
+  //   demo: 'https://justin-tsugranes-bootstrap-example01.netlify.app',
+  //   repo: `https://github.com/justintsugranes/project_bootstrap-frontend-example`
+  // },
   {
     id: 'fullstackstore',
     title: 'Fullstack Stripe Store',

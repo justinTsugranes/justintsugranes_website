@@ -1,5 +1,5 @@
 import { Nav, Navbar } from 'react-bootstrap';
-import { user, navLinks } from '../constants';
+import { about as user, navLinks } from '../constants';
 import { ContactModal } from './';
 import { motion } from 'framer-motion';
 import { navVariants } from '../utils/motion';
