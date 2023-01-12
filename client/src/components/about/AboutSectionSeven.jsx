@@ -8,7 +8,7 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 // import required modules
-import SwiperCore, { Navigation, Pagination, Mousewheel, Keyboard } from 'swiper';
+import SwiperCore, { Navigation, Pagination, Mousewheel, Keyboard, Lazy } from 'swiper';
 
 /* import projects data for swiper */
 import { useFetchData } from '../../hooks/useFetchData';
@@ -20,7 +20,7 @@ function useSwiper() {
   // Use the useEffect hook to call the SwiperCore.use function
   // with the necessary modules for the Swiper component
   useEffect(() => {
-    SwiperCore.use([Navigation, Pagination, Mousewheel, Keyboard]);
+    SwiperCore.use([Navigation, Pagination, Mousewheel, Keyboard, Lazy]);
   }, []);
 
   return swiperRef;
