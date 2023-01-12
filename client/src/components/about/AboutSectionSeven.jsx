@@ -40,7 +40,7 @@ const AboutSectionSeven = () => {
 
   return (
     <Row className="section-container">
-      <h3 className="text-gradient text-center mb-4">Always building things</h3>
+      <h2 className="text-gradient text-center mb-4">Always building things</h2>
       <Col className="swiper-container" style={{ height: '300px' }}>
         <Swiper
           ref={swiperRef}

@@ -21,7 +21,7 @@ const AboutSectionThree = () => {
         // Applying the fadeIn motion object
         variants={fadeIn('up', 'tween', 0.1, 1)}>
         {/* Title element */}
-        <h3 className="mb-4 text-gradient">What I Do</h3>
+        <h2 className="mb-4 text-gradient">What I Do</h2>
         {/* Description element */}
         <p className="text-light fs-3 text-shadow" style={{ maxWidth: '75ch' }}>
           {about.bioOne}

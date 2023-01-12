@@ -33,7 +33,7 @@ const AboutSectionFour = () => {
         viewport={{ once: false, amount: 0.25 }}
         variants={fadeIn('up', 'tween', 0.1, 1)}>
         {/* Title */}
-        <h3 className="mb-4 text-gradient">My Background</h3>
+        <h2 className="mb-4 text-gradient">My Background</h2>
         {/* Text content with a max width of 75 characters */}
         <p className="text-light fs-3 text-shadow" style={{ maxWidth: '75ch' }}>
           {about.bioTwo}
