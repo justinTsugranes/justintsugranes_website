@@ -27,14 +27,14 @@ import {
   // misfitdodo,
   // restaurantApp,
   // shareme
-  crashCourses,
-  fullstackStore,
+  // crashCourses,
+  // fullstackStore,
+  // nextTailwindBlog,
+  // personalWebsite
   landingPage,
   megamask,
   museract,
-  nextTailwindBlog,
-  passwordGenerator,
-  personalWebsite
+  passwordGenerator
 } from '../assets';
 
 export const projects = [
@@ -47,6 +47,46 @@ export const projects = [
   //   demo: '',
   //   repo: ''
   // },
+  {
+    id: 'landingpage',
+    title: 'Landing Page',
+    descr:
+      "This 'Landing Page' project is a responsive website designed for a fictional company. It was built using React and Bootstrap, and follows a design specification created in Figma. The project theoritically includes several pages, including a home page, about us page, and contact page. The home page features a full-width hero image, along with sections for product features, customer testimonials, and a call to action. Overall, the project showcases my ability to create a visually appealing and functional landing page website using modern web development tools.",
+    tech: 'React, Bootstrap, HTML, CSS, Figma',
+    imageUrl: landingPage,
+    demo: 'https://justin-tsugranes-landing-page-example.netlify.app',
+    repo: `https://github.com/justintsugranes/project_react_landing_page`
+  },
+  {
+    id: 'megamask',
+    title: 'MegaMask',
+    descr:
+      'MegaMask is a user interface (UI) clone of the popular Web3 Wallet, MetaMask. It was built using JavaScript, HTML, and CSS. The project aims to replicate the look and feel of the original MetaMask app, including its features and functionality. This project was created as a way to familiarize myself with the design and functionality of Web3 Wallets and to practice my front-end development skills.',
+    tech: 'JavaScript, HTML, CSS',
+    imageUrl: megamask,
+    demo: 'https://justin-tsugranes-megamask.netlify.app',
+    repo: 'https://github.com/justinTsugranes/project_metamask-clone'
+  },
+  {
+    id: 'passwordgenerator',
+    title: 'Password Generator',
+    descr:
+      'A web-based tool for generating secure, random passwords. The tool allows users to specify the length of the password and is setup to be deployed in the Chrome Web Store as a Chrome Extension. This project was built using JavaScript, HTML, and CSS, and was an opportunity to learn more about random number generation and implementing user input in a web application',
+    tech: 'JavaScript, HTML, CSS',
+    imageUrl: passwordGenerator,
+    demo: 'https://justin-tsugranes-password-generator.netlify.app',
+    repo: 'https://github.com/justinTsugranes/project_password-generator'
+  },
+  {
+    id: 'museract',
+    title: 'Museract',
+    descr:
+      'Museract is a social media messaging app for musicians. With this project, I had the opportunity to learn about the JS .forEach() method, how to use CDNs, and how to conditionally render styles. The app allows musicians to create profiles, connect with other musicians, and send messages to each other. It was built using JavaScript, HTML, and CSS, and includes features such as FontAwesome icons and the use of UUIDs to uniquely identify users. The app is deployed on Netlify',
+    tech: 'JavaScript, HTML, CSS, FontAwesome, UUIDs',
+    imageUrl: museract,
+    demo: 'https://justin-tsugranes-museract-app.netlify.app',
+    repo: 'https://github.com/justinTsugranes/project_museract'
+  }
   // {
   //   id: 'misfitdodo',
   //   title: 'misfitDodo Media',
@@ -127,86 +167,46 @@ export const projects = [
   //   demo: 'https://justin-tsugranes-bootstrap-example01.netlify.app',
   //   repo: `https://github.com/justintsugranes/project_bootstrap-frontend-example`
   // },
-  {
-    id: 'fullstackstore',
-    title: 'Fullstack Stripe Store',
-    descr:
-      'The Fullstack Stripe Store is a full-stack ecommerce application that allows users to purchase products using the Stripe payment platform. The frontend of the application was built with React and React-Bootstrap, while the backend was built with Express and Node.js. The application also utilizes Netlify for deployment. With this project, I gained experience in creating a complete ecommerce solution, including handling payment processing and securely storing sensitive customer information. The project also included features such as a shopping cart and a product catalog. Overall, this project provided me with a comprehensive understanding of how to build a full-stack ecommerce application from start to finish.',
-    tech: 'React-Bootstrap, React, Express, Node.js, Stripe, Netlify',
-    imageUrl: fullstackStore,
-    demo: 'https://justintsugranes-react-stripe-store.netlify.app/',
-    repo: `https://github.com/justinTsugranes/project_react-stripe-store`
-  },
-  {
-    id: 'landingpage',
-    title: 'Landing Page',
-    descr:
-      "This 'Landing Page' project is a responsive website designed for a fictional company. It was built using React and Bootstrap, and follows a design specification created in Figma. The project theoritically includes several pages, including a home page, about us page, and contact page. The home page features a full-width hero image, along with sections for product features, customer testimonials, and a call to action. Overall, the project showcases my ability to create a visually appealing and functional landing page website using modern web development tools.",
-    tech: 'React, Bootstrap, HTML, CSS, Figma',
-    imageUrl: landingPage,
-    demo: 'https://justin-tsugranes-landing-page-example.netlify.app',
-    repo: `https://github.com/justintsugranes/project_react_landing_page`
-  },
-  {
-    id: 'nexttailwindblog',
-    title: 'Next.js Tailwind Blog',
-    descr:
-      'The Next.js Tailwind Blog is an interactive project that demonstrates my skills in building a responsive and feature-rich blog website using Next.js and TailwindCSS. This project required me to utilize Next.js routing and API fetching, as well as implementing Swiper for interactive scrolling and working with React functional components. In addition, I was able to showcase my proficiency in HTML and CSS through the design and layout of the website. ',
-    tech: 'HTML, CSS',
-    imageUrl: nextTailwindBlog,
-    demo: 'https://blog-website-using-next-tailwind.vercel.app',
-    repo: 'https://github.com/justinTsugranes/tutorial_blog-website-using-next-tailwind'
-  },
-  {
-    id: 'crashcourse',
-    title: 'Crash Courses',
-    descr:
-      'The Crash Courses project is a website that I developed to consolidate my notes from a variety of coding crash courses that I completed on the Codevolution YouTube channel. These courses covered a range of topics, including HTML, CSS, Flexbox, Grid, and JavaScript. I used JavaScript, HTML, and CSS to create the website, which was then deployed on Netlify. The website serves as a reference resource for me to quickly access the key concepts and techniques that I learned from the crash courses, and also serves as a portfolio piece to showcase my skills in web development.',
-    tech: 'JavaScript, HTML, CSS, Netlify',
-    imageUrl: crashCourses,
-    demo: 'https://justin-tsugranes-coding-crash-courses.netlify.app',
-    repo: 'https://github.com/justinTsugranes/project_codevolution-crash-courses'
-  },
-  {
-    id: 'megamask',
-    title: 'MegaMask',
-    descr:
-      'MegaMask is a user interface (UI) clone of the popular Web3 Wallet, MetaMask. It was built using JavaScript, HTML, and CSS. The project aims to replicate the look and feel of the original MetaMask app, including its features and functionality. This project was created as a way to familiarize myself with the design and functionality of Web3 Wallets and to practice my front-end development skills.',
-    tech: 'JavaScript, HTML, CSS',
-    imageUrl: megamask,
-    demo: 'https://justin-tsugranes-megamask.netlify.app',
-    repo: 'https://github.com/justinTsugranes/project_metamask-clone'
-  },
-  {
-    id: 'passwordgenerator',
-    title: 'Password Generator',
-    descr:
-      'A web-based tool for generating secure, random passwords. The tool allows users to specify the length of the password and is setup to be deployed in the Chrome Web Store as a Chrome Extension. This project was built using JavaScript, HTML, and CSS, and was an opportunity to learn more about random number generation and implementing user input in a web application',
-    tech: 'JavaScript, HTML, CSS',
-    imageUrl: passwordGenerator,
-    demo: 'https://justin-tsugranes-password-generator.netlify.app',
-    repo: 'https://github.com/justinTsugranes/project_password-generator'
-  },
-  {
-    id: 'personalwebsite',
-    title: 'My Personal Website',
-    descr:
-      'My personal website is a portfolio website that showcases my recent coding projects. It was built using React, Bootstrap, HTML, and CSS, and makes use of the Swiper library for interactive scrolling, the Framer Motion library for animations, and Type-Animation for engaging text effects on the home page. The website is continuously integrated through GitHub and deployed on Netlify. The website serves as a platform for me to share my work and connect with potential employers or clients..',
-    tech: 'React, Bootstrap, HTML, CSS, Framer Motion, Swiper, Type-Animation',
-    imageUrl: personalWebsite,
-    demo: 'http://www.justintsugranes.com',
-    repo: 'https://github.com/justinTsugranes/justintsugranes_website'
-  },
-  {
-    id: 'museract',
-    title: 'Museract',
-    descr:
-      'Museract is a social media messaging app for musicians. With this project, I had the opportunity to learn about the JS .forEach() method, how to use CDNs, and how to conditionally render styles. The app allows musicians to create profiles, connect with other musicians, and send messages to each other. It was built using JavaScript, HTML, and CSS, and includes features such as FontAwesome icons and the use of UUIDs to uniquely identify users. The app is deployed on Netlify',
-    tech: 'JavaScript, HTML, CSS, FontAwesome, UUIDs',
-    imageUrl: museract,
-    demo: 'https://justin-tsugranes-museract-app.netlify.app',
-    repo: 'https://github.com/justinTsugranes/project_museract'
-  }
+  // {
+  //   id: 'fullstackstore',
+  //   title: 'Fullstack Stripe Store',
+  //   descr:
+  //     'The Fullstack Stripe Store is a full-stack ecommerce application that allows users to purchase products using the Stripe payment platform. The frontend of the application was built with React and React-Bootstrap, while the backend was built with Express and Node.js. The application also utilizes Netlify for deployment. With this project, I gained experience in creating a complete ecommerce solution, including handling payment processing and securely storing sensitive customer information. The project also included features such as a shopping cart and a product catalog. Overall, this project provided me with a comprehensive understanding of how to build a full-stack ecommerce application from start to finish.',
+  //   tech: 'React-Bootstrap, React, Express, Node.js, Stripe, Netlify',
+  //   imageUrl: fullstackStore,
+  //   demo: 'https://justintsugranes-react-stripe-store.netlify.app/',
+  //   repo: `https://github.com/justinTsugranes/project_react-stripe-store`
+  // },
+  // {
+  //   id: 'nexttailwindblog',
+  //   title: 'Next.js Tailwind Blog',
+  //   descr:
+  //     'The Next.js Tailwind Blog is an interactive project that demonstrates my skills in building a responsive and feature-rich blog website using Next.js and TailwindCSS. This project required me to utilize Next.js routing and API fetching, as well as implementing Swiper for interactive scrolling and working with React functional components. In addition, I was able to showcase my proficiency in HTML and CSS through the design and layout of the website. ',
+  //   tech: 'Next.js, TailwindCSS, HTML, CSS',
+  //   imageUrl: nextTailwindBlog,
+  //   demo: 'https://blog-website-using-next-tailwind.vercel.app',
+  //   repo: 'https://github.com/justinTsugranes/tutorial_blog-website-using-next-tailwind'
+  // },
+  // {
+  //   id: 'crashcourse',
+  //   title: 'Crash Courses',
+  //   descr:
+  //     'The Crash Courses project is a website that I developed to consolidate my notes from a variety of coding crash courses that I completed on the Codevolution YouTube channel. These courses covered a range of topics, including HTML, CSS, Flexbox, Grid, and JavaScript. I used JavaScript, HTML, and CSS to create the website, which was then deployed on Netlify. The website serves as a reference resource for me to quickly access the key concepts and techniques that I learned from the crash courses, and also serves as a portfolio piece to showcase my skills in web development.',
+  //   tech: 'JavaScript, HTML, CSS, Netlify',
+  //   imageUrl: crashCourses,
+  //   demo: 'https://justin-tsugranes-coding-crash-courses.netlify.app',
+  //   repo: 'https://github.com/justinTsugranes/project_codevolution-crash-courses'
+  // },
+  // {
+  //   id: 'personalwebsite',
+  //   title: 'My Personal Website',
+  //   descr:
+  //     'My personal website is a portfolio website that showcases my recent coding projects. It was built using React, Bootstrap, HTML, and CSS, and makes use of the Swiper library for interactive scrolling, the Framer Motion library for animations, and Type-Animation for engaging text effects on the home page. The website is continuously integrated through GitHub and deployed on Netlify. The website serves as a platform for me to share my work and connect with potential employers or clients..',
+  //   tech: 'React, Bootstrap, HTML, CSS, Framer Motion, Swiper, Type-Animation',
+  //   imageUrl: personalWebsite,
+  //   demo: 'http://www.justintsugranes.com',
+  //   repo: 'https://github.com/justinTsugranes/justintsugranes_website'
+  // },
   // {
   //   id: 'coworkingspaces',
   //   title: 'Coworking Space App',

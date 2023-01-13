@@ -1,7 +1,7 @@
-export default experience = {
+export default {
   name: 'experience',
-  type: 'document',
   title: 'Experience',
+  type: 'document',
   fields: [
     {
       name: 'title',

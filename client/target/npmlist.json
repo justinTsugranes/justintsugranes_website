@@ -14,7 +14,6 @@
     "react-router-dom": { "version": "6.4.3" },
     "react-scripts": { "version": "5.0.1" },
     "react": { "version": "18.2.0" },
-    "typescript": { "version": "4.8.4" },
-    "web-vitals": { "version": "2.1.4" }
+    "typescript": { "version": "4.8.4" }
   }
 }

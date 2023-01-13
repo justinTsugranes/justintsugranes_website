@@ -1,7 +1,7 @@
 export default {
   name: 'banner',
-  type: 'document',
   title: 'Banner',
+  type: 'document',
   fields: [
     {
       name: 'title',
@@ -12,10 +12,15 @@ export default {
       name: 'image',
       type: 'image',
       title: 'Image',
-      description: 'Alt text for the image',
       options: {
         hotspot: true,
       },
+    },
+    {
+      name: 'altText',
+      title: 'Alt Text',
+      description: 'Alt text for the image',
+      type: 'string',
     },
   ],
 }
