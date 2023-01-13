@@ -60,17 +60,3 @@ export const socialMedia = [
   //   link: `https://stackblitz.com/@${tags.stackblitz}`
   // },
 ];
-
-export const about = {
-  name: 'Justin Tsugranes',
-  title: 'Web Developer, Digital Media Creator',
-  quote:
-    'I believe the best designs are driven by user-centered, equity-focused principles that ensure any user from any nation can interact with your product from any device and any internet connection',
-  bioOne: `As a front-end web developer with experience in full-stack and back-end development, I specialize in solving the problem of creating high-performing, user-friendly web applications and communicating with non-technical clients.`,
-  bioTwo: `I hold a Master of Arts degree, served 13 years as a member of the US Army Band,
-      and have over 20 years of combined experience working with government entities,
-      Fortune 500 companies, and international organizations across several industries,
-      including media & entertainment, IT, sales, marketing, real estate, and
-      hospitality.`,
-  bioThree: `Outside of work, I am an avid learner and enjoy tinkering with new software and apps.  When I'm not coding, I'm usually writing music, playing guitar, hiking, reading non-fiction, or spending time with my wife and son.`
-};

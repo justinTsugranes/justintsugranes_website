@@ -25,6 +25,8 @@ const ProjectsHome = () => {
             data
               .slice(0, 8)
               .map((project, index) => <ProjectCard key={project._id} {...project} index={index} />)
+          ) : error ? (
+            <p>{error.message}</p>
           ) : (
             <p>Loading...</p>
           )}

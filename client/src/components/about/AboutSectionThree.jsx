@@ -1,10 +1,16 @@
 import { Container } from 'react-bootstrap';
-import { about } from '../../constants';
 import { motion } from 'framer-motion';
 import { fadeIn } from '../../utils/motion';
+import { useFetchData } from '../../hooks/useFetchData';
 
 // AboutSectionThree: displays a brief description of what the user does
 const AboutSectionThree = () => {
+  const { data, error } = useFetchData(`*[_type == "about"]`);
+
+  if (error) {
+    return <p>{error.message}</p>;
+  }
+
   return (
     // Container element from react-bootstrap
     <Container className="section p-3">
@@ -24,7 +30,7 @@ const AboutSectionThree = () => {
         <h2 className="mb-4 text-gradient">What I Do</h2>
         {/* Description element */}
         <p className="text-light fs-3 text-shadow" style={{ maxWidth: '75ch' }}>
-          {about.bioOne}
+          {data[0]?.bioOne}
         </p>
       </motion.div>
     </Container>

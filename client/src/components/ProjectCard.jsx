@@ -13,7 +13,6 @@ import {
 import { motion } from 'framer-motion';
 
 import { GithubIcon, DemoIcon } from '../assets';
-
 import { urlFor } from '../lib/client';
 import './projects/projects.css';
 

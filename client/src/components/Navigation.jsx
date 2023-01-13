@@ -1,5 +1,5 @@
 import { Nav, Navbar } from 'react-bootstrap';
-import { about as user, navLinks } from '../constants';
+import { navLinks } from '../constants';
 import { ContactModal } from './';
 import { motion } from 'framer-motion';
 import { navVariants } from '../utils/motion';
@@ -24,7 +24,7 @@ const Navigation = () => {
       <Navbar expand="lg" className="navbar-dark bg-none px-4 px-md-5">
         {/* Navbar brand, which is the user's name */}
         <Navbar.Brand href={home.id} className="text-uppercase fs-3">
-          {user.name}
+          Justin Tsugranes
         </Navbar.Brand>
         {/* Toggler for the navbar, used for smaller screens */}
         <Navbar.Toggle aria-controls="navbar"></Navbar.Toggle>

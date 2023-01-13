@@ -51,6 +51,7 @@ export { default as SalesforceIcon } from './icons-tech/SalesforceIcon.jsx';
 export { default as SassIcon } from './icons-tech/SassIcon.jsx';
 export { default as StrapiIcon } from './icons-tech/StrapiIcon.jsx';
 export { default as TailwindIcon } from './icons-tech/TailwindIcon.jsx';
+export { default as TsIcon } from './icons-tech/TsIcon.jsx';
 export { default as VercelIcon } from './icons-tech/VercelIcon.jsx';
 export { default as WordpressIcon } from './icons-tech/WordpressIcon.jsx';
 // TODO: Add Netlify Icon

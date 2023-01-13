@@ -1,14 +1,19 @@
 import { Row, Col } from 'react-bootstrap';
 import { Parallax } from 'react-parallax';
-import { about } from '../../constants';
+import { motion } from 'framer-motion';
 import { fadeIn } from '../../utils/motion';
 import { headShot01 } from '../../assets';
-import { motion } from 'framer-motion';
+import { useFetchData } from '../../hooks/useFetchData';
 
 // This component displays an image with a caption and some text
 const AboutSectionFour = () => {
+  const { data, error } = useFetchData(`*[_type == "about"]`);
+
+  if (error) {
+    return <p>{error.message}</p>;
+  }
+
   return (
-    // Row element with background color set to secondary and display set to flex
     <Row className="bg-secondary d-flex flex-column align-items-center justify-content-center flex-md-row">
       {/* Column element for the image */}
       <Col>
@@ -36,7 +41,7 @@ const AboutSectionFour = () => {
         <h2 className="mb-4 text-gradient">My Background</h2>
         {/* Text content with a max width of 75 characters */}
         <p className="text-light fs-3 text-shadow" style={{ maxWidth: '75ch' }}>
-          {about.bioTwo}
+          {data[0]?.bioTwo}
         </p>
       </motion.div>
     </Row>
