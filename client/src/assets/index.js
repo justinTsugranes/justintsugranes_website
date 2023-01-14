@@ -1,20 +1,20 @@
 // HERO IMAGES
-export { default as heroAbout } from './heros/hero-about.jpg';
-export { default as heroIndex } from './heros/hero-index.png';
-export { default as preFooterImg } from './heros/pre-footer.jpg';
+export { default as heroAbout } from './heros/hero-about.webp';
+export { default as heroIndex } from './heros/hero-index.webp';
+export { default as preFooterImg } from './heros/pre-footer.webp';
 // GRAPHICS
 export { default as pageNotFound } from './graphics/pagenotfound.svg';
 export { default as preFooterGraphic } from './graphics/pre-footer-graphic.svg';
 export { default as programmer } from './graphics/programmer.svg';
 export { default as sent } from './graphics/sent.svg';
 // HEADSHOTS
-export { default as headShot01 } from './headshots/headshot-01.jpg';
-export { default as headShot02 } from './headshots/headshot-02.jpg';
-export { default as headShot03 } from './headshots/headshot-03.jpg';
-export { default as headShot04 } from './headshots/headshot-04.jpg';
-export { default as headShot05 } from './headshots/headshot-05.jpg';
-export { default as headShot06 } from './headshots/headshot-06.jpg';
-export { default as headShot07 } from './headshots/headshot-07.jpg';
+export { default as headShot01 } from './headshots/headshot-01.webp';
+export { default as headShot02 } from './headshots/headshot-02.webp';
+export { default as headShot03 } from './headshots/headshot-03.webp';
+export { default as headShot04 } from './headshots/headshot-04.webp';
+export { default as headShot05 } from './headshots/headshot-05.webp';
+export { default as headShot06 } from './headshots/headshot-06.webp';
+export { default as headShot07 } from './headshots/headshot-07.webp';
 export { default as headShot08 } from './headshots/headshot-08.jpg';
 export { default as headShot09 } from './headshots/headshot-09.jpg';
 export { default as headShot10 } from './headshots/headshot-10.jpeg';
