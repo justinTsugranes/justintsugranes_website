@@ -39,6 +39,11 @@ export const socialMedia = [
     icon: <GithubIcon />,
     link: `https://github.com/justintsugranes`
   },
+  // {
+  //   id: 'stackblitz',
+  //   icon: <StackBlitzIcon/>,
+  //   link: `https://stackblitz.com/@${tags.stackblitz}`
+  // },
   {
     id: 'codepen',
     icon: <CodepenIcon />,
@@ -54,9 +59,4 @@ export const socialMedia = [
     icon: <InstagramIcon />,
     link: `https://instagram.com/justintsugranes`
   }
-  // {
-  //   id: 'stackblitz',
-  //   icon: <StackBlitzIcon/>,
-  //   link: `https://stackblitz.com/@${tags.stackblitz}`
-  // },
 ];

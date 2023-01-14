@@ -15,7 +15,7 @@ const Button = (text, path) => {
       whileTap={{ scale: 0.9 }}
       // When the button is clicked, navigate to the specified path
       onClick={() => navigate(`${path}`)}>
-      // Display the provided text on the button
+      {/* Display the provided text on the button */}
       {`${text}`}
     </motion.button>
   );

@@ -54,7 +54,6 @@
 }
 
 /*---- MODALS ----*/
-
 ModalBody {
   display: flex;
   align-items: center;
@@ -70,5 +69,4 @@ ModalBody {
   font-weight: 600;
   letter-spacing: 2px;
 }
-
 /*---- /MODALS ----*/

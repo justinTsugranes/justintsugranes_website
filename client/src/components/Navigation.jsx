@@ -17,9 +17,7 @@ const Navigation = () => {
       // Initial state is "hidden"
       initial="hidden"
       // When the component comes into view, the state changes to "show"
-      whileInView="show"
-      // When the component comes into view (when it takes up 20% of the viewport), the state change occurs
-      viewport={{ once: true, amount: 0.2 }}>
+      whileInView="show">
       {/* Setting up the navbar with React Bootstrap */}
       <Navbar expand="lg" className="navbar-dark bg-none px-4 px-md-5">
         {/* Navbar brand, which is the user's name */}

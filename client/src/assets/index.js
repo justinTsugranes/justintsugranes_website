@@ -57,21 +57,3 @@ export { default as WordpressIcon } from './icons-tech/WordpressIcon.jsx';
 // TODO: Add Netlify Icon
 // TODO: Add Stripe Icon
 // TODO: Add Sanity Icon
-
-// PROJECT_SCREENSHOTS
-// export { default as bankingApp } from './project-images/banking-app.webp';
-// export { default as crashCourses } from './project-images/crashcourses.webp';
-// export { default as ecommerce } from './project-images/ecommerce.webp';
-// export { default as frontendBootcamp } from './project-images/frontend-bootcamp.webp';
-// export { default as fullstackStore } from './project-images/fullstack-store.webp';
-// export { default as gpt3 } from './project-images/gpt3.webp';
-// export { default as landingPage } from './project-images/landing-page.webp';
-// export { default as megamask } from './project-images/megamask.webp';
-// export { default as metaversus } from './project-images/metaversus.webp';
-// export { default as misfitdodo } from './project-images/misfitdodo.webp';
-// export { default as museract } from './project-images/museract.webp';
-// export { default as nextTailwindBlog } from './project-images/next-tailwind-blog.webp';
-// export { default as passwordGenerator } from './project-images/password-generator.webp';
-// export { default as personalWebsite } from './project-images/personal-website.webp';
-// export { default as restaurantApp } from './project-images/restaurant-app.webp';
-// export { default as shareme } from './project-images/shareme.webp';
