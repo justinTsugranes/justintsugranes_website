@@ -13,6 +13,7 @@ const HomeHero = () => (
             {/* Typing animation for title */}
             <TypeAnimation
               sequence={[
+                1000,
                 'Web Developer, Digital Media Creator',
                 () => {
                   console.log('Done typing!');
@@ -26,7 +27,7 @@ const HomeHero = () => (
             {/* Typing animation for technologies */}
             <TypeAnimation
               sequence={[
-                2750,
+                3750,
                 'JavaScript - React.js - Node.js - MongoDB - TailwindCSS - Figma', //
                 () => {
                   console.log('Done typing!');
