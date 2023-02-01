@@ -28,7 +28,7 @@
     "@types/react-dom": "^18.0.9",
     "bootstrap": "^5.2.2",
     "canvas-confetti": "^1.6.0",
-    "framer-motion": "^8.0.2",
+    "framer-motion": "^9.0.0",
     "react": "^18.2.0",
     "react-bootstrap": "^2.6.0",
     "react-dom": "^18.2.0",
