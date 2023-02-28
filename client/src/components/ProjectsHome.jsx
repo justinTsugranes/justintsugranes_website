@@ -1,16 +1,16 @@
-import { useNavigate } from 'react-router-dom';
-import { motion } from 'framer-motion';
-import { Col, Row } from 'react-bootstrap';
-import { ProjectCard } from './';
-import { useFetchData } from '../hooks/useFetchData';
+import { useNavigate } from 'react-router-dom'
+import { motion } from 'framer-motion'
+import { Col, Row } from 'react-bootstrap'
+import { useFetchData } from '../hooks'
+import { ProjectCard } from './'
 
 const ProjectsHome = () => {
-  const navigate = useNavigate();
+  const navigate = useNavigate()
 
-  const { data, error } = useFetchData(`*[_type == "project"]`);
+  const { data, error } = useFetchData(`*[_type == "project"]`)
 
   if (error) {
-    return <p>{error.message}</p>;
+    return <p>{error.message}</p>
   }
 
   return (
@@ -24,7 +24,7 @@ const ProjectsHome = () => {
           {data ? (
             data
               .slice(0, 8)
-              .map((project, index) => <ProjectCard key={project._id} {...project} index={index} />)
+              .map((project) => <ProjectCard key={project._id} {...project} index={project._id} />)
           ) : error ? (
             <p>{error.message}</p>
           ) : (
@@ -44,7 +44,7 @@ const ProjectsHome = () => {
         </motion.button>
       </motion.div>
     </motion.div>
-  );
-};
+  )
+}
 
-export default ProjectsHome;
+export default ProjectsHome

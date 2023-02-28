@@ -1,8 +1,13 @@
 export default {
-  name: 'banner',
-  title: 'Banner',
+  name: 'graphics',
+  title: 'Graphics',
   type: 'document',
   fields: [
+    {
+      name: 'id',
+      type: 'string',
+      title: 'ID',
+    },
     {
       name: 'title',
       type: 'string',
@@ -20,7 +25,7 @@ export default {
     {
       name: 'altText',
       title: 'Alt Text',
-      description: 'Alt text for the image',
+      description: 'Alt text for the graphic',
       type: 'string',
     },
   ],

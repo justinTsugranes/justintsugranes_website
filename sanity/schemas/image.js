@@ -1,17 +1,23 @@
 export default {
-  name: 'headshot',
-  title: 'Headshot',
+  name: 'images',
+  title: 'Images',
   type: 'document',
   fields: [
+    {
+      name: 'id',
+      type: 'string',
+      title: 'ID',
+    },
     {
       name: 'title',
       type: 'string',
       title: 'Title',
     },
     {
-      name: 'image',
-      type: 'image',
-      title: 'Image',
+      name: 'imgUrl',
+      title: 'ImgUrl',
+      description: 'The image file from cloudinary',
+      type: 'cloudinary.asset',
       options: {
         hotspot: true,
       },

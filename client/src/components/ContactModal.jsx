@@ -1,32 +1,39 @@
-import { useState } from 'react';
-import { Modal, CloseButton, Container, Form, Button, FloatingLabel } from 'react-bootstrap';
-import { sent } from '../assets';
-// import Confetti from 'react-confetti';
+import { useEffect, useState } from 'react'
+import { sanityClient } from '../lib'
+import { Modal, CloseButton, Container, Form, Button, FloatingLabel } from 'react-bootstrap'
 
 const ContactModal = () => {
-  /* show/hide the contact modal */
-  const [show, setShow] = useState(false);
-  const handleClose = () => setShow(false);
-  const handleOpen = () => setShow(true);
-
+  // modal
+  const [show, setShow] = useState(false)
+  const handleClose = () => setShow(false)
+  const handleOpen = () => setShow(true)
+  // sanity data
+  const [data, setData] = useState([])
   // form validation
-  const [validated, setValidated] = useState(false);
-
+  const [validated, setValidated] = useState(false)
   // success honeypot
-  const [success, setSuccess] = useState(false);
+  const [success, setSuccess] = useState(false)
 
-  // contact submit
+  // form submit
   const handleSubmit = (e) => {
-    // Prevent the browser from reloading the page
-    e.preventDefault();
-    // Read the form data
-    const form = e.currentTarget;
+    e.preventDefault()
+    const form = e.currentTarget
+
     if (form.checkValidity() === false) {
-      setValidated(true);
+      setValidated(false)
     } else {
-      setSuccess(true);
+      setSuccess(true)
     }
-  };
+  }
+
+  // sanity data
+  useEffect(() => {
+    const query = "*[_type == 'graphics' && title == 'sent message graphic']"
+
+    sanityClient.fetch(query).then((data) => {
+      setData(data)
+    })
+  }, [])
 
   return (
     <>
@@ -60,12 +67,14 @@ const ContactModal = () => {
                 {/* bot field */}
                 <input type="hidden" name="form-name" value="contact" />
                 <Form.Control type="hidden" id="bot-field" name="bot-field" />
+
                 {/* default email subject */}
                 <Form.Control
                   type="hidden"
                   name="subject"
                   defaultValue="Contact message from justintsugranes.com"
                 />
+
                 {/* name */}
                 <Form.Group>
                   <FloatingLabel controlId="floatingName" label="Name" className="mb-3 mt-3">
@@ -84,6 +93,7 @@ const ContactModal = () => {
                     </Form.Control.Feedback>
                   </FloatingLabel>
                 </Form.Group>
+
                 {/* email */}
                 <Form.Group className="form-floating mb-3 mt-3">
                   <FloatingLabel controlId="floatingInput" label="Email address" className="mb-3">
@@ -101,6 +111,7 @@ const ContactModal = () => {
                     </Form.Control.Feedback>
                   </FloatingLabel>
                 </Form.Group>
+
                 {/* message */}
                 <Form.Group className="form-floating mt-3 mb-3">
                   <FloatingLabel controlId="floatingTextarea" label="Enter message">
@@ -118,9 +129,10 @@ const ContactModal = () => {
                     </Form.Control.Feedback>
                   </FloatingLabel>
                 </Form.Group>
+
                 {/* submit */}
                 <Button
-                  onClick={handleSubmit}
+                  onClick={validated ? handleSubmit : null}
                   type="submit"
                   className="rounded-pill px-4 py-2"
                   style={{ background: '#33bbcf', border: 'none' }}>
@@ -132,7 +144,6 @@ const ContactModal = () => {
         </Modal>
       ) : (
         <Modal show={show} onHide={handleClose} size="lg" centered className="text-dark">
-          {/* <Confetti height={height} width={width} /> */}
           <Container className="d-flex flex-column">
             <Modal.Header className="d-flex justify-content-around">
               <Modal.Title>Success!</Modal.Title>
@@ -140,13 +151,18 @@ const ContactModal = () => {
             </Modal.Header>
 
             <Modal.Body className="modal-lg text-center" id="modal-body">
-              <img src={sent} alt="message sent" style={{ width: '100%', maxHeight: '200px' }} />
+              <img
+                src={data[0]?.imgUrl?.url}
+                alt={data[0]?.altText}
+                style={{ width: '100%', maxHeight: '200px' }}
+              />
               <p className="lead pt-2">
                 Your message was successfully sent! <br />
                 <br />
                 Thank you for contacting me. I&apos;m looking forward to your message.
               </p>
             </Modal.Body>
+
             <Modal.Footer>
               <Button
                 onClick={handleClose}
@@ -159,7 +175,7 @@ const ContactModal = () => {
         </Modal>
       )}
     </>
-  );
-};
+  )
+}
 
-export default ContactModal;
+export default ContactModal

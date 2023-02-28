@@ -14,9 +14,10 @@ export default {
       type: 'string',
     },
     {
-      name: 'icon',
-      title: 'Icon',
-      type: 'image',
+      name: 'image',
+      title: 'Image',
+      description: 'The icon to display for this skill',
+      type: 'cloudinary.asset',
       options: {
         hotspot: true,
       },

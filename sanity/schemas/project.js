@@ -22,14 +22,23 @@ export default {
       of: [{type: 'string'}],
     },
     {
-      name: 'image',
+      name: 'imgUrl',
+      title: 'ImgUrl',
+      description: 'The image to display for this project',
       type: 'image',
-      title: 'Image',
-      description: 'A screenshot or preview of the project',
       options: {
         hotspot: true,
       },
     },
+    // {
+    //   name: 'imgUrl',
+    //   title: 'ImgUrl',
+    //   description: 'The image to display for this project',
+    //   type: 'cloudinary.asset',
+    //   options: {
+    //     hotspot: true,
+    //   },
+    // },
     {
       name: 'demoLink',
       type: 'url',

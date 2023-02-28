@@ -1,10 +1,10 @@
-import React from 'react';
-import { Row } from 'react-bootstrap';
-import { useFetchData } from '../hooks/useFetchData';
-import { ProjectCard } from './';
+import React from 'react'
+import { Row } from 'react-bootstrap'
+import { useFetchData } from '../hooks'
+import { ProjectCard } from './'
 
 const AllProjects = () => {
-  const { data, error } = useFetchData(`*[_type == "project"]`);
+  const { data, error } = useFetchData(`*[_type == "project"]`)
 
   return (
     <Row className="d-flex justify-content-evenly row-cols-1 row-cols-md-3 row-cols-lg-5 gap-5 mb-3">
@@ -18,7 +18,7 @@ const AllProjects = () => {
         <p>Loading...</p>
       )}
     </Row>
-  );
-};
+  )
+}
 
-export default AllProjects;
+export default AllProjects

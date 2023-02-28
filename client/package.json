@@ -15,39 +15,57 @@
     "bootstrap",
     "react-bootstrap"
   ],
-  "dependencies": {
-    "@fortawesome/fontawesome-free": "^6.2.0",
-    "@sanity/client": "^4.0.1",
-    "@sanity/image-url": "^1.0.1",
-    "@testing-library/jest-dom": "^5.16.5",
-    "@testing-library/react": "^13.4.0",
-    "@testing-library/user-event": "^13.5.0",
-    "@types/jest": "^29.2.3",
-    "@types/node": "^18.11.9",
-    "@types/react": "^18.0.25",
-    "@types/react-dom": "^18.0.9",
-    "bootstrap": "^5.2.2",
-    "canvas-confetti": "^1.6.0",
-    "framer-motion": "^8.0.2",
-    "react": "^18.2.0",
-    "react-bootstrap": "^2.6.0",
-    "react-dom": "^18.2.0",
-    "react-icons": "^4.7.1",
-    "react-intersection-observer": "^9.4.1",
-    "react-parallax": "^3.5.1",
-    "react-router-dom": "^6.4.3",
-    "react-scripts": "5.0.1",
-    "react-type-animation": "^2.1.2",
-    "swiper": "^8.4.4"
-  },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "lint:fix": "eslint --fix",
-    "format": "prettier --write \"**/*.{js,json,css,md}\"",
-    "lint": "eslint . --ext .js"
+    "format": "prettier --ignore-path .prettierignore --write \"**/*.{js,jsx,ts,tsx,json,md}\"",
+    "lint": "eslint . --ext .js",
+    "pre-commit": "npm run format & npm run lint --fix"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^6.3.0",
+    "@sanity/client": "^5.2.2",
+    "@sanity/image-url": "^1.0.2",
+    "@testing-library/jest-dom": "^5.16.5",
+    "@testing-library/react": "^14.0.0",
+    "@testing-library/user-event": "^14.4.3",
+    "@types/jest": "^29.4.0",
+    "@types/node": "^18.14.0",
+    "@types/react": "^18.0.28",
+    "@types/react-dom": "^18.0.11",
+    "bootstrap": "^5.2.3",
+    "canvas-confetti": "^1.6.0",
+    "framer-motion": "^9.0.4",
+    "react": "^18.2.0",
+    "react-bootstrap": "^2.7.2",
+    "react-dom": "^18.2.0",
+    "react-icons": "^4.7.1",
+    "react-intersection-observer": "^9.4.2",
+    "react-parallax": "^3.5.1",
+    "react-router-dom": "^6.8.1",
+    "react-scripts": "5.0.1",
+    "react-type-animation": "^2.1.2",
+    "swiper": "^9.0.5"
+  },
+  "devDependencies": {
+    "@sanity/cli": "^3.4.0",
+    "eslint": "^8.34.0",
+    "eslint-config-airbnb": "^19.0.4",
+    "eslint-config-prettier": "^8.6.0",
+    "eslint-plugin-import": "^2.27.5",
+    "eslint-plugin-jsx-a11y": "^6.7.1",
+    "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-react": "^7.32.2",
+    "husky": "^8.0.3",
+    "lint-staged": "^13.1.2",
+    "prettier": "^2.8.4"
+  },
+  "lint-staged": {
+    "*.{js,jsx,ts,tsx}": "eslint --cache --fix",
+    "*": "prettier --write --ignore-unknown"
   },
   "eslintConfig": {
     "extends": [
@@ -66,17 +84,5 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  },
-  "devDependencies": {
-    "@sanity/cli": "^3.2.0",
-    "eslint": "^8.27.0",
-    "eslint-config-airbnb": "^19.0.4",
-    "eslint-config-prettier": "^8.5.0",
-    "eslint-plugin-import": "^2.26.0",
-    "eslint-plugin-jsx-a11y": "^6.6.1",
-    "eslint-plugin-prettier": "^4.2.1",
-    "eslint-plugin-react": "^7.31.10",
-    "husky": "^8.0.3",
-    "prettier": "^2.7.1"
   }
 }

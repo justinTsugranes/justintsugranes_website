@@ -45,7 +45,6 @@ const ProjectModal = ({ show, onHide, projects }) => (
           <Row>
             <p className="my-4">{projects.descr}</p>
             <h5 className="key-tech-title text-gradient mt-2">KEY TECH</h5>
-            {/* showing tech titles */}
             <p className="mb-0">{projects.tech}</p>
             {/* showing list icons */}
             {/* <ul className="d-flex">

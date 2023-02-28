@@ -1,11 +1,4 @@
-import {
-  // StackBlitzIcon,
-  CodepenIcon,
-  GithubIcon,
-  InstagramIcon,
-  LinkedInIcon,
-  SpotifyIcon
-} from '../assets';
+import { CodepenIcon, GithubIcon, InstagramIcon, LinkedInIcon, SpotifyIcon } from '../assets'
 
 export const navLinks = {
   home: {
@@ -26,7 +19,7 @@ export const navLinks = {
     id: './cv',
     title: 'CV'
   }
-};
+}
 
 export const socialMedia = [
   {
@@ -39,11 +32,6 @@ export const socialMedia = [
     icon: <GithubIcon />,
     link: `https://github.com/justintsugranes`
   },
-  // {
-  //   id: 'stackblitz',
-  //   icon: <StackBlitzIcon/>,
-  //   link: `https://stackblitz.com/@${tags.stackblitz}`
-  // },
   {
     id: 'codepen',
     icon: <CodepenIcon />,
@@ -59,4 +47,4 @@ export const socialMedia = [
     icon: <InstagramIcon />,
     link: `https://instagram.com/justintsugranes`
   }
-];
+]

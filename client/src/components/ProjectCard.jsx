@@ -1,5 +1,5 @@
 /* eslint-disable react/prop-types */
-import { useState } from 'react';
+import { useState } from 'react'
 import {
   Modal,
   ModalHeader,
@@ -9,17 +9,17 @@ import {
   CloseButton,
   Row,
   Col
-} from 'react-bootstrap';
-import { motion } from 'framer-motion';
+} from 'react-bootstrap'
+import { motion } from 'framer-motion'
 
-import { GithubIcon, DemoIcon } from '../assets';
-import { urlFor } from '../lib/client';
-import './projects/projects.css';
+import { GithubIcon, DemoIcon } from '../assets'
+// import { urlFor } from '../lib'
+import '../styles/projects.css'
 
 const ProjectCard = ({ index, image, title, description, technologies, demoLink, repoLink }) => {
-  const [show, setShow] = useState(false);
-  const handleClose = () => setShow(false);
-  const handleShow = () => setShow(true);
+  const [show, setShow] = useState(false)
+  const handleClose = () => setShow(false)
+  const handleShow = () => setShow(true)
 
   return (
     <>
@@ -37,7 +37,7 @@ const ProjectCard = ({ index, image, title, description, technologies, demoLink,
           <motion.div className="text-center" id="title">
             {title}
           </motion.div>
-          <img className="image proj-card-img shadow" src={urlFor(image)} alt={title} />
+          <img className="image proj-card-img shadow" src={image} alt={title} />
         </motion.div>
       </motion.div>
 
@@ -60,11 +60,7 @@ const ProjectCard = ({ index, image, title, description, technologies, demoLink,
             <Col>
               <Row>
                 <a href={demoLink} target="_blank" rel="noreferrer">
-                  <img
-                    src={urlFor(image)}
-                    alt={title}
-                    className="proj-card-img-modal fluid rounded-4"
-                  />
+                  <img src={image} alt={title} className="proj-card-img-modal fluid rounded-4" />
                 </a>
               </Row>
               <Row>
@@ -100,7 +96,7 @@ const ProjectCard = ({ index, image, title, description, technologies, demoLink,
         </Container>
       </Modal>
     </>
-  );
-};
+  )
+}
 
-export default ProjectCard;
+export default ProjectCard

@@ -2,12 +2,11 @@ import {
   AboutSectionOne,
   AboutSectionTwo,
   AboutSectionThree,
-  AboutSectionFour,
-  // AboutSectionFive,
+  // AboutSectionFour,
   AboutSectionSix,
   AboutSectionSeven
-} from '../components/about';
-import { motion } from 'framer-motion';
+} from '../components/about'
+import { motion } from 'framer-motion'
 
 const About = () => (
   <motion.div
@@ -17,11 +16,10 @@ const About = () => (
     <AboutSectionOne />
     <AboutSectionTwo />
     <AboutSectionThree />
-    <AboutSectionFour />
-    {/* <AboutSectionFive /> */}
+    {/* <AboutSectionFour /> */}
     <AboutSectionSix />
     <AboutSectionSeven />
   </motion.div>
-);
+)
 
-export default About;
+export default About

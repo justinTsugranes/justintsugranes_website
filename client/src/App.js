@@ -1,12 +1,12 @@
-import * as React from 'react';
+import * as React from 'react'
 
-import { Routes, Route } from 'react-router-dom';
-import { Footer, PreFooter, Navigation, ScrollToTop } from './components';
-import { Home } from './pages';
+import { Routes, Route } from 'react-router-dom'
+import { Footer, PreFooter, Navigation, ScrollToTop } from './components'
+import { Home } from './pages'
 
 // Lazy Loading
-const About = React.lazy(() => import('./pages/About'));
-const Projects = React.lazy(() => import('./pages/Projects'));
+const About = React.lazy(() => import('./pages/About'))
+const Projects = React.lazy(() => import('./pages/Projects'))
 
 const App = () => (
   <>
@@ -39,6 +39,6 @@ const App = () => (
 
     <Footer />
   </>
-);
+)
 
-export default App;
+export default App

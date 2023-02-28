@@ -75,6 +75,8 @@ Give a ⭐️ if you like this project and if you like my work, maybe you would 
 
 <a href="https://www.buymeacoffee.com/tsugranes" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-red.png" alt="Buy Me A Coffee" width="150"></a>
 
+<!-- [![coffee]][coffee-url] -->
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- MARKDOWN LINKS & IMAGES -->
@@ -104,3 +106,5 @@ Give a ⭐️ if you like this project and if you like my work, maybe you would 
 [framer-url]: https://www.framer.com/motion/
 [swiper]: https://img.shields.io/badge/Swiper-6332F6?style=for-the-badge&logo=swiper&logoColor=white
 [swiper-url]: https://swiperjs.com/
+[coffee]: https://cdn.buymeacoffee.com/buttons/v2/default-red.png
+[coffee-url]: https://www.buymeacoffee.com/tsugranes

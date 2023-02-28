@@ -1,41 +1,35 @@
-import { useEffect, useRef } from 'react';
-import { Container, Card, Col, Row } from 'react-bootstrap';
-// Import Swiper React components
-import { Swiper, SwiperSlide } from 'swiper/react';
-// Import Swiper styles
-import '../../styles/MySwiper.css';
-import 'swiper/css';
-import 'swiper/css/navigation';
-import 'swiper/css/pagination';
-// import required modules
-import SwiperCore, { Navigation, Pagination, Mousewheel, Keyboard, Lazy } from 'swiper';
+import { useEffect, useRef } from 'react'
+import { Container, Card, Col, Row } from 'react-bootstrap'
 
-/* import projects data for swiper */
-import { useFetchData } from '../../hooks/useFetchData';
-import { urlFor } from '../../lib/client';
+// Import Swiper React components
+import { Swiper, SwiperSlide } from 'swiper/react'
+// Import Swiper styles
+import '../../styles/MySwiper.css'
+import 'swiper/css'
+import 'swiper/css/navigation'
+import 'swiper/css/pagination'
+// import required modules
+import SwiperCore, { Navigation, Pagination, Mousewheel, Keyboard } from 'swiper'
+
+import { useFetchData } from '../../hooks'
 
 function useSwiper() {
-  const swiperRef = useRef(null);
+  const swiperRef = useRef(null)
 
-  // Use the useEffect hook to call the SwiperCore.use function
-  // with the necessary modules for the Swiper component
   useEffect(() => {
-    SwiperCore.use([Navigation, Pagination, Mousewheel, Keyboard, Lazy]);
-  }, []);
+    SwiperCore.use([Navigation, Pagination, Mousewheel, Keyboard])
+  }, [])
 
-  return swiperRef;
+  return swiperRef
 }
 
 const AboutSectionSeven = () => {
-  // Create a reference to the Swiper component
-  const swiperRef = useSwiper();
+  const swiperRef = useSwiper()
 
-  // Use the useFetchData hook to fetch data from the Sanity CMS
-  const { data, error } = useFetchData(`*[_type == "project"]`);
+  const { data, error } = useFetchData(`*[_type == "project"]`)
 
-  // If there's an error with fetching the data, return an error message
   if (error) {
-    return <p>{error.message}</p>;
+    return <p>{error.message}</p>
   }
 
   return (
@@ -76,7 +70,7 @@ const AboutSectionSeven = () => {
           {/* For each item in the data array, create a new SwiperSlide element and pass in the properties of the current item as props */}
           {data.map(({ image, title, demoLink }, slideID) => {
             return (
-              <SwiperSlide key={slideID} lazy>
+              <SwiperSlide key={slideID}>
                 <Col className="col-lg p-0 m-0">
                   <Container className="mt-sm-1" fluid>
                     <Container fluid className="m-0 p-0">
@@ -90,7 +84,7 @@ const AboutSectionSeven = () => {
                             fluid
                             variant="top"
                             className="proj-card-img proj-about hover-zoom"
-                            src={urlFor(image)}
+                            src={image}
                             alt={title}
                             title={title}
                             style={{ height: '250px' }}
@@ -101,12 +95,12 @@ const AboutSectionSeven = () => {
                   </Container>
                 </Col>
               </SwiperSlide>
-            );
+            )
           })}
         </Swiper>
       </Col>
     </Row>
-  );
-};
+  )
+}
 
-export default AboutSectionSeven;
+export default AboutSectionSeven

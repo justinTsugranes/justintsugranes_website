@@ -1,18 +1,45 @@
 import {defineConfig} from 'sanity'
+import {RobotIcon, RocketIcon} from '@sanity/icons'
 import {deskTool} from 'sanity/desk'
 import {visionTool} from '@sanity/vision'
 import {schemaTypes} from './schemas'
+import {cloudinaryAssetSourcePlugin, cloudinarySchemaPlugin} from 'sanity-plugin-cloudinary'
 
-export default defineConfig({
-  name: 'default',
-  title: 'justintsugranes',
+import {myTheme} from './theme'
 
-  projectId: 'tmk7ypfb',
-  dataset: 'production',
+const sanityStudioProjectId = import.meta.env.SANITY_STUDIO_PROJECT_ID
+const sanityStudioDataset = import.meta.env.SANITY_STUDIO_DATASET
 
-  plugins: [deskTool(), visionTool()],
+export default defineConfig([
+  {
+    projectId: sanityStudioProjectId,
+    dataset: sanityStudioDataset,
+    name: 'production-workspace',
+    basePath: '/production',
+    title: 'Production Workspace',
+    icon: RobotIcon,
 
-  schema: {
-    types: schemaTypes,
+    plugins: [deskTool(), visionTool(), cloudinaryAssetSourcePlugin(), cloudinarySchemaPlugin()],
+
+    schema: {
+      types: schemaTypes,
+    },
+    theme: myTheme,
   },
-})
+
+  {
+    projectId: sanityStudioProjectId,
+    dataset: sanityStudioDataset,
+    name: 'staging-workspace',
+    basePath: '/staging',
+    title: 'Staging Workspace!',
+    icon: RocketIcon,
+
+    plugins: [deskTool(), visionTool(), cloudinaryAssetSourcePlugin(), cloudinarySchemaPlugin()],
+
+    schema: {
+      types: schemaTypes,
+    },
+    theme: myTheme,
+  },
+])
