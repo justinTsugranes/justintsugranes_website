@@ -1,3 +1,3 @@
-const GithubIcon = () => <i className="fa-brands fa-github" />;
+const GithubIcon = () => <i className="fa-brands fa-github" />
 
-export default GithubIcon;
+export default GithubIcon

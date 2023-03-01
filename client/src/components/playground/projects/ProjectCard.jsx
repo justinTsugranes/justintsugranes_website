@@ -1,7 +1,7 @@
 /* eslint-disable react/prop-types */
-import { useState, useEffect } from 'react';
-import 'bootstrap/dist/css/bootstrap.min.css';
-import './../styles/ProjectCards.css';
+import { useState, useEffect } from 'react'
+import 'bootstrap/dist/css/bootstrap.min.css'
+import './../styles/ProjectCards.css'
 import {
   Modal,
   ModalHeader,
@@ -12,46 +12,46 @@ import {
   Row,
   Col,
   Image
-} from 'react-bootstrap';
+} from 'react-bootstrap'
 // import { GithubIcon, DemoIcon } from '../../assets';
-import { motion } from 'framer-motion';
-import { projects } from '../../constants/ProjectData';
+import { motion } from 'framer-motion'
+import { projects } from '../../constants/ProjectData'
 // import TechIcon from './TechIcon';
 
 const ProjectCard = ({ index, imageUrl, title, descr, tech, repo, demo }) => {
-  const [show, setShow] = useState(false);
-  const [currentIndex, setCurrentIndex] = useState(0);
-  const [projectData, setProjectData] = useState([]);
+  const [show, setShow] = useState(false)
+  const [currentIndex, setCurrentIndex] = useState(0)
+  const [projectData, setProjectData] = useState([])
 
-  const handleClose = () => setShow(false);
-  const handleShow = () => setShow(true);
+  const handleClose = () => setShow(false)
+  const handleShow = () => setShow(true)
 
   const toggleShowModal = () => {
-    setShowModal((prevShowModal) => !prevShowModal);
-  };
+    setShowModal((prevShowModal) => !prevShowModal)
+  }
 
   // Load project data from data.js file on mount
   useEffect(() => {
-    setProjectData(projects);
-  }, []);
+    setProjectData(projects)
+  }, [])
 
   const handlePrevious = ({ projectData }) => {
-    const newIndex = currentIndex - 1;
+    const newIndex = currentIndex - 1
     // Check if the new index is within the range of the project data array
     if (newIndex >= 0 && newIndex < projectData.length) {
       // Update the currentIndex state with the new index
-      setCurrentIndex(newIndex);
+      setCurrentIndex(newIndex)
     }
-  };
+  }
 
   const handleNext = ({ projectData }) => {
-    const newIndex = currentIndex + 1;
+    const newIndex = currentIndex + 1
     // Check if the new index is within the range of the project data array
     if (newIndex >= 0 && newIndex < projectData.length) {
       // Update the currentIndex state with the new index
-      setCurrentIndex(newIndex);
+      setCurrentIndex(newIndex)
     }
-  };
+  }
 
   return (
     <>
@@ -86,7 +86,7 @@ const ProjectCard = ({ index, imageUrl, title, descr, tech, repo, demo }) => {
         demo={projects.demo}
       />
     </>
-  );
-};
+  )
+}
 
-export default ProjectCard;
+export default ProjectCard

@@ -18,6 +18,6 @@ const Awards = () => (
       </li>
     </ul>
   </div>
-);
+)
 
-export default Awards;
+export default Awards

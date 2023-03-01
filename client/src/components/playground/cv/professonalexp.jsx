@@ -366,6 +366,6 @@ const Professonalexp = () => (
       </li>
     </ul>
   </div>
-);
+)
 
-export default Professonalexp;
+export default Professonalexp

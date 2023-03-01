@@ -5,6 +5,6 @@ const HtmlIcon = () => (
     rel="noreferrer">
     <i className="fa-brands fa-html5 text-light h1" />
   </a>
-);
+)
 
-export default HtmlIcon;
+export default HtmlIcon

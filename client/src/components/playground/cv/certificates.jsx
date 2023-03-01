@@ -260,6 +260,6 @@ const Certificates = () => (
       <li>2001-2004 - East Coast Music Mall, Danbury, CT - Private Instruction, Guitar</li>
     </ul>
   </div>
-);
+)
 
-export default Certificates;
+export default Certificates

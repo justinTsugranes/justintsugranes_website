@@ -1,7 +1,7 @@
-import Image from 'next/image';
+import Image from 'next/image'
 
 const StudioLogo = () => {
-  const { renderDefault } = props;
+  const { renderDefault } = props
   return (
     <div className="flex items-center space-x-2">
       <Image
@@ -13,7 +13,7 @@ const StudioLogo = () => {
       />
       <>{renderDefault(props)}</>
     </div>
-  );
-};
+  )
+}
 
-export default StudioLogo;
+export default StudioLogo

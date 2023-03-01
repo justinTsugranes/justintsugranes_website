@@ -1,4 +1,4 @@
-import { Container, Tab, Tabs } from 'react-bootstrap';
+import { Container, Tab, Tabs } from 'react-bootstrap'
 import {
   Professonalexp,
   Education,
@@ -11,7 +11,7 @@ import {
   Transcriptions,
   Musicals,
   Links
-} from './index.js';
+} from './index.js'
 
 const Cv = () => (
   <div className="text-light">
@@ -57,6 +57,6 @@ const Cv = () => (
       </Tabs>
     </Container>
   </div>
-);
+)
 
-export default Cv;
+export default Cv

@@ -1,3 +1,3 @@
-const SpotifyIcon = () => <i className="fa-brands fa-spotify fa-lg" />;
+const SpotifyIcon = () => <i className="fa-brands fa-spotify fa-lg" />
 
-export default SpotifyIcon;
+export default SpotifyIcon

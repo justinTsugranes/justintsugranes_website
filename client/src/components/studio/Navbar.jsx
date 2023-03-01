@@ -1,5 +1,5 @@
-import Link from 'next/link';
-import { ArrowUturnLeftIcon } from '@heroicons/react/24/solid';
+import Link from 'next/link'
+import { ArrowUturnLeftIcon } from '@heroicons/react/24/solid'
 
 const StudioNavbar = () => {
   return (
@@ -18,7 +18,7 @@ const StudioNavbar = () => {
       </div>
       <div>{props.renderDefault(props)}</div>
     </div>
-  );
-};
+  )
+}
 
-export default StudioNavbar;
+export default StudioNavbar

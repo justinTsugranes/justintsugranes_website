@@ -1,9 +1,9 @@
-import React from 'react';
-import { useNavigate } from 'react-router-dom';
-import { motion } from 'framer-motion';
+import React from 'react'
+import { useNavigate } from 'react-router-dom'
+import { motion } from 'framer-motion'
 
 const Button = (text, path) => {
-  const navigate = useNavigate();
+  const navigate = useNavigate()
 
   return (
     <motion.button
@@ -13,7 +13,7 @@ const Button = (text, path) => {
       onClick={() => navigate(`${path}`)}>
       {`${text}`}
     </motion.button>
-  );
-};
+  )
+}
 
-export default Button;
+export default Button

@@ -1,6 +1,6 @@
-import React from 'react';
-import Cv from '../components/playground/cv/cv';
+import React from 'react'
+import Cv from '../components/playground/cv/cv'
 
-const CV = () => <Cv />;
+const CV = () => <Cv />
 
-export default CV;
+export default CV

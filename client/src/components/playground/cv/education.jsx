@@ -14,6 +14,6 @@ const Education = () => (
       <em>(Aug 2006 - May 2010)</em>
     </p>
   </>
-);
+)
 
-export default Education;
+export default Education

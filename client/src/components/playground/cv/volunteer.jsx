@@ -64,6 +64,6 @@ const Volunteer = () => (
       </li>
     </ul>
   </div>
-);
+)
 
-export default Volunteer;
+export default Volunteer

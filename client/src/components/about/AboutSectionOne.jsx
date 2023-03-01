@@ -1,10 +1,10 @@
-import { useRef } from 'react';
-import { Row } from 'react-bootstrap';
-import { staggerContainer, textVariant } from '../../utils/motion';
-import { motion } from 'framer-motion';
+import { useRef } from 'react'
+import { Row } from 'react-bootstrap'
+import { staggerContainer, textVariant } from '../../utils/motion'
+import { motion } from 'framer-motion'
 
 const AboutSectionOne = () => {
-  const ref = useRef(null);
+  const ref = useRef(null)
 
   return (
     <Row className="section-container p-md-5" ref={ref}>
@@ -22,7 +22,7 @@ const AboutSectionOne = () => {
         </div>
       </motion.div>
     </Row>
-  );
-};
+  )
+}
 
-export default AboutSectionOne;
+export default AboutSectionOne

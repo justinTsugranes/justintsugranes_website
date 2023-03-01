@@ -39,6 +39,6 @@ const About = () => (
       </li>
     </ul>
   </div>
-);
+)
 
-export default About;
+export default About

@@ -1,10 +1,10 @@
-import { useFetchData } from '../hooks';
+import { useFetchData } from '../hooks'
 
 const Quote = () => {
-  const { data, error } = useFetchData(`*[_type == "about"]`);
+  const { data, error } = useFetchData(`*[_type == "about"]`)
 
   if (error) {
-    return <p>{error.message}</p>;
+    return <p>{error.message}</p>
   }
 
   return (
@@ -17,7 +17,7 @@ const Quote = () => {
         </div>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default Quote;
+export default Quote

@@ -20,6 +20,6 @@ const Speaking = () => (
       <strong>Want me to speak at your event, podcast, or vlog?</strong>\
     </p>
   </div>
-);
+)
 
-export default Speaking;
+export default Speaking

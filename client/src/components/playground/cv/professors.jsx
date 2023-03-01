@@ -102,6 +102,6 @@ const Professors = () => (
       </li>
     </ul>
   </div>
-);
+)
 
-export default Professors;
+export default Professors

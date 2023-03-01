@@ -39,6 +39,6 @@ const Musicals = () => (
       <li>Guitarist for the Musical Production of Cole Porter’s, “Anything Goes”</li>
     </ul>
   </div>
-);
+)
 
-export default Musicals;
+export default Musicals

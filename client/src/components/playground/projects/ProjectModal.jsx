@@ -1,4 +1,4 @@
-import React from 'react';
+import React from 'react'
 import {
   Modal,
   ModalHeader,
@@ -9,11 +9,11 @@ import {
   Row,
   Col,
   Image
-} from 'react-bootstrap';
-import { motion } from 'framer-motion';
+} from 'react-bootstrap'
+import { motion } from 'framer-motion'
 
-import { GithubIcon, DemoIcon } from '../assets';
-import './../styles/ProjectCards.css';
+import { GithubIcon, DemoIcon } from '../assets'
+import './../styles/ProjectCards.css'
 
 const ProjectModal = ({ show, onHide, projects }) => (
   <Modal
@@ -88,6 +88,6 @@ const ProjectModal = ({ show, onHide, projects }) => (
       </ModalFooter>
     </Container>
   </Modal>
-);
+)
 
-export default ProjectModal;
+export default ProjectModal

@@ -1,11 +1,11 @@
-import * as React from 'react';
-import { Row, Col } from 'react-bootstrap';
-import { socialMedia } from '../constants';
-import { motion } from 'framer-motion';
+import * as React from 'react'
+import { Row, Col } from 'react-bootstrap'
+import { socialMedia } from '../constants'
+import { motion } from 'framer-motion'
 
 const currentYear = new Date().toLocaleDateString('en-US', {
   year: 'numeric'
-});
+})
 
 const Footer = () => (
   <Row className="py-5">
@@ -41,6 +41,6 @@ const Footer = () => (
       </Row>
     </Col>
   </Row>
-);
+)
 
-export default Footer;
+export default Footer

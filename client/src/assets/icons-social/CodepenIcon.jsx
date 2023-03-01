@@ -1,3 +1,3 @@
-const CodepenIcon = () => <i className="fa-brands fa-codepen" />;
+const CodepenIcon = () => <i className="fa-brands fa-codepen" />
 
-export default CodepenIcon;
+export default CodepenIcon

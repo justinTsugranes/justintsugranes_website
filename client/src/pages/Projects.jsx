@@ -1,5 +1,5 @@
-import { ProjectsAll, ProjectsShowcase } from '../components';
-import { motion } from 'framer-motion';
+import { ProjectsAll, ProjectsShowcase } from '../components'
+import { motion } from 'framer-motion'
 
 const Projects = () => (
   <motion.div
@@ -14,6 +14,6 @@ const Projects = () => (
 
     <ProjectsAll />
   </motion.div>
-);
+)
 
-export default Projects;
+export default Projects

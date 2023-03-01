@@ -356,6 +356,6 @@ const Skills = () => (
       <li>Zoom</li>
     </ul>
   </div>
-);
+)
 
-export default Skills;
+export default Skills

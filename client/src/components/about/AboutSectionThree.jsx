@@ -1,13 +1,13 @@
-import { Container } from 'react-bootstrap';
-import { motion } from 'framer-motion';
-import { fadeIn } from '../../utils/motion';
-import { useFetchData } from '../../hooks';
+import { Container } from 'react-bootstrap'
+import { motion } from 'framer-motion'
+import { fadeIn } from '../../utils/motion'
+import { useFetchData } from '../../hooks'
 
 const AboutSectionThree = () => {
-  const { data, error } = useFetchData(`*[_type == "about"]`);
+  const { data, error } = useFetchData(`*[_type == "about"]`)
 
   if (error) {
-    return <p>{error.message}</p>;
+    return <p>{error.message}</p>
   }
 
   return (
@@ -24,7 +24,7 @@ const AboutSectionThree = () => {
         </p>
       </motion.div>
     </Container>
-  );
-};
+  )
+}
 
-export default AboutSectionThree;
+export default AboutSectionThree

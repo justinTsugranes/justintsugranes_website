@@ -90,6 +90,6 @@ const Transcriptions = () => (
       </li>
     </ul>
   </div>
-);
+)
 
-export default Transcriptions;
+export default Transcriptions
