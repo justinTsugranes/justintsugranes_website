@@ -14,13 +14,13 @@ import {
   JenkinsIcon,
   MongoIcon,
   NextIcon,
-  TailwindIcon
+  TailwindIcon,
 } from '../assets'
 
 const iconRows = [
   [ReactIcon, NextIcon, JsIcon, NodeIcon],
   [HtmlIcon, CssIcon, BootstrapIcon, TailwindIcon],
-  [MongoIcon, DockerIcon, JenkinsIcon, FigmaIcon]
+  [MongoIcon, DockerIcon, JenkinsIcon, FigmaIcon],
 ]
 
 const ProjectsShowcase = () => {
@@ -35,29 +35,30 @@ const ProjectsShowcase = () => {
   }, [])
 
   return (
-    <Row className="py-5 px-3 d-flex align-items-center justify-content-around text-light text-center text-md-center">
+    <Row className='py-5 px-3 d-flex align-items-center justify-content-around text-light text-center text-md-center'>
       <Col>
-        <Row className="text-center">
+        <Row className='text-center'>
           {/* title on small-medium screens */}
-          <h2 className="text-gradient d-lg-none">Coding Projects</h2>
+          <h2 className='text-gradient d-lg-none'>Coding Projects</h2>
           {/* title on large screens */}
-          <h2 className="d-none d-lg-block">
-            <span className="text-gradient">Some Tech</span>
+          <h2 className='d-none d-lg-block'>
+            <span className='text-gradient'>Some Tech</span>
             <br></br> I&apos;ve Worked With
           </h2>
         </Row>
 
         {/* icon rows */}
-        <Row className="d-none d-lg-block px-5">
+        <Row className='d-none d-lg-block px-5'>
           {iconRows.map((row, index) => (
-            <Row key={index} className="mt-3 d-flex justify-content-evenly">
+            <Row key={index} className='mt-3 d-flex justify-content-evenly'>
               {row.map((Icon, index) => (
                 <motion.div
                   key={index}
-                  className="col"
+                  className='col'
                   whileHover={{ scale: 1.2 }}
                   whileTap={{ scale: 0.9 }}
-                  transition={{ type: 'spring', stiffness: 400, damping: 10 }}>
+                  transition={{ type: 'spring', stiffness: 400, damping: 10 }}
+                >
                   <Icon />
                 </motion.div>
               ))}
@@ -67,7 +68,7 @@ const ProjectsShowcase = () => {
       </Col>
 
       <Col>
-        <img className="img-fluid w-75" src={data[0]?.imgUrl?.url} alt={data[0]?.altText} />
+        <img className='img-fluid w-75' src={data[0]?.imgUrl?.url} alt={data[0]?.altText} />
       </Col>
     </Row>
   )

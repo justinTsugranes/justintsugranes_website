@@ -6,7 +6,7 @@ export const sanityClient = createClient({
   projectId,
   dataset,
   apiVersion,
-  useCdn: true
+  useCdn: true,
 })
 
 // for images in Sanity, not cloudinary
