@@ -14,6 +14,7 @@ export default defineConfig([
   {
     projectId: sanityStudioProjectId,
     dataset: sanityStudioDataset,
+    apiVersion: '2021-03-25',
     name: 'production-workspace',
     basePath: '/production',
     title: 'Production Workspace',
@@ -30,6 +31,7 @@ export default defineConfig([
   {
     projectId: sanityStudioProjectId,
     dataset: sanityStudioDataset,
+    apiVersion: '2021-03-25',
     name: 'staging-workspace',
     basePath: '/staging',
     title: 'Staging Workspace!',
