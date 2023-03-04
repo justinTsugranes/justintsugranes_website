@@ -1,34 +1,39 @@
-import { useEffect, useState } from 'react'
-import { sanityClient } from '../lib'
+// import { useEffect, useState } from 'react'
+// import { sanityClient } from '../lib'
 import { Row, Col } from 'react-bootstrap'
 import { TypeAnimation } from 'react-type-animation'
 
 const HomeHero = () => {
-  const [data, setData] = useState([])
+  // const [data, setData] = useState([])
 
-  useEffect(() => {
-    const query = "*[_type == 'images' && title == 'home hero image']"
+  // useEffect(() => {
+  //   const query = "*[_type == 'images' && title == 'home hero image']"
 
-    sanityClient.fetch(query).then((data) => {
-      setData(data)
-    })
-  }, [])
+  //   sanityClient.fetch(query).then((data) => {
+  //     setData(data)
+  //   })
+  // }, [])
 
   return (
     <Row>
-      <Col className='p-0'>
+      <Col className="p-0">
         <div
-          className='hero position-relative'
-          style={{ backgroundImage: `url(${data[0]?.imgUrl?.url})` }}
+          className="hero position-relative"
+          // style={{ backgroundImage: `url(${data[0]?.imgUrl?.url})` }}
+          style={{ backgroundImage: `url()` }}
         >
-          <div className='color-overlay d-flex justify-content-center align-items-center text-center p-0'>
-            <Col className='text-white px-3'>
+          <div className="color-overlay d-flex justify-content-center align-items-center text-center p-0">
+            <Col className="text-white px-3">
               <TypeAnimation
-                sequence={[1000, 'Web Developer, Digital Media Creator', () => {}]}
-                wrapper='div'
+                sequence={[
+                  1000,
+                  'Web Developer, Digital Media Creator',
+                  () => {},
+                ]}
+                wrapper="div"
                 cursor={false}
                 style={{ fontSize: '2.5em' }}
-                className='text-shadow'
+                className="text-shadow"
               />
               <TypeAnimation
                 sequence={[
@@ -36,10 +41,10 @@ const HomeHero = () => {
                   'JavaScript - React.js - Node.js - MongoDB - TailwindCSS - Figma',
                   () => {},
                 ]}
-                wrapper='div'
+                wrapper="div"
                 cursor={false}
                 style={{ fontSize: '1.3em' }}
-                className='text-gradient'
+                className="text-gradient"
               />
             </Col>
           </div>
