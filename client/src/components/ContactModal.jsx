@@ -16,7 +16,7 @@ const ContactModal = () => {
   const handleClose = () => setShow(false)
   const handleOpen = () => setShow(true)
   // sanity data
-  const [data, setData] = useState([])
+  // const [data, setData] = useState([])
   // form validation
   const [validated, setValidated] = useState(false)
   // success honeypot
@@ -197,7 +197,7 @@ const ContactModal = () => {
                 // src={data[0]?.imgUrl?.url}
                 // alt={data[0]?.altText}
                 src={sentImage}
-                alt={sentImageAlt}
+                alt="sent message graphic"
                 style={{ width: '100%', maxHeight: '200px' }}
               />
               <p className="lead pt-2">

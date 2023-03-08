@@ -9,6 +9,7 @@ const Home = () => {
       exit={{ opacity: 0, transition: { duration: 0.05 } }}
     >
       <HomeHero />
+
       {/* TODO: slide from the left, text fade in from bottom*/}
       <Quote />
       {/* TODO: title fade in from bottom */}
