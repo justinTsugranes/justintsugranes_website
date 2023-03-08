@@ -1,3 +1,18 @@
+export { default as aboutFour } from './images/headshot-01.webp'
+export { default as aboutSix } from './images/headshot-02.webp'
+export { default as aboutTwo } from './images/hero-about.webp'
+export { default as headshot03 } from './images/headshot-03.webp'
+export { default as headshot05 } from './images/headshot-05.webp'
+export { default as headshot06 } from './images/headshot-06.webp'
+export { default as headshot07 } from './images/headshot-07.webp'
+export { default as headshot09 } from './images/headshot-09.webp'
+export { default as headshot10 } from './images/headshot-10.webp'
+export { default as heroIndex } from './images/hero-index.webp'
+export { default as preFooterBackground } from './images/pre-footer.webp'
+export { default as preFooterGraphic } from './images/pre-footer-graphic.svg'
+export { default as programmer } from './images/programmer.svg'
+export { default as sentImage } from './images/sent.svg'
+
 // SOCIAL_ICONS
 export { default as CodepenIcon } from './icons-social/CodepenIcon.jsx'
 export { default as GithubIcon } from './icons-social/GithubIcon.jsx'
@@ -34,6 +49,3 @@ export { default as TailwindIcon } from './icons-tech/TailwindIcon.jsx'
 export { default as TsIcon } from './icons-tech/TsIcon.jsx'
 export { default as VercelIcon } from './icons-tech/VercelIcon.jsx'
 export { default as WordpressIcon } from './icons-tech/WordpressIcon.jsx'
-// TODO: Add Netlify Icon
-// TODO: Add Stripe Icon
-// TODO: Add Sanity Icon

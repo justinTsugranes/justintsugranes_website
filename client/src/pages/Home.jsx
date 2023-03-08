@@ -13,7 +13,7 @@ const Home = () => {
       <Quote />
       {/* TODO: title fade in from bottom */}
       {/* TODO: view more projects button fade in from bottom */}
-      <ProjectsHome />
+      {/* <ProjectsHome /> */}
     </motion.div>
   )
 }

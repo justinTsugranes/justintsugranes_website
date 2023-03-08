@@ -1,7 +1,8 @@
 // import { useEffect, useState } from 'react'
-// import { sanityClient } from '../lib'
 import { Row, Col } from 'react-bootstrap'
 import { TypeAnimation } from 'react-type-animation'
+// import { sanityClient } from '../lib'
+import { heroIndex } from '../assets'
 
 const HomeHero = () => {
   // const [data, setData] = useState([])
@@ -20,7 +21,7 @@ const HomeHero = () => {
         <div
           className="hero position-relative"
           // style={{ backgroundImage: `url(${data[0]?.imgUrl?.url})` }}
-          style={{ backgroundImage: `url()` }}
+          style={{ backgroundImage: `url(${heroIndex})` }}
         >
           <div className="color-overlay d-flex justify-content-center align-items-center text-center p-0">
             <Col className="text-white px-3">

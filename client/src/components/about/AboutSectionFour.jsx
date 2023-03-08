@@ -1,22 +1,23 @@
-import { useState, useEffect } from 'react'
-import { sanityClient } from '../../lib'
+// import { useState, useEffect } from 'react'
 import { Row, Col } from 'react-bootstrap'
 import { Parallax } from 'react-parallax'
 import { motion } from 'framer-motion'
 import { fadeIn } from '../../utils/motion'
 import { useFetchData } from '../../hooks'
+// import { sanityClient } from '../../lib'
+import { aboutFour } from '../../assets'
 
 const AboutSectionFour = () => {
-  const [data, setData] = useState([])
+  // const [data, setData] = useState([])
 
-  useEffect(() => {
-    const query = "*[_type == 'images && title == 'about section four']"
+  // useEffect(() => {
+  //   const query = "*[_type == 'images && title == 'about section four']"
 
-    sanityClient.fetch(query).then((data) => {
-      setData(data)
-    })
-    console.log(data)
-  }, [])
+  //   sanityClient.fetch(query).then((data) => {
+  //     setData(data)
+  //   })
+  //   console.log(data)
+  // }, [])
 
   const { about } = useFetchData(`*[_type == "about"]`)
 
@@ -25,11 +26,14 @@ const AboutSectionFour = () => {
       <Col>
         <Row>
           <Parallax
-            bgImage={data[0]?.imgUrl?.url}
-            bgImageAlt={data[0]?.altText}
+            // bgImage={data[0]?.imgUrl?.url}
+            // bgImageAlt={data[0]?.altText}
+            bgImage={aboutFour}
+            bgImageAlt="about section four"
             strength={300}
             fluid
-            className="about-image shadow">
+            className="about-image shadow"
+          >
             <div className="about-headshot" style={{ height: '700px' }} />
           </Parallax>
         </Row>
@@ -40,7 +44,8 @@ const AboutSectionFour = () => {
         initial="hidden"
         whileInView="show"
         viewport={{ once: false, amount: 0.25 }}
-        variants={fadeIn('up', 'tween', 0.1, 1)}>
+        variants={fadeIn('up', 'tween', 0.1, 1)}
+      >
         <h2 className="mb-4 text-gradient">My Background</h2>
         <p className="text-light fs-3 text-shadow" style={{ maxWidth: '75ch' }}>
           {about[0]?.bioTwo}

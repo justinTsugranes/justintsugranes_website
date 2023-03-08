@@ -9,9 +9,15 @@ import 'swiper/css'
 import 'swiper/css/navigation'
 import 'swiper/css/pagination'
 // import required modules
-import SwiperCore, { Navigation, Pagination, Mousewheel, Keyboard } from 'swiper'
+import SwiperCore, {
+  Navigation,
+  Pagination,
+  Mousewheel,
+  Keyboard,
+} from 'swiper'
 
 import { useFetchData } from '../../hooks'
+import { urlFor } from '../../lib'
 
 function useSwiper() {
   const swiperRef = useRef(null)
@@ -51,22 +57,23 @@ const AboutSectionSeven = () => {
           breakpoints={{
             '@0.00': {
               slidesPerView: 1,
-              spaceBetween: 5
+              spaceBetween: 5,
             },
             '@0.75': {
               slidesPerView: 2,
-              spaceBetween: 5
+              spaceBetween: 5,
             },
             '@1.00': {
               slidesPerView: 3,
-              spaceBetween: 5
+              spaceBetween: 5,
             },
             '@1.50': {
               slidesPerView: 4,
-              spaceBetween: 5
-            }
+              spaceBetween: 5,
+            },
           }}
-          className="mySwiper">
+          className="mySwiper"
+        >
           {/* For each item in the data array, create a new SwiperSlide element and pass in the properties of the current item as props */}
           {data.map(({ image, title, demoLink }, slideID) => {
             return (
@@ -78,13 +85,14 @@ const AboutSectionSeven = () => {
                         href={demoLink}
                         rel="noreferrer"
                         target="_blank"
-                        className="text-decoration-none">
+                        className="text-decoration-none"
+                      >
                         <Card className="proj-card-container border-0">
                           <Card.Img
                             fluid
                             variant="top"
                             className="proj-card-img proj-about hover-zoom"
-                            src={image}
+                            src={urlFor(image)}
                             alt={title}
                             title={title}
                             style={{ height: '250px' }}

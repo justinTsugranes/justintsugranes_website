@@ -10,7 +10,7 @@ export const useFetchData = (query) => {
       try {
         const result = await sanityClient.fetch(query)
 
-        // console.log(result)
+        console.log(result)
 
         setData(result)
       } catch (err) {

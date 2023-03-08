@@ -13,14 +13,14 @@ export default {
       title: 'BgColor',
       type: 'string',
     },
-    {
-      name: 'image',
-      title: 'Image',
-      description: 'The icon to display for this skill',
-      type: 'cloudinary.asset',
-      options: {
-        hotspot: true,
-      },
-    },
+    // {
+    //   name: 'image',
+    //   title: 'Image',
+    //   description: 'The icon to display for this skill',
+    //   type: 'cloudinary.asset',
+    //   options: {
+    //     hotspot: true,
+    //   },
+    // },
   ],
 }
