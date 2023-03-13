@@ -11,16 +11,16 @@ const Navigation = () => {
     <motion.div
     // variants={navVariants} initial="hidden" whileInView="show"
     >
-      <Navbar expand='lg' className='navbar-dark bg-none px-4 px-md-5'>
-        <Navbar.Brand href={home.id} className='text-uppercase fs-3'>
+      <Navbar expand="lg" className="navbar-dark bg-none px-4 px-md-5">
+        <Navbar.Brand href={home.id} className="text-uppercase fs-3">
           Justin Tsugranes
         </Navbar.Brand>
-        <Navbar.Toggle aria-controls='navbar'></Navbar.Toggle>
+        <Navbar.Toggle aria-controls="navbar"></Navbar.Toggle>
         <Navbar.Collapse>
-          <Nav className='ms-auto dropstart text-end text-uppercase'>
+          <Nav className="ms-auto dropstart text-end text-uppercase">
             <Nav.Link href={projects.id}>{projects.title}</Nav.Link>
             <Nav.Link href={about.id}>{about.title}</Nav.Link>
-            <Nav.Link id='contactLink'>
+            <Nav.Link id="contactLink">
               <ContactModal />
             </Nav.Link>
           </Nav>

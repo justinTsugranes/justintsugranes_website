@@ -1,4 +1,4 @@
-// import { useEffect, useState } from 'react'
+import { useEffect, useState } from 'react'
 import { Row, Col } from 'react-bootstrap'
 import { motion } from 'framer-motion'
 import {
@@ -15,8 +15,7 @@ import {
   NextIcon,
   TailwindIcon,
 } from '../assets'
-// import { sanityClient } from '../lib'
-import { programmer } from '../assets'
+import { sanityClient } from '../lib'
 
 const iconRows = [
   [ReactIcon, NextIcon, JsIcon, NodeIcon],
@@ -25,15 +24,15 @@ const iconRows = [
 ]
 
 const ProjectsShowcase = () => {
-  // const [data, setData] = useState([])
+  const [data, setData] = useState([])
 
-  // useEffect(() => {
-  //   const query = "*[_type == 'graphics' && title == 'programmer graphic']"
+  useEffect(() => {
+    const query = "*[_type == 'graphics' && title == 'programmer graphic']"
 
-  //   sanityClient.fetch(query).then((data) => {
-  //     setData(data)
-  //   })
-  // }, [])
+    sanityClient.fetch(query).then((data) => {
+      setData(data)
+    })
+  }, [])
 
   return (
     <Row className="py-5 px-3 d-flex align-items-center justify-content-around text-light text-center text-md-center">
@@ -71,10 +70,8 @@ const ProjectsShowcase = () => {
       <Col>
         <img
           className="img-fluid w-75"
-          // src={data[0]?.imgUrl?.url}
-          // alt={data[0]?.altText}
-          src={programmer}
-          alt="..."
+          src={data[0]?.imgUrl?.url}
+          alt={data[0]?.altText}
         />
       </Col>
     </Row>

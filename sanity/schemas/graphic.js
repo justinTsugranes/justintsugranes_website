@@ -23,6 +23,15 @@ export default {
     //   },
     // },
     {
+      name: 'image',
+      type: 'image',
+      title: 'image',
+      description: 'The image to display for this graphic',
+      options: {
+        hotspot: true,
+      },
+    },
+    {
       name: 'altText',
       title: 'Alt Text',
       description: 'Alt text for the graphic',

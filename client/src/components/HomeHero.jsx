@@ -2,7 +2,7 @@
 import { Row, Col } from 'react-bootstrap'
 import { TypeAnimation } from 'react-type-animation'
 // import { sanityClient } from '../lib'
-import { heroIndex } from '../assets'
+// import { urlFor } from '../lib'
 
 const HomeHero = () => {
   // const [data, setData] = useState([])
@@ -12,16 +12,18 @@ const HomeHero = () => {
 
   //   sanityClient.fetch(query).then((data) => {
   //     setData(data)
+  //     console.log(data)
   //   })
   // }, [])
+
+  // const url = urlFor(data[0].image)
 
   return (
     <Row>
       <Col className="p-0">
         <div
           className="hero position-relative"
-          // style={{ backgroundImage: `url(${data[0]?.imgUrl?.url})` }}
-          style={{ backgroundImage: `url(${heroIndex})` }}
+          // style={{ backgroundImage: `url(${url})` }}
         >
           <div className="color-overlay d-flex justify-content-center align-items-center text-center p-0">
             <Col className="text-white px-3">

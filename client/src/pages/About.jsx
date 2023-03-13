@@ -3,7 +3,7 @@ import {
   AboutSectionTwo,
   AboutSectionThree,
   // AboutSectionSix,
-  // AboutSectionSeven,
+  AboutSectionSeven,
   AboutSectionFour,
 } from '../components/about'
 import { motion } from 'framer-motion'
@@ -19,7 +19,7 @@ const About = () => (
     <AboutSectionThree />
     <AboutSectionFour />
     {/* <AboutSectionSix /> */}
-    {/* <AboutSectionSeven /> */}
+    <AboutSectionSeven />
   </motion.div>
 )
 

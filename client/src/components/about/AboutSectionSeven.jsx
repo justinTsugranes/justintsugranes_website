@@ -16,8 +16,8 @@ import SwiperCore, {
   Keyboard,
 } from 'swiper'
 
-// import { useFetchData } from '../../hooks'
-// import { urlFor } from '../../lib'
+import { useFetchData } from '../../hooks'
+import { urlFor } from '../../lib'
 
 function useSwiper() {
   const swiperRef = useRef(null)
@@ -32,11 +32,11 @@ function useSwiper() {
 const AboutSectionSeven = () => {
   const swiperRef = useSwiper()
 
-  // const { data, error } = useFetchData(`*[_type == "project"]`)
+  const { data, error } = useFetchData(`*[_type == "project"]`)
 
-  // if (error) {
-  //   return <p>{error.message}</p>
-  // }
+  if (error) {
+    return <p>{error.message}</p>
+  }
 
   return (
     <Row className="section-container">
@@ -75,7 +75,7 @@ const AboutSectionSeven = () => {
           className="mySwiper"
         >
           {/* For each item in the data array, create a new SwiperSlide element and pass in the properties of the current item as props */}
-          {/* {data.map(({ image, title, demoLink }, slideID) => {
+          {data.map(({ image, title, demoLink }, slideID) => {
             return (
               <SwiperSlide key={slideID}>
                 <Col className="col-lg p-0 m-0">
@@ -104,7 +104,7 @@ const AboutSectionSeven = () => {
                 </Col>
               </SwiperSlide>
             )
-          })} */}
+          })}
         </Swiper>
       </Col>
     </Row>

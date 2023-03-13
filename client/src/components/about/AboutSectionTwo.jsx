@@ -15,6 +15,8 @@ const AboutSectionTwo = () => {
   //   })
   // }, [])
 
+  // console.log(data)
+
   return (
     <Row>
       <Parallax
