@@ -51,7 +51,7 @@ const ProjectCard = ({
           </motion.div>
           <img
             className="image proj-card-img shadow"
-            src={urlFor(image)}
+            src={urlFor(image).auto('format').fit('max').width(720).toString()}
             alt={title}
           />
         </motion.div>
@@ -84,7 +84,11 @@ const ProjectCard = ({
               <Row>
                 <a href={demoLink} target="_blank" rel="noreferrer">
                   <img
-                    src={urlFor(image)}
+                    src={urlFor(image)
+                      .auto('format')
+                      .fit('max')
+                      .width(720)
+                      .toString()}
                     alt={title}
                     className="proj-card-img-modal fluid rounded-4"
                   />

@@ -1,17 +1,17 @@
 import { useNavigate } from 'react-router-dom'
 import { motion } from 'framer-motion'
 import { Col, Row } from 'react-bootstrap'
-// import { useFetchData } from '../hooks'
-// import { ProjectCard } from './'
+import { useFetchData } from '../hooks'
+import { ProjectCard } from './'
 
 const ProjectsHome = () => {
   const navigate = useNavigate()
 
-  // const { data, error } = useFetchData(`*[_type == "project"]`)
+  const { data, error } = useFetchData(`*[_type == "project"]`)
 
-  // if (error) {
-  //   return <p>{error.message}</p>
-  // }
+  if (error) {
+    return <p>{error.message}</p>
+  }
 
   return (
     <motion.div className="row section-container d-flex flex-column text-center">
@@ -21,7 +21,7 @@ const ProjectsHome = () => {
 
       <Col>
         <Row className="d-flex justify-content-center gap-5 row-cols-1 row-cols-md-3 row-cols-lg-5 my-3">
-          {/* {data ? (
+          {data ? (
             data
               .slice(0, 8)
               .map((project) => (
@@ -35,7 +35,7 @@ const ProjectsHome = () => {
             <p>{error.message}</p>
           ) : (
             <p>Loading...</p>
-          )} */}
+          )}
         </Row>
       </Col>
 

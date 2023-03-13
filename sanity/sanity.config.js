@@ -3,7 +3,7 @@ import {RobotIcon, RocketIcon} from '@sanity/icons'
 import {deskTool} from 'sanity/desk'
 import {visionTool} from '@sanity/vision'
 import {schemaTypes} from './schemas'
-import {cloudinaryAssetSourcePlugin, cloudinarySchemaPlugin} from 'sanity-plugin-cloudinary'
+// import {cloudinaryAssetSourcePlugin, cloudinarySchemaPlugin} from 'sanity-plugin-cloudinary'
 
 import {myTheme} from './theme'
 
@@ -20,7 +20,7 @@ export default defineConfig([
     title: 'Production Workspace',
     icon: RobotIcon,
 
-    plugins: [deskTool(), visionTool(), cloudinaryAssetSourcePlugin(), cloudinarySchemaPlugin()],
+    plugins: [deskTool(), visionTool()],
 
     schema: {
       types: schemaTypes,
@@ -37,7 +37,7 @@ export default defineConfig([
     title: 'Staging Workspace!',
     icon: RocketIcon,
 
-    plugins: [deskTool(), visionTool(), cloudinaryAssetSourcePlugin(), cloudinarySchemaPlugin()],
+    plugins: [deskTool(), visionTool()],
 
     schema: {
       types: schemaTypes,
