@@ -89,7 +89,7 @@ const AboutSectionSeven = () => {
                       >
                         <Card className="proj-card-container border-0">
                           <Card.Img
-                            fluid
+                            fluid="true"
                             variant="top"
                             className="proj-card-img proj-about hover-zoom"
                             src={urlFor(image)}

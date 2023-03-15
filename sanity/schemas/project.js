@@ -42,7 +42,12 @@ export default {
       title: 'Repository Link',
       description: 'A link to the repository for this project',
     },
-
+    {
+      name: 'designLink',
+      type: 'url',
+      title: 'Design Link',
+      description: 'A link to the UX/UI files for this project',
+    },
     {
       name: 'tags',
       title: 'Tags',

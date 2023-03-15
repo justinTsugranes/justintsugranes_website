@@ -51,7 +51,7 @@ const ProjectCard = ({
           </motion.div>
           <img
             className="image proj-card-img shadow"
-            src={urlFor(image).auto('format').fit('max').width(720).toString()}
+            src={urlFor(image)}
             alt={title}
           />
         </motion.div>

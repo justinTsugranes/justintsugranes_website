@@ -2,7 +2,6 @@ import {
   AboutSectionOne,
   AboutSectionTwo,
   AboutSectionThree,
-  // AboutSectionSix,
   AboutSectionSeven,
   AboutSectionFour,
 } from '../components/about'
@@ -18,7 +17,6 @@ const About = () => (
     <AboutSectionTwo />
     <AboutSectionThree />
     <AboutSectionFour />
-    {/* <AboutSectionSix /> */}
     <AboutSectionSeven />
   </motion.div>
 )

@@ -10,7 +10,7 @@ export { default as headshot10 } from './images/headshot-10.webp'
 export { default as heroIndex } from './images/hero-index.webp'
 export { default as preFooterBackground } from './images/pre-footer.webp'
 export { default as preFooterGraphic } from './images/pre-footer-graphic.svg'
-export { default as programmer } from './images/programmer.svg'
+export { default as programmerGraphic } from './images/programmer.svg'
 export { default as sentImage } from './images/sent.svg'
 
 // SOCIAL_ICONS

@@ -13,7 +13,8 @@ const AboutSectionOne = () => {
         initial="hidden"
         whileInView="show"
         viewport={{ once: true, amount: 0.25 }}
-        ref={ref}>
+        ref={ref}
+      >
         <div className="justify-center relative z-10">
           <motion.h1 variants={textVariant(1.1)}>about</motion.h1>
           <motion.div variants={textVariant(1.2)} className="px-5">

@@ -13,15 +13,6 @@ export default {
       type: 'string',
       title: 'Title',
     },
-    // {
-    //   name: 'imgUrl',
-    //   title: 'ImgUrl',
-    //   description: 'The image file from cloudinary',
-    //   type: 'cloudinary.asset',
-    //   options: {
-    //     hotspot: true,
-    //   },
-    // },
     {
       name: 'image',
       type: 'image',

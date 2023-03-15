@@ -13,19 +13,10 @@ export default {
       type: 'string',
       title: 'Title',
     },
-    // {
-    //   name: 'imgUrl',
-    //   title: 'ImgUrl',
-    //   description: 'The image file from cloudinary',
-    //   type: 'cloudinary.asset',
-    //   options: {
-    //     hotspot: true,
-    //   },
-    // },
     {
       name: 'image',
       type: 'image',
-      title: 'image',
+      title: 'Image',
       description: 'The image to display',
       options: {
         hotspot: true,
@@ -36,6 +27,11 @@ export default {
       title: 'Alt Text',
       description: 'Alt text for the image',
       type: 'string',
+    },
+    {
+      name: 'caption',
+      type: 'string',
+      title: 'Caption',
     },
   ],
 }

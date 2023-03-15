@@ -1,5 +1,4 @@
-import { useEffect, useState } from 'react'
-import { Row, Col } from 'react-bootstrap'
+import { Row, Col, Image } from 'react-bootstrap'
 import { motion } from 'framer-motion'
 import {
   ReactIcon,
@@ -14,8 +13,8 @@ import {
   MongoIcon,
   NextIcon,
   TailwindIcon,
+  programmerGraphic,
 } from '../assets'
-import { sanityClient } from '../lib'
 
 const iconRows = [
   [ReactIcon, NextIcon, JsIcon, NodeIcon],
@@ -24,16 +23,6 @@ const iconRows = [
 ]
 
 const ProjectsShowcase = () => {
-  const [data, setData] = useState([])
-
-  useEffect(() => {
-    const query = "*[_type == 'graphics' && title == 'programmer graphic']"
-
-    sanityClient.fetch(query).then((data) => {
-      setData(data)
-    })
-  }, [])
-
   return (
     <Row className="py-5 px-3 d-flex align-items-center justify-content-around text-light text-center text-md-center">
       <Col>
@@ -68,11 +57,7 @@ const ProjectsShowcase = () => {
       </Col>
 
       <Col>
-        <img
-          className="img-fluid w-75"
-          src={data[0]?.imgUrl?.url}
-          alt={data[0]?.altText}
-        />
+        <Image className="w-75" fluid="true" src={programmerGraphic} />
       </Col>
     </Row>
   )

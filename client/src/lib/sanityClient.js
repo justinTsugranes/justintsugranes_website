@@ -9,3 +9,5 @@ export const sanityClient = createClient({
   useCdn: true,
   // withCredentials: false,
 })
+
+console.log(sanityClient)

@@ -1,26 +1,13 @@
-import { useEffect, useState } from 'react'
 import { Row, Col } from 'react-bootstrap'
 import { TypeAnimation } from 'react-type-animation'
-import { sanityClient } from '../lib'
 import { heroIndex } from '../assets'
 
 const HomeHero = () => {
-  const [data, setData] = useState([])
-
-  useEffect(() => {
-    const query = "*[_type == 'images' && title == 'home hero image']"
-
-    sanityClient.fetch(query).then((data) => {
-      setData(data)
-    })
-  }, [])
-
   return (
     <Row>
       <Col className="p-0">
         <div
           className="hero position-relative"
-          // style={{ backgroundImage: `url(${data[0]?.imgUrl?.url})` }}
           style={{ backgroundImage: `url(${heroIndex})` }}
         >
           <div className="color-overlay d-flex justify-content-center align-items-center text-center p-0">
