@@ -5,7 +5,7 @@
 <br />
 <div align="center">
   <a href="https://github.com/justintsugranes/">
-    <img src="client/src/assets/logo.jpg" alt="Logo" width="80" height="80">
+    <img src="client/src/assets/images/logo.webp" alt="Logo" width="80" height="80">
   </a>
   </div>
 
@@ -84,7 +84,7 @@ Give a ⭐️ if you like this project and if you like my work, maybe you would 
 
 [repo-url]: https://github.com/justintsugranes/justintsugranes_website
 [project-url]: https://www.justintsugranes.com
-[project-screenshot]: client/src/assets/project-screenshot.jpg
+[project-screenshot]: client/src/assets/images/project-screenshot.webp
 [contributors-shield]: https://img.shields.io/github/contributors/justintsugranes/justintsugranes_website.svg?style=for-the-badge
 [contributors-url]: https://github.com/justintsugranes/justintsugranes_website/graphs/contributors
 [forks-shield]: https://img.shields.io/github/forks/justintsugranes/justintsugranes_website.svg?style=for-the-badge
@@ -106,5 +106,6 @@ Give a ⭐️ if you like this project and if you like my work, maybe you would 
 [framer-url]: https://www.framer.com/motion/
 [swiper]: https://img.shields.io/badge/Swiper-6332F6?style=for-the-badge&logo=swiper&logoColor=white
 [swiper-url]: https://swiperjs.com/
-[coffee]: https://cdn.buymeacoffee.com/buttons/v2/default-red.png
-[coffee-url]: https://www.buymeacoffee.com/tsugranes
+
+<!-- [coffee]: https://cdn.buymeacoffee.com/buttons/v2/default-red.png -->
+<!-- [coffee-url]: https://www.buymeacoffee.com/tsugranes -->

@@ -2,8 +2,8 @@ import {
   AboutSectionOne,
   AboutSectionTwo,
   AboutSectionThree,
-  AboutSectionSeven,
   AboutSectionFour,
+  AboutSectionFive,
 } from '../components/about'
 import { motion } from 'framer-motion'
 
@@ -17,7 +17,7 @@ const About = () => (
     <AboutSectionTwo />
     <AboutSectionThree />
     <AboutSectionFour />
-    <AboutSectionSeven />
+    <AboutSectionFive />
   </motion.div>
 )
 

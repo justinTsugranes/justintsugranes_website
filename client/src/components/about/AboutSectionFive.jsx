@@ -29,7 +29,7 @@ function useSwiper() {
   return swiperRef
 }
 
-const AboutSectionSeven = () => {
+const AboutSectionFive = () => {
   const swiperRef = useSwiper()
 
   const { data, error } = useFetchData(`*[_type == "project"]`)
@@ -111,4 +111,4 @@ const AboutSectionSeven = () => {
   )
 }
 
-export default AboutSectionSeven
+export default AboutSectionFive

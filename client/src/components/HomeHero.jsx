@@ -26,7 +26,7 @@ const HomeHero = () => {
               <TypeAnimation
                 sequence={[
                   3750,
-                  'JavaScript - React.js - Node.js - MongoDB - TailwindCSS - Figma',
+                  'JavaScript - React.js - Node.js - MongoDB - TailwindCSS - Shopify',
                   () => {},
                 ]}
                 wrapper="div"
