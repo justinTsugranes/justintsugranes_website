@@ -1,5 +1,5 @@
-/* eslint-disable react/prop-types */
-import { useState } from 'react'
+import PropTypes from 'prop-types'
+import { useCallback, useState } from 'react'
 import {
   Modal,
   ModalHeader,
@@ -26,8 +26,9 @@ const ProjectCard = ({
   repoLink,
 }) => {
   const [show, setShow] = useState(false)
-  const handleClose = () => setShow(false)
-  const handleShow = () => setShow(true)
+
+  const handleClose = useCallback(() => setShow(false), [])
+  const handleShow = useCallback(() => setShow(true), [])
 
   return (
     <>
@@ -140,6 +141,16 @@ const ProjectCard = ({
       </Modal>
     </>
   )
+}
+
+ProjectCard.propTypes = {
+  index: PropTypes.number.isRequired,
+  image: PropTypes.string.isRequired,
+  title: PropTypes.string.isRequired,
+  description: PropTypes.string.isRequired,
+  technologies: PropTypes.arrayOf(PropTypes.string).isRequired,
+  demoLink: PropTypes.string.isRequired,
+  repoLink: PropTypes.string.isRequired,
 }
 
 export default ProjectCard
