@@ -12,8 +12,8 @@ const Navigation = () => {
         <Navbar.Brand href={home.id} className="text-uppercase fs-3">
           Justin Tsugranes
         </Navbar.Brand>
-        <Navbar.Toggle aria-controls="navbar"></Navbar.Toggle>
-        <Navbar.Collapse>
+        <Navbar.Toggle aria-controls="navbarResponsive" />
+        <Navbar.Collapse id="navbarResponsive">
           <Nav className="ms-auto dropstart text-end text-uppercase">
             <Nav.Link href={projects.id}>{projects.title}</Nav.Link>
             <Nav.Link href={about.id}>{about.title}</Nav.Link>
