@@ -4,15 +4,30 @@ import { Row } from 'react-bootstrap'
 import { useFetchData } from '../hooks'
 import { fadeIn } from '../utils/motion'
 import { ProjectCard } from './'
+import Loading from '../components/Loading'
+import Error from '../components/Error'
+
+const PROJECTS_QUERY = `*[_type == "project"]`
 
 const ProjectsHome = () => {
   const navigate = useNavigate()
 
-  const { data, error } = useFetchData(`*[_type == "project"]`)
+  const { data, error, isLoading } = useFetchData(PROJECTS_QUERY)
+
+  if (isLoading) {
+    return <Loading />
+  }
 
   if (error) {
-    return <p>{error.message}</p>
+    return <Error message={error.message} />
   }
+
+  const renderProjects = (projects) =>
+    projects
+      .slice(0, 8)
+      .map((project) => (
+        <ProjectCard key={project._id} {...project} index={project._id} />
+      ))
 
   return (
     <motion.div className="row section-container d-flex flex-column text-center">
@@ -34,21 +49,7 @@ const ProjectsHome = () => {
         variants={fadeIn('up', 'tween', 0.1, 1)}
       >
         <Row className="d-flex justify-content-center gap-5 row-cols-1 row-cols-md-3 row-cols-lg-5 my-3">
-          {data ? (
-            data
-              .slice(0, 8)
-              .map((project) => (
-                <ProjectCard
-                  key={project._id}
-                  {...project}
-                  index={project._id}
-                />
-              ))
-          ) : error ? (
-            <p>{error.message}</p>
-          ) : (
-            <p>Loading...</p>
-          )}
+          {data.length ? renderProjects(data) : <p>No projects found.</p>}
         </Row>
       </div>
 

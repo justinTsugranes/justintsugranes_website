@@ -1,13 +1,17 @@
 import { motion } from 'framer-motion'
 import { fadeIn } from '../utils/motion'
 import { useFetchData } from '../hooks'
+import Loading from './Loading'
+import Error from './Error'
+
+const QUOTE_QUERY = `*[title == "Home Page Quote"]`
+const ANIMATION_DURATION = 0.3
 
 const Quote = () => {
-  const { data, error } = useFetchData(`*[title == "Home Page Quote"]`)
+  const { data, error, isLoading } = useFetchData(QUOTE_QUERY)
 
-  if (error) {
-    return <p>{error.message}</p>
-  }
+  if (error) return <Error message={error.message} />
+  if (isLoading) return <Loading />
 
   return (
     <motion.div
@@ -15,7 +19,7 @@ const Quote = () => {
       initial="hidden"
       whileInView="show"
       viewport={{ once: true }}
-      transition={{ duration: 0.3 }}
+      transition={{ duration: ANIMATION_DURATION }}
       variants={fadeIn('up', 'tween', 0.1, 1)}
     >
       <div className="card quote-card w-75 bg-dark bg-gradient text-white rounded-3 border-0 m-5 shadow">

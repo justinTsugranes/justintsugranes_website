@@ -9,7 +9,7 @@ import {
   BootstrapIcon,
   DockerIcon,
   FigmaIcon,
-  JenkinsIcon,
+  Shopify,
   MongoIcon,
   NextIcon,
   TailwindIcon,
@@ -19,7 +19,7 @@ import {
 const iconRows = [
   [ReactIcon, NextIcon, JsIcon, NodeIcon],
   [HtmlIcon, CssIcon, BootstrapIcon, TailwindIcon],
-  [MongoIcon, DockerIcon, JenkinsIcon, FigmaIcon],
+  [MongoIcon, DockerIcon, Shopify, FigmaIcon],
 ]
 
 const ProjectsShowcase = () => {

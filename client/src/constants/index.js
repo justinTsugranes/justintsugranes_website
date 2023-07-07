@@ -1,21 +1,27 @@
-import { CodepenIcon, GithubIcon, InstagramIcon, LinkedInIcon, SpotifyIcon } from '../assets'
+import {
+  CodepenIcon,
+  GithubIcon,
+  InstagramIcon,
+  LinkedInIcon,
+  SpotifyIcon,
+} from '../assets'
 
-export const navLinks = {
-  home: {
+export const NAV_LINKS = {
+  HOME: {
     id: '/',
   },
-  contactsuccess: {
+  CONTACT_SUCCESS: {
     id: '/contact-success',
   },
-  projects: {
+  PROJECTS: {
     id: '/projects',
     title: 'Projects',
   },
-  about: {
+  ABOUT: {
     id: '/about',
     title: 'About',
   },
-  cv: {
+  CV: {
     id: './cv',
     title: 'CV',
   },
