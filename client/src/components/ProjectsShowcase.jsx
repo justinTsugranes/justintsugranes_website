@@ -13,7 +13,7 @@ import {
   MongoIcon,
   NextIcon,
   TailwindIcon,
-  programmerGraphic,
+  PROGRAMMER_GRAPHIC,
 } from '../assets'
 
 const iconRows = [
@@ -57,7 +57,7 @@ const ProjectsShowcase = () => {
       </Col>
 
       <Col>
-        <Image className="w-75" fluid="true" src={programmerGraphic} />
+        <Image className="w-75" fluid="true" src={PROGRAMMER_GRAPHIC} />
       </Col>
     </Row>
   )

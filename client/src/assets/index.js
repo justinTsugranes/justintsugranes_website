@@ -3,8 +3,8 @@ export { default as aboutFour } from './images/about-headshot.webp'
 export { default as HERO_INDEX } from './images/index-hero.webp'
 export { default as PRE_FOOTER_BACKGROUND } from './images/pre-footer.webp'
 export { default as PRE_FOOTER_GRAPHIC } from './images/pre-footer-graphic.svg'
-export { default as programmerGraphic } from './images/programmer.svg'
-export { default as sentImage } from './images/sent.svg'
+export { default as PROGRAMMER_GRAPHIC } from './images/programmer.svg'
+export { default as MESSAGE_SUCCESS_GRAPHIC } from './images/sent.svg'
 
 // SOCIAL_ICONS
 export { default as CodepenIcon } from './icons-social/CodepenIcon.jsx'
