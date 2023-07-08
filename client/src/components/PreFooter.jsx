@@ -1,7 +1,8 @@
-import { useState } from 'react'
+import { useContext } from 'react'
 import { Row, Col, Image } from 'react-bootstrap'
 import { motion } from 'framer-motion'
-import { ContactModal } from '../components'
+import { ContactModal } from '.'
+import { ModalContext } from '../context/ModalContext'
 import { fadeIn } from '../utils'
 import { PRE_FOOTER_BACKGROUND, PRE_FOOTER_GRAPHIC } from '../assets'
 
@@ -12,15 +13,7 @@ const PreFooterImage = ({ src, alt }) => (
 )
 
 const PreFooter = () => {
-  const [showModal, setShowModal] = useState(false)
-
-  const handleClick = () => {
-    setShowModal(true)
-  }
-
-  const handleClose = () => {
-    setShowModal(false)
-  }
+  const { openModal } = useContext(ModalContext)
 
   return (
     <Row className="overflow-hidden min-vh-50">
@@ -55,13 +48,9 @@ const PreFooter = () => {
                 className="button rounded-pill m-0 mt-4"
                 whileHover={{ scale: 1.1 }}
                 whileTap={{ scale: 0.9 }}
-                onClick={handleClick}
+                onClick={openModal}
               >
-                <ContactModal
-                  triggerText="Contact"
-                  show={showModal}
-                  handleClose={handleClose}
-                />
+                <ContactModal triggerText="Contact" />
               </motion.button>
             </Row>
           </Col>

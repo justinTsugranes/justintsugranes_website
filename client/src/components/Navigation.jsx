@@ -1,8 +1,12 @@
+import { useContext } from 'react'
 import { Nav, Navbar } from 'react-bootstrap'
 import { NAV_LINKS } from '../constants'
-import { ContactModal } from './'
+import { ContactModal } from '.'
+import { ModalContext } from '../context/ModalContext'
 
 const Navigation = () => {
+  const { openModal } = useContext(ModalContext)
+
   const { HOME, PROJECTS, ABOUT } = NAV_LINKS
 
   const navLinks = [HOME, PROJECTS, ABOUT].map((link) => (
@@ -23,9 +27,9 @@ const Navigation = () => {
       <Navbar.Collapse id="navbarResponsive">
         <Nav className="ms-auto dropstart text-end text-uppercase">
           {navLinks}
-          <Nav.Link>
+          <a className="nav-link contact-link" onClick={openModal}>
             <ContactModal triggerText="Contact" />
-          </Nav.Link>
+          </a>
         </Nav>
       </Navbar.Collapse>
     </Navbar>

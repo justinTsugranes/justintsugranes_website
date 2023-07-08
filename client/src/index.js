@@ -5,14 +5,17 @@ import ReactDOM from 'react-dom/client'
 import { BrowserRouter as Router } from 'react-router-dom'
 import './styles/index.css'
 import App from './App'
-import { register } from './serviceWorkerRegistration'
+import { ModalProvider } from './context/ModalContext'
+// import { register } from './serviceWorkerRegistration'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <Router>
-      <App />
-    </Router>
+    <ModalProvider>
+      <Router>
+        <App />
+      </Router>
+    </ModalProvider>
   </React.StrictMode>,
 )
 
-register()
+// register()
