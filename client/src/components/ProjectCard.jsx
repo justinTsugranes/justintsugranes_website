@@ -11,7 +11,6 @@ import {
   Col,
 } from 'react-bootstrap'
 import { motion } from 'framer-motion'
-
 import { GithubIcon, DemoIcon } from '../assets'
 import { urlFor } from '../lib'
 import '../styles/projects.css'

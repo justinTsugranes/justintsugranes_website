@@ -7,7 +7,7 @@ import {
   Button,
   FloatingLabel,
 } from 'react-bootstrap'
-import { sentImage } from '../assets'
+import { MESSAGE_SUCCESS_GRAPHIC } from '../assets'
 
 const ContactModal = ({ triggerText }) => {
   const [showModal, setShowModal] = useState(false)
@@ -185,7 +185,7 @@ const ContactModal = ({ triggerText }) => {
 
           <Modal.Body className="modal-lg text-center" id="modal-body">
             <img
-              src={sentImage}
+              src={MESSAGE_SUCCESS_GRAPHIC}
               alt="sent message graphic"
               style={{ width: '100%', maxHeight: '200px' }}
             />

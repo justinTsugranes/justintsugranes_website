@@ -10,14 +10,20 @@ const sequence2 = [
 
 const HomeHero = () => {
   return (
-    <Row>
+    <Row className="overflow-hidden min-vh-50">
       <Col className="p-0">
-        <div
-          className="hero position-relative"
-          style={{ backgroundImage: `url(${HERO_INDEX})` }}
+        <Row
+          className="hero"
+          style={{
+            backgroundImage: `url(${HERO_INDEX})`,
+            backgroundSize: 'cover',
+            backgroundAttachment: 'fixed',
+            backgroundPosition: 'center',
+            backgroundRepeat: 'no-repeat',
+          }}
         >
-          <div className="color-overlay d-flex justify-content-center align-items-center text-center p-0">
-            <Col className="text-white px-3">
+          <Col className="color-overlay d-flex justify-content-center align-items-center text-center px-md-3">
+            <Row className="text-white px-3">
               <TypeAnimation
                 sequence={sequence1}
                 wrapper="div"
@@ -32,9 +38,9 @@ const HomeHero = () => {
                 style={{ fontSize: '1.3em' }}
                 className="text-gradient"
               />
-            </Col>
-          </div>
-        </div>
+            </Row>
+          </Col>
+        </Row>
       </Col>
     </Row>
   )

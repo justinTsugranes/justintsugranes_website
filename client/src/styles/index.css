@@ -68,55 +68,6 @@ body {
   text-fill-color: transparent;
 }
 
-.orange-gradient {
-  /* ff 3.6+ */
-  background: -moz-linear-gradient(
-    90deg,
-    rgba(244, 67, 54, 1) 0%,
-    rgba(255, 193, 7, 1) 57%,
-    rgba(255, 255, 0, 1) 100%
-  );
-
-  /* safari 5.1+,chrome 10+ */
-  background: -webkit-linear-gradient(
-    90deg,
-    rgba(244, 67, 54, 1) 0%,
-    rgba(255, 193, 7, 1) 57%,
-    rgba(255, 255, 0, 1) 100%
-  );
-
-  /* opera 11.10+ */
-  background: -o-linear-gradient(
-    90deg,
-    rgba(244, 67, 54, 1) 0%,
-    rgba(255, 193, 7, 1) 57%,
-    rgba(255, 255, 0, 1) 100%
-  );
-
-  /* ie 6-9 */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#FFFF00', endColorstr='#F44336', GradientType=0 );
-
-  /* ie 10+ */
-  background: -ms-linear-gradient(
-    90deg,
-    rgba(244, 67, 54, 1) 0%,
-    rgba(255, 193, 7, 1) 57%,
-    rgba(255, 255, 0, 1) 100%
-  );
-
-  /* global 94%+ browsers support */
-  background: linear-gradient(
-    90deg,
-    rgba(244, 67, 54, 1) 0%,
-    rgba(255, 193, 7, 1) 57%,
-    rgba(255, 255, 0, 1) 100%
-  );
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  text-fill-color: transparent;
-}
-
 /*---- MAIN TYPOGRAPHY ----*/
 
 h1 {
@@ -211,37 +162,30 @@ p {
   margin-top: 10em;
   margin-bottom: 10em;
 }
+
 /*---- /CONTAINERS ----*/
 
 /*---- HERO ----*/
-.hero,
-.pre-footer {
+.hero {
   position: relative;
   background-size: cover;
   background-attachment: fixed;
   background-position: bottom center;
   background-repeat: no-repeat;
-  min-height: 60vh;
+  min-height: 75vh;
   width: 100%;
   text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+  filter: grayscale(100%);
+  transition: filter 0.5s;
+}
+.hero:hover {
+  filter: none;
 }
 .color-overlay {
   position: absolute;
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.2);
-}
-.hero,
-.pre-footer {
-  filter: grayscale(100%);
-  transition: filter 0.5s;
-}
-.hero:hover {
-  box-shadow: var(--light-blue) 0px 19px 38px, var(--light-blue) 0px 15px 12px;
-}
-.pre-footer:hover,
-.hero:hover {
-  filter: none;
 }
 /*---- /HERO ----*/
 
@@ -254,8 +198,9 @@ p {
 
 /*---- RESPONSIVENESS ----*/
 @media (max-width: 768px) {
-  .hero,
-  .pre-footer {
+  .hero {
     filter: none;
   }
 }
+
+/* box-shadow: var(--light-blue) 0px 19px 38px, var(--light-blue) 0px 15px 12px; */
