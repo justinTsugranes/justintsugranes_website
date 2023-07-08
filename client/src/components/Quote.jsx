@@ -25,7 +25,7 @@ const Quote = () => {
           transition={{ duration: ANIMATION_DURATION }}
           variants={fadeIn('up', 'tween', 0.1, 1)}
         >
-          <div className="card quote-card w-75 bg-dark bg-gradient text-white rounded-3 border-0 m-5 shadow">
+          <div className="card w-75 bg-dark bg-gradient text-white rounded-3 border-0 m-5 shadow">
             <div className="mx-auto">
               <blockquote className="p-4">
                 <p className="text-shadow text-white text-center p-4 lh-lg fs-2">
