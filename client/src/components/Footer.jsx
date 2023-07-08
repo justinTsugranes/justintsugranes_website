@@ -1,6 +1,7 @@
 import React from 'react'
 import { Row, Col } from 'react-bootstrap'
 import { socialMedia } from '../constants'
+import { Error } from './'
 import { motion } from 'framer-motion'
 import { useFetchData } from '../hooks'
 
@@ -11,7 +12,7 @@ const Footer = () => {
   })
 
   if (error) {
-    return <p>{error.message}</p>
+    return <Error message={error.message} />
   }
 
   return (

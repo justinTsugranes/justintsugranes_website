@@ -1,6 +1,8 @@
 export { default as ContactModal } from './ContactModal'
+export { default as Error } from './Error'
 export { default as Footer } from './Footer'
 export { default as HomeHero } from './HomeHero'
+export { default as Loading } from './Loading'
 export { default as Navigation } from './Navigation'
 export { default as PreFooter } from './PreFooter'
 export { default as ProjectCard } from './ProjectCard'
