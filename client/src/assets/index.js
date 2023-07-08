@@ -1,5 +1,5 @@
 export { default as ABOUT_HERO } from './images/about-hero.webp'
-export { default as aboutFour } from './images/about-headshot.webp'
+export { default as ABOUT_HEADSHOT } from './images/about-headshot.webp'
 export { default as HERO_INDEX } from './images/index-hero.webp'
 export { default as PRE_FOOTER_BACKGROUND } from './images/pre-footer.webp'
 export { default as PRE_FOOTER_GRAPHIC } from './images/pre-footer-graphic.svg'

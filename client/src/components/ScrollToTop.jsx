@@ -1,5 +1,4 @@
 // This component is a hook that allows the page to scroll to the top of the window when a new route is visited.
-// It is implemented using the useEffect hook from React to update the window's scroll position.
 
 import { useEffect } from 'react'
 import { useLocation } from 'react-router-dom'
