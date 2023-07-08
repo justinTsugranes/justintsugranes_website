@@ -22,7 +22,7 @@
     "sanity": "^3.6.0",
     "sanity-plugin-cloudinary": "^1.1.1",
     "sanity-plugin-iframe-pane": "^2.2.0",
-    "styled-components": "^5.3.9"
+    "styled-components": "^6.0.0"
   },
   "devDependencies": {
     "@sanity/eslint-config-studio": "^2.0.1",
