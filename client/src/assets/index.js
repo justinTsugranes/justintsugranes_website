@@ -1,8 +1,8 @@
 export { default as aboutTwo } from './images/about-hero.webp'
 export { default as aboutFour } from './images/about-headshot.webp'
 export { default as HERO_INDEX } from './images/index-hero.webp'
-export { default as preFooterBackground } from './images/pre-footer.webp'
-export { default as preFooterGraphic } from './images/pre-footer-graphic.svg'
+export { default as PRE_FOOTER_BACKGROUND } from './images/pre-footer.webp'
+export { default as PRE_FOOTER_GRAPHIC } from './images/pre-footer-graphic.svg'
 export { default as programmerGraphic } from './images/programmer.svg'
 export { default as sentImage } from './images/sent.svg'
 
