@@ -158,6 +158,7 @@ const ContactModal = ({ triggerText }) => {
                 type="submit"
                 className="rounded-pill px-4 py-2"
                 style={{ background: '#33bbcf', border: 'none' }}
+                name="submit"
               >
                 Send
               </Button>
