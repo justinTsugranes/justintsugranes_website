@@ -27,7 +27,7 @@ export const NAV_LINKS = {
   },
 }
 
-export const socialMedia = [
+export const SOCIAL_MEDIA = [
   {
     id: 'linkedin',
     icon: <LinkedInIcon />,

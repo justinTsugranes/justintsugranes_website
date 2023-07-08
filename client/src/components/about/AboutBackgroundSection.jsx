@@ -4,7 +4,7 @@ import { motion } from 'framer-motion'
 import { fadeIn } from '../../utils'
 import { useFetchData } from '../../hooks'
 import { ABOUT_HEADSHOT } from '../../assets'
-import { Error } from '../'
+import { Error } from '..'
 
 const AboutSectionFour = () => {
   const { data, error } = useFetchData(`*[title == "My Background"]`)

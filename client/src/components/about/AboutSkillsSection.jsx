@@ -2,7 +2,7 @@ import { Container } from 'react-bootstrap'
 import { motion } from 'framer-motion'
 import { fadeIn } from '../../utils/motion'
 import { useFetchData } from '../../hooks'
-import { Error } from '../'
+import { Error } from '..'
 
 const AboutSectionThree = () => {
   const { data, error } = useFetchData(`*[title == "What I Do"]`)

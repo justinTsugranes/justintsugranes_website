@@ -1,6 +1,6 @@
 import React from 'react'
 import { Row, Col } from 'react-bootstrap'
-import { socialMedia } from '../constants'
+import { SOCIAL_MEDIA } from '../constants'
 import { Error } from './'
 import { motion } from 'framer-motion'
 import { useFetchData } from '../hooks'
@@ -26,7 +26,7 @@ const Footer = () => {
 
             <Row className="d-flex justify-content-around py-4 pb-0">
               <div className="mb-4">
-                {socialMedia.map((social) => (
+                {SOCIAL_MEDIA.map((social) => (
                   <motion.div
                     key={social.id}
                     whileHover={{ scale: 1.2 }}
@@ -48,8 +48,15 @@ const Footer = () => {
               </div>
             </Row>
 
-            <p className="text-secondary fs-6 mb-0">
-              &copy; {currentYear} misfitDodo Media
+            <p className="fs-6 mb-0">
+              <a
+                href="https://misfitdodo.com"
+                target="_blank"
+                rel="noreferrer"
+                className="text-secondary"
+              >
+                &copy; {currentYear} misfitDodo Media
+              </a>
             </p>
           </>
         )}

@@ -13,7 +13,7 @@ import SwiperCore, {
 
 import { useFetchData } from '../../hooks'
 import { urlFor } from '../../lib'
-import { Error } from '../'
+import { Error } from '..'
 
 function useSwiper() {
   const swiperRef = useRef(null)
